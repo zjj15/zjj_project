@@ -1,0 +1,38 @@
+1.postman背景：
+原本是谷歌浏览器的插件后来独立成了一个app
+postman是一个web api测试工具，用来调试网页与发送网页http请求（不仅可以调试简单的css、html、脚本等简单的网页基本信息，它还可以发送几乎所有类型的HTTP请求）
+postman只能发送http或者https的请求
+
+2.使用(流程)
+1）打开postman
+2）创建一个collection，用于保存所有接口请求
+3）创建一个请求,请求方法为Get类型，请求的url为：https://www.baidu.com
+4)点击send发送请求
+5)在Response区域分析服务器返回的信息
+@1 Body区域：显示服务器返回的信息主题
+@2 Cookies区域：服务器返回的所有的Cookie值（用于验证客户端、服务器端身份信息）
+@3 Headers区域：服务器返回的响应头部信息
+@4 Test Result：断言，判断服务器返回的响应信息是否正确（自动化测试重点）
+@5 响应的其他信息：status（状态码）、Time（响应时间）、Size（响应信息的大小）
+6）请求案例内容的保存（Ctrl+S）
+7) 分析接口的响应结果时，必须弄清楚每一个返回值是什么意思，及其取值范围
+
+2.1使用postman发送请求
+不带参数的Get请求:
+
+带参数的Get请求:
+
+4）添加参数，在请求区的Parms里添加参数,输入参数名（key）、参数值（value）:如果有多个值，依次输入
+
+
+带参数的Post请求:
+4）添加参数，参数只能是Body里面的类型，一般是raw和form data
+
+
+2.2 postman并发：
+https://learning.postman.com/docs/running-collections/working-with-data-files/
+
+https://zhuanlan.zhihu.com/p/109078237
+
+https://www.cnblogs.com/qiaoyeye/p/6183238.html
+

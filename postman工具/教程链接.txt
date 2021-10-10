@@ -1,0 +1,10 @@
+postman使用教程：
+官网教程：
+https://learning.postman.com/docs/running-collections/intro-to-collection-runs/
+
+https://blog.csdn.net/fxbin123/article/details/80428216
+
+https://www.cnblogs.com/rookie-c/p/5753948.html
+
+postman并发：
+https://zhuanlan.zhihu.com/p/109078237

@@ -1,0 +1,42 @@
+1.mysql 开启默认事务（ACID） 默认执行 自动提交，不可撤销和回滚。
+
+2.  执行 set autocommit=0; （这条语句关闭了mysql的自动提交）
+  如果插入了一条数据后  执行 rollback 刚插入的语句会被撤回。
+  如果插入一条数据后 执行 commit 是不可以rollback的。
+
+3.事务分为 自动提交？ @@autocommit
+           手动提交？ commit
+           手动事务回滚？ rollback
+  事务给我们提供了一个返回的机会 多条语句要嬷全成功 要就都失败
+
+4.begin 或者start transaction 手动开启自动提交事物 可回滚
+
+5.事物的 ACID{ A：原子性：事物最小单位，不可再分割
+               C：一致性：同一事物中sql语句，必须保证同时成功失败。
+               I：隔离性:事物1和事物2之间有隔离性
+             D：持久性：事物一旦结束（commit，rollback），就不可以返
+回}。
+
+6.事物的隔离性4个隔离级别：
+1. read uncommited （读未提交的数据）>>出现 脏读
+  如果有事物a和事物b
+ a事物对数据进行操作，在操作过程中，事物没有被提交，但b可以看到a的
+ 操作（a给b打钱 然后a把钱撤回）
+
+2. read commited    （读已提交的数据）>>出现 不可重复读
+（a 算钱的平均数，b又加了一条数据，a算出来和预期不一样）
+
+3.repeatable read    （可重复读  mysql默认隔离级别）出现 幻读
+a 插入了一条数据 commit后 b查 查不到 再查同一条数据插入不进去
+4.serializable        （串行化）
+当 user表 a事物在操作， b事物的写操作不可以进行，等a事物结束，b事物写
+可以执行
+
+7.如何查看数据库的隔离级别？
+select @@global.transaction_isolation
+修改数据库隔离级别
+set global transaction isolation level read uncommitted 
+
+隔离级别越高 性能越差 性能 1>2>3>4
+serializable 性能最差
+<c:if test="${admin.username ne 'admin'}">

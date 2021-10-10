@@ -1,0 +1,67 @@
+get http://192.168.1.2:8000/carousel?username=zjj
+
+request param
+
+输入请求参数 username=zjj
+
+
+返回数据
+{
+   "username" :"我是张晶晶"
+}
+
+返回数据
+{
+    "status": 100,
+    "msg": "success",
+    "data": [
+        {
+            "id": 0,
+            "image": "https://img2.baidu.com/it/u=1267931373,3662510004&fm=26&fmt=auto&gp=0.jpg",
+            "colors": [
+                "black",
+                "blue"
+            ]
+        },
+        {
+            "id": 1,
+            "image": "https://img2.baidu.com/it/u=2636384542,2342846786&fm=26&fmt=auto&gp=0.jpg",
+            "colors": [
+                "red",
+                "red"
+            ]
+        },
+        {
+            "id": 2,
+            "image": "https://img0.baidu.com/it/u=1397939527,1839889565&fm=26&fmt=auto&gp=0.jpg",
+            "colors": [
+                "#eee",
+                "#ddd"
+            ]
+        },
+        {
+            "id": 3,
+            "image": "https://img1.baidu.com/it/u=1677923055,2984930156&fm=224&fmt=auto&gp=0.jpg",
+            "colors": [
+                "#eee",
+                "#ddd"
+            ]
+        },
+        {
+            "id": 4,
+            "image": "https://img1.baidu.com/it/u=3266479433,1999627905&fm=26&fmt=auto&gp=0.jpg",
+            "colors": [
+                "#eee",
+                "#ddd"
+            ]
+        },
+        {
+            "id": 5,
+            "image": "https://img2.baidu.com/it/u=111713540,615806613&fm=26&fmt=auto&gp=0.jpg",
+            "colors": [
+                "#eee",
+                "#ddd"
+            ]
+        }
+    ]
+}

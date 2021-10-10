@@ -1,0 +1,414 @@
+1、https://www.techug.com/post/mysql-command-usage.html
+
+2、这个真的…，大家一定要记住，Mysql，表名、字段名、数据库名用``（反引号）
+
+值一定要用''啊（单引号）
+
+
+
+#大纲
+1、增删改查数据表（对表的数据操作）insert、delete、update、select
+2、对表的结构操作，增删改查，create、drop、alter、show tables；
+3、索引：提高查看速度
+4、数据库的事务 ：ACID
+5、关键字：
+limit、like
+
+
+
+
+
+菜鸟教程：https://www.runoob.com/mysql/mysql-tutorial.html
+命令：
+1、连接数据库
+2、创建数据库：create databse datbase_name;
+3、查看数据库：show databases;查看数据库中有哪些表：show tables;
+4、选择数据库：use database_name；
+5、创建表：
+create table table_name(
+    `name1` varchar(100) not null，
+    `name2` varchar(40) not null，
+    `name3` Date，
+    primary key(`name3`)
+)；
+
+mysql> create table table_3(
+    -> date3 DATE,
+    -> weather3 varchar(40),
+    -> value3 int,
+    -> primary key(`value3`));
+
+6、在表里插入数据： 
+insert into table_name（name1,name2,name3）
+values
+("***","***","***")；
+7、查看表里内容：select * from table_name;
+8、查看表的结构：show columns from table_name  或者 decribe table_name
+9、查看表里某列的值：
+mysql> select date1 from tabale_1;
++------------+
+| date1      |
++------------+
+| 2021-05-23 |
++------------+
+1 row in set (0.00 sec)
+10、删除数据表：
+mysql> drop table table_4;
+Query OK, 0 rows affected (0.05 sec)
+11、删除数据库：
+mysql> drop database day1_database1;
+Query OK, 0 rows affected (0.05 sec)
+12、where语句：
+mysql> select * from tabale_1 where Date1=`date1`;
++------------+---------+--------+
+| Date1      | Weather | Week   |
++------------+---------+--------+
+| 2021-05-23 | 阵雨    | 星期日 |
++------------+---------+--------+
+1 row in set (0.00 sec)
+
+13、update语句
+ update tabale_1 set Date1='2021-05-25',Weather='晴',Week='星期二' where Date1='2021-05-25';
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> select * from tabale_1;
++------------+---------+--------+
+| Date1      | Weather | Week   |
++------------+---------+--------+
+| 2021-05-23 | 阵雨    | 星期日 |
+| 2021-05-24 | 晴      | 星期一 |
+| 2021-05-25 | 晴      | 星期二 |
++------------+---------+--------+
+
+14、delete
+ysql> delete from tabale_1 where date1='2021-05-25';
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from tabale_1;
++------------+---------+--------+
+| Date1      | Weather | Week   |
++------------+---------+--------+
+| 2021-05-23 | 阵雨    | 星期日 |
+| 2021-05-24 | 晴      | 星期一 |
++------------+---------+--------+
+2 rows in set (0.00 sec)
+
+15、like语句：
+mysql> select * from table_2;
++----------+-------------+-------+
+| data     | dns         | value |
++----------+-------------+-------+
+| 百度     | baidu.com   |     1 |
+| 腾旭     | tengxun.com |     2 |
+| 阿里     | ali.com     |     3 |
+| 百里守约 | blsy.www    |     4 |
++----------+-------------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from table_2 where dns like '%com';
++------+-------------+-------+
+| data | dns         | value |
++------+-------------+-------+
+| 百度 | baidu.com   |     1 |
+| 腾旭 | tengxun.com |     2 |
+| 阿里 | ali.com     |     3 |
++------+-------------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select data from table_2 where dns like '%com';
++------+
+| data |
++------+
+| 百度 |
+| 腾旭 |
+| 阿里 |
++------+
+3 rows in set (0.00 sec)
+
+
+16、修改表中字段：
+mysql> alter table table_2
+    -> change column date2 data varchar(100);
+Query OK, 0 rows affected (0.14 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table table_2
+    -> change column value2 value int;
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table table_2
+    -> change column weather2 dns varchar(100);#将Weather2列改成dns
+Query OK, 0 rows affected (0.11 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe table_2;
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| data  | varchar(100) | YES  |     | NULL    |       |
+| dns   | varchar(100) | YES  |     | NULL    |       |
+| value | int          | NO   | PRI | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+
+17、修改表名：
+-- 修改表名 
+rename table old_table to new_table;
+
+18、union、union all
+UNION 语句：用于将不同表中相同列中查询的数据展示出来；（不包括重复数据）
+UNION ALL 语句：用于将不同表中相同列中查询的数据展示出来；（包括重复数据）
+
+mysql> select Date1,Weather from tabale_1 where value =1
+    -> union all
+    -> select data,dns from table_2 where value=1
+    -> order by Date1;#生成得列名为第一个表得列名，俩个表列数要相同，即select
++------------+-----------+
+| Date1      | Weather   |
++------------+-----------+
+| 2021-05-23 | 阵雨      |
+| 百度       | baidu.com |
++------------+-----------+
+2 rows in set (0.00 sec)
+
+mysql> select value,Date1,Weather from tabale_1
+    -> union all
+    -> select value,data,dns from table_2
+    -> order by value;
++-------+------------+-------------+
+| value | Date1      | Weather     |
++-------+------------+-------------+
+|     1 | 2021-05-23 | 阵雨        |
+|     1 | 百度       | baidu.com   |
+|     2 | 2021-05-24 | 晴          |
+|     2 | 腾旭       | tengxun.com |
+|     3 | 阿里       | ali.com     |
+|     4 | 百里守约   | blsy.www    |
++-------+------------+-------------+
+6 rows in set (0.00 sec)
+
+19、给当前表添加列：(https://www.cnblogs.com/ysource/articles/13693055.html)
+alter table 表名 add 字段名 类型 约束条件;
+
+例子1：alter table student add isDelete int(11);
+
+20、排序 order by
+SELECT field1, field2,...fieldN FROM table_name1, table_name2...
+ORDER BY field1 [ASC [DESC][默认 ASC]], [field2...] [ASC [DESC][默认 ASC]]
+你可以使用 ASC 或 DESC 关键字来设置查询结果是按升序或降序排列。 默认情况下，它是按升序排列。
+mysql> select place,value from tabale_1 where place='CN'
+    -> union all
+    -> select place,value from table_2 where place='CN'
+    -> order by place ASC , value DESC ;
++-------+-------+
+| place | value |
++-------+-------+
+| CN    |     6 |
+| CN    |     6 |
+| CN    |     3 |
+| CN    |     3 |
+| CN    |     1 |
+| CN    |     1 |
++-------+-------+
+6 rows in set (0.00 sec)
+
+mysql> select value,dns from table_2 where dns like '%com'
+    -> union all
+    -> select value,dns from table_3 where dns like '%com'
+    -> order by  value ASC ;
++-------+-------------+
+| value | dns         |
++-------+-------------+
+|     1 | baidu.com   |
+|     1 | baidu.com   |
+|     2 | tengxun.com |
+|     2 | tengxun.com |
+|     3 | ali.com     |
+|     3 | ali.com     |
+|     5 | aql.com     |
+|     5 | aql.com     |
+|     7 | dj.com      |
+|     7 | dj.com      |
+|     8 | mq.com      |
+|     8 | mq.com      |
++-------+-------------+
+12 rows in set (0.02 sec)
+
+mysql> select value,dns from table_2 where dns like '%com'
+    -> union
+    -> select value,dns from table_3 where dns like '%com'
+    -> order by  value ASC ;
++-------+-------------+
+| value | dns         |
++-------+-------------+
+|     1 | baidu.com   |
+|     2 | tengxun.com |
+|     3 | ali.com     |
+|     5 | aql.com     |
+|     7 | dj.com      |
+|     8 | mq.com      |
++-------+-------------+
+6 rows in set (0.00 sec)
+
+mysql>
+
+21、group by；group by with rollup
+create table table_4(
+    `id` int(11) NOT NULL,
+  `name` char(10) NOT NULL DEFAULT '',
+  `date` datetime NOT NULL,
+  `singin` tinyint(4) NOT NULL DEFAULT '0' COMMENT '登录次数',
+  #创建新表的脚本中， 可在字段定义脚本中添加comment属性来添加注释。
+  PRIMARY KEY (`id`)
+)
+INSERT INTO `table_4` VALUES ('1', '小明', '2016-04-22 15:25:33', '1'), ('2', '小王', '2016-04-20 15:25:47', '3'), ('3', '小丽', '2016-04-19 15:26:02', '2'), ('4', '小王', '2016-04-07 15:26:14', '4'), ('5', '小明', '2016-04-11 15:26:40', '4'), ('6', '小明', '2016-04-04 15:26:54', '2');
+COMMIT;#一行全部插入
+
+select coalesce(name,'总数'),count(name) from table_4 group by name ;
+select coalesce(name,'总数'),count(*) from table_4 group by name with rollup ;
+select coalesce(name,'总数'),sum(singin) as singin_count from table_4 group by name with rollup ;
+#select coalesce(name,'总数'),sum(*) as singin_count from table_4 group by name with rollup ;
+
+22、join -》inner join；left join;right join;
+select a.Date1,a.place,b.data from table_1 a inner join table_2 b on a.place=b.place;
+select a.Date1,a.place,a.value,b.data from table_1 a inner join table_2 b where a.place=b.place and a.value = b.value;
+select a.Date1,a.place,b.data from table_1 a left join table_2 b on a.place=b.place;
+select a.Date1,a.place,b.data from table_1 a right join table_2 b on a.place=b.place;
+
+23、
+SELECT * from table_5;
+SELECT * from table_5 where count is not null;
+SELECT * from table_5 where count is  null;
+
+以下实例中你可以看到 = 和 != 运算符是不起作用的：
+mysql> SELECT * FROM runoob_test_tbl WHERE runoob_count = NULL;
+Empty set (0.00 sec)
+mysql> SELECT * FROM runoob_test_tbl WHERE runoob_count != NULL;
+Empty set (0.01 sec)
+查找数据表中 runoob_test_tbl 列是否为 NULL，必须使用 IS NULL 和 IS NOT NULL，如下实例：
+mysql> SELECT * FROM runoob_test_tbl WHERE runoob_count IS NULL;
++---------------+--------------+
+| runoob_author | runoob_count |
++---------------+--------------+
+| 菜鸟教程  | NULL         |
+| Google        | NULL         |
+
+24.正则表达式
+25.事务，原子性、一致性、隔离性、持久性
+MYSQL 事务处理主要有两种方法：
+1、用 BEGIN, ROLLBACK, COMMIT来实现
+
+BEGIN 开始一个事务
+ROLLBACK 事务回滚
+COMMIT 事务确认
+2、直接用 SET 来改变 MySQL 的自动提交模式:
+
+SET AUTOCOMMIT=0 禁止自动提交
+SET AUTOCOMMIT=1 开启自动提交
+
+mysql> select * from table_5;
++----------+-------+-------+
+| author   | count | money |
++----------+-------+-------+
+| RUNOOB   |    20 |  2000 |
+| 菜鸟教程 |  NULL |  NULL |
+| Google   |  NULL |  NULL |
+| FK       |    20 |  NULL |
+| RUNOOB   |    20 |  2000 |
++----------+-------+-------+
+5 rows in set (0.00 sec)
+
+mysql> update table_5 set money=3000 where author='菜鸟教程';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update table_5 set money=5000 where author='Google';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> commit;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from table_5;
++----------+-------+-------+
+| author   | count | money |
++----------+-------+-------+
+| RUNOOB   |    20 |  2000 |
+| 菜鸟教程 |  NULL |  3000 |
+| Google   |  NULL |  5000 |
+| FK       |    20 |  NULL |
+| RUNOOB   |    20 |  2000 |
++----------+-------+-------+
+5 rows in set (0.00 sec)
+
+mysql> begin;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> update table_5 set money=4000 where author='FK';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> rollback;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from table_5;
++----------+-------+-------+
+| author   | count | money |
++----------+-------+-------+
+| RUNOOB   |    20 |  2000 |
+| 菜鸟教程 |  NULL |  3000 |
+| Google   |  NULL |  5000 |
+| FK       |    20 |  NULL |
+| RUNOOB   |    20 |  2000 |
++----------+-------+-------+
+5 rows in set (0.00 sec)
+
+mysql> update table_5 set money=4000 where author='FK';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> commit;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from table_5;
++----------+-------+-------+
+| author   | count | money |
++----------+-------+-------+
+| RUNOOB   |    20 |  2000 |
+| 菜鸟教程 |  NULL |  3000 |
+| Google   |  NULL |  5000 |
+| FK       |    20 |  4000 |
+| RUNOOB   |    20 |  2000 |
++----------+-------+-------+
+5 rows in set (0.00 sec)
+
+26.alter
+删除数据表的某一列： 
+alter table 表名 drop 字段名；
+alter table table_5 drop count;
+
+mysql> select * from table_5;
++----------+-------+-------+
+| author   | count | money |
++----------+-------+-------+
+| RUNOOB   |    20 |  2000 |
+| 菜鸟教程 |  NULL |  3000 |
+| Google   |  NULL |  5000 |
+| FK       |    20 |  4000 |
+| RUNOOB   |    20 |  2000 |
++----------+-------+-------+
+5 rows in set (0.00 sec)
+
+mysql> alter table table_5 drop count;
+Query OK, 0 rows affected (0.00 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from table_5;
++----------+-------+
+| author   | money |
++----------+-------+
+| RUNOOB   |  2000 |
+| 菜鸟教程 |  3000 |
+| Google   |  5000 |
+| FK       |  4000 |
