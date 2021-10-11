@@ -412,3 +412,41 @@ mysql> select * from table_5;
 | 菜鸟教程 |  3000 |
 | Google   |  5000 |
 | FK       |  4000 |
+
+################################################################################
+1.查询
+1.0 基本查询语句
+1.1 单表查询
+1.2 使用集合函数查询
+1.3 连接查询
+1.4 子查询
+
+#############code##########3
+1.0 基本查询语句
+create table table2_1
+(
+f_id char(10) NOT Null,
+s_id INT NOT Null,
+f_name char(255) NOT Null,
+f_frice decimal(8,2) NOT Null,
+primary key(f_id)
+);
+
+insert into table2_1(f_id,s_id,f_name,f_price)
+values
+('a1',101,'apple',5.2),
+('b1',101,'blackberry',10.2),
+('c1',102,'orange',11.2);
+
+alter table table2_1
+change column f_frice f_price decimal(8,2) NOT Null;
+mysql> select * from table2_1
+    -> ;
++------+------+------------+---------+
+| f_id | s_id | f_name     | f_price |
++------+------+------------+---------+
+| a1   |  101 | apple      |    5.20 |
+| b1   |  101 | blackberry |   10.20 |
+| c1   |  102 | orange     |   11.20 |
++------+------+------------+---------+
+3 rows in set (0.00 sec)
