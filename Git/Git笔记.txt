@@ -1,25 +1,37 @@
 GIT：
+0.遇到的问题及解决方案：
 0.【同一台电脑上个人的github账户如何与公司的gitlab账户共存】
 https://www.cnblogs.com/hezhi/p/10317642.html(亲测好用)
 config文件实例：zjj_project\ssh 文件
 0.1【（诊断）为GitHub添加SSH key时出现“Could not open a connection to your authentication agent”错误的应对方案】
 https://www.cnblogs.com/Security-Darren/p/4106328.html
-【git-ssh 配置和使用：https://www.cnblogs.com/ldq2016/p/7418206.html】
+0.2【git-ssh 配置和使用：https://www.cnblogs.com/ldq2016/p/7418206.html】
 
 1.【了解Git】
+1.0Git、Github、Gitlab与Gitee之间的关系
+Git     是一种版本控制系统，是一个命令，是一种工具，有点像cmd(命令行工具)。
+Github  是一个基于git实现在线代码托管的仓库，向互联网开放，企业版要收钱。
+Gitlab  类似 github，一般用于在企业内搭建git私服，要自己搭环境。
+Gitee   即码云，是 oschina 免费给企业用的，不用自己搭建环境，可以建立自己的私有仓库。
+Git-ce  是社区版，gitlab-ee是企业版，收费的。
+
 1.1Git 提供了一个叫做 git config 的工具，专门用来配置或读取相应的工作环境变量。
 这些环境变量，决定了 Git 在各个环节的具体工作方式和行为。这些变量可以存放在以下三个不同的地方：
 /etc/gitconfig 文件：系统中对所有用户都普遍适用的配置。若使用 git config 时用 --system 选项，读写的就是这个文件。
 ~/.gitconfig 文件：用户目录下的配置文件只适用于该用户。若使用 git config 时用 --global 选项，读写的就是这个文件。
-
-当前项目的 Git 目录中的配置文件（也就是工作目录中的 .git/config 文件）：这里的配置仅仅针对当前项目有效。每一个级别的配置都会覆盖上层的相同配置，所以 .git/config 里的配置会覆盖 /etc/gitconfig 中的同名变量。
+（当前项目的 Git 目录中的配置文件（也就是工作目录中的 .git/config 文件）：这里的配置仅仅针对当前项目有效。每一个级别的配置都会覆盖上层的相同配置，所以 .git/config 里的配置会覆盖 /etc/gitconfig 中的同名变量。
 在 Windows 系统上，Git 会找寻用户主目录下的 .gitconfig 文件。主目录即 $HOME 变量指定的目录，一般都是 C:\Documents and Settings\$USER。
-
-此外，Git 还会尝试找寻 /etc/gitconfig 文件，只不过看当初 Git 装在什么目录，就以此作为根目录来定位。
+此外，Git 还会尝试找寻 /etc/gitconfig 文件，只不过看当初 Git 装在什么目录，就以此作为根目录来定位。）
 
 1.2git工作流程
+流程见上一级目录下的[Git工作流程.pptx文档]
 
 2.【Git配置】
+2.0新建Github仓库
+*几个需要关注的文件：
+@1 README.md（This is where you can write a long description for your project）
+@2 .gitignore（Choose which files not to track from a list of templates）
+
 2.1配置个人的用户名称和电子邮件地址：
 $ git config --global user.name "zhangjingjing"
 $ git config --global user.email 2580043710@qq.com
@@ -81,12 +93,26 @@ git remote	远程仓库操作
 git fetch	从远程获取代码库
 git pull	下载远程代码并合并
 git push	上传远程代码并合并
+（$ git push origin master:master
+=> 在 local repository 中找到名字为 master 的 branch，使用它去更新 remote repository 下名字为 master 的 branch，
+如果 remote repository 下不存在名字是 master 的 branch，那么新建一个。）
 
 3.3.4分支
+(对 Git 分支 master 和 origin/master 的一些认识:
+https://blog.csdn.net/zzwpublic/article/details/106651578?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1.no_search_link&spm=1001.2101.3001.4242)
 创建分支：git branch 分支名
 切换分支：git checkout 分支名
 合并分支：git merge
-查看当前所有分支：git branch
+查看当前本地所有分支：git branch
+查看当前所有分支（包括remote）：git branch -a
+实例：
+$ git branch -a
+* main（本地分支）
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main（origin的远程仓库里有一个名叫main的分支）
+  remotes/origin/master1
+
+查看当前远程分支：git branch -r
 创建新分支并立即切换到该分支下：git checkout -b branchname
 删除分支：git branch -d branchname
 
@@ -99,40 +125,31 @@ git blame <file> 以列表形式查看指定文件的历史修改记录。
 $ git tag
 v0.9
 v1.0
+
 3.3.7git remote查看当前配置有哪些远程仓库
 $ git remote
 origin
 $ git remote -v （加上 -v 参数，你还可以看到每个别名的实际链接地址）
 origin  git@github.com:zjj15/zjj_project.git (fetch)
 origin  git@github.com:zjj15/zjj_project.git (push)
-实例：
-git remote查看当前配置有哪些远程仓库
-从远程仓库下载新分支与数据：git fetch ，该命令执行完后需要执行 git merge 远程分支到你所在的分支。
-从远端仓库提取数据并尝试合并到当前分支：git merge
-推送你的新分支与数据到某个远端仓库命令:git push [alias] [branch]
-git fetch
-git merge
+#从远程仓库下载新分支与数据：git fetch ，该命令执行完后需要执行 git merge 远程分支到你所在的分支。
+#从远端仓库提取数据并尝试合并到当前分支：git merge
+（git pull origin master命令相当于git fetch 和 git merge，在实际使用中，git fetch更安全一些因为在merge前，我们可以查看更新情况，然后再决定是否合并）
+#git push origin master    # 推送到 Github（推送你的新分支与数据到某个远端仓库命令:git push [alias] [branch]）
 
-git push origin master    # 推送到 Github
-$ git remote -v
-origin    git@github.com:tianqixin/runoob-git-test.git (fetch)
-origin    git@github.com:tianqixin/runoob-git-test.git (push)
-实例：
-# 添加仓库 origin2
+# 添加仓库 git remote add 
 $ git remote add origin2 git@github.com:tianqixin/runoob-git-test.git
-
 $ git remote -v
 origin    git@github.com:tianqixin/runoob-git-test.git (fetch)
 origin    git@github.com:tianqixin/runoob-git-test.git (push)
 origin2    git@github.com:tianqixin/runoob-git-test.git (fetch)
 origin2    git@github.com:tianqixin/runoob-git-test.git (push)
 
-# 删除仓库 origin2
+# 删除仓库 git remote rm origin2
 $ git remote rm origin2
 $ git remote -v
 origin    git@github.com:tianqixin/runoob-git-test.git (fetch)
 origin    git@github.com:tianqixin/runoob-git-test.git (push)
-
 
 4.【永久删除文件后找回】：
 删除：rm a.txt
