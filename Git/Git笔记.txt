@@ -2,6 +2,9 @@ GIT：
 0.【同一台电脑上个人的github账户如何与公司的gitlab账户共存】
 https://www.cnblogs.com/hezhi/p/10317642.html(亲测好用)
 config文件实例：zjj_project\ssh 文件
+0.1【（诊断）为GitHub添加SSH key时出现“Could not open a connection to your authentication agent”错误的应对方案】
+https://www.cnblogs.com/Security-Darren/p/4106328.html
+【git-ssh 配置和使用：https://www.cnblogs.com/ldq2016/p/7418206.html】
 
 1.【了解Git】
 1.1Git 提供了一个叫做 git config 的工具，专门用来配置或读取相应的工作环境变量。
