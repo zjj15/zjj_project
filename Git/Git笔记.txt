@@ -6,6 +6,9 @@ config文件实例：zjj_project\ssh 文件
 0.1【（诊断）为GitHub添加SSH key时出现“Could not open a connection to your authentication agent”错误的应对方案】
 https://www.cnblogs.com/Security-Darren/p/4106328.html
 0.2【git-ssh 配置和使用：https://www.cnblogs.com/ldq2016/p/7418206.html】
+0.3【解决Windows下使用github需要每次都要ssh-add的问题】
+https://blog.csdn.net/EsonJohn/article/details/79134665?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link
+https://blog.csdn.net/xianhenyuan/article/details/92397894
 
 1.【了解Git】
 1.0Git、Github、Gitlab与Gitee之间的关系
