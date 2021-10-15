@@ -1,0 +1,6 @@
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/github_rsa
+
+
+
+以上内容为.bashrc文件的文本内容
