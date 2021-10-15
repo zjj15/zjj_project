@@ -1,6 +1,28 @@
+python连接mysql的几种方式(https://blog.csdn.net/shdxhsq/article/details/107724207)
+(1) 什么是 mysql.connector？
+由于 MySQL 服务器以独立的进程运行，并通过网络对外服务，所以，需要支持 Python 的 MySQL 驱动来连接到 MySQL 服务器。
+目前，有两个 MySQL 驱动：
+mysql-connector-python：是 MySQL 官方的纯 Python 驱动；
+MySQL-python ：是封装了 MySQL C驱动的 Python 驱动。
+
+(2) 什么是 PyMySQL？<推荐使用>
+PyMySQL 是 Python 中用于连接 MySQL 服务器的一个库，它遵循 Python 数据库 API 规范 V2.0，并包含了 pure-Python MySQL 客户端库。
+(PyMySQL 是纯 Python 实现的驱动，速度上比不上 MySQLdb，最大的特点可能就是它的安装方式没那么繁琐，同时也兼容 MySQL-python)
+
+(3)什么是MySQLdb？<停用>
+MySQLdb 是用于 Python 连接 MySQL 数据库的接口，它实现了 Python 数据库 API 规范 V2.0，基于 MySQL C API 上建立的。
+(MySQL-python 又叫 MySQLdb，是 Python 连接 MySQL 最流行的一个驱动，很多框架都也是基于此库进行开发，
+遗憾的是它只支持 Python2.x，而且安装的时候有很多前置条件，因为它是基于C开发的库，
+在 Windows 平台安装非常不友好，经常出现失败的情况，现在基本不推荐使用，取代的是它的衍生版本。)
+(MySQLdb只只支持到py3.4，建议py选手忘记它吧.python官方都在2021年停止py2开发啦)
+
+(4)mysqlclient:<MySQLdb的接替者，单手从star上看出其势头已经被pymysql超越了>
+(由于 MySQL-python 年久失修，后来出现了它的 Fork 版本 mysqlclient，完全兼容 MySQLdb，同时支持 Python3.x，是 Django ORM的依赖工具，如果你想使用原生 SQL 来操作数据库，那么推荐此驱动。)
+
+(5)Flask-MySQL
+
 **************Python MySQL - mysql-connector 驱动******************************************
-python-mysql:
-python中使用数据库：
+python-mysql:python中使用数据库：mysql.connector
 
 #导入mysql包
 import mysql.connector
@@ -140,7 +162,42 @@ val = ("Zhihu", "ZH")
 sql = "DROP TABLE IF EXISTS sites"  # 删除数据表 sites
 
 **************Python3 MySQL 数据库连接 - PyMySQL 驱动********************************************************
-PyMySQL 是在 Python3.x 版本中用于连接 MySQL 服务器的一个库，Python2中则使用mysqldb。
+1.安装PyMySQL
+pip install PyMySQL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	
