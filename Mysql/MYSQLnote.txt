@@ -4,7 +4,7 @@
 
 值一定要用''啊（单引号）
 
-
+使用：用的Mysql Workbench界面化工具
 
 #大纲
 1、增删改查数据表（对表的数据操作）insert、delete、update、select
@@ -450,3 +450,117 @@ mysql> select * from table2_1
 | c1   |  102 | orange     |   11.20 |
 +------+------+------------+---------+
 3 rows in set (0.00 sec)
+
+
+insert into etable1(f_id,s_id,f_name,f_price)
+values
+('a1',101,'apple',5.2),
+('b1',101,'blackberry',10.2),
+('c1',102,'orange',11.2);
+
+#单表查询
+1.筛选所有数据
+select * from etable1(*)
+2.(具体字段名)
+select f_id,f_name,f_price from etable1
+3.where语句，查询确定条件数据
+select f_name,f_price from etable1 where f_price=10.2
+4.where语句查询指定范围数据
+select f_id,f_name,f_price from etable1 where f_price<10.2;
+5.where语句查询IN字句数据并按价格排序
+select f_id,f_name,f_price from etable1 where f_price in (5.2,10.2)order by f_price;
+6.not in
+select f_id,f_name,f_price from etable1 where f_price not in (5.2,10.2)order by f_price;
+7.between and
+select f_id,f_name,f_price from etable1 where f_price between 5.2 and 10.2 order by f_price;
+8.not between and
+select f_id,f_name,f_price from etable1 where f_price not between 8.2 and 10.2 order by f_price;
+9.like，%通配符匹配任意长度，_下划线通配符一次只能匹配一个字符，要想匹配多个字符就要用多个下划线
+select f_id,f_name,f_price from etable1 where f_name like '%e';（结尾是e的记录）
+select f_id,f_name,f_price from etable1 where f_name like 'm%';（m开头的记录）
+select f_id,f_name,f_price from etable1 where f_name like '%n%';（包含n记录）
+select f_id,f_name,f_price from etable1 where f_name like 'm%n';（m开头n结尾的记录）
+select f_id,f_name,f_price from etable1 where f_name like '____n';（_n前面有4个下划线）
+10.查询空值 IS NULL/is not null
+select * from etable2 where c_email is Null;
+select * from etable2 where c_email is not Null;
+11.and多条件查询
+select f_id,s_id,f_name,f_price from etable1 where s_id <102  And f_price>8.2;
+12.or多条件查询
+select f_id,s_id,f_name,f_price from etable1 where s_id <102  or f_price>8.2;
+13.distinct 消除重复字段值
+select distinct s_id from etable1;
+14.排序order by；单列排序，多列排序，指定升降序
+单列排序
+select f_name from etable1 order by f_name;
+多列排序
+select f_name,f_price from etable1 order by f_name,f_price;
+select f_name,f_price from etable1 order by f_price,f_name;
+指定升降序
+select f_name,f_price from etable1 order by f_price DESC;（降序）
+select f_name,f_price from etable1 order by f_price DESC,f_name ASC ;（降序，升序，ASC关键字不写的话也会默认是升序）
+15.分组查询group by 字段 having 条件表达式
+select s_id, count(*) as total from etable1 group by s_id;
+注：count()函数计算s_id中包含了几条记录，并生成total列将结果输出到total列
++------+-------+
+| s_id | total |
++------+-------+
+|  101 |     2 |
+|  104 |     2 |
+|  102 |     1 |
+|  103 |     3 |
++------+-------+
+select s_id, group_concat(f_name) as Name from etable1 group by s_id;
+注：group_concat(f_name) as Name，将s_id分组后的f_name的内容显示在生成的Name列
+注：group_concat函数：将group by产生的同一个分组中的值连接起来，返回一个字符串结果
++------+-------------------+
+| s_id | Name              |
++------+-------------------+
+|  101 | apple,blackberry  |
+|  102 | orange            |
+|  103 | melon,melon,lemon |
+|  104 | banana,pear       |
++------+-------------------+
+select s_id, group_concat(f_name) as Name from etable1 group by s_id having count(f_name)>1;
++------+-------------------+
+| s_id | Name              |
++------+-------------------+
+|  101 | apple,blackberry  |
+|  103 | melon,melon,lemon |
+|  104 | banana,pear       |
++------+-------------------+
+16.group by与with rollup连用，WITH ROLLUP 可以实现在分组统计数据基础上再进行相同的统计（SUM,AVG,COUNT…）
+select s_id, count(*) as total from etable1 group by s_id with rollup;
++------+-------+
+| s_id | total |
++------+-------+
+|  101 |     2 |
+|  102 |     1 |
+|  103 |     3 |
+|  104 |     2 |
+| NULL |     8 |
++------+-------+
+17.group by多字段分组（本地测试不对，需要研究）
+mysql根据多字段的值来进行层次分组，
+分组层次从左到右，先按第一个字段分组，然后第一个字段值相同的记录中再根据第二个字段值分组
+
+18.group by与order by连用
+select s_id, count(*) as total from etable1 group by s_id order by total;
++------+-------+
+| s_id | total |
++------+-------+
+|  102 |     1 |
+|  104 |     2 |
+|  101 |     3 |
+|  103 |     3 |
++------+-------+
+注：当使用order by时不能同时使用rollup(因为有NULL值)
+19.limit返回指定位置的记录（记录偏移量从0开始）
+limit 位置偏移量 行数
+select * from etable1 limit 4;返回前四行
+select * from etable1 limit 4，3；返回从第5行开始的三行内容
+
+20.使用集合函数查询
+
+
+

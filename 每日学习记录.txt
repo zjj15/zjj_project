@@ -13,8 +13,15 @@ linux：linux基础命令总结（菜鸟教程）
 10/11
 git学习/git配置
 10/12
-git学习完毕
+git学习完毕**
 英语方法确定
 python中mysql应用
 复习基本语句
+10/16
+做简历
+10/18
+mysql 2h
+python 2h
+linux 1h
+记单词+复习单词 1h
 
