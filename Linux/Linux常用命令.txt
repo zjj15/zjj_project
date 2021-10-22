@@ -195,6 +195,123 @@ total 0
 -rw-r--r-- 1 lihang 197121 0 10月 21 21:11 mpmk #文件显示时间为在tempmp文件中创建的时间
 drwxr-xr-x 1 lihang 197121 0 10月 21 21:11 tempmp/#文件显示时间为tempmp文件被创建的时间
 
+9.cat命令
+(1)cat filename,显示文件内容
+例：$ cat c.mg
+hello world
+jjz
+
+(2-1)从键盘创建一个文件: 只能创建新文件，不能编辑已有文件。(如果当前新建文件已存在就直接覆盖)
+cat > filename
+文件内容
+例：$ cat > b.tlog
+hello pp
+;
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ cat b.tlog
+hello pp
+;
+(2-2)从键盘创建一个文件,cat<<EOF，以EOF输入字符为标准输入结束
+例1：$ cat > b.tlog <<EOF
+> wonderful
+> magical
+> helpless
+> uncomfortable
+> very myself
+> EOF
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ cat b.tlog
+wonderful
+magical
+helpless
+uncomfortable
+very myself
+
+例2：$ cat >d.log <<end
+> hellomzz
+> end
+
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ cat d.log
+hellomzz
+
+
+
+(3)cat file1 file2 > file 将几个文件合并为一个文件:
+$ cat b.tlog c.mg d.log hhh.ak mp.mk  > mpmk
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ ls
+b.tlog  c.mg  d.log  hhh.ak  mp.mk  mpmk  tempmp/
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ cat mpmk
+hello world
+jjz
+
+(4-1)cat -n filename: 将文件里的内容加上行号输出
+$ cat -n  c.mg
+     1  hello world
+     2  jjz
+(4-2)cat -b filename:将文件里非空行的内容加上行号输出
+ cat -b c.mg
+     1  hello world
+     2  #下面一行是空行
+
+     3  jjz
+(5)反向打印文件里的内容：tac命令
+$ cat b.tlog
+wonderful
+magical
+helpless
+uncomfortable
+very myself
+
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ tac b.tlog
+very myself
+uncomfortable
+helpless
+magical
+wonderful
+
+10.more命令
+功能类似于 cat, more 会以一页一页的显示方便使用者逐页阅读，
+而最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示。
+
+
+11.
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
