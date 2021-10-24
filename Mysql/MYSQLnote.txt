@@ -467,8 +467,8 @@ select f_id,f_name,f_price from etable1
 select f_name,f_price from etable1 where f_price=10.2
 4.where语句查询指定范围数据
 select f_id,f_name,f_price from etable1 where f_price<10.2;
-5.where语句查询IN字句数据并按价格排序
-select f_id,f_name,f_price from etable1 where f_price in (5.2,10.2)order by f_price;
+5.where语句查询in字句数据并按价格排序
+select f_id,f_name,f_price from etable1 where f_price in (5.2,10.2)order by f_price;#值为5.2 和10.2
 6.not in
 select f_id,f_name,f_price from etable1 where f_price not in (5.2,10.2)order by f_price;
 7.between and
@@ -543,6 +543,8 @@ select s_id, count(*) as total from etable1 group by s_id with rollup;
 17.group by多字段分组（本地测试不对，需要研究）
 mysql根据多字段的值来进行层次分组，
 分组层次从左到右，先按第一个字段分组，然后第一个字段值相同的记录中再根据第二个字段值分组
+group by university,gender; 
+group by 字段1，字段2，字段n
 
 18.group by与order by连用
 select s_id, count(*) as total from etable1 group by s_id order by total;
@@ -561,6 +563,7 @@ select * from etable1 limit 4;返回前四行
 select * from etable1 limit 4，3；返回从第5行开始的三行内容
 
 20.使用集合函数查询
+
 
 
 
