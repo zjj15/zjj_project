@@ -195,6 +195,7 @@ total 0
 -rw-r--r-- 1 lihang 197121 0 10月 21 21:11 mpmk #文件显示时间为在tempmp文件中创建的时间
 drwxr-xr-x 1 lihang 197121 0 10月 21 21:11 tempmp/#文件显示时间为tempmp文件被创建的时间
 
+*********************************Linux用来查看文件内容：以下9-13，cat,more,less,head,tail***************************************
 9.cat命令
 (1)cat filename,显示文件内容
 例：$ cat c.mg
@@ -278,7 +279,55 @@ wonderful
 而最基本的指令就是按空白键（space）就往下一页显示，按 b 键就会往回（back）一页显示。
 
 
-11.
+11.less 命令
+(1)less filename：显示文件内容
+(2)less -p b.tlog c.mg:查看后一个文件的内容
+(3)less -n b.tlog c.mg:查看前一个文件的内容
+
+12.head 命令
+head 用来显示档案的开头至标准输出中，默认 head 命令打印其相应文件的开头 10 行。
+常用参数：-n<行数> 显示的行数（行数为复数表示从最后向前数）
+(1)head filename:不加参数时默认显示文件前10行
+(2)head -n 8 b.tlog:显示文件的前n行
+(3)head -n -8 b.tlog:输出文件除了最后n行的全部内容
+(4)haed filename1 filename2:输出多个文件的内容
+例：head b.tlog c.mg
+==> b.tlog <==
+wonderful
+magical
+helpless
+uncomfortable
+very myself
+qq
+o
+yuuoiop
+daasda
+dadsadf
+==> c.mg <==
+hello world
+#下面一行是空行
+jjz
+
+13.tail 命令
+用于显示指定文件末尾内容
+(1)tail b.tlog:输出文件最后10行内容
+(2)-n<行数> 显示行数（从后向前）
+$ tail -n 3  b.tlog:查看b.tlog的最后3行信息
+
+
+
+****************************在 linux 要查找某个文件，但不知道放在哪里了，可以使用下面的一些命令来搜索：************************
+which   查看可执行文件的位置。
+whereis 查看文件的位置。
+locate  配合数据库查看文件位置。
+find    实际搜寻硬盘查询文件名称。
+
+14.
+
+
+
+
+
 
 	 
 
