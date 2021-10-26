@@ -322,18 +322,67 @@ whereis 查看文件的位置。
 locate  配合数据库查看文件位置。
 find    实际搜寻硬盘查询文件名称。
 
-14.
+14. which:查看命令位置
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project (main)
+$ which ls
+/usr/bin/ls
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project (main)
+$ which which
+/usr/bin/which
 
 
+15.find 命令
+find pathname -options 
+(1)find pathname -name (按照文件名查找文件)
+例1：$ find ./ -name 'tem*'#查找以tem开头的文件及文件夹
+./tempmp
+./tempss
+./tempss/tempmp
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project (main)
+例2：$ find ./ -name '*.txt'#查找以.txt结尾的文件及文件夹
+./Git/Git笔记.txt
+./Git/新建文本文档.txt
+./Linux/Linux常用命令.txt
+./Linux/Linux笔记.txt
+例3：$ find -name *.mk
+./tempmp/mp.mk
+./tempss/mp.mk
+./tempss/tempmp/mp.mk
 
 
+(2)find ./ -perm (按文件权限查找文件)
+$ find ./ -perm 644
+./Git/git命令.xlsx
+./Git/Git工作流程.pptx
+./Git/Git笔记.txt
+./Git/新建文本文档.txt
+./Linux/Linux基础部分复习大纲.pdf
+./Linux/Linux常用命令.txt
 
+注：文件权限解释，(r,w,x)分别代表的意思是：(读,写,执行)权限数值分别为(4,2,1)
+drwxr-xr-x 1 autost 197121       0 10月 23 14:36 tempss/
+-rw-r--r-- 1 autost 197121      13 10月 12 10:34 README.md
+解释上面两行：
+第1位，-表示文件，d表示目录，l表示软连接
+第2~4：表示这个文件的属主拥有的权限(user)
+第5~7：表示这个文件的属主所在同一个组的用户所具有的权限(group)
+第8~10：表示其他用户所具有的权限(other)
 
-	 
+(3)find 目录(查看目录下的所有文件)
+$ find ./tempss/
+./tempss/
+./tempss/b.tlog
+./tempss/c.mg
+./tempss/d.log
+./tempss/hhh.ak
+./tempss/mp.mk
+./tempss/mpmk
+./tempss/tempmp
+./tempss/tempmp/hhh.ak
+./tempss/tempmp/mp.mk
+./tempss/tempmp/mpmk
 
-
-
-
+(4)
 
 
 

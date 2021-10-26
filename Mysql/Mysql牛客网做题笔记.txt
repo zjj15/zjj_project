@@ -96,3 +96,21 @@ question_practice_detail.result
 from question_practice_detail INNER join user_profile on
 question_practice_detail.device_id=user_profile.device_id
 where university='浙江大学';
+
+
+22.有问题，回去再看
+select user_profile.university,
+round(count(question_practice_detail.question_id) / count(DISTINCT question_practice_detail.device_id), 4) as avg_answer-cnt
+from user_profile INNER JOIN question_practice_detail on user_profile.device_id = question_practice_detail.device_id
+group by user_profile.university;
+
+
+
+
+
+
+
+
+
+
+
