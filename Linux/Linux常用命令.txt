@@ -1,4 +1,19 @@
 Linux常用命令（只记录最常用得命令）：
+
+命令概述:
+
+
+
+
+
+
+
+
+
+
+
+
+具体命令内容：
 1.ls 命令
 就是 list 的缩写，通过 ls 命令不仅可以查看 linux 文件夹包含的文件，而且可以查看文件权限(包括目录、文件夹、文件权限)查看目录信息等等。
 (1)ls -a 
@@ -382,14 +397,225 @@ $ find ./tempss/
 ./tempss/tempmp/mp.mk
 ./tempss/tempmp/mpmk
 
-(4)
+
+16.chmod命令
+语法
+chmod [-cfvR] [--help] [--version] mode file...
+参数说明
+mode : 权限设定字串，格式如下 : [ugoa...][[+-=][rwxX]...][,...]
+其中：
+u 表示该文件的拥有者，g 表示与该文件的拥有者属于同一个群体(group)者，o 表示其他以外的人，a 表示这三者皆是。
++ 表示增加权限、- 表示取消权限、= 表示唯一设定权限。
+r 表示可读取，w 表示可写入，x 表示可执行，X 表示只有当该文件是个子目录或者该文件已经被设定过为可执行。
+(1)chmod u=rw,g+x,o-w d.log
+(2)chmod 777 b.tlog
+
+17.tar 命令
+用来压缩和解压文件。tar 本身不具有压缩功能，只具有打包功能，有关压缩及解压是调用其它的功能来完成。
+弄清两个概念：打包和压缩。打包是指将一大堆文件或目录变成一个总的文件；压缩则是将一个大的文件通过一些压缩算法变成一个小文件
+https://www.cnblogs.com/aksir/p/9066611.html
+(0)打包-->压缩(常用的3个命令如下)
+tar –cvf jpg.tar *.jpg //将目录里所有jpg文件打包成jpg.tar
+tar –czf jpg.tar.gz *.jpg   //将目录里所有jpg文件打包成jpg.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为jpg.tar.gz
+zip jpg.zip *.jpg //zip格式的压缩，需要先下载zip for linux
+
+例1：$ tar -cvf m.tar *.m*
+c.mg
+mp.mk
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ tar -czf m.tar.gz *.m*
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ ll
+total 17
+-rw-r--r-- 1 autost 197121   157 10月 23 14:36 b.tlog
+-rw-r--r-- 1 autost 197121    40 10月 22 15:32 c.mg
+-rw-r--r-- 1 autost 197121     9 10月 22 15:38 d.log
+-rw-r--r-- 1 autost 197121     0 10月 22 14:31 hhh.ak
+-rw-r--r-- 1 autost 197121 10240 10月 27 11:37 m.tar
+-rw-r--r-- 1 autost 197121   196 10月 27 11:38 m.tar.gz
+-rw-r--r-- 1 autost 197121     0 10月 22 14:31 mp.mk
+-rw-r--r-- 1 autost 197121    16 10月 22 15:25 mpmk
+drwxr-xr-x 1 autost 197121     0 10月 22 14:31 tempmp/
+
+(2)解压
+tar –xvf file.tar //解压 tar包
+tar -xzvf file.tar.gz //解压tar.gz
+unzip file.zip //解压zip
+例1：autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ tar -xvf m.tar
+c.mg
+mp.mk
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ tar -xzvf m.tar.gz
+c.mg
+mp.mk
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ ll
+total 17
+-rw-r--r-- 1 autost 197121   157 10月 23 14:36 b.tlog
+-rw-r--r-- 1 autost 197121    40 10月 22 15:32 c.mg
+-rw-r--r-- 1 autost 197121     9 10月 22 15:38 d.log
+-rw-r--r-- 1 autost 197121     0 10月 22 14:31 hhh.ak
+-rw-r--r-- 1 autost 197121 10240 10月 27 11:37 m.tar
+-rw-r--r-- 1 autost 197121   196 10月 27 11:38 m.tar.gz
+-rw-r--r-- 1 autost 197121     0 10月 22 14:31 mp.mk
+-rw-r--r-- 1 autost 197121    16 10月 22 15:25 mpmk
+drwxr-xr-x 1 autost 197121     0 10月 22 14:31 tempmp/
 
 
 
+18.df 命令
+显示磁盘空间使用情况。获取硬盘被占用了多少空间，目前还剩下多少空间等信息，如果没有文件名被指定，则所有当前被挂载的文件系统的可用空间将被显示。
+默认情况下，磁盘空间将以 1KB 为单位进行显示，除非环境变量 POSIXLY_CORRECT 被指定，那样将以512字节为单位进行显示：
+-a 全部文件系统列表
+-h 以方便阅读的方式显示信息
+-i 显示inode信息
+-k 区块为1024字节
+-l 只显示本地磁盘
+-T 列出文件系统类型
+(1)df
+$ df
+Filesystem      1K-blocks      Used Available Use% Mounted on
+C:/software/Git 104259764  73443596  30816168  71% /
+D:              382866428 194782256 188084172  51% /d
+(2)df -lhT,命令组合使用
+$ df -lhT
+Filesystem      Type  Size  Used Avail Use% Mounted on
+C:/software/Git ntfs  100G   71G   30G  71% /
+D:              ntfs  366G  186G  180G  51% /d
+
+19.du
+du 命令也是查看使用空间的，但是与 df 命令不同的是 Linux du 命令是对文件和目录磁盘使用的空间的查看：
+(1)du
+$ du
+0       ./tempmp
+26      .
+(2)du-a
+autost@DESKTOP-IM2UOV2 MINGW64 ~/Desktop/ZjjGit/zjj_project/tempss (main)
+$ du -a
+0       ./a.kk
+0       ./b.kk
+1       ./b.tlog
+0       ./c.kk
+1       ./c.mg
+1       ./d.log
+0       ./hhh.ak
+4       ./kk.tar
+1       ./kk.tar.gz
+12      ./m.tar
+1       ./m.tar.gz
+0       ./mp.mk
+1       ./mpmk
+0       ./tempmp/hhh.ak
+0       ./tempmp/mp.mk
+0       ./tempmp/mpmk
+0       ./tempmp
+26      .
+
+20.data(显示或设定系统的日期与时间)
+$ date
+2021年10月27日 14:50:58
+
+21.grep 命令
+强大的文本搜索命令,全局正则表达式搜索
+(1)ps -ef | grep ，查看进程
+$ ps -ef | grep autost
+  autost    1142       1 ?          Oct 26 /usr/bin/mintty
+  autost    1143    1142 pty1       Oct 26 /usr/bin/bash
+  autost    1140       1 ?          Oct 26 /usr/bin/ssh-agent
+  autost    1218    1217 pty0     15:35:40 /usr/bin/bash
+  autost    1241       1 ?        15:35:41 /usr/bin/ssh-agent
+  autost    1981    1143 pty1     15:28:46 /usr/bin/bash
+  autost    1980    1143 pty1     15:28:46 /usr/bin/ps
+  autost    1217       1 ?        15:35:40 /usr/bin/mintty
+  autost    1166       1 ?          Oct 26 /usr/bin/ssh-agent
+(2))ps -ef | grep -c,查看进程数
+$ ps -ef | grep autost -c
+9
+(3)打印b.tlog中包含ha字符串的行数据
+$ grep  ha  b.tlog
+chain
+happy
+happy new year
+(4)#加参数-c是打印b.tlog中包含ha字符串的行数总和
+$ grep -c  ha  b.tlog
+3
+(5)加参数rni是打印递归匹配当前目录下 所有包含 ha 字符串的文件
+$ grep -rni  ha  b.tlog
+12:chain
+14:happy
+17:happy new year
+$ grep -rni  ha  ./
+./b.tlog:12:chain
+./b.tlog:14:happy
+./b.tlog:17:happy new year
+
+22.wc 命令
+wc(word count)功能为统计指定的文件中字节数、字数、行数，并将统计结果输出
+(1)
+$ wc -l b.tlog
+22 b.tlog
+
+23.ps 命令
+ps(process status)，用来查看当前运行的进程状态，一次性查看，如果需要动态连续结果使用 top
+linux上进程有5种状态:
+1. 运行(正在运行或在运行队列中等待)
+2. 中断(休眠中, 受阻, 在等待某个条件的形成或接受到信号)
+3. 不可中断(收到信号不唤醒和不可运行, 进程必须等待直到有中断发生)
+4. 僵死(进程已终止, 但进程描述符存在, 直到父进程调用wait4()系统调用后释放)
+5. 停止(进程收到SIGSTOP, SIGSTP, SIGTIN, SIGTOU信号后停止运行运行)
+
+ps 工具标识进程的5种状态码:
+D 不可中断 uninterruptible sleep (usually IO)
+R 运行 runnable (on run queue)
+S 中断 sleeping
+T 停止 traced or stopped
+Z 僵死 a defunct (”zombie”) process
+
+命令参数：
+a 显示所有进程
+-a 显示同一终端下所有进程
+c 显示进程真实名称
+e 显示环境变量
+f 显示进程间的关系
+r 显示当前终端运行的进程
+-aux 显示所有包含其它使用的进程
+
+(1)ps -ef:显示当前所有进程环境变量及进程间关系
+$ ps -ef
+     UID     PID    PPID  TTY        STIME COMMAND
+  autost    1142       1 ?          Oct 26 /usr/bin/mintty
+  autost    1143    1142 pty1       Oct 26 /usr/bin/bash
+  autost    1140       1 ?          Oct 26 /usr/bin/ssh-agent
+  autost    2197    2196 pty2     16:24:19 /usr/bin/bash
+  autost    2338    1143 pty1     16:42:12 /usr/bin/ps
+  autost    2196       1 ?        16:24:19 /usr/bin/mintty
+  autost    1218    1217 pty0       Oct 26 /usr/bin/bash
+  autost    1241       1 ?          Oct 26 /usr/bin/ssh-agent
+  autost    2220       1 ?        16:24:22 /usr/bin/ssh-agent
+  autost    1217       1 ?          Oct 26 /usr/bin/mintty
+  autost    1166       1 ?          Oct 26 /usr/bin/ssh-agent
+
+(2)ps -a:显示当前所有进程
+$ ps -a
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     1142       1    1142       5848  ?         197609   Oct 26 /usr/bin/mintty
+     1143    1142    1143       2724  pty1      197609   Oct 26 /usr/bin/bash
+     1140       1    1140       8324  ?         197609   Oct 26 /usr/bin/ssh-agent
+     2197    2196    2197      49012  pty2      197609 16:24:19 /usr/bin/bash
+     2196       1    2196      51812  ?         197609 16:24:19 /usr/bin/mintty
+     1218    1217    1218      15112  pty0      197609   Oct 26 /usr/bin/bash
+     1241       1    1241      16344  ?         197609   Oct 26 /usr/bin/ssh-agent
+     2220       1    2220      49328  ?         197609 16:24:22 /usr/bin/ssh-agent
+     1217       1    1217      15488  ?         197609   Oct 26 /usr/bin/mintty
+     2474    1143    2474      53152  pty1      197609 17:08:05 /usr/bin/ps
+     1166       1    1166        344  ?         197609   Oct 26 /usr/bin/ssh-agent
+(3)与grep联用查找某进程
+ps -aux | grep apache
 
 
-
-
+24.top 命令
+显示当前系统正在执行的进程的相关信息，包括进程 ID、内存占用率、CPU 占用率等
 
 
 
