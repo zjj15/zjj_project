@@ -1,6 +1,32 @@
 Linux常用命令（只记录最常用得命令）：
 
 命令概述:
+1.文件管理命令
+显示文件目录：ls,ls-a,ls-l
+进入文件目录：cd，cd-，cd /，cd ~,cd ..
+查看当前路径：pwd
+创建文件：touch,创建文件夹：mkdir
+删除文件：rm,rm -r,rm-rf,删除空目录：rmdir
+拷贝文件：cp,cp -i，cp-ra,剪切文件：mv
+显示文件内容：cat,more,less,head,tail
+显示文件内容和行号：nl
+查找文件：find
+修改文件权限：chmod
+2.进程
+查看进程信息：ps
+结束进程：kill pid，挂起进程：kill -stop pid
+显示进程信息：top
+3.系统管理
+显示系统运行统计信息：free
+分别显示系统的信号量、消息队列、共享内存：ipcs -s/-q/-m
+列出当前系统打开的所有文件描述符：lsof
+实时监测多功能处理器系统上的每个CPU使用情况：mpstat
+4.用户管理
+添加新用户：useradd/adduser newname
+修改密码：passwd username
+删除用户：userdel username
+5.网络通讯
+
 
 
 
@@ -612,16 +638,45 @@ $ ps -a
      1166       1    1166        344  ?         197609   Oct 26 /usr/bin/ssh-agent
 (3)与grep联用查找某进程
 ps -aux | grep apache
-
+(ps aux 列出所有进程)
 
 24.top 命令
 显示当前系统正在执行的进程的相关信息，包括进程 ID、内存占用率、CPU 占用率等
 
 
+25.
+先使用ps查找进程pro1，然后用kill杀掉
+kill -9 $(ps -ef | grep pro1)
 
 
+26.free 命令
+显示系统内存使用情况，包括物理内存、交互区内存(swap)和内核缓冲区内存。
 
 
+27. nl：显示文件内容和行号
+nl b.tlog
+     1  wonderful
+     2  magical
+     3  helpless
+     4  uncomfortable
+     5  very myself
+     6  qq
+     7  o
+     8  yuuoiop
+     9  daasda
+    10  dadsadf
+    11  cdsf
+    12  chain
+    13  host
+    14  happy
+    15  terrible
+    16  boribal
+    17  happy new year
+    18  ok
+    19  right
+    20  now
+    21  end
+    22  EDF
 
 
 
