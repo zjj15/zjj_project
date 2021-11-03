@@ -565,5 +565,33 @@ select * from etable1 limit 4，3；返回从第5行开始的三行内容
 20.使用集合函数查询
 
 
+#1、牛客网用到union
+union:MySQL UNION 操作符用于连接两个以上的 SELECT 语句的结果组合到一个结果集合中。多个 SELECT 语句会删除重复的数据。
+可选参数：
+expression1, expression2, ... expression_n: 要检索的列。
+tables: 要检索的数据表。
+WHERE conditions: 可选， 检索条件。
+DISTINCT: 可选，删除结果集中重复的数据。默认情况下 UNION 操作符已经删除了重复数据，所以 DISTINCT 修饰符对结果没啥影响。
+ALL: 可选，返回所有结果集，包含重复数据。
+union all是返回所有结果集，包含重复数据
 
+#2、牛客网用到count函数里面使用if语句
+count(if())的写法应该是count(if(表达式表达式，true,null));
+count(if(category=1,true,null))中count函数返回一个布尔值类型的数值，
+如果category=1,返回true,如果category不等于1返回null，
+如果写成count(If(category=1,1,0) 则返回的全是true,也就是说全都会计数，
+而count()间断内容是true还是null,如果不是null就计数，如果是null就不计数。
+
+MySQL COUNT() 函数统计数据表中包含的记录行的总数，或者根据查询结果返回列中包含的数据行数，使用方法有以下两种：
+COUNT(*) 计算表中总的行数，无论某列有数值或者为空值。
+COUNT（字段名）计算指定列下总的行数，计算时将忽略空值的行。
+age is null
+
+#3.牛客网用到if语句
+if 两个判断：IF(expr,v1,v2)	如果表达式 expr 成立，返回结果 v1；否则，返回结果 v2。	
+if 多个判断：if(expr,v1,if(expr,v2,if(expr,v3,v2)))
+举例：
+select device_id,gender, 
+if(age<20,'20岁以下',if(age between 20 and 24,'20-24岁',if(age>=25,'25岁及以上','其他'))) as age_cut
+from user_profile;
 
