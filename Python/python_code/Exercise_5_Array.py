@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2021-11-04 12:18:23
+LastEditTime: 2021-11-04 13:09:43
+LastEditors: Please set LastEditors
+Description: In User Settings Edit
+FilePath: \python_code\Exercise_5_Array.py
+'''
 #数组
 #1.创建混合列表、空列表
 mix=[1,'耳机',3.14,[1,2,3]]
@@ -69,4 +77,50 @@ list2=[234]
 print(list1 >  list2)#False
 list3=[123,456]
 list4=[234,123]
-print(list1 >  list2)#False
+print(list1 >  list2)#False,和AScll比较方法一致
+
+list5=list1+list2 # +号两边类型一致,错误示范：list1+'apple'
+print(list5)
+
+print(list1 * 3)
+list1 *= 4
+print(list1)
+
+print('--------in not in----------------')
+print(123 in list1)#true
+print(123 in list2)#false
+print(123 not in list1)#false
+print(123 not in list2)#true
+
+print('--------list[list]---------------')
+list7=[123,[123,456],789]
+print(123 in list7)#true
+print(456 in list7)#false,列表里边的列表
+print(456 in list7[1])#true
+print(list7[1][1])#456
+print(list3 in list7)#true
+
+
+
+#FBI(内置函数)
+list8=[123,222,344,678,[999,101,'mu',123,'牡丹',678],'p',123,'驴',878,678,545,'hudie']
+list9=[90,78,123,456,1,34]
+#1.count,计算某个数据出现的次数
+print(list8.count(123))#2次
+
+#2.index，返回参数在列表中的位置
+print(list8.index(678))#3,位置下标为3
+
+#print(list8.index(678,4,8))#报错， 678 is not in list
+print(list8.index(678,4,11))#9，index(数据，查找范围start,查找范围stop)
+
+#3.reverse,反转
+list8.reverse()#没有返回值,打印出来是None
+print(list8)
+
+#4.sort,排序
+list9.sort()#没有返回值,打印出来是None;sort有3个默认参数sort(排序函数func,默认是归并排序，归并排序的参数，reverse=false,默认是false)
+print(list9)
+#想从大到小排序
+list9.sort(reverse=True)
+print(list9)
