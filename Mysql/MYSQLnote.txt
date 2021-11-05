@@ -563,6 +563,99 @@ select * from etable1 limit 4;返回前四行
 select * from etable1 limit 4，3；返回从第5行开始的三行内容
 
 20.使用集合函数查询
+1.count()
+count(*):计算总行数，不管是不是空
+count(字段名)：计算该字段列的行数，不计算null
+
+2.sum(字段名) 求和
+
+3.avg(字段名) 求平均值
+
+4.max(字段名) 返回字段中最大值
+
+5.min(字段名) 返回字段中最小值
+
+max和min也可用于字符查询,按照ASCLL码查询
+
+
+连接查询：
+1.内连接查询 inner join 表名 on 连接条件
+可以和不同的表连接，也可以同一个表连接(自连接)
+
+不连接表查询
+select f1.f_id,f1.f_name, f2.f_price
+from fruit1,fruit2
+where f1.s_id=f2.s_id 
+
+连接表查询
+select f1.f_id,f1.f_name f2.f_price
+from fruit1 inner join fruit2 on f1.s_id=f2.s_id 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #1、牛客网用到union

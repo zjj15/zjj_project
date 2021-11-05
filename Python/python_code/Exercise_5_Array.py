@@ -36,6 +36,7 @@ member[0]=member[1]
 member[1]=temp
 print(member[0],member[1])#猪 猫
 
+
 #列表分片
 print(member[1:3])#下标为1、2的值 
 
@@ -52,6 +53,7 @@ print(member[-11:])#所有的值：下标从-11到-1的值
 #列表拷贝
 member2=member[:]
 print(member2)
+
 
 #5.删除元素remve()、del、pop()、pop(下标)
 #删除不存在的元素会报错
@@ -79,7 +81,7 @@ list3=[123,456]
 list4=[234,123]
 print(list1 >  list2)#False,和AScll比较方法一致
 
-list5=list1+list2 # +号两边类型一致,错误示范：list1+'apple'
+list5=list1+list2 # +号两边类型一致,错误示范：list1+'apple'，尽量别用加号而用extend
 print(list5)
 
 print(list1 * 3)
@@ -124,3 +126,21 @@ print(list9)
 #想从大到小排序
 list9.sort(reverse=True)
 print(list9)
+
+
+
+#************list的深浅拷贝************
+print('************list的深浅拷贝************')
+list9.reverse()
+print(list9)#[1, 34, 78, 90, 123, 456]
+
+list10 = list9[:]#使用分片浅拷贝，拷贝一份list9
+print(list10)#[1, 34, 78, 90, 123, 456]
+
+list11=list9#深拷贝，list10指向list9
+print(list11)#[1, 34, 78, 90, 123, 456]
+
+#************
+list9.reverse()#[456, 123, 90, 78, 34, 1]
+print(list10)#[1, 34, 78, 90, 123, 456]
+print(list11)#[456, 123, 90, 78, 34, 1]
