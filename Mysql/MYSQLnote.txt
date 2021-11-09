@@ -38,6 +38,26 @@ mysql> create table table_3(
     -> value3 int,
     -> primary key(`value3`));
 
+#创建表补充：
+#主键：primary key
+#外键 foreign key http://c.biancheng.net/view/2441.html
+#唯一性约束关键字
+#默认值 Default
+drop table if exists exercise;
+create table exercise(
+name varchar(256) unique,
+id int(25) not null  auto_increment ,
+class char(10) ,
+grade float default 90,
+primary key(id),
+#primary key(name,id),exercise
+constraint fk foreign key(class) references etable1(f_id)
+);
+
+#show create table 表名 
+用来查看表结构
+
+
 6、在表里插入数据： 
 insert into table_name（name1,name2,name3）
 values
