@@ -73,5 +73,7 @@ print(f'{count} is what?')
 print('%s is what?' %count)
 #Google is what?
 
+exp='ppl'
+print('exp: ' ,exp)
 
 
