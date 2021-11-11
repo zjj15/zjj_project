@@ -10,6 +10,10 @@ https://www.cnblogs.com/Security-Darren/p/4106328.html
 https://blog.csdn.net/EsonJohn/article/details/79134665?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link
 https://blog.csdn.net/xianhenyuan/article/details/92397894
 
+git存储密码
+https://www.cnblogs.com/Black-Hawk/p/13508318.html
+
+
 1.【了解Git】
 1.0Git、Github、Gitlab与Gitee之间的关系
 Git     是一种版本控制系统，是一个命令，是一种工具，有点像cmd(命令行工具)。
