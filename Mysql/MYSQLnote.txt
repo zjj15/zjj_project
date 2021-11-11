@@ -38,7 +38,7 @@ mysql> create table table_3(
     -> value3 int,
     -> primary key(`value3`));
 
-#创建表补充：
+#############################补充:创建表######################################33
 #主键：primary key
 #外键 foreign key http://c.biancheng.net/view/2441.html
 #唯一性约束关键字
@@ -54,8 +54,6 @@ primary key(id),
 constraint fk foreign key(class) references etable1(f_id)
 );
 
-#show create table 表名 
-用来查看表结构
 
 
 6、在表里插入数据： 
@@ -64,6 +62,13 @@ values
 ("***","***","***")；
 7、查看表里内容：select * from table_name;
 8、查看表的结构：show columns from table_name  或者 decribe table_name
+#8.1查看表结构 
+#查看表的字段信息，包括主键;show create table 表名
+desc etable1;
+describe etable2;
+#查看数据表的创建语句;DESC/describe tablename
+show create table exercise;
+
 9、查看表里某列的值：
 mysql> select date1 from tabale_1;
 +------------+
@@ -175,6 +180,35 @@ mysql> describe table_2;
 17、修改表名：
 -- 修改表名 
 rename table old_table to new_table;
+
+##############################补充：修改表####################################3
+#修改表名 alter table oldtablename rename(to) newtablename
+alter table user_profile rename user_pro;
+alter table user_pro rename to user_profile;
+#修改字段 
+#1修改字段的数据类型：alter table tablename modify 字段名 数据类型
+alter table etable1 modify s_id char(255) NOT NULL;
+#2.修改表字段名： alter table tablename change old字段名 new字段名 新数据类型
+alter table etable1 change s_id is_id int not null;
+
+#添加字段 alter table tablename add new字段名 数据类型 约束条件 [first|after 已存在的字段名]
+#(first 指的是把新加字段添加成第一列的字段，after已存在的字段指的是把新加字段放在已存在的字段后面)
+alter table etable1 add _gender char(255) not null first;
+alter table etable1 add gender_ char(255) not null after f_price;
+
+#删除字段 alter table tablename drop 字段名
+alter table etable1 drop _gender;
+
+#修改字段排列位置alter table tablename modify 字段1 数据类型 [first|after 字段2]
+alter table etable1 modify gender char(20)  after gender_;
+
+#修改存储引擎 alter table tablename engine=new引擎名
+show create table etable1 ;#查看存储引擎为innodb
+alter table etable1 engine=InnoDB;
+
+#删除表的外键约束 alter table tablenaame drop foreign key 外键约束名
+alter table exercise drop foreign key fk;
+
 
 18、union、union all
 UNION 语句：用于将不同表中相同列中查询的数据展示出来；（不包括重复数据）
