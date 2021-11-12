@@ -121,7 +121,8 @@ $ git branch -a
 
 查看当前远程分支：git branch -r
 创建新分支并立即切换到该分支下：git checkout -b branchname
-删除分支：git branch -d branchname
+删除本地分支：git branch -d branchname
+删除远程分支： git push origin --delete <BranchName>
 
 3.3.5Git 提交历史一般常用两个命令：
 git log  查看历史提交记录。

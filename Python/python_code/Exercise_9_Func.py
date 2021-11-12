@@ -71,6 +71,51 @@ exp:  *9
 '''
 
 
+#返回值
+def Func1():
+    print('Hello 1')
+
+temp=Func1()#Hello 1
+print(temp)#None,函数无返回值时 返回None对象
+
+def Func2():
+    return [1,2,7.8,'str']
+print(Func2())#[1, 2, 7.8, 'str']
+
+def Func3():
+    return 1,4,8,'ok'
+print(Func3())#(1, 4, 8, 'ok') 逗号默认是元组
+
+
+#局部变量，全局变量
+#函数内部使用栈存储数据
+
+def Func4(price,rate):
+    print("old price: ",old_price)#打印的old_price是全局变量
+    return price*rate
+
+old_price=float(input('please input price: '))
+rate=float(input('please input rate: '))
+new_price=Func4(old_price,rate)
+print('after discounts the price is : ',new_price)
+
+
+def Func5(price,rate):
+    #print("old price: ",old_price)#打印的old_price是全局变量
+    old_price=50
+    #在局部变量里试图修改全局变量的值，python会生成一个和全局变量同名的局部变量，由于局部变量和全局变量的存储位置不同，所以这是两个值互不影响
+    print('1 after modify old_price is: ',old_price)#50
+    return price*rate
+
+old_price=float(input('please input price: '))
+rate=float(input('please input rate: '))
+new_price=Func5(old_price,rate)
+print('2 after modify old_price is: ',old_price)#第109行输入的old_price
+
+print('after discounts the price is : ',new_price)
+
+
+
 
 
     
