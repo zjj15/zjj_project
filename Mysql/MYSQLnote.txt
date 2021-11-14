@@ -712,6 +712,8 @@ from fruit1 inner join fruit2 on f1.s_id=f2.s_id
 
 
 
+
+
 #1、牛客网用到union
 union:MySQL UNION 操作符用于连接两个以上的 SELECT 语句的结果组合到一个结果集合中。多个 SELECT 语句会删除重复的数据。
 可选参数：
