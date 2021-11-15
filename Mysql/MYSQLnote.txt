@@ -209,6 +209,12 @@ alter table etable1 engine=InnoDB;
 #删除表的外键约束 alter table tablenaame drop foreign key 外键约束名
 alter table exercise drop foreign key fk;
 
+##删除没有被关联的表：drop table [if exists] 表1，表2，...表n
+
+#删除被其他表关联的主表，首先要取消关联表的外键约束
+#取消关联表的外键约束 alter table exercise drop foreign key fk;
+#删除子表 drop table etble1
+
 
 18、union、union all
 UNION 语句：用于将不同表中相同列中查询的数据展示出来；（不包括重复数据）
