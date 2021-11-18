@@ -72,12 +72,12 @@ print(6 in dict8)#False
 print('data' in dict8)#False 为啥会false，因为 in关键字用在字典里是查找key而不是values
 
 
-#清空字典 clear
+#2.3清空字典 clear
 print(dict7)#{}
 print(dict7.clear())#None
 
 
-#copy 浅拷贝
+#2.4 copy 浅拷贝
 a={1:'one',2:'two'}
 b=a.copy()
 c=a
@@ -87,3 +87,34 @@ print(c)#{1: 'one', 2: 'two'}
 print(id(a))#1913661700744
 print(id(b))#1913661700552
 print(id(c))#1913661700744
+
+c[4]='four'
+print(c)#{1: 'one', 2: 'two', 4: 'four'}
+print(a)#{1: 'one', 2: 'two', 4: 'four'}
+print(b)#{1: 'one', 2: 'two'}
+
+
+
+#2.5 pop(参数1)函数、popitem()函数
+print(a.pop(2))#必须给一个参数 ；弹出key为2的；#two
+print(a)#弹出key为2的之后，还剩：{1: 'one', 4: 'four'}
+
+print(a.popitem())#随机从字典里弹出数据 #(1, 'one')
+print(a)#只剩下{4: 'four'}
+
+print(a.popitem())#弹出{4: 'four'}
+print(a)#剩下：{}
+
+
+#2.6 setdefault,添加元素，随机位置
+a.setdefault(5, "five")
+print(a)#{5: 'five'}
+a.setdefault("空的")
+print(a)#{'空的': None, 5: 'five'}
+
+#2.7 a.update(b) 把b的数据更新到a里，位置随机
+b={3:'three'}
+a.update(b)
+print(b)#{3: 'three'}
+print(a)#{'空的': None, 3: 'three', 5: 'five'}
+

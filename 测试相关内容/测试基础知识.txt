@@ -1,0 +1,16 @@
+1.文件格式一般可分为：①文档格式、②图片格式、③视频格式、④声音格式、⑤系统格式。
+
+具体如下：
+
+文档格式有：TXT、DOC、XLS、PPT、DOCX、XLSX、PPTX 等。
+
+图片格式有：JPG、PNG、PDF、TIFF、SWF等。
+
+视频格式有：FLV、RMVB、MP4、MVB等。
+
+声音格式有：WMA、MP3等。
+
+系统格式有：RAR、EXE等。
+
+7种常见的音频格式简析 MP3，WMA，WAV，APE，FLAC，OGG，AAC:
+https://blog.csdn.net/wuyahui0124505/article/details/104523588
