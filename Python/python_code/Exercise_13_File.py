@@ -23,6 +23,7 @@ for eachline in f:
     print(eachline)
 
 
+
 f1=open(r'Python\python_code\FileTest2_13.txt', 'r+',encoding='utf-8',errors='ignore')
 f1.write('apple')
 print(f1.readline())
@@ -39,14 +40,3 @@ f1.close()
 str -- 分隔符，默认为所有的空字符，包括空格、换行(\n)、制表符(\t)等。
 num -- 分割次数。默认为 -1, 即分隔所有。
 '''
-
-f2=open(r'Python\python_code\FileTest_13.txt', 'r',encoding='utf-8',errors='ignore')
-f3=open(r'Python\python_code\FileTest2_13.txt', 'r+',encoding='utf-8',errors='ignore')
-for each in f2:
-    if each==':':
-        (_each,_eachline)=each.split(':',1)
-        f3.write(_each)
-        f3.write(_eachline)
-        
-        
-print(f3.readline())
