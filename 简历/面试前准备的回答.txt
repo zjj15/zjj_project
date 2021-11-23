@@ -32,3 +32,16 @@ Morley项目主页
 商泰，让汽车软件开发更轻松！
 
 欢迎各界朋友、专家、同仁莅临交流！
+
+
+Apoo	Leepi	Android9.x，
+基于iAuto Android PF及Leepi对应DA，支持carlife机能，支持外接T-Box，MVCS。
+
+Morley	Leepi	Android9.x，高德Navi，联友iCar&SmartHome&天气，爱奇艺在线视频SDK，极豆智慧加油，考拉听伴日产电台，酷我在线音乐，日产用户手册
+
+
+Gaea	Morley	高德Navi; 唱吧KTV; 酷狗音乐;GUI商城;车家互联;个人中心;考拉电台; 墨迹天气
+
+
+
+
