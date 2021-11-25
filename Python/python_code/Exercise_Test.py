@@ -1,14 +1,8 @@
-'''
-try:
-    执行语句1
-except:
-    出现异常时执行的语句
-else:
-    未出现异常时执行的语句
-finally:
-    不管有没有异常都会执行
 
-'''
+import time
 
-#1/0
-raise ZeroDivisionError('除数不为0')
+time1=int(time.time())
+while int(time.time())-time1 <5:
+    print(int(time.time()))
+    print(int(time1))
+    print(int(time.time()-time1))

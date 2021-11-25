@@ -1,0 +1,176 @@
+#1、USB端口1插入根目录有Audio文件内容的U盘
+insertTestUSB("1", "根目录有Audio文件")
+
+from autost.api import *
+import os
+import traceback
+import os.path 
+import sys
+import shutil
+from shutil import copyfile
+from sys import exit
+import tkinter as tk
+from tkinter import filedialog
+import getpass
+import subprocess
+import re
+import locale
+
+
+import Common.ExternalConfig
+from Common.InfraLib.CommonFuncDef.ExternalDynamicConfigDef import *
+from Common.InfraLib.CommonFuncDef.ProjectPath import *
+from Common.InfraLib.ExcelParsing.ExcelParsing import *
+from Common.InfraLib.CommonFuncDef.CommonFunctions import *
+from Common.InfraLib.CommonFuncDef.shellFunctions import *
+from Common.InfraLib.CommonFuncDef.shell_Process import *
+from Common.InfraLib.CommonFuncDef.checkIgnorePicsForException import *
+from Common.ProjPlugins.TestMaterials.MaterialsConfig import *
+
+Version = None
+#Version = 0.1
+keyName = "别名"
+
+exceptionList = {}
+
+
+
+
+#拷贝文件到USB
+def insertTestUSB(com, materials):
+    print('insertTestUSB')
+
+    opeEnvironment = Common.ExternalConfig.ExternalConfig_getOperatingEnvironment()
+    print(opeEnvironment)
+    if 'usbbox' not in opeEnvironment:
+        print('未连接usbhub环境，默认U盘中已存在所需文件')
+        usb_on(1)
+        sleep(5)
+        return
+    if 'hibox' in opeEnvironment:
+        usb_on(1)
+        sleep(5)
+
+    source = MaterialsConfig_getMaterialsConfigByID(materials)
+    if source == '':
+        print('拷贝文件的源路径为NULL')
+        error('拷贝文件的源路径为NULL')
+        return
+    target = getUSBPath(int(com))
+    if target == '':
+        print('拷贝文件的目标路径为NULL')
+        error('拷贝文件的目标路径为NULL')
+        return
+
+    nullList = ['']
+    prevFdList = []
+    postFdList = []
+    prevFileList = []
+    postFileList = []
+    customOrderFileList = []
+    customOrderFolderList = []
+    list_dirs = os.walk(target)
+    endFile = materials +'.txt'
+    endFilePath = target + '/' + endFile
+    sourceEndFilePath = source + '/' + endFile
+    CustomOrderFile = source + '/CustomOrder.txt'
+    addDelay = 0
+    print('endFilePath = ', endFilePath)
+    if not os.path.exists(sourceEndFilePath) :
+        print('资源不符合规范')
+        usb_switch(1,int(com))
+        sleep(5)
+        return
+
+    if os.path.exists(endFilePath) :
+        print(materials + '内容已存在U盘中')
+        usb_switch(1,int(com))
+        sleep(5)
+        return
+    print('CustomOrderFile = ', CustomOrderFile)
+    if os.path.exists(CustomOrderFile) :
+        with open(CustomOrderFile, mode='r',encoding='utf-8') as f:
+            for line in f:
+                print(line)
+                if 'prevFd'  in line:
+                    prevFdList = line.lstrip('prevFd = [').strip().rstrip(']').strip('"').split('","')
+                    if prevFdList == nullList:
+                        prevFdList = []
+                    print('prevFdList', prevFdList)
+                elif 'postFd' in line:
+                    postFdList = line.lstrip('postFd = [').strip().rstrip(']').strip('"').split('","')
+                    if postFdList == nullList:
+                        postFdList = []
+                    print('postFdList', postFdList)
+                elif 'prevFile'  in line:
+                    prevFileList = line.lstrip('prevFile = [').strip().rstrip(']').strip('"').split('","')
+                    if prevFileList == nullList:
+                        prevFileList = []
+                    print('prevFileList', prevFileList)
+                elif 'postFile'  in line:
+                    postFileList = line.lstrip('postFile = [').strip().rstrip(']').strip('"').split('","')
+                    if postFileList == nullList:
+                        postFileList = []
+                    print('postFileList', postFileList)
+                elif 'additionalDelay' in line:
+                    addDelay = int(line.lstrip('additionalDelay = '))
+
+        customOrderFileList = getCustomOrderFileList(source, prevFdList, postFdList, prevFileList, postFileList)
+        customOrderFolderList = getCustomOrderFolderList(source, prevFdList, postFdList)
+
+    #清空U盘内的内容
+    for root, dirs, files in os.walk(target, topdown=False):
+        for name in files:
+            os.remove(os.path.join(root, name))
+        for name in dirs:
+            os.rmdir(os.path.join(root, name))
+
+    sleep(5)
+    usb_switch(1,int(com))
+    sleep(10)
+    usb_switch(3,int(com))
+    sleep(8)
+
+    if len(prevFileList) > 0:
+        print('prevFileList')
+        for prevFile in prevFileList:
+            sourcePath = source + '/' + prevFile
+            targetPath = target + '/' + prevFile
+            print('prevFileList', sourcePath)
+            copyFileToUSB(sourcePath, targetPath)
+
+    if len(prevFdList) > 0:
+        print('prevFdList')
+        for prevFd in prevFdList:
+            sourcePath = source + '/' + prevFd
+            targetPath = target + '/' + prevFd
+            copyFolderToUSB(sourcePath, targetPath)
+    customOrderFileList.append(source + '\\' + endFile)
+
+    copyInStringOrder(source, source, target, customOrderFileList, customOrderFolderList)
+
+    if len(postFileList) > 0:
+        print('postFileList')
+        for postFile in postFileList:
+            sourcePath = source + '/' + postFile
+            targetPath = target + '/' + postFile
+            copyFileToUSB(sourcePath, targetPath)
+
+    if len(postFdList) > 0:
+        print('postFdList')
+        for postFd in postFdList:
+            sourcePath = source + '/' + postFd
+            targetPath = target + '/' + postFd
+            copyFolderToUSB(sourcePath, targetPath)
+
+    #拷贝标志位文件
+    sourceFilePath = source + '/' + endFile
+    print('sourceFilePath =', sourceFilePath)
+    print('endFilePath =', endFilePath)
+    copyFileToUSB(sourceFilePath, endFilePath)
+
+    sleep(5)
+    usb_switch(1,int(com))
+    sleep(5)
+
+    sleep(addDelay)
