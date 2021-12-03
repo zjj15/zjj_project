@@ -1,0 +1,1 @@
+USB中有三个文件夹，music/py/txt，每个文件夹中均包含任意个数的.mp3/.txt/.py文件，试使用python将所有.mp3文件放在music文件夹中，所有.txt文件放在txt文件夹中，所有.py文件放在py文件夹中
