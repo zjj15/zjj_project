@@ -84,3 +84,22 @@ finally:
 if 1/0:
     raise ZeroDivisionError('除数不为0')
 
+
+try:
+   3 / 0
+except ZeroDivisionError:
+   print('error')
+else:
+   print('right')
+
+'''
+#这不是异常 不执行except
+try:
+   3 > 9
+except :
+   print('error')
+else:
+   print('right')
+
+'''
+

@@ -1,4 +1,20 @@
 #类和对象
+
+#self的必要性
+''' 
+类的方法与普通的函数只有一个特别的区别——它们必须有一个额外的第一个参数名称，但是
+在调用这个方法的时候你不为这个参数赋值，Python会提供这个值。这个特别的变量指对象本
+身，按照惯例它的名称是self。
+
+
+你一定很奇怪Python如何给self赋值以及为何你不需要给它赋值。举一个例子会使此变得清晰。
+假如你有一个类称为MyClass和这个类的一个实例MyObject。
+当你调用这个对象的方法MyObject.method(arg1, arg2)的时候，
+这会由Python自动转为MyClass.method(MyObject, arg1, arg2)
+——这就是self的原理了。
+
+'''
+
 #对象=属性+方法
 class Cat:
     #属性
@@ -20,6 +36,30 @@ class Cat:
 GouTou=Cat()
 GouTou.climb()
 GouTou.Eat()
+
+
+#类的变量、对象的变量
+class People:
+    populate=0#类变量
+
+    def __init__(self,name):
+        People.populate+=1
+        self.name=name #对象变量
+        print('i am __init__ fun ')  
+
+    def __delattr__(self):
+        People.populate-=1
+        print('i am  __delattr__ func')
+
+    def sayHi(self):
+        print('People.populate is %s' %People.populate)
+        print('i am %s' %(self.name))
+
+p=People('小明')
+p.sayHi()
+    
+
+
 
 #面向对象编程的特征：1.封装
 list1=[2,1,7,5,3]
@@ -147,6 +187,25 @@ class Test2:
         print(self.r+self.im)
 
 complex=Test2(3.0 , 4.0)#7.0
+
+
+
+class Parent:        # 定义父类
+   def myMethod(self):
+      print ('调用父类方法')
+ 
+class Child(Parent): # 定义子类
+   def myMethod(self):
+      print ('调用子类方法')
+ 
+c = Child()          # 子类实例
+c.myMethod()         # 子类调用重写方法
+super(Child,c).myMethod()
+
+#导入单个类；从一个模块中导入多个类
+#有一个car.py的脚本里面写了Car类、ElectricCar类
+#from car import Car
+#from car import Car, ElectricCar
 
 
 
