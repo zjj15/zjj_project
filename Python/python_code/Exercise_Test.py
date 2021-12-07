@@ -15,3 +15,24 @@ super(Child,c).myMethod()
 #有一个car.py的脚本里面写了Car类、ElectricCar类
 #from car import Car
 #from car import Car, ElectricCar
+
+
+
+try:
+   3 / 0
+except ZeroDivisionError:
+   print('error')
+else:
+   print('right')
+
+'''
+#这不是异常 不执行except
+try:
+   3 > 9
+except :
+   print('error')
+else:
+   print('right')
+
+'''
+
