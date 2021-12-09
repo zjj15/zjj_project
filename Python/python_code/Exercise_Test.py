@@ -1,38 +1,26 @@
+#类的变量、对象的变量
+class People:
+    populate=0#类变量
 
-class Parent:        # 定义父类
-   def myMethod(self):
-      print ('调用父类方法')
- 
-class Child(Parent): # 定义子类
-   def myMethod(self):
-      print ('调用子类方法')
- 
-c = Child()          # 子类实例
-c.myMethod()         # 子类调用重写方法
-super(Child,c).myMethod()
+    def __init__(self,name):
+        People.populate+=1
+        self.name=name #对象变量
+        print('i am __init__ fun ')  
 
-#导入单个类；从一个模块中导入多个类
-#有一个car.py的脚本里面写了Car类、ElectricCar类
-#from car import Car
-#from car import Car, ElectricCar
+    def __delattr__(self):
+        People.populate-=1
+        print('i am  __delattr__ func')
 
+    def sayHi(self):
+        print('People.populate is %s' %People.populate)
+        print('i am %s' %(self.name))
 
-
-try:
-   3 / 0
-except ZeroDivisionError:
-   print('error')
-else:
-   print('right')
+p=People('小明')
+p.sayHi()
+    
+'''
+i am __init__ fun
+People.populate is 1
+i am 小明
 
 '''
-#这不是异常 不执行except
-try:
-   3 > 9
-except :
-   print('error')
-else:
-   print('right')
-
-'''
-
