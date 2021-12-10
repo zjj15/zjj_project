@@ -1,4 +1,8 @@
 #文件系统
+
+#https://www.jb51.net/article/48001.htm
+
+
 '''
 #1.文件
 f2=open(r'Python\python_code\FileTest_13.txt', 'r',encoding='utf-8',errors='ignore')
@@ -24,6 +28,7 @@ f2.close()
 f3.close()
 f4.close()
 ''' 
+
 
 #2.文件系统
 #1. os模块
