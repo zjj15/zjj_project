@@ -92,3 +92,59 @@ pickle_file.close()
 pickle_file=open('FileTest2_14.txt', 'rb')
 content=pickle.load(pickle_file)
 print(content)
+
+
+#os.path.splitext(x) 后缀分割函数
+#os.path.isfile(x) 是否是文件
+#os.path.isdir(x) 是否是目录
+import os
+count=0
+count1=0
+count2=0
+for x in os.listdir('.'):
+    if os.path.isdir(x):
+        count2+=1
+        print('我是第%d个目录: ' %count2,x)
+    if os.path.isfile(x):
+        count1+=1
+        print('我是第%d个文件: ' %count1,x)
+    if os.path.splitext(x)[1] == '.py':
+        count+=1
+        print('我是第%d个python文件: ' %count,x)
+        
+print('一共有%d个目录' %count2)
+print('一共有%d个python文件' %count)
+print('一共有%d个文件' %count1)
+
+
+
+#问题描述：在当前目录以及当前目录的所有子目录下查找文件名包含指定字符串的文件，并打印出相对路径
+
+#做法1：错误；原因：结果不全
+#listdir是当前层里面所有的文件和目录
+from genericpath import isdir
+import os
+count=0
+for file in os.listdir(os.getcwd()):
+    if file.find('Exercise') != -1:
+        count+=1
+        print('第%d个符合条件的文件' %count)
+        print('文件名为：', file)
+        print('绝对路径为：' , os.getcwd())
+    
+
+#做法2：正确
+#os.walk是遍历所有的文件与目录
+#结果有区别：使用dirpath,dirname,filename=os.walk(os.getcwd())与dirpath,dirname,filename in os.walk(os.getcwd())
+#建议使用 in
+import os
+count=0
+for dirpath,dirname,filename in os.walk(os.getcwd()) :
+    for file in filename :
+        if file.find('Exercise') !=-1:
+            count+=1
+            print('第%d个符合条件的文件' %count)
+            print('文件名为：', file)
+            print('绝对路径为：' , os.getcwd())
+        else:
+            pass
