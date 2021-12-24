@@ -1,0 +1,134 @@
+从cmd进行Wireshark的安装目录，使用命令
+
+1，分割文件
+editcap -c  100000  待分割文件目录\文件名.pcap 已分割文件目录\文件名.pcap
+
+2，合并文件
+mergecap -w 已合并文件目录\已合并文件名 被合并文件目录\被合并文件名  被合并文件目录\被合并文件名
+说明：-w 参数之后的文件为合并之后的文件，后面的两个文件是要被合并的文件
+
+3，苹果电脑抓捕空中包使用方法
+sudo wireshark
+
+鼠标放置到无线网络图标中，alt+鼠标左键  选择 diagnose 
+选择 windows  选择sniffer 
+再选择 号信道和 带宽 (信道和带宽可以通过手机上的wifi分析仪填写)
+
+最后过滤器中填入MAC地址后回车 筛选 对应的地址的包。
+
+或：
+wlan.addr == mac address || wlan.addr == mac address
+wlan.addr == mac address or wlan.addr == mac address
+
+与：
+wlan.addr == mac address && wlan.addr == mac address
+wlan.addr == mac address and wlan.addr == mac address
+
+
+特别小注意点和方法：=========================================================================================
+http://www.netprojnetworks.com/802-11-data-types-and-wireshark-filters/
+
+除了beacon只有车机的Mac地址外，其他的帧都同时存在车机和手机的Mac地址，所以筛选的时候最好是同时加上两个设备的Mac地址
+
+查看支持wifi wpa模式方法：
+使用wlan.fc.type_subtype == 0x0B筛选出Authentication帧，
+然后查看：IEEE 802.11 Wireless Management  > Fixed parameters > Autentication Algorithm
+如果这项的值是“Open System (0)”那么就是以WPA或者WPA2来连接的，如果是“Simultaneous Authentication of Equals (SAE) (3)”就是以WPA3来连接的。
+特别小注意点和方法：=========================================================================================
+
+Management frame 帧过滤
+
+wlan.fc.type == 0
+
+Control frame
+
+wlan.fc.type == 1
+
+Data frame
+
+wlan.fc.type == 2
+
+Association request
+
+wlan.fc.type_subtype == 0x00
+
+Association response
+
+wlan.fc.type_subtype == 0x01
+
+Reassociation request
+
+wlan.fc.type_subtype == 0x02
+
+Reassociation response
+
+wlan.fc.type_subtype == 0x03
+
+Probe request
+
+wlan.fc.type_subtype == 0x04
+
+Probe response
+
+wlan.fc.type_subtype == 0x05
+
+Beacon
+
+wlan.fc.type_subtype == 0x08
+
+Disassociate
+
+wlan.fc.type_subtype == 0x0A
+
+Authentication
+
+wlan.fc.type_subtype == 0x0B
+
+Deauthentication
+
+wlan.fc.type_subtype == 0x0C
+
+Action frame
+
+wlan.fc.type_subtype == 0x0D
+
+Block ACK requests
+
+wlan.fc.type_subtype == 0x18
+
+Block ACK
+
+wlan.fc.type_subtype == 0x19
+
+Power save poll
+
+wlan.fc.type_subtype == 0x1A
+
+Request to send
+
+wlan.fc.type_subtype == 0x1B
+
+Clear to send
+
+wlan.fc.type_subtype == 0x1C
+
+ACK
+
+wlan.fc.type_subtype == 0x1D
+
+Contention free period end
+
+wlan.fc.type_subtype == 0x1E
+
+NULL data
+
+wlan.fc.type_subtype == 0x24
+
+QoS data
+
+wlan.fc.type_subtype == 0x28
+
+Null QoS data
+
+wlan.fc.type_subtype == 0x2C
+————————————————
