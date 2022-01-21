@@ -1,0 +1,5 @@
+Facet test plan版本：3.0
+Release：0.201000_1
+下载地址：scorpiosharenode27GerdaCVirginReleasevirginreleasewl_211201
+测试范围：所有case
+facet config文档，见附件《virgin3.0_selftest_0.2010001.facets.zip》
