@@ -1,0 +1,11 @@
+from autost.api import *
+
+DEV1 = 'Gaea://127.0.0.1:5037/GFEDCBA0987654321'
+CANBUS_CH1 = 'CANBus1'
+CANBUS_CH2 = 'CANBus2'
+print("__脚本名称: " + __file__)
+
+do_segment(Segment('../../../Action/Message/USB_Switch_IN1_to_none.tcs'))
+do_segment(Segment('../../../Action/Message/USB_Switch_IN1_to_2.tcs'))
+
+assert_exists(Template('../../Design/USBAudio_NoPlayFiles.png'), device=DEV1)

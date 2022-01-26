@@ -1,0 +1,8 @@
+Device1=Phone_A_MB_0107
+DEV7 = 'iAndroid://127.0.0.1:5037/DRGGAM0860501882'
+phoneNumber='17301643089'
+
+
+Phone_S_MB_0569
+DEV7 = 'iAndroid://127.0.0.1:5037/DRGGAM0860501882'
+phoneNumber='17301643089'
