@@ -1,0 +1,6 @@
+{"depth": 0, "tag": "pre_script", "thread_id": 13472, "data": {}, "time": "2021-11-29 17:39:27"}
+{"depth": 0, "tag": "main_script", "thread_id": 13472, "data": {}, "time": "2021-11-29 17:39:27"}
+{"depth": 1, "tag": "function", "thread_id": 13472, "data": {"running_segments": "", "kwargs": {}, "version": "1.4.4", "ret": null, "time_used": 0.005997419357299805, "name": "switch_device", "args": ["Gaea://127.0.0.1:5037/GFEDCBA0987654321"], "res_prefix": "."}, "time": "2021-11-29 17:39:27"}
+{"depth": 1, "tag": "function", "thread_id": 13472, "data": {"running_segments": "", "kwargs": {}, "ret": null, "time_used": 0.8706989288330078, "name": "say", "args": [{"org_file_name": "audio/Music.wav", "filename": "audio/Music.wav", "_filepath": "audio/Music.wav"}], "say_audio_file": "audio/Music.wav", "res_prefix": "."}, "time": "2021-11-29 17:39:28"}
+{"depth": 1, "tag": "function", "thread_id": 13472, "data": {"running_segments": "", "kwargs": {}, "ret": null, "time_used": 5.0116260051727295, "name": "sleep", "args": [5], "res_prefix": "."}, "time": "2021-11-29 17:39:33"}
+{"depth": 0, "tag": "post_script", "thread_id": 13472, "data": {}, "time": "2021-11-29 17:39:33"}

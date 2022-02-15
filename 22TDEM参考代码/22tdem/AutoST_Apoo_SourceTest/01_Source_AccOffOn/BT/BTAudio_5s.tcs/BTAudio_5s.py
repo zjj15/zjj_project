@@ -5,7 +5,7 @@ checkImage = Template('')
 errType = 'acc_BT5s_error'
 
 def check(on_sleep):
-    if exists(checkImage,timeout=3, device=DEV1) and exists(Template('pic/BT_ON.png'),timeout=3, device=DEV1):
+    if exists(checkImage,time7uklm,out=3, device=DEV1) and exists(Template('pic/BT_ON.png'),timeout=3, device=DEV1):
         pass
     else:
         error(errType)

@@ -1,0 +1,726 @@
+[
+    {
+        "org_rect": [
+            1601,
+            281,
+            300,
+            33
+        ],
+        "widget_in_rect": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.TextView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 5,
+        "longClickable": false,
+        "name": "android.widget.TextView",
+        "objectName": "android.widget.TextView",
+        "org_height": 34,
+        "org_rect": [
+            1604,
+            282,
+            303,
+            34
+        ],
+        "org_size": [
+            303,
+            34
+        ],
+        "org_width": 303,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.9143229166666667,
+            0.4152777777777778
+        ],
+        "pos2": [
+            1604,
+            282
+        ],
+        "rect": {
+            "height": 34,
+            "width": 303,
+            "x": 1604,
+            "y": 282
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": false,
+        "size": [
+            303,
+            34
+        ],
+        "size2": [
+            303,
+            34
+        ],
+        "text": "",
+        "type": "android.widget.TextView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.ImageView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 0,
+        "longClickable": false,
+        "name": "android.widget.ImageView",
+        "objectName": "android.widget.ImageView",
+        "org_height": 50,
+        "org_rect": [
+            1616,
+            282,
+            62,
+            50
+        ],
+        "org_size": [
+            62,
+            50
+        ],
+        "org_width": 62,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.8578125,
+            0.4263888888888889
+        ],
+        "pos2": [
+            1616,
+            282
+        ],
+        "rect": {
+            "height": 50,
+            "width": 62,
+            "x": 1616,
+            "y": 282
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": true,
+        "size": [
+            62,
+            50
+        ],
+        "size2": [
+            62,
+            50
+        ],
+        "text": "",
+        "type": "android.widget.ImageView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.TextView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 1,
+        "longClickable": false,
+        "name": "1",
+        "objectName": "1",
+        "org_height": 34,
+        "org_rect": [
+            1616,
+            292,
+            62,
+            34
+        ],
+        "org_size": [
+            62,
+            34
+        ],
+        "org_width": 62,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.8578125,
+            0.42916666666666664
+        ],
+        "pos2": [
+            1616,
+            292
+        ],
+        "rect": {
+            "height": 34,
+            "width": 62,
+            "x": 1616,
+            "y": 292
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": true,
+        "size": [
+            62,
+            34
+        ],
+        "size2": [
+            62,
+            34
+        ],
+        "text": "1",
+        "type": "android.widget.TextView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.ImageView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 2,
+        "longClickable": false,
+        "name": "android.widget.ImageView",
+        "objectName": "android.widget.ImageView",
+        "org_height": 18,
+        "org_rect": [
+            1644,
+            282,
+            34,
+            18
+        ],
+        "org_size": [
+            34,
+            18
+        ],
+        "org_width": 34,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.8651041666666667,
+            0.4041666666666667
+        ],
+        "pos2": [
+            1644,
+            282
+        ],
+        "rect": {
+            "height": 18,
+            "width": 34,
+            "x": 1644,
+            "y": 282
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": true,
+        "size": [
+            34,
+            18
+        ],
+        "size2": [
+            34,
+            18
+        ],
+        "text": "",
+        "type": "android.widget.ImageView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.ImageView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 0,
+        "longClickable": false,
+        "name": "android.widget.ImageView",
+        "objectName": "android.widget.ImageView",
+        "org_height": 50,
+        "org_rect": [
+            1684,
+            282,
+            62,
+            50
+        ],
+        "org_size": [
+            62,
+            50
+        ],
+        "org_width": 62,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.8932291666666666,
+            0.4263888888888889
+        ],
+        "pos2": [
+            1684,
+            282
+        ],
+        "rect": {
+            "height": 50,
+            "width": 62,
+            "x": 1684,
+            "y": 282
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": false,
+        "size": [
+            62,
+            50
+        ],
+        "size2": [
+            62,
+            50
+        ],
+        "text": "",
+        "type": "android.widget.ImageView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.TextView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 1,
+        "longClickable": false,
+        "name": "2",
+        "objectName": "2",
+        "org_height": 34,
+        "org_rect": [
+            1684,
+            292,
+            62,
+            34
+        ],
+        "org_size": [
+            62,
+            34
+        ],
+        "org_width": 62,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.8932291666666666,
+            0.42916666666666664
+        ],
+        "pos2": [
+            1684,
+            292
+        ],
+        "rect": {
+            "height": 34,
+            "width": 62,
+            "x": 1684,
+            "y": 292
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": false,
+        "size": [
+            62,
+            34
+        ],
+        "size2": [
+            62,
+            34
+        ],
+        "text": "2",
+        "type": "android.widget.TextView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.ImageView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 2,
+        "longClickable": false,
+        "name": "android.widget.ImageView",
+        "objectName": "android.widget.ImageView",
+        "org_height": 18,
+        "org_rect": [
+            1712,
+            282,
+            34,
+            18
+        ],
+        "org_size": [
+            34,
+            18
+        ],
+        "org_width": 34,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.9005208333333333,
+            0.4041666666666667
+        ],
+        "pos2": [
+            1712,
+            282
+        ],
+        "rect": {
+            "height": 18,
+            "width": 34,
+            "x": 1712,
+            "y": 282
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": false,
+        "size": [
+            34,
+            18
+        ],
+        "size2": [
+            34,
+            18
+        ],
+        "text": "",
+        "type": "android.widget.ImageView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.ImageView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 0,
+        "longClickable": false,
+        "name": "android.widget.ImageView",
+        "objectName": "android.widget.ImageView",
+        "org_height": 50,
+        "org_rect": [
+            1752,
+            282,
+            62,
+            50
+        ],
+        "org_size": [
+            62,
+            50
+        ],
+        "org_width": 62,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.9286458333333333,
+            0.4263888888888889
+        ],
+        "pos2": [
+            1752,
+            282
+        ],
+        "rect": {
+            "height": 50,
+            "width": 62,
+            "x": 1752,
+            "y": 282
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": false,
+        "size": [
+            62,
+            50
+        ],
+        "size2": [
+            62,
+            50
+        ],
+        "text": "",
+        "type": "android.widget.ImageView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.TextView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 1,
+        "longClickable": false,
+        "name": "3",
+        "objectName": "3",
+        "org_height": 34,
+        "org_rect": [
+            1752,
+            292,
+            62,
+            34
+        ],
+        "org_size": [
+            62,
+            34
+        ],
+        "org_width": 62,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.9286458333333333,
+            0.42916666666666664
+        ],
+        "pos2": [
+            1752,
+            292
+        ],
+        "rect": {
+            "height": 34,
+            "width": 62,
+            "x": 1752,
+            "y": 292
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": false,
+        "size": [
+            62,
+            34
+        ],
+        "size2": [
+            62,
+            34
+        ],
+        "text": "3",
+        "type": "android.widget.TextView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.ImageView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 2,
+        "longClickable": false,
+        "name": "android.widget.ImageView",
+        "objectName": "android.widget.ImageView",
+        "org_height": 18,
+        "org_rect": [
+            1780,
+            282,
+            34,
+            18
+        ],
+        "org_size": [
+            34,
+            18
+        ],
+        "org_width": 34,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.9359375,
+            0.4041666666666667
+        ],
+        "pos2": [
+            1780,
+            282
+        ],
+        "rect": {
+            "height": 18,
+            "width": 34,
+            "x": 1780,
+            "y": 282
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": false,
+        "size": [
+            34,
+            18
+        ],
+        "size2": [
+            34,
+            18
+        ],
+        "text": "",
+        "type": "android.widget.ImageView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.ImageView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 0,
+        "longClickable": false,
+        "name": "android.widget.ImageView",
+        "objectName": "android.widget.ImageView",
+        "org_height": 50,
+        "org_rect": [
+            1820,
+            282,
+            62,
+            50
+        ],
+        "org_size": [
+            62,
+            50
+        ],
+        "org_width": 62,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.9640625,
+            0.4263888888888889
+        ],
+        "pos2": [
+            1820,
+            282
+        ],
+        "rect": {
+            "height": 50,
+            "width": 62,
+            "x": 1820,
+            "y": 282
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": false,
+        "size": [
+            62,
+            50
+        ],
+        "size2": [
+            62,
+            50
+        ],
+        "text": "",
+        "type": "android.widget.ImageView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.TextView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 1,
+        "longClickable": false,
+        "name": "4",
+        "objectName": "4",
+        "org_height": 34,
+        "org_rect": [
+            1820,
+            292,
+            62,
+            34
+        ],
+        "org_size": [
+            62,
+            34
+        ],
+        "org_width": 62,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.9640625,
+            0.42916666666666664
+        ],
+        "pos2": [
+            1820,
+            292
+        ],
+        "rect": {
+            "height": 34,
+            "width": 62,
+            "x": 1820,
+            "y": 292
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": false,
+        "size": [
+            62,
+            34
+        ],
+        "size2": [
+            62,
+            34
+        ],
+        "text": "4",
+        "type": "android.widget.TextView",
+        "visible": true
+    },
+    {
+        "checkable": false,
+        "checked": false,
+        "className": "android.widget.ImageView",
+        "clickable": false,
+        "enabled": true,
+        "focusable": false,
+        "focused": false,
+        "index": 2,
+        "longClickable": false,
+        "name": "android.widget.ImageView",
+        "objectName": "android.widget.ImageView",
+        "org_height": 18,
+        "org_rect": [
+            1848,
+            282,
+            34,
+            18
+        ],
+        "org_size": [
+            34,
+            18
+        ],
+        "org_width": 34,
+        "package": "com.iauto.onlinevideo",
+        "password": false,
+        "pos": [
+            0.9713541666666666,
+            0.4041666666666667
+        ],
+        "pos2": [
+            1848,
+            282
+        ],
+        "rect": {
+            "height": 18,
+            "width": 34,
+            "x": 1848,
+            "y": 282
+        },
+        "resourceId": "",
+        "scrollable": false,
+        "selected": false,
+        "size": [
+            34,
+            18
+        ],
+        "size2": [
+            34,
+            18
+        ],
+        "text": "",
+        "type": "android.widget.ImageView",
+        "visible": true
+    }
+]
