@@ -5,6 +5,7 @@ DEV2 = ST.DEV2
 checkImage_night = Template('')
 checkImage_day = Template('') #ill off
 #设置初始状态
+rev_off()
 ill_off()
 
 def checkDisp(imageType='day'):
@@ -68,7 +69,6 @@ def spd_pkb():
     #check into run limit
     if not checkDisp():
         setError(errStr)
-    ig_on()
     pkb_on()
     #check relieve run limit
     if not checkDisp():
@@ -90,11 +90,11 @@ def spd_pkb():
 for i in range(2):
     keyevent(HOME, device=DEV1)
 if exists(Template("pic/Tuner未播放.png"), timeout=3, threshold=ST.allSource_threshold, device=DEV1) or exists(Template("pic/Tuner播放中.png"), timeout=3, threshold=ST.allSource_threshold, device=DEV1):
-        #进入Tuner
-        touch([991, 384])
-        #不论是不是AM在播放，都点击AM图标让AM播放
-        touch([141, 571])
-        sleep(1)    
+    #进入Tuner
+    touch([991, 384])
+    #不论是不是AM在播放，都点击AM图标让AM播放
+    touch([141, 571])
+    sleep(1)    
 checkImage_day = snapshot(rect=ST.eare_tuner, device=DEV1)
 ill_on()
 sleep(1)

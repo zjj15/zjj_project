@@ -19,11 +19,11 @@ ST.eare_devices1=[774, 106, 465, 392]#full of softbar
 ST.eare_devices2=[450, 588, 386, 83]
 #androidauto
 ST.eare_devices3=[1011, 612, 229, 87]
-
 #carplay
 ST.eare_devices4=[21, 603, 93, 96]
 #usb video
 ST.eare_usb_video=[13, 635, 1897, 76]
+
 
 ##匹配度
 #除camera外所有图片匹配度

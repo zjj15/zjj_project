@@ -7,12 +7,6 @@ checkImage_night1 = Template('')
 checkImage_night2 = 'pic/BT_On_night.png'
 checkImage_day1 = Template('') #ill off
 checkImage_day2 = 'pic/BT_On_day.png' #ill off
-
-'''
-sendCAN(MICU_BCM.C_BACKLTSW.phys,0.0, interval=0.1, device=DEV1)
-sendCAN(ILLUMI.C_METER_ILL_STATUS.phys,0.0, interval=0.1, device=DEV1)
-spd_speed(0)
-'''
 rev_off()
 ill_off()
 spd_speed(0)
@@ -36,9 +30,6 @@ def test():
     errStr = ''
     #ILL
     errStr = "error_BT_ill"
-    #sendCAN(MICU_BCM.C_IG1.phys,1.0, interval=0.1, device=DEV1)
-    #sendCAN(ILLUMI.C_METER_ILL_STATUS.phys,1.0, interval=0.1, device=DEV1)
-    ig_on()
     ill_on()
  
     if not checkDisp('night'):
@@ -57,12 +48,6 @@ def test():
     do_segment(Segment('../../common/rev_on_off.tcs'))
  
 def spd_pkb():
-    '''
-    sendCAN(MICU_BCM.C_IG1.phys,1.0, interval=0.1, device=DEV1)
-    sendCAN(AT.C_PBRAKE.phys,0.0, interval=0.1, device=DEV1)
-    spd_speed(0)
-    '''
-    ig_on()
     pkb_on()
     spd_speed(0)
  
@@ -93,11 +78,6 @@ def spd_pkb():
     #check into run limit
     if not checkDisp():
         setError(errStr)
-    '''
-    sendCAN(MICU_BCM.C_IG1.phys,1.0, interval=0.1, device=DEV1)
-    sendCAN(AT.C_PBRAKE.phys,1.0, interval=0.1, device=DEV1)
-    '''
-    ig_on()
     pkb_on()
  
     #check relieve run limit
@@ -106,13 +86,6 @@ def spd_pkb():
  
     #case 4:[PKB:ON + SPD:0] SPD:0->10[km/h]
     #set status
-    '''
-    sendCAN(MICU_BCM.C_IG1.phys,1.0, interval=0.1, device=DEV1)
-    sendCAN(AT.C_PBRAKE.phys,0.0, interval=0.1, device=DEV1)
-    spd_speed(0)
-    sendCAN(AT.C_PBRAKE.phys,1.0, interval=0.1, device=DEV1)
-    '''
-    ig_on()
     pkb_off()
     spd_speed(0)
     pkb_on()
@@ -137,14 +110,6 @@ if exists(Template('pic/Music图标.png'), threshold=ST.allSource_threshold):
 else:
     error("No find the view")
 checkImage_day1 = snapshot(rect=ST.eare_devices2, device=DEV1)
-'''
-sendCAN(MICU_BCM.C_BACKLTSW.phys,0.0, interval=0.1, device=DEV1)
-sendCAN(ILLUMI.C_METER_ILL_STATUS.phys,1.0, interval=0.1, device=DEV1)
-checkImage_night1 = snapshot(rect=ST.eare_devices2, device=DEV1)
-spd_speed(0)
-sendCAN(MICU_BCM.C_BACKLTSW.phys,0.0, interval=0.1, device=DEV1)
-sendCAN(ILLUMI.C_METER_ILL_STATUS.phys,0.0, interval=0.1, device=DEV1)
-'''
 rev_off()
 ill_on()
 checkImage_night1 = snapshot(rect=ST.eare_devices2, device=DEV1)

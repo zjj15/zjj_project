@@ -7,8 +7,9 @@ checkImage_night1 = Template('')
 checkImage_night2 = 'pic/USB_On_night.png'
 checkImage_day1 = Template('') #ill off
 checkImage_day2 = 'pic/USB_On.png' #ill off
-sendCAN(MICU_BCM.C_BACKLTSW.phys,0.0, interval=0.1, device=DEV1)
-sendCAN(ILLUMI.C_METER_ILL_STATUS.phys,0.0, interval=0.1, device=DEV1)
+#设置初始状态
+rev_off()
+ill_off()
 spd_speed(0)
 
 def checkDisp(imageType='day'):
@@ -30,13 +31,12 @@ def test():
     errStr = ''
     #ILL
     errStr = "error_USBAudio_ill"
-    sendCAN(MICU_BCM.C_IG1.phys,1.0, interval=0.1, device=DEV1)
-    sendCAN(ILLUMI.C_METER_ILL_STATUS.phys,1.0, interval=0.1, device=DEV1)
+    ill_on()
   
     if not checkDisp('day'):
         setError(errStr)
     
-    sendCAN(ILLUMI.C_METER_ILL_STATUS.phys,0.0, interval=0.1, device=DEV1)
+    ill_off()
     sleep(2)
     if not checkDisp():
         setError(errStr)
@@ -48,50 +48,46 @@ def test():
     do_segment(Segment("../../common/rev_on_off.tcs"))
     
 def spd_pkb():
-    sendCAN(MICU_BCM.C_IG1.phys,1.0, interval=0.1, device=DEV1)
-    sendCAN(AT.C_PBRAKE.phys,0.0, interval=0.1, device=DEV1)
+    pkb_off()
     spd_speed(0)
     errStr = "error_SPD_PKB"
     
-    #case 1:[PKB:OFF + SPD:0] SPD:0->55->0[km/h]
+    #case 1:[PKB:OFF + SPD:0] SPD:0->10->0[km/h]
     sleep(1)
-    spd_speed(55)
+    spd_speed(10)
     sleep(1)
 
     #check into run limit
     if not checkDisp():
         setError(errStr)
 
-    #case 2:[PKB:OFF + SPD:55] SPD:55->0[km/h]
+    #case 2:[PKB:OFF + SPD:10] SPD:10->0[km/h]
     spd_speed(0)
     sleep(1)
     #check relieve run limit
     if not checkDisp():
         setError(errStr)
     
-    #case 3:[PKB:OFF + SPD:55] SPD:55->PKN:ON[km/h]
+    #case 3:[PKB:OFF + SPD:10] SPD:10->PKN:ON[km/h]
     sleep(1)
-    spd_speed(55)
+    spd_speed(10)
     sleep(1)
     #check into run limit
     if not checkDisp():
         setError(errStr)
 
-    sendCAN(MICU_BCM.C_IG1.phys,1.0, interval=0.1, device=DEV1)
-    sendCAN(AT.C_PBRAKE.phys,1.0, interval=0.1, device=DEV1)
+    pkb_on()
     #check relieve run limit
     if not checkDisp():
         setError(errStr)
         
-    #case 4:[PKB:ON + SPD:0] SPD:0->55[km/h]
+    #case 4:[PKB:ON + SPD:0] SPD:0->10[km/h]
     #set status
-    sendCAN(MICU_BCM.C_IG1.phys,1.0, interval=0.1, device=DEV1)
-    sendCAN(AT.C_PBRAKE.phys,0.0, interval=0.1, device=DEV1)
+    pkb_off()
     spd_speed(0)
-    sendCAN(AT.C_PBRAKE.phys,1.0, interval=0.1, device=DEV1)
-    
+    pkb_on()    
     sleep(2)
-    spd_speed(55)
+    spd_speed(10)
     sleep(2)
     checkImage='pic/SPD_Limit.png'
     #check into run limit
@@ -99,21 +95,22 @@ def spd_pkb():
         setError(errStr)
 
 keyevent(HOME, device=DEV1)
-if exists(Template("pic/USB_OFF.png"),timeout=1, device=DEV1):
-    touch(Template("pic/USB_OFF.png"), device=DEV1)
-    sleep(1)
-elif exists(Template("pic/USB_ON.png"),timeout=1, device=DEV1):
+touch(Template('pic/菜单按钮.png'), threshold=ST.allSource_threshold)
+if exists(Template('pic/USB_OFF.png'),timeout=1, threshold=ST.allSource_threshold, device=DEV1):
+    touch(Template('pic/USB_OFF.png'),  threshold=ST.allSource_threshold, device=DEV1)
+    sleep(2)
+elif exists(Template('pic/USB_ON.png'),timeout=1, threshold=ST.allSource_threshold, device=DEV1):
     pass
 else:
     error("No find the view")
 
 checkImage_day1 = snapshot(rect=ST.eare_devices2, device=DEV1)
-sendCAN(MICU_BCM.C_BACKLTSW.phys,0.0, interval=0.1, device=DEV1)
-sendCAN(ILLUMI.C_METER_ILL_STATUS.phys,1.0, interval=0.1, device=DEV1)
+rev_off()
+ill_on()
 sleep(1)
 checkImage_night1 = snapshot(rect=ST.eare_devices2, device=DEV1)
-sendCAN(MICU_BCM.C_BACKLTSW.phys,0.0, interval=0.1, device=DEV1)
-sendCAN(ILLUMI.C_METER_ILL_STATUS.phys,0.0, interval=0.1, device=DEV1)
+rev_off()
+ill_off()
 sleep(1)
 test()
         

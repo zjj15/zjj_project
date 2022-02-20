@@ -6,19 +6,21 @@ checkImage_btn1 = Template('')
 checkImage_btn2 = Template('')
 choiceTimes = 5
 AM_OFF = 'pic/AM_OFF.png'
-FM1_OFF = 'pic/AM_OFF.png'
+FM1_OFF = 'pic/FM1_OFF.png'
 FM2_OFF = 'pic/FM2_OFF.png'
 BT_OFF = 'pic/BT_OFF.png'
 USB_OFF = 'pic/USB_OFF.png'
 Ipod_OFF = 'pic/BT_OFF.png'
+Androidauto_OFF = 'pic/Androidauto_OFF.png'
+Carplay_OFF = 'pic/Carplay_OFF.png'
 touchTimes = random.randint(0,3)
-sourceBtn=[AM_OFF, FM1_OFF, FM2_OFF, BT_OFF, USB_OFF, Ipod_OFF]
+sourceBtn=[AM_OFF, FM1_OFF, FM2_OFF, BT_OFF, USB_OFF, Ipod_OFF,Androidauto_OFF,Carplay_OFF]
 isUSBObj = random.randint(0,1)#0:Audio,1:vedio
 
 def touchChannel():
     touchTimes = random.randint(0,3)
     for i in range(touchTimes):
-        changeChannel = random.choice(['pic/Left.png', 'pic/Left.png'])
+        changeChannel = random.choice(['pic/Left.png', 'pic/Right.png'])
         touch(Template(changeChannel), device=DEV1)
         
 def intoVideoView():
@@ -60,6 +62,8 @@ def touchObj(btnObj):
 
     elif btnObj==Ipod_OFF:
         tempPic = snapshot(rect=ST.eare_devices1, device=DEV1)
+    elif btnObj==Androidauto_OFF:
+
     else:
         error('btn error')
     return tempPic
