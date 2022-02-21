@@ -46,16 +46,27 @@ rev_on()
 rev_off()
 exists(Template('pic/capture_20220218150414973868.png'))
 
+
+touch_if(Template('pic/现在不要.png'))
+
+
 '''
+
+
+
+
+usb_off(1)
 usb_off(2)
+usb_off(3)
+end()
+'''
+flick([1250, 284], DIR_LEFT, step=4, speed=SPEED_NORMAL)
 
-
-
-
-
-
-
-
+        #进入carplay画面
+        touch([269, 384])
+        #进入主画面
+        touch([70, 647])
+'''
 
 
 

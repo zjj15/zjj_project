@@ -6,7 +6,7 @@ DEV2 = ST.DEV2
 checkImage_night1 = Template('')
 checkImage_night2 = 'pic/USB_On_night.png'
 checkImage_day1 = Template('') #ill off
-checkImage_day2 = 'pic/USB_On.png' #ill off
+checkImage_day2 = 'pic/USB_On_day.png' #ill off
 #设置初始状态
 rev_off()
 ill_off()
@@ -14,12 +14,12 @@ spd_speed(0)
 
 def checkDisp(imageType='day'):
     if imageType == 'night':
-        if exists(checkImage_night1, device=DEV1) and exists(Template(checkImage_night2), device=DEV1):
+        if exists(checkImage_night1, threshold=ST.allSource_threshold, device=DEV1) and exists(Template(checkImage_night2), threshold=ST.allSource_threshold, device=DEV1):
             return True
         else:
             return False
     else:
-        if exists(checkImage_day1, device=DEV1) and exists(Template(checkImage_day2), device=DEV1):
+        if exists(checkImage_day1, threshold=ST.allSource_threshold, device=DEV1) and exists(Template(checkImage_day2), threshold=ST.allSource_threshold, device=DEV1):
             return True
         else:
             return False
@@ -94,10 +94,14 @@ def spd_pkb():
     if not checkDisp():
         setError(errStr)
 
-keyevent(HOME, device=DEV1)
+usb_on(1)
+for i in range(2):
+    keyevent(HOME, device=DEV1)
 touch(Template('pic/菜单按钮.png'), threshold=ST.allSource_threshold)
 if exists(Template('pic/USB_OFF.png'),timeout=1, threshold=ST.allSource_threshold, device=DEV1):
     touch(Template('pic/USB_OFF.png'),  threshold=ST.allSource_threshold, device=DEV1)
+    if exists(Template('pic/USB连接请求.png'),timeout=5, threshold=ST.allSource_threshold, device=DEV1):
+        touch(Template('pic/USB_OFF.png'),  threshold=ST.allSource_threshold, device=DEV1)  
     sleep(2)
 elif exists(Template('pic/USB_ON.png'),timeout=1, threshold=ST.allSource_threshold, device=DEV1):
     pass

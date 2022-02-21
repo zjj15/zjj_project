@@ -2,19 +2,22 @@ from autost.api import *
 
 DEV1 = ST.DEV1
 DEV2 = ST.DEV2
-checkImage_Default = 'pic/Video_On.png'
+checkImage_Default = 'pic/USBV_On.png'
 #设置初始状态
 rev_off()
 ill_off()
 spd_speed(0)
 
 def checkDisp(checkImage=checkImage_Default):
-    
-    if exists(Template(checkImage), timeout=1, device=DEV1):
+    if not exists(Template('pic/上一曲按钮.png'), threshold=ST.allSource_threshold, timeout=5):
+        print('当前是全屏状态')
+        #解除全屏
+        touch([574, 97])
+    if exists(Template(checkImage), threshold=ST.allSource_threshold, timeout=1, device=DEV1):
         return True
     else:
         return False
-        
+ 
 def setError(errType):
     error(errType)
 
@@ -25,9 +28,9 @@ def test():
     ill_on()
     sleep(2)
 
-    if not checkDisp('pic/ILL_On_Video_On.png'):"???"
+    if not checkDisp('pic/ILL_On_Video_On.png'):
         setError(errStr)
-    
+ 
     ill_off()
     sleep(2)
     if not checkDisp():
@@ -35,12 +38,12 @@ def test():
 
     #SPD+PKB
     spd_pkb()
-    
+ 
     #REV
-    do_segment(Segment("../../common/rev_on_off.tcs"))
+    do_segment(Segment('../../common/rev_on_off.tcs'))
 
 def spd_pkb():
-    
+ 
     spd_speed(0)
 
     #case 1:[PKB:OFF + SPD:0] SPD:0->10->0[km/h]
@@ -59,7 +62,7 @@ def spd_pkb():
     #check relieve run limit
     if checkDisp(checkImage) and not checkDisp():
         setError(errStr)
-    
+ 
     #case 3:[PKB:OFF + SPD:10] SPD:10->PKN:ON[km/h]
     sleep(1)
     spd_speed(10)
@@ -74,13 +77,13 @@ def spd_pkb():
     #check relieve run limit
     if checkDisp(checkImage) and not checkDisp():
         setError(errStr)
-        
+ 
     #case 4:[PKB:ON + SPD:0] SPD:0->10[km/h]
     #set status
     pkb_off()
     spd_speed(0)
     pkb_on()
-    
+ 
     sleep(2)
     spd_speed(10)
     sleep(2)
@@ -90,24 +93,31 @@ def spd_pkb():
     if checkDisp(checkImage):
         setError(errStr)
 
-keyevent(HOME, device=DEV1)
-if exists(Template('pic/USB_OFF.png'), timeout=1, device=DEV1):
-    touch(Template('pic/USB_OFF.png'), device=DEV1)
-    touch(Template("pic/USB_Video.png"), device=DEV1)
-   
-else:
-    touch(Template("pic/USB_Video.png"), device=DEV1)
-    
-if exists(Template('pic/Video_List.png'), device=DEV1):
-    touch(Template('pic/Video_List.png'), device=DEV1)
-else:
-    touch([185, 324])
-    if exists(Template('pic/Video_List.png'), device=DEV1):
-        touch(Template('pic/Video_List.png'), device=DEV1)
-
-if exists(Template('pic/Full_Progress.png'), timeout=0, device=DEV1):
-    touch(Template('pic/Song_Choice.png'), device=DEV1)
-        
+for i in range(2):
+    keyevent(HOME, device=DEV1)
+usb_on(1)
+touch(Template('pic/菜单按钮.png'), threshold=ST.allSource_threshold)
+if exists(Template('pic/USB卡片.png'), threshold=ST.allSource_threshold):
+    for i in range(2):
+        touch([478, 480])
+    touch([482, 346])
+    if not exists(Template('pic/上一曲按钮.png'), threshold=ST.allSource_threshold, timeout=5):
+        print('当前是全屏状态')
+        #解除全屏
+        touch([574, 97])
+    elif exists(Template('pic/USB_Audio.png'), threshold=ST.allSource_threshold):
+        pass
+    else:
+        touch(Template('pic/USB_Video.png'), threshold=ST.allSource_threshold)
+    touch_if(Template('pic/播放按钮.png'), threshold=ST.allSource_threshold)
+    if exists(Template('pic/暂停按钮.png'), threshold=ST.allSource_threshold):
+        print('video playing')
+    else:
+        print('video not playing')
+ 
 test()
-        
+
+#复归
+usb_off(1)
+ 
 

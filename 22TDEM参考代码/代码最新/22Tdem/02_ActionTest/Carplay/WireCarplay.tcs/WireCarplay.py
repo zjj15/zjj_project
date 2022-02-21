@@ -4,9 +4,9 @@ DEV1 = ST.DEV1
 DEV2 = ST.DEV2
 
 checkImage_night1 = Template('')
-checkImage_night2 = 'pic/USBAA_On_night.png'
+checkImage_night2 = 'pic/WireCarplay_On_night.png'
 checkImage_day1 = Template('') #ill off
-checkImage_day2 = 'pic/USBAA_On_day.png' #ill off
+checkImage_day2 = 'pic/WireCarplay_On_day.png' #ill off
 rev_off()
 ill_off()
 spd_speed(0)
@@ -45,7 +45,7 @@ def test():
     spd_pkb()
 
     #REV
-    do_segment(Segment('../../common/rev_on_off.tcs'))
+    do_segment(Segment('../../../common/rev_on_off.tcs'))
  
 def spd_pkb():
     pkb_on()
@@ -97,14 +97,26 @@ def spd_pkb():
     #check into run limit
     if not checkDisp():
         setError(errStr)
- 
-keyevent(HOME, device=DEV1)
-usb_on(2)
-if exists(Template("pic/AA_连接成功.png"), threshold=ST.allSource_threshold, device=DEV1) :
-    print('AA_连接成功')
-elif exists(Template("pic/AndroidAuto卡片.png")):
-    touch([299, 337])
-    sleep(5)
+
+usb_on(3)
+for i in range(2):
+    keyevent(HOME, device=DEV1)
+if exists(Template('pic/WireCp_Connected.png'), threshold=ST.allSource_threshold, timeout=5,device=DEV1):
+    #进入carplay画面
+    touch([269, 384])
+    #进入主画面
+    touch([70, 647])
+    #播放音乐
+    touch_if(Template('pic/音乐图标.png'), threshold=ST.allSource_threshold, device=DEV1)
+    if exists(Template('pic/播放列表.png'), threshold=ST.allSource_threshold, timeout=5, device=DEV1):
+        touch([378, 195])
+        touch([429, 310])
+    touch_if(Template('pic/播放中.png'), threshold=ST.allSource_threshold, device=DEV1)
+    if exists(Template('pic/播放按钮.png'), threshold=ST.allSource_threshold, device=DEV1):
+        touch(Template('pic/播放按钮.png'), threshold=ST.allSource_threshold, device=DEV1)
+    else:
+        pass
+    sleep(1)
 checkImage_day1 = snapshot(rect=ST.eare_devices3, device=DEV1)
 rev_off()
 ill_on()
@@ -113,3 +125,6 @@ spd_speed(0)
 rev_off()
 ill_off()
 test()
+
+#复归状态
+usb_off(3)

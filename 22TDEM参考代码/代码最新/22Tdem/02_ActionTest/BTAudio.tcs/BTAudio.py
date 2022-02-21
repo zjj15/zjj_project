@@ -34,8 +34,6 @@ def test():
  
     if not checkDisp('night'):
         setError(errStr)
- 
-    #sendCAN(ILLUMI.C_METER_ILL_STATUS.phys,0.0, interval=0.1, device=DEV1)
     ill_off()
     sleep(2)
     if not checkDisp():
@@ -60,7 +58,7 @@ def spd_pkb():
     sleep(1)
 
     #check into run limit
-    
+ 
     if not checkDisp():
         setError(errStr)
 
@@ -101,7 +99,7 @@ def spd_pkb():
  
 for i in range(2):
     keyevent(HOME, device=DEV1)
-    
+ 
 global checkImage_night1,checkImage_day1
 touch(Template('pic/菜单按钮.png'), threshold=ST.allSource_threshold)
 touch(Template('pic/BT图标.png'), threshold=ST.allSource_threshold)

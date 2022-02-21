@@ -99,13 +99,13 @@ def spd_pkb():
         setError(errStr)
  
 if exists(Template('pic/WireCp_Connected.png'), threshold=ST.allSource_threshold, device=DEV1):
-    #è¿›å…¥carplayç”»é¢
+    #½øÈëcarplay»­Ãæ
     touch([307, 378])
-    #æ’­æ”¾éŸ³ä¹
-    touch_if(Template('pic/éŸ³ä¹å›¾æ ‡.png'), threshold=ST.allSource_threshold, device=DEV1)
-    touch_if(Template('pic/æ’­æ”¾ä¸­.png'), threshold=ST.allSource_threshold, device=DEV1)
-    if exists(Template('pic/æ’­æ”¾æŒ‰é’®.png'), threshold=ST.allSource_threshold, device=DEV1):
-        touch(Template('pic/æ’­æ”¾æŒ‰é’®.png'), threshold=ST.allSource_threshold, device=DEV1)
+    #²¥·ÅÒôÀÖ
+    touch_if(Template('pic/ÒôÀÖÍ¼±ê.png'), threshold=ST.allSource_threshold, device=DEV1)
+    touch_if(Template('pic/²¥·ÅÖĞ.png'), threshold=ST.allSource_threshold, device=DEV1)
+    if exists(Template('pic/²¥·Å°´Å¥.png'), threshold=ST.allSource_threshold, device=DEV1):
+        touch(Template('pic/²¥·Å°´Å¥.png'), threshold=ST.allSource_threshold, device=DEV1)
     else:
         pass
     sleep(1)
