@@ -10,7 +10,7 @@ FM1_OFF = 'pic/FM1_OFF.png'
 FM2_OFF = 'pic/FM2_OFF.png'
 BT_OFF = 'pic/BT_OFF.png'
 USB_OFF = 'pic/USB_OFF.png'
-Ipod_OFF = 'pic/BT_OFF.png'
+Ipod_OFF = 'pic/Ipod_OFF.png'
 Androidauto_OFF = 'pic/Androidauto_OFF.png'
 Carplay_OFF = 'pic/Carplay_OFF.png'
 touchTimes = random.randint(0,3)
@@ -43,8 +43,6 @@ def touchObj(btnObj):
     elif btnObj==FM1_OFF:
         touchChannel()
         tempPic = snapshot(rect=ST.eare_tuner, device=DEV1)
-        #退出bt画面
-        touch([151, 95])
     elif btnObj==FM2_OFF:
         touchChannel()
         tempPic = snapshot(rect=ST.eare_tuner, device=DEV1)
@@ -93,11 +91,9 @@ def choiceBtn():
         else:
             break
     sourceBtn.remove(btn1);
-    if btn1==BT_OFF:
-        do_segment(Segment('../../01_Source_AccOffOn/BT/ConnectBT.tcs'))   
-    flick([1228, 369], DIR_LEFT, step=1, speed=SPEED_NORMAL)
-    flick([320, 501], DIR_RIGHT, step=1, speed=SPEED_NORMAL)
     touch(Template(btn1), device=DEV1)
+    if btn1==BT_OFF:
+        do_segment(Segment('../../01_Source_AccOffOn/BT/ConnectBT.tcs'))  
     if  btn1==USB_OFF:
         usb_on(1)
     if btn1==Androidauto_OFF:
@@ -114,15 +110,15 @@ def choiceBtn():
             btn2 = random.choice(sourceBtn)
         else:
             break
-
-    if btn2==BT_OFF:
-        do_segment(Segment('../../01_Source_AccOffOn/BT/ConnectBT.tcs')) 
-    if (btn1=='Androidauto_OFF' and btn2== 'Carplay_OFF' ) or (btn1=='Carplay_OFF' and btn2=='Androidauto_OFF'):
+    if btn1=='Androidauto_OFF' and btn2== 'Carplay_OFF' :
         print('不能同时存在')
         return None
-    flick([1228, 369], DIR_LEFT, step=1, speed=SPEED_NORMAL)
-    flick([320, 501], DIR_RIGHT, step=1, speed=SPEED_NORMAL)   
+    if btn1=='Carplay_OFF' and btn2=='Androidauto_OFF':
+        print('不能同时存在')
+        return None  
     touch(Template(btn2), device=DEV1)
+    if btn2==BT_OFF:
+        do_segment(Segment('../../01_Source_AccOffOn/BT/ConnectBT.tcs')) 
     if  btn2==USB_OFF:
         usb_on(1)
     if btn2==Androidauto_OFF:
@@ -145,6 +141,7 @@ btnObj1, btnObj2 = choiceBtn()
 for i in range(ST.touchTimes):
     #切换Source
     checkImage_btn1 = touchObj(btnObj1)
+    ########在这里试试source1的退出######
     checkImage_btn2 = touchObj(btnObj2)
     #确认Source复归
     checkSourceReturn(btnObj1, checkImage_btn1)
