@@ -1,0 +1,1793 @@
+[2022-02-24 17:49:44.949551][ 1153.957619] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:913 tx:227
+[2022-02-24 17:49:44.949551][ 1153.961569] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:44.949551]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890\",\"data\":{\"GESTURE\
+[2022-02-24 17:49:44.949551]\":\"1234567890\",\"data\":{\"GESTURE\                                        <":[\"KEY=1\"],\"ScreenChange\":false}}" 
+[2022-02-24 17:49:44.949551]:[\"KEY=1\"],\"ScreenChange\":false}}"                                        <> /data/ws_client_cmd
+[2022-02-24 17:49:44.949551]
+[2022-02-24 17:49:45.450119]> [ 1154.495512] [WDK]: kick Ex WDT
+[2022-02-24 17:49:45.950241][ 1154.916272] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:45.950241][ 1154.975459] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:415 tx:477
+[2022-02-24 17:49:45.950241][ 1154.977139] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:45.950241][ 1155.098311] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:47.952432][ 1156.893317] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:543 tx:249
+[2022-02-24 17:49:47.952432][ 1156.894289] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:47.952432][ 1156.916938] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:47.952432]/data/autotest_client
+[2022-02-24 17:49:47.952432]
+[2022-02-24 17:49:47.952432][ 1157.069643] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:48.453133]> [2022-02-24 17:49:48.953330][ 1157.956722] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:917 tx:227
+[2022-02-24 17:49:48.953330][ 1157.957692] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:49.953902][ 1158.708843] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:49.953902][ 1158.881743] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:49.953902][ 1158.894577] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:49.953902][ 1158.926737] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:49.953902][ 1158.947823] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:49.953902][ 1158.986215] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:518 tx:272
+[2022-02-24 17:49:49.953902][ 1158.987178] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:50.955082][ 1159.989133] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:50.955082][ 1159.989938] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:416 tx:285
+[2022-02-24 17:49:50.955082][ 1159.990896] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:50.955082][ 1159.999670] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:50.955082][ 1160.001028] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:50.955082][ 1160.025350] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:50.955082][ 1160.026737] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:50.955082][ 1160.030479] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:50.955082][ 1160.053139] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:50.955082][ 1160.058469] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:50.955082][ 1160.081668] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:50.955082][ 1160.085369] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:51.455437]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890\",\"data\":{\"GESTURE\
+[2022-02-24 17:49:51.455437]\":\"1234567890\",\"data\":{\"GESTURE\                                        <":[\"KEY=1\"],\"ScreenChange\":false}}" 
+[2022-02-24 17:49:51.455437]:[\"KEY=1\"],\"ScreenChange\":false}}"                                        <> /data/ws_client_cmd
+[2022-02-24 17:49:51.455437]
+[2022-02-24 17:49:51.956028]> [ 1160.912862] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:51.956028][ 1160.923849] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:52.458846]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890\",\"data\":{\"GESTURE\
+[2022-02-24 17:49:52.458846]\":\"1234567890\",\"data\":{\"GESTURE\                                        <":[\"KEY=1\"],\"ScreenChange\":false}}" 
+[2022-02-24 17:49:52.458846]:[\"KEY=1\"],\"ScreenChange\":false}}"                                        <> /data/ws_client_cmd
+[2022-02-24 17:49:52.458846]
+[2022-02-24 17:49:52.959488]> [ 1161.958507] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:832 tx:521
+[2022-02-24 17:49:52.959488][ 1161.959922] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:53.466851][ 1162.496051] [WDK]: kick Ex WDT
+[2022-02-24 17:49:53.962553][ 1162.917555] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:53.962553][ 1162.971201] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:415 tx:290
+[2022-02-24 17:49:53.962553][ 1162.976663] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:53.962553][ 1163.122970] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:55.463529]/data/autotest_client
+[2022-02-24 17:49:55.463529]
+[2022-02-24 17:49:55.964159]> [ 1164.894794] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:439 tx:249
+[2022-02-24 17:49:55.964159][ 1164.895778] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:55.964159][ 1164.917545] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:55.964159][ 1165.107009] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:56.964948][ 1165.956859] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:782 tx:227
+[2022-02-24 17:49:56.964948][ 1165.957831] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:57.966604][ 1166.913167] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:57.966604][ 1166.978531] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:415 tx:290
+[2022-02-24 17:49:57.967602][ 1166.980449] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:57.967602][ 1167.096690] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:58.466930]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890\",\"data\":{\"GESTURE\
+[2022-02-24 17:49:58.466930]\":\"1234567890\",\"data\":{\"GESTURE\                                        <":[\"TOUCH=press,522,267\",\"SLEEP=20\",
+[2022-02-24 17:49:58.466930]:[\"TOUCH=press,522,267\",\"SLEEP=20\",                                       <\"TOUCH=hold,522,267\",\"SLEEP=20\",\"T
+[2022-02-24 17:49:58.466930]\"TOUCH=hold,522,267\",\"SLEEP=20\",\"T                                       <OUCH=release,522,267\"],\"ScreenChange\
+[2022-02-24 17:49:58.466930]OUCH=release,522,267\"],\"ScreenChange\                                       <":false}}" > /data/ws_client_cmd
+[2022-02-24 17:49:58.466930]
+[2022-02-24 17:49:58.967699]> [2022-02-24 17:49:59.968867][ 1168.895579] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:507 tx:249
+[2022-02-24 17:49:59.968867][ 1168.899118] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:59.968867][ 1168.921544] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:59.968867][ 1169.046628] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:00.972450][ 1169.957786] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1086 tx:227
+[2022-02-24 17:50:00.972450][ 1169.960502] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:00.972450][ 1170.122681] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:00.972450][ 1170.138490] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:00.972450][ 1170.140214] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:01.475222][ 1170.161098] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:01.475222][ 1170.162150] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:01.475222][ 1170.170950] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:01.475222]/data/autotest_client
+[2022-02-24 17:50:01.475222]
+[2022-02-24 17:50:01.475222]> [ 1170.193825] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:01.475222][ 1170.202255] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:01.475222][ 1170.233390] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:01.475222][ 1170.251034] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:01.475222][ 1170.496279] [WDK]: kick Ex WDT
+[2022-02-24 17:50:01.978067][ 1170.899865] [TOUCH]:(func:mxt_interrupt,line:751)receive response in 5s, jiffies: 4295185019.
+[2022-02-24 17:50:01.978067][ 1170.917442] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:01.978067]onInputMonitorMessage device = 0, code = 1, action = 1
+[2022-02-24 17:50:01.978067]
+[2022-02-24 17:50:01.978067]onAutokeyRecorded:SLEEP=327595
+[2022-02-24 17:50:01.978067][ 1170.990000] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:01.978067][ 1170.990814] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:176 tx:352
+[2022-02-24 17:50:01.978067][ 1170.991776] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:02.479236]onInputMonitorMessage device = 0, code = 1, action = 0
+[2022-02-24 17:50:02.480234]
+[2022-02-24 17:50:02.480234]onAutokeyRecorded:KEY=1
+[2022-02-24 17:50:02.480234]-> Dummy GetScreenInfo
+[2022-02-24 17:50:02.480234]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:50:02.480234]wait(200ms)...
+[2022-02-24 17:50:02.480234]onInputMonitorMessage device = 0, code = 1, action = 1
+[2022-02-24 17:50:02.480234]
+[2022-02-24 17:50:02.480234]onAutokeyRecorded:SLEEP=44
+[2022-02-24 17:50:02.480234]onInputMonitorMessage device = 0, code = 1, action = 0
+[2022-02-24 17:50:02.480234]
+[2022-02-24 17:50:02.480234]onAutokeyRecorded:KEY=1
+[2022-02-24 17:50:02.483232]-> Running Msg
+[2022-02-24 17:50:02.483232]-> Dummy GetScreenInfo
+[2022-02-24 17:50:02.483232]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:50:02.483232]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:50:02.483232]Capture Failed
+[2022-02-24 17:50:02.483232]sendData failed
+[2022-02-24 17:50:02.483232]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:50:02.483232]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:50:02.483232]wait(200ms)...
+[2022-02-24 17:50:02.483232]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:50:02.483232]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:50:02.483232]Capture Failed
+[2022-02-24 17:50:02.483232]sendData failed
+[2022-02-24 17:50:02.483232]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:50:03.988705][ 1172.897269] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:641 tx:476
+[2022-02-24 17:50:03.989703][ 1172.898237] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:03.989703][ 1172.925225] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:03.989703][ 1173.104514] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:04.492664]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890\",\"data\":{\"GESTURE\
+[2022-02-24 17:50:04.492664]\":\"1234567890\",\"data\":{\"GESTURE\                                        <":[\"TOUCH=press,522,267\",\"SLEEP=20\",
+[2022-02-24 17:50:04.492664]:[\"TOUCH=press,522,267\",\"SLEEP=20\",                                       <\"TOUCH=hold,522,267\",\"SLEEP=20\",\"T
+[2022-02-24 17:50:04.492664]\"TOUCH=hold,522,267\",\"SLEEP=20\",\"T                                       <OUCH=release,522,267\"],\"ScreenChange\
+[2022-02-24 17:50:04.492664]OUCH=release,522,267\"],\"ScreenChange\                                       <":false}}" > /data/ws_client_cmd
+[2022-02-24 17:50:04.492664]
+[2022-02-24 17:50:04.995197]> [ 1173.956234] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:779 tx:227
+[2022-02-24 17:50:04.995197][ 1173.959979] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:06.002100][ 1174.920879] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:06.003096][ 1174.969828] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:417 tx:291
+[2022-02-24 17:50:06.003096][ 1174.970801] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:06.003096][ 1175.104715] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:22.108836]Watchdog Status: 0 , boot from normal
+[2022-02-24 17:50:22.110837]Build Time: Jan 19 2022 08:08:13
+[2022-02-24 17:50:22.110837]Init_DRAM_8_14 3 start: 204607 (us)
+[2022-02-24 17:50:22.110837]Clockfreq 2600 MHz dlycell 1303 /100 ps
+[2022-02-24 17:50:22.110837]CH0, 24 26 26 26 26 25 26 26 26 24 25 26 27 26 26 27  TXVref 12
+[2022-02-24 17:50:22.110837]CH1, 27 25 26 26 29 27 25 25 24 23 26 26 28 24 26 25  TXVref 16
+[2022-02-24 17:50:22.110837]CH0, 24 24 25 25 25 23 24 23 22 22 23 25 24 22 25 22 RXVREF  9 
+[2022-02-24 17:50:22.111832]CH1, 23 24 25 25 24 23 23 24 24 22 24 25 25 26 26 25 RXVREF  8 
+[2022-02-24 17:50:22.111832]ROW 16, CHANNEL 2, Rank 1 SIZE 2GB, Vendor 1
+[2022-02-24 17:50:22.111832]CONNECT_Warning Channel 1 CA 6
+[2022-02-24 17:50:22.111832]Init_DRAM done: 279675 (us) @ 2600  @1303
+[2022-02-24 17:50:22.111832]RGU rgu_dram_reserved:MTK_WDT_MODE(22000010)
+[2022-02-24 17:50:22.111832]mt_mem_size 80000000
+[2022-02-24 17:50:22.111832][MEM] 0xfffffff0c0000000  complex R/W mem test pass
+[2022-02-24 17:50:22.111832]phase: [map:fffffffe] [maxlen:31] [final:16]
+[2022-02-24 17:50:22.111832]Final cmd/data pad delay: 10
+[2022-02-24 17:50:22.111832][eMMC/SD] Size: 14912 MB, Max.Speed: 200000 kHz, blklen(512), nblks(30539776), ro(0)
+[2022-02-24 17:50:22.111832]starting app fitboot
+[2022-02-24 17:50:22.111832]starting app shell
+[2022-02-24 17:50:22.111832]# 
+[2022-02-24 17:50:22.612999]# [2022-02-24 17:50:23.117789]get_uramdisk_loadaddr: addr = 0x4A000000
+[2022-02-24 17:50:23.117789]LK run time: 1325146 (us)
+[2022-02-24 17:50:23.117789]jump to tz 0x42ff6000
+[2022-02-24 17:50:23.117789][TZ_INIT] TEE start entry : 0x0
+[2022-02-24 17:50:23.117789][TZ_INIT] MEID : 0x93, 0x98, 0xC0, 0x55
+[2022-02-24 17:50:23.117789][TZ_INIT] MEID : 0xDF, 0x4D, 0x40, 0x2B
+[2022-02-24 17:50:23.117789][TZ_INIT] MEID : 0x8B, 0xE0, 0xAC, 0x3
+[2022-02-24 17:50:23.117789][TZ_INIT] MEID : 0xD, 0x60, 0x92, 0x10
+[2022-02-24 17:50:23.117789][TZ_INIT] HRID[0] : 0xA322F0DD
+[2022-02-24 17:50:23.117789][TZ_INIT] HRID[1] : 0x49526549
+[2022-02-24 17:50:23.117789][TZ_INIT] atf_log_port : 0x11002000
+[2022-02-24 17:50:23.117789][TZ_INIT] atf_log_baudrate : 0xE1000
+[2022-02-24 17:50:23.117789][TZ_INIT] atf_irq_num : 267
+[2022-02-24 17:50:23.117789][TZ_INIT] ATF log buffer start : 0x0
+[2022-02-24 17:50:23.117789][TZ_INIT] ATF log buffer size : 0x0
+[2022-02-24 17:50:23.118780][TZ_INIT] ATF aee buffer start : 0x0
+[2022-02-24 17:50:23.118780][TZ_INIT] ATF aee buffer size : 0x0
+[2022-02-24 17:50:23.118780][TZ_INIT] ATF entry addr, aligned addr : 0x43001000, 0x43000000
+[2022-02-24 17:50:23.118780][TZ_EMI_MPU] MPU [0x43000000-0x4303FFFF]
+[2022-02-24 17:50:23.118780][TZ_INIT] set ATF memory protection : 0x43000000, 0x4303FFFF (1)
+[2022-02-24 17:50:23.118780][TZ_INIT] Jump to ATF, then jump 0x41E00000
+[2022-02-24 17:50:23.118780][teeloader] tl jump to atf!
+[2022-02-24 17:50:23.118780][ATF](0)[1.333941]INFO:    LK is AArch64
+[2022-02-24 17:50:23.118780][ATF](0)[1.335978]NOTICE:  BL3-1: v1.2(debug):d185163
+[2022-02-24 17:50:23.119778][ATF](0)[1.336552]NOTICE:  BL3-1: Built : 07:18:44, May 16 2018
+[2022-02-24 17:50:23.119778][ATF](0)[1.337252]NOTICE:  BL31: v1.2(debug):d185163
+[2022-02-24 17:50:23.119778][ATF](0)[1.337833]NOTICE:  BL31: Built : 07:18:44, May 16 2018
+[2022-02-24 17:50:23.119778][ATF](0)[1.338526]SPM_POWERON_CONFIG_SET_0x10006000=0x1
+[2022-02-24 17:50:23.119778][ATF](0)[1.339137]BYPASS_SPMC_0x10006c5c=0x0
+[2022-02-24 17:50:23.119778][ATF](0)[1.339632][spmc_init]change to SPMC mode !!!
+[2022-02-24 17:50:23.119778][ATF](0)[1.340235]INFO:    ARM GICv2 driver initialized
+[2022-02-24 17:50:23.121777][ATF](0)[1.340853]INFO:    ptr = 0x4300c0b0, len = 1850
+[2022-02-24 17:50:23.121777][ATF](0)[1.341464]INFO:    BL31: Initializing runtime services
+[2022-02-24 17:50:23.121777][ATF](0)[1.342161]WARNING: No TSP provided by BL2 boot loader, Booting device without TSP initialization. SMC`s destined for TSP will return SMC_UNK
+[2022-02-24 17:50:23.121777][ATF](0)[1.343757]ERROR:   Error initializing runtime service fiqd_fast
+[2022-02-24 17:50:23.121777][ATF](0)[1.344543]INFO:    BL31: Preparing for EL3 exit to normal world
+[2022-02-24 17:50:23.121777][ATF](0)[1.345329]INFO:    Entry point address = 0x41e00000
+[2022-02-24 17:50:23.121777][ATF](0)[1.345986]INFO:    SPSR = 0x3c9
+[2022-02-24 17:50:23.121777][    0.000000] Booting Linux on physical CPU 0x0
+[2022-02-24 17:50:23.121777][    0.000000] Linux version 4.9.274 (jenkins@commoncompile-jw412) (gcc version 7.3.0 (GCC) ) #1 SMP PREEMPT Wed Feb 9 13:32:57 UTC 2022
+[2022-02-24 17:50:23.121777][    0.000000] Boot CPU: AArch64 Processor [410fd041]
+[2022-02-24 17:50:23.122776][    0.000000] earlycon: uart8250 at MMIO32 0x0000000011002000 (options '')
+[2022-02-24 17:50:23.122776][    0.000000] bootconsole [uart8250] enabled
+[2022-02-24 17:50:23.122776][    0.000000] efi: Getting EFI parameters from FDT:
+[2022-02-24 17:50:23.122776][    0.000000] efi: UEFI not found.
+[2022-02-24 17:50:23.122776][    0.000000] LinuxCrashDump[Debug]:   start[    0.000000] LinuxCrashDump[ Info]: crash reserved: phys(0x60000000) size(3)M virt(0x0) zone(0x300000)
+[2022-02-24 17:50:23.122776][    0.000000] LinuxCrashDump[Debug]: Reserved memory: created (linux_crash_dump_reserved) memory pool at 0x0000000060000000, size 3 MiB
+[2022-02-24 17:50:23.122776][    0.000000] LinuxCrashDump[Debug]:   end[    0.000000] OF: reserved mem: initialized node linux_crash_dump_reserved, compatible id linux_crash_dump_pool
+[2022-02-24 17:50:23.122776][    0.000000] cma: Reserved 32 MiB at 0x00000000be000000
+[2022-02-24 17:50:23.122776][    0.000000] psci: probing for conduit method from DT.
+[2022-02-24 17:50:23.122776][    0.000000] psci: PSCIv1.0 detected in firmware.
+[2022-02-24 17:50:23.122776][    0.000000] psci: Using standard PSCI v0.2 function IDs
+[2022-02-24 17:50:23.122776][    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[2022-02-24 17:50:23.123775][    0.000000] psci: SMC Calling Convention v1.0
+[2022-02-24 17:50:23.123775][    0.000000] percpu: Embedded 21 pages/cpu s46488 r8192 d31336 u86016
+[2022-02-24 17:50:23.123775][    0.000000] Detected VIPT I-cache on CPU0
+[2022-02-24 17:50:23.123775][    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 514678
+[2022-02-24 17:50:23.123775][    0.000000] Kernel command line: console=ttyS0,921600n1 root=/dev/ram initrd=0x4a000000,32M debugshell=1 printk.disable_uart=0 rootwait initcall_debug=1 earlycon=uart8250,mmio32,0x11002000 bootmode=0 submode=0
+[2022-02-24 17:50:23.123775][    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[2022-02-24 17:50:23.123775][    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[2022-02-24 17:50:23.123775][    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[2022-02-24 17:50:23.124780][    0.000000] Memory: 1969000K/2091480K available (10428K kernel code, 674K rwdata, 3976K rodata, 640K init, 1351K bss, 89712K reserved, 32768K cma-reserved)
+[2022-02-24 17:50:23.124780][    0.000000] Virtual kernel memory layout:
+[2022-02-24 17:50:23.124780][    0.000000]     modules : 0xffffff8000000000 - 0xffffff8008000000   (   128 MB)
+[2022-02-24 17:50:23.124780][    0.000000]     vmalloc : 0xffffff8008000000 - 0xffffffbebfff0000   (   250 GB)
+[2022-02-24 17:50:23.124780][    0.000000]       .text : 0xffffff8008080000 - 0xffffff8008ab0000   ( 10432 KB)
+[2022-02-24 17:50:23.124780][    0.000000]     .rodata : 0xffffff8008ab0000 - 0xffffff8008ea0000   (  4032 KB)
+[2022-02-24 17:50:23.124780][    0.000000]       .init : 0xffffff8008ea0000 - 0xffffff8008f40000   (   640 KB)
+[2022-02-24 17:50:23.124780][    0.000000]       .data : 0xffffff8008f40000 - 0xffffff8008fe8a00   (   675 KB)
+[2022-02-24 17:50:23.124780][    0.000000]        .bss : 0xffffff8008fe8a00 - 0xffffff800913a914   (  1352 KB)
+[2022-02-24 17:50:23.124780][    0.000000]     fixed   : 0xffffffbefe7fb000 - 0xffffffbefec00000   (  4116 KB)
+[2022-02-24 17:50:23.124780][    0.000000]     PCI I/O : 0xffffffbefee00000 - 0xffffffbeffe00000   (    16 MB)
+[2022-02-24 17:50:23.124780][    0.000000]     vmemmap : 0xffffffbf00000000 - 0xffffffc000000000   (     4 GB maximum)
+[2022-02-24 17:50:23.124780][    0.000000]               0xffffffbf00000000 - 0xffffffbf02000000   (    32 MB actual)
+[2022-02-24 17:50:23.124780][    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc080000000   (  2048 MB)
+[2022-02-24 17:50:23.124780][    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=3, Nodes=1
+[2022-02-24 17:50:23.124780][    0.000000] Preemptible hierarchical RCU implementation.
+[2022-02-24 17:50:23.124780][    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[2022-02-24 17:50:23.125780][    0.000000] 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=3.
+[2022-02-24 17:50:23.125780][    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=3
+[2022-02-24 17:50:23.125780][    0.000000] NR_IRQS:64 nr_irqs:64 0
+[2022-02-24 17:50:23.125780][    0.000000] GIC: Adjusting CPU interface base to 0x000000001052f000
+[2022-02-24 17:50:23.125780][    0.000000] GIC: Using split EOI/Deactivate mode
+[2022-02-24 17:50:23.125780][    0.000000] arm_arch_timer: Architected cp15 timer(s) running at 13.00MHz (phys).
+[2022-02-24 17:50:23.125780][    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x2ff89eacb, max_idle_ns: 440795202429 ns
+[2022-02-24 17:50:23.125780][    0.000005] sched_clock: 56 bits at 13MHz, resolution 76ns, wraps every 4398046511101ns
+[2022-02-24 17:50:23.125780][    0.001401] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 147020034397 ns
+[2022-02-24 17:50:23.125780][    0.003362] Console: colour dummy device 80x25
+[2022-02-24 17:50:23.125780][    0.003962] Calibrating delay loop (skipped), value calculated using timer frequency.. 26.00 BogoMIPS (lpj=52000)
+[2022-02-24 17:50:23.125780][    0.005298] pid_max: default: 32768 minimum: 301
+[2022-02-24 17:50:23.125780][    0.005972] Security Framework initialized
+[2022-02-24 17:50:23.125780][    0.006514] Smack:  Initializing.
+[2022-02-24 17:50:23.125780][    0.006945] Smack:  IPv6 port labeling enabled.
+[2022-02-24 17:50:23.125780][    0.007591] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[2022-02-24 17:50:23.125780][    0.008465] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[2022-02-24 17:50:23.125780][    0.011101] sched-energy: Sched-energy-costs installed from DT
+[2022-02-24 17:50:23.125780][    0.011905] CPU0: update cpu_capacity 443
+[2022-02-24 17:50:23.125780][    0.012467] ASID allocator initialised with 32768 entries
+[2022-02-24 17:50:23.620431][    0.044916] EFI services will not be available.
+[2022-02-24 17:50:23.622428][    0.080302] Detected VIPT I-cache on CPU1
+[2022-02-24 17:50:23.622428][    0.080361] CPU1: update cpu_capacity 443
+[2022-02-24 17:50:23.622428][    0.080364] CPU1: Booted secondary processor [410fd041]
+[2022-02-24 17:50:23.622428][    0.108342] Detected PIPT I-cache on CPU2
+[2022-02-24 17:50:23.622428][    0.108351] CPU features: SANITY CHECK: Unexpected variation in SYS_ID_AA64MMFR0_EL1. Boot CPU: 0x00000000101122, CPU2: 0x00000000001124
+[2022-02-24 17:50:23.622428][    0.108356] CPU features: Unsupported CPU feature variation detected.
+[2022-02-24 17:50:23.622428][    0.108371] CPU2: update cpu_capacity 1024
+[2022-02-24 17:50:23.622428][    0.108372] CPU2: Booted secondary processor [410fd083]
+[2022-02-24 17:50:23.622428][    0.108429] Brought up 3 CPUs
+[2022-02-24 17:50:23.622428][    0.114696] SMP: Total of 3 processors activated.
+[2022-02-24 17:50:23.622428][    0.115310] CPU features: detected feature: 32-bit EL0 Support
+[2022-02-24 17:50:23.622428][    0.116068] CPU features: detected feature: Kernel page table isolation (KPTI)
+[2022-02-24 17:50:23.625426][    0.121137] CPU: All CPU(s) started at EL2
+[2022-02-24 17:50:23.625426][    0.121683] alternatives: patching kernel code
+[2022-02-24 17:50:23.625426][    0.122460] CPU2: update max cpu_capacity 1024
+[2022-02-24 17:50:23.625426][    0.123726] devtmpfs: initialized
+[2022-02-24 17:50:23.625426][    0.125036] CPU0: update max cpu_capacity 443
+[2022-02-24 17:50:23.625426][    0.141597] DMI not present or invalid.
+[2022-02-24 17:50:23.625426][    0.142387] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[2022-02-24 17:50:23.625426][    0.143673] futex hash table entries: 1024 (order: 5, 131072 bytes)
+[2022-02-24 17:50:23.625426][    0.145622] pinctrl core: initialized pinctrl subsystem
+[2022-02-24 17:50:23.625426][    0.148054] NET: Registered protocol family 16
+[2022-02-24 17:50:23.625426][    0.149015] schedtune: init normalization constants...
+[2022-02-24 17:50:23.625426][    0.149689] schedtune: CLUSTER[0-1]      min_pwr:    50 max_pwr:   130
+[2022-02-24 17:50:23.625426][    0.150538] schedtune: CPU[0]            min_pwr:     0 max_pwr:    44
+[2022-02-24 17:50:23.625426][    0.151387] schedtune: CPU[1]            min_pwr:     0 max_pwr:    44
+[2022-02-24 17:50:23.625426][    0.152236] schedtune: CLUSTER[2]        min_pwr:     3 max_pwr:    39
+[2022-02-24 17:50:23.625426][    0.153100] schedtune: CPU[2]            min_pwr:     0 max_pwr:   349
+[2022-02-24 17:50:23.625426][    0.153948] schedtune: SYSTEM            min_pwr:    53 max_pwr:   606
+[2022-02-24 17:50:23.626425][    0.154797] schedtune: using normalization constants mul: 3658100537 sh1: 1 sh2: 9
+[2022-02-24 17:50:23.626425][    0.155779] schedtune: verify normalization constants...
+[2022-02-24 17:50:23.626425][    0.156470] schedtune: max_pwr/2^0:  553 => norm_pwr:  1024
+[2022-02-24 17:50:23.626425][    0.157202] schedtune: max_pwr/2^1:  276 => norm_pwr:   511
+[2022-02-24 17:50:23.626425][    0.157926] schedtune: max_pwr/2^2:  138 => norm_pwr:   255
+[2022-02-24 17:50:23.626425][    0.158650] schedtune: max_pwr/2^3:   69 => norm_pwr:   127
+[2022-02-24 17:50:23.626425][    0.159374] schedtune: max_pwr/2^4:   34 => norm_pwr:    62
+[2022-02-24 17:50:23.626425][    0.160098] schedtune: max_pwr/2^5:   17 => norm_pwr:    31
+[2022-02-24 17:50:23.626425][    0.160822] schedtune: configured to support 5 boost groups
+[2022-02-24 17:50:23.626425][    0.177580] cpuidle: using governor menu
+[2022-02-24 17:50:23.626425][    0.178983] vdso: 2 pages (1 code @ ffffff8008ab7000, 1 data @ ffffff8008f44000)
+[2022-02-24 17:50:23.626425][    0.179976] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[2022-02-24 17:50:23.626425][    0.181618] DMA: preallocated 256 KiB pool for atomic allocations
+[2022-02-24 17:50:23.626425][    0.182660] Serial: AMBA PL011 UART driver
+[2022-02-24 17:50:23.626425][    0.229447] MTK_WDT_NONRST_REG(0)
+[2022-02-24 17:50:23.626425][    0.229924] mtk-wdt 10007000.watchdog: register restart_handler on reboot_notifier_list for psci reset
+[2022-02-24 17:50:23.626425][    0.231137] mtk-wdt 10007000.watchdog: Watchdog enabled (timeout=31 sec, nowayout=0)
+[2022-02-24 17:50:23.626425][    0.256523] irq: no irq domain found for /i2c@11007000/rtq5115-regulator !
+[2022-02-24 17:50:23.626425][    0.290263] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[2022-02-24 17:50:23.626425][    0.297432] iommu: Adding device 14001000.rdma to group 0
+[2022-02-24 17:50:23.626425][    0.298182] iommu: Adding device 14002000.rdma to group 0
+[2022-02-24 17:50:23.626425][    0.298896] iommu: Adding device 14006000.wdma to group 0
+[2022-02-24 17:50:23.626425][    0.299608] iommu: Adding device 14007000.wrot to group 0
+[2022-02-24 17:50:23.626425][    0.300320] iommu: Adding device 14008000.wrot to group 0
+[2022-02-24 17:50:23.627425][    0.301033] iommu: Adding device 1400c000.ovl to group 0
+[2022-02-24 17:50:23.627425][    0.301733] iommu: Adding device 1400d000.ovl to group 0
+[2022-02-24 17:50:23.627425][    0.302448] iommu: Adding device 1400e000.rdma to group 0
+[2022-02-24 17:50:23.627425][    0.303160] iommu: Adding device 1400f000.rdma to group 0
+[2022-02-24 17:50:23.627425][    0.303875] iommu: Adding device 14010000.rdma to group 0
+[2022-02-24 17:50:23.627425][    0.304587] iommu: Adding device 14011000.wdma to group 0
+[2022-02-24 17:50:23.627425][    0.305299] iommu: Adding device 14012000.wdma to group 0
+[2022-02-24 17:50:23.627425][    0.306017] iommu: Adding device 14028000.rdma to group 0
+[2022-02-24 17:50:23.627425][    0.306745] iommu: Adding device 1402c000.ovl to group 0
+[2022-02-24 17:50:23.627425][    0.307446] iommu: Adding device ovl@1402c100 to group 0
+[2022-02-24 17:50:23.627425][    0.308147] iommu: Adding device ovl@1402c200 to group 0
+[2022-02-24 17:50:23.628424][    0.308848] iommu: Adding device ovl@1402c300 to group 0
+[2022-02-24 17:50:23.628424][    0.309552] iommu: Adding device 1402d000.wdma to group 0
+[2022-02-24 17:50:23.628424][    0.310265] iommu: Adding device 14033000.rdma to group 0
+[2022-02-24 17:50:23.628424][    0.310991] iommu: Adding device 14034000.wrot to group 0
+[2022-02-24 17:50:23.628424][    0.311707] iommu: Adding device 15004000.camsv to group 0
+[2022-02-24 17:50:23.628424][    0.312431] iommu: Adding device 15005000.camsv to group 0
+[2022-02-24 17:50:23.628424][    0.313154] iommu: Adding device 15006000.camsv to group 0
+[2022-02-24 17:50:23.628424][    0.313877] iommu: Adding device 15007000.camsv to group 0
+[2022-02-24 17:50:23.628424][    0.314600] iommu: Adding device 15008000.camsv to group 0
+[2022-02-24 17:50:23.628424][    0.315338] iommu: Adding device 15009000.camsv to group 0
+[2022-02-24 17:50:23.628424][    0.316062] iommu: Adding device 15013000.nr to group 0
+[2022-02-24 17:50:23.628424][    0.316752] iommu: Adding device 15011000.mediatek-di to group 0
+[2022-02-24 17:50:23.628424][    0.317545] iommu: Adding device 16000000.codec to group 0
+[2022-02-24 17:50:23.628424][    0.318268] iommu: Adding device 16000000.vcu to group 0
+[2022-02-24 17:50:23.628424][    0.318971] iommu: Adding device 18004000.codec to group 0
+[2022-02-24 17:50:23.628424][    0.319708] iommu: Adding device 19001000.jpegdec to group 0
+[2022-02-24 17:50:23.628424][    0.320454] iommu: Adding device dma to group 0
+[2022-02-24 17:50:23.628424][    0.321559] vgaarb: loaded
+[2022-02-24 17:50:23.628424][    0.321929] [FH] mt_fh_init
+[2022-02-24 17:50:23.628424][    0.322571] DDR LVDS  test[    0.322904] mt_fh_init_register 583 g_dys[FH_LVDS_PLLID] = 14,g_dts[FH_LVDS_PLLID] = 2
+[2022-02-24 17:50:23.628424][    0.324020] set default lvds ssc On id = 9 
+[2022-02-24 17:50:23.628424][    0.324573] [FH] freqhopping_debug_proc_init[    0.325387] SCSI subsystem initialized
+[2022-02-24 17:50:23.628424][    0.332153] usbcore: registered new interface driver usbfs
+[2022-02-24 17:50:23.628424][    0.332899] usbcore: registered new interface driver hub
+[2022-02-24 17:50:23.628424][    0.333607] usbcore: registered new device driver usb
+[2022-02-24 17:50:23.628424][    0.336212] media: Linux media interface: v0.10
+[2022-02-24 17:50:23.629423][    0.336826] Linux video capture interface: v2.00
+[2022-02-24 17:50:23.629423][    0.337466] pps_core: LinuxPPS API ver. 1 registered
+[2022-02-24 17:50:23.629423][    0.338113] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[2022-02-24 17:50:23.629423][    0.339314] PTP clock support registered
+[2022-02-24 17:50:23.629423][    0.339899] dmi: Firmware registration failed.
+[2022-02-24 17:50:23.629423][    0.341262] Advanced Linux Sound Architecture Driver Initialized.
+[2022-02-24 17:50:23.629423][    0.346090] NetLabel: Initializing
+[2022-02-24 17:50:23.629423][    0.346533] NetLabel:  domain hash size = 128
+[2022-02-24 17:50:23.629423][    0.347100] NetLabel:  protocols = UNLABELED CIPSOv4
+[2022-02-24 17:50:23.629423][    0.347764] NetLabel:  unlabeled traffic allowed by default
+[2022-02-24 17:50:23.629423][    0.348893] clocksource: Switched to clocksource arch_sys_counter
+[2022-02-24 17:50:23.629423][    0.349783] VFS: Disk quotas dquot_6.6.0
+[2022-02-24 17:50:23.629423][    0.350330] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[2022-02-24 17:50:23.629423][    0.355148] NET: Registered protocol family 2
+[2022-02-24 17:50:23.629423][    0.355765] IP idents hash table entries: 32768 (order: 6, 262144 bytes)
+[2022-02-24 17:50:23.629423][    0.357275] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+[2022-02-24 17:50:23.629423][    0.358256] TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+[2022-02-24 17:50:23.629423][    0.359196] TCP: Hash tables configured (established 16384 bind 16384)
+[2022-02-24 17:50:23.629423][    0.360087] UDP hash table entries: 1024 (order: 3, 32768 bytes)
+[2022-02-24 17:50:23.629423][    0.360877] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes)
+[2022-02-24 17:50:23.629423][    0.361810] NET: Registered protocol family 1
+[2022-02-24 17:50:23.629423][    0.370573] RPC: Registered named UNIX socket transport module.
+[2022-02-24 17:50:23.629423][    0.371344] RPC: Registered udp transport module.
+[2022-02-24 17:50:23.629423][    0.371956] RPC: Registered tcp transport module.
+[2022-02-24 17:50:23.629423][    0.372568] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[2022-02-24 17:50:23.629423][    0.373526] Unpacking initramfs...
+[2022-02-24 17:50:23.926908][    0.637204] Initramfs unpacking failed: junk in compressed archive
+[2022-02-24 17:50:23.926908][    0.650699] Freeing initrd memory: 32768K
+[2022-02-24 17:50:23.927914][    0.651960] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[2022-02-24 17:50:23.927914][    0.653090] kvm [1]: 8-bit VMID
+[2022-02-24 17:50:23.927914][    0.653501] kvm [1]: IDMAP page: 40a9c000
+[2022-02-24 17:50:23.927914][    0.654023] kvm [1]: HYP VA range: 4000000000:7fffffffff
+[2022-02-24 17:50:23.927914][    0.655358] kvm [1]: Hyp mode initialized successfully
+[2022-02-24 17:50:23.927914][    0.656072] kvm [1]: vgic-v2@10540000
+[2022-02-24 17:50:23.927914][    0.656623] kvm [1]: vgic interrupt IRQ1
+[2022-02-24 17:50:23.927914][    0.657149] kvm [1]: virtual timer IRQ4
+[2022-02-24 17:50:23.927914][    0.659848] audit: initializing netlink subsys (disabled)
+[2022-02-24 17:50:23.927914][    0.660574] audit: type=2000 audit(0.652:1): initialized
+[2022-02-24 17:50:23.927914][    0.661640] workingset: timestamp_bits=46 max_order=19 bucket_order=0
+[2022-02-24 17:50:23.928909][    0.671182] NFS: Registering the id_resolver key type
+[2022-02-24 17:50:23.928909][    0.671848] Key type id_resolver registered
+[2022-02-24 17:50:23.928909][    0.672393] Key type id_legacy registered
+[2022-02-24 17:50:23.928909][    0.673048] fuse init (API version 7.26)
+[2022-02-24 17:50:23.928909][    0.673780] 9p: Installing v9fs 9p2000 file system support
+[2022-02-24 17:50:23.928909][    0.676423] io scheduler noop registered
+[2022-02-24 17:50:23.928909][    0.677071] io scheduler cfq registered (default)
+[2022-02-24 17:50:23.928909][    0.680334] board-info simple_devices:gpio-configure-node: gpio-configure-node = 0xffffffc07dff21b0
+[2022-02-24 17:50:23.928909][    0.681570] board-info simple_devices:gpio-configure-node: Found gpio-array, length = 369
+[2022-02-24 17:50:23.928909][    0.682635] board-info simple_devices:gpio-configure-node: [0]gpio_name_str = GPI_NFC_IRQ
+[2022-02-24 17:50:23.928909][    0.683764] board-info simple_devices:gpio-configure-node: [1]gpio_name_str = GPO_SPC_PWR_DOWN_N
+[2022-02-24 17:50:23.928909][    0.684958] board-info simple_devices:gpio-configure-node: [2]gpio_name_str = GPI_TOUCH_INT
+[2022-02-24 17:50:23.928909][    0.686082] board-info simple_devices:gpio-configure-node: [3]gpio_name_str = GPO_USBA_VBUS
+[2022-02-24 17:50:23.928909][    0.687206] board-info simple_devices:gpio-configure-node: [4]gpio_name_str = GPO_TOUCH_RST
+[2022-02-24 17:50:23.928909][    0.688328] board-info simple_devices:gpio-configure-node: [5]gpio_name_str = DRV_USBC_VBUS
+[2022-02-24 17:50:23.928909][    0.689514] board-info simple_devices:gpio-configure-node: [6]gpio_name_str = GPO_CP_VCONT
+[2022-02-24 17:50:23.928909][    0.690626] board-info simple_devices:gpio-configure-node: [7]gpio_name_str = GPI_EQ0
+[2022-02-24 17:50:23.928909][    0.691684] board-info simple_devices:gpio-configure-node: [8]gpio_name_str = GPI_EQ1
+[2022-02-24 17:50:23.928909][    0.692737] board-info simple_devices:gpio-configure-node: [9]gpio_name_str = GPI_EQ2
+[2022-02-24 17:50:23.928909][    0.693799] board-info simple_devices:gpio-configure-node: [10]gpio_name_str = GPI_EQ3
+[2022-02-24 17:50:23.928909][    0.694865] board-info simple_devices:gpio-configure-node: [11]gpio_name_str = GPI_DVR_DET
+[2022-02-24 17:50:23.929908][    0.695975] board-info simple_devices:gpio-configure-node: [12]gpio_name_str = GPO_VENC_RST_N
+[2022-02-24 17:50:23.929908][    0.697141] board-info simple_devices:gpio-configure-node: [13]gpio_name_str = GPO_VBUS_SW_EN
+[2022-02-24 17:50:23.929908][    0.698287] board-info simple_devices:gpio-configure-node: [14]gpio_name_str = GPO_AUTHE_RST
+[2022-02-24 17:50:23.929908][    0.699424] board-info simple_devices:gpio-configure-node: [15]gpio_name_str = GPO_AUTHE_READYBUSY
+[2022-02-24 17:50:23.929908][    0.700625] board-info simple_devices:gpio-configure-node: [16]gpio_name_str = GPI_BSENRQ
+[2022-02-24 17:50:23.929908][    0.701734] board-info simple_devices:gpio-configure-node: [17]gpio_name_str = GPO_VIDEO_SEL
+[2022-02-24 17:50:23.929908][    0.702870] board-info simple_devices:gpio-configure-node: [18]gpio_name_str = GPO_WATCHDOG_N
+[2022-02-24 17:50:23.929908][    0.704016] board-info simple_devices:gpio-configure-node: [19]gpio_name_str = GPO_SOC_OFF_RDY
+[2022-02-24 17:50:23.929908][    0.705197] board-info simple_devices:gpio-configure-node: [20]gpio_name_str = GPI_ASENRQ
+[2022-02-24 17:50:23.929908][    0.706297] board-info simple_devices:gpio-configure-node: [21]gpio_name_str = GPO_USBRESYNC_A_EN
+[2022-02-24 17:50:23.929908][    0.707489] board-info simple_devices:gpio-configure-node: [22]gpio_name_str = GPO_USBRESYNC_C_EN
+[2022-02-24 17:50:23.929908][    0.708682] board-info simple_devices:gpio-configure-node: [23]gpio_name_str = MD_TDMO0_DATA
+[2022-02-24 17:50:23.929908][    0.709824] board-info simple_devices:gpio-configure-node: [24]gpio_name_str = GPO_RGB_RST
+[2022-02-24 17:50:23.929908][    0.710937] board-info simple_devices:gpio-configure-node: [25]gpio_name_str = DWLD_MODE
+[2022-02-24 17:50:23.929908][    0.712029] board-info simple_devices:gpio-configure-node: [26]gpio_name_str = GPO_MOBILE_SYSRST_B
+[2022-02-24 17:50:23.929908][    0.718647] 8250_mtk_dma 11000400.dma-controller: Using 12 as missing dma-requests property
+[2022-02-24 17:50:23.929908][    0.722491] Serial: 8250/16550 driver, 6 ports, IRQ sharing disabled
+[2022-02-24 17:50:23.929908][    0.724302] mt6577-uart 11002000.serial: mtk8250_probe_of data->domain:0
+[2022-02-24 17:50:23.929908][    0.725315] console [ttyS0] disabled
+[2022-02-24 17:50:23.929908][    0.725805] 11002000.serial: ttyS0 at MMIO 0x11002000 (irq = 254, base_baud = 1625000) is a ST16650V2
+[2022-02-24 17:50:23.929908][    0.727033] console [ttyS0] enabled
+[2022-02-24 17:50:23.929908][    0.727033] console [ttyS0] enabled
+[2022-02-24 17:50:23.929908][    0.727924] bootconsole [uart8250] disabled
+[2022-02-24 17:50:23.929908][    0.727924] bootconsole [uart8250] disabled
+[2022-02-24 17:50:23.930912][    0.729197] mt6577-uart 11003000.serial: mtk8250_probe_of data->domain:0
+[2022-02-24 17:50:23.930912][    0.730118] 11003000.serial: ttyS1 at MMIO 0x11003000 (irq = 255, base_baud = 1625000) is a ST16650V2
+[2022-02-24 17:50:23.930912][    0.731469] mt6577-uart 11004000.serial: mtk8250_probe_of data->domain:0
+[2022-02-24 17:50:23.930912][    0.732392] 11004000.serial: ttyS2 at MMIO 0x11004000 (irq = 256, base_baud = 1625000) is a ST16650V2
+[2022-02-24 17:50:23.930912][    0.733749] mt6577-uart 11005000.serial: mtk8250_probe_of data->domain:0
+[2022-02-24 17:50:23.930912][    0.734670] 11005000.serial: ttyS3 at MMIO 0x11005000 (irq = 257, base_baud = 1625000) is a ST16650V2
+[2022-02-24 17:50:23.930912][    0.736025] mt6577-uart 11019000.serial: mtk8250_probe_of data->domain:0
+[2022-02-24 17:50:23.930912][    0.736954] 11019000.serial: ttyS4 at MMIO 0x11019000 (irq = 265, base_baud = 1625000) is a ST16650V2
+[2022-02-24 17:50:23.930912][    0.738823] [drm] Initialized
+[2022-02-24 17:50:23.930912][    0.739335] mtk_drm_aal_debugfs_dir_init
+[2022-02-24 17:50:23.930912][    0.739933] request irq success: aal0 irq:287
+[2022-02-24 17:50:23.930912][    0.740557] request irq success: aal1 irq:294
+[2022-02-24 17:50:23.930912][    0.741982] mediatek-dpi 1401d000.dpi: Found bridge node: /lvds@14026000
+[2022-02-24 17:50:23.930912][    0.742890] panel supply power not found, using dummy regulator
+[2022-02-24 17:50:23.930912][    0.744717] mediatek-drm 14000000.dispsys: Adding component match for /ovl@1400c000
+[2022-02-24 17:50:23.930912][    0.745781] mediatek-drm 14000000.dispsys: Adding component match for /ovl@1400d000
+[2022-02-24 17:50:23.930912][    0.746760] mediatek-drm 14000000.dispsys: Adding component match for /rdma@1400e000
+[2022-02-24 17:50:23.930912][    0.747748] mediatek-drm 14000000.dispsys: Adding component match for /rdma@1400f000
+[2022-02-24 17:50:23.930912][    0.748795] mediatek-drm 14000000.dispsys: Adding component match for /rdma@14010000
+[2022-02-24 17:50:23.930912][    0.750030] mediatek-drm 14000000.dispsys: Adding component match for /color@14013000
+[2022-02-24 17:50:23.930912][    0.751029] mediatek-drm 14000000.dispsys: Adding component match for /color@14014000
+[2022-02-24 17:50:23.931905][    0.752258] mediatek-drm 14000000.dispsys: Adding component match for /dpi@1401d000
+[2022-02-24 17:50:23.931905][    0.753377] mediatek-drm 14000000.dispsys: Adding component match for /dpi@14024000
+[2022-02-24 17:50:23.931905][    0.754354] mediatek-drm 14000000.dispsys: Adding component match for /lvds@14026000
+[2022-02-24 17:50:23.931905][    0.755364] mediatek-drm 14000000.dispsys: Adding component match for /color@14029000
+[2022-02-24 17:50:23.931905][    0.756529] mediatek-drm 14000000.dispsys: Adding component match for /lvds@1402e000
+[2022-02-24 17:50:23.931905][    0.758178] panel1 supply power not found, using dummy regulator
+[2022-02-24 17:50:23.931905][    0.759236] mediatek-dpi 14024000.dpi: Found bridge node: /lvds@1402e000
+[2022-02-24 17:50:23.931905][    0.759269] Unable to detect cache hierarchy for CPU 0
+[2022-02-24 17:50:23.931905][    0.760847] ########################LVDSTX_CTL2: 0x10fb0
+[2022-02-24 17:50:23.931905][    0.761550] ###tx2_regs = ffffff8009223800 ###LVDSTX_CTL2: 0x10fc7
+[2022-02-24 17:50:23.931905][    0.762380] ########################LVDSTX_CTL2: 0x10fb0
+[2022-02-24 17:50:23.931905][    0.763048] ###tx2_regs = ffffff8009227800 ###LVDSTX_CTL2: 0x10fc7
+[2022-02-24 17:50:23.931905][    0.794264] loop: module loaded
+[2022-02-24 17:50:23.931905][    0.794984] [SDIO-DETECT][I]sdio_detect_init:sdio_register_driver() ret=0
+[2022-02-24 17:50:23.931905][    0.796230] [WMT-DETECT][E]wmt_detect_probe(255):platform name: connectivity-combo@0
+[2022-02-24 17:50:23.931905][    0.797702] wmt_gpio: gpio init start!
+[2022-02-24 17:50:23.931905][    0.798174] wmt_gpio:set GPIO_COMBO_URXD_PIN to GPIO_PULL_DIS fail, is NULL!
+[2022-02-24 17:50:23.931905][    0.799062] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin UTXD3 already requested by 11005000.serial; cannot claim for connectivity-combo@0
+[2022-02-24 17:50:23.931905][    0.800629] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin-124 (connectivity-combo@0) status -22
+[2022-02-24 17:50:23.931905][    0.801732] mediatek-mt2712-pinctrl 1000b000.pinctrl: could not request pin 124 (UTXD3) from group UTXD3  on device 1000b000.pinctrl
+[2022-02-24 17:50:23.931905][    0.803224] mediatek,connectivity-combo connectivity-combo@0: Error applying setting, reverse things back
+[2022-02-24 17:50:23.931905][    0.804421] wmt_gpio:set GPIO_COMBO_UTXD_PIN to GPIO_PULL_DIS done!
+[2022-02-24 17:50:23.931905][    0.805223] wmt_gpio:set GPIO_COMBO_PMU_EN_PIN to GPIO_PULL_DIS done!
+[2022-02-24 17:50:23.931905][    0.806035] wmt_gpio:set GPIO_COMBO_PMU_EN_PIN out to 0: 0!
+[2022-02-24 17:50:23.931905][    0.806737] wmt_gpio:set GPIO_COMBO_RST_PIN to GPIO_PULL_DIS done!
+[2022-02-24 17:50:24.124382][    0.807515] wmt_gpio:set GPIO_COMBO_RST_PIN out to 0: 0!
+[2022-02-24 17:50:24.126381][    0.808185] wmt_gpio:set GPIO_WIFI_EINT_PIN to GPIO_IN_PULLUP done!
+[2022-02-24 17:50:24.126381][    0.808981] wmt_gpio:set GPIO_PCM_DAICLK_PIN to GPIO_PULL_DIS done!
+[2022-02-24 17:50:24.126381][    0.809770] wmt_gpio:set GPIO_PCM_DAIPCMIN_PIN to GPIO_PULL_DIS done!
+[2022-02-24 17:50:24.126381][    0.810580] wmt_gpio:set GPIO_PCM_DAIPCMOUT_PIN to GPIO_PULL_DIS done!
+[2022-02-24 17:50:24.126381][    0.811401] wmt_gpio:set GPIO_PCM_DAISYNC_PIN to GPIO_PULL_DIS done!
+[2022-02-24 17:50:24.126381][    0.812198] wmt_gpio:it may not be 6632 project, GPIO_CHIP_DEEP_SLEEP_PIN no need config!
+[2022-02-24 17:50:24.126381][    0.813227] wmt_gpio:it may not be 6632 project, GPIO_CHIP_WAKE_UP_PIN no need config!
+[2022-02-24 17:50:24.126381][    0.814218] wmt_gpio: gpio init done! ret(-22)
+[2022-02-24 17:50:24.126381][    0.814926] [WMT-DETECT][I]wmt_detect_driver_init:driver(major 154) installed success
+[2022-02-24 17:50:24.126381][    0.816289] [mt_udi] udipin_base = 0xffffff800922d000.
+[2022-02-24 17:50:24.126381][    0.817070] [mt_udi] UDI Initial.
+[2022-02-24 17:50:24.126381][    0.817537] systracker 10208000.systracker: systracker probe
+[2022-02-24 17:50:24.126381][    0.818253] systracker 10208000.systracker: of_iomap for systracker @ 0xffffff800922f000
+[2022-02-24 17:50:24.126381][    0.819297] systracker 10208000.systracker: systracker_platform_probe_default:86: irq # 239
+[2022-02-24 17:50:24.126381][    0.820445] mt_systracker_drv.systracker_hook_fault is NULL
+[2022-02-24 17:50:24.126381][    0.821152] systracker init done!
+[2022-02-24 17:50:24.127378][    0.822747] Trustonic TEE: mobicore_init: MobiCore mcDrvModuleApi version is 6.10
+[2022-02-24 17:50:24.127378][    0.823840] Trustonic TEE: mobicore_init: No mcd device found in device tree
+[2022-02-24 17:50:24.127378][    0.825298] mali 13040000.mali: Continuing without Mali regulator control
+[2022-02-24 17:50:24.127378][    0.826153] mali 13040000.mali: Continuing without Mali clock control
+[2022-02-24 17:50:24.127378][    0.827191] mali 13040000.mali: mfg ecc support is enable
+[2022-02-24 17:50:24.127378][    0.827990] mali 13040000.mali: GPU identified as 0x0880 r1p0 status 8
+[2022-02-24 17:50:24.127378][    0.828838] mali 13040000.mali: Protected mode not available
+[2022-02-24 17:50:24.127378][    0.833943] mali 13040000.mali: Probed as mali0
+[2022-02-24 17:50:24.127378][    0.834976] arch_timer_probe ioremap success
+[2022-02-24 17:50:24.127378][    0.835515] arch_timer_probe with ret:0
+[2022-02-24 17:50:24.127378][    0.837331] libphy: Fixed MDIO Bus: probed
+[2022-02-24 17:50:24.127378][    0.837853] tun: Universal TUN/TAP device driver, 1.6
+[2022-02-24 17:50:24.127378][    0.838486] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[2022-02-24 17:50:24.127378][    0.839371] sky2: driver version 1.30
+[2022-02-24 17:50:24.130376][    0.840197] usbcore: registered new interface driver asix
+[2022-02-24 17:50:24.130376][    0.840919] usbcore: registered new interface driver ax88179_178a
+[2022-02-24 17:50:24.130376][    0.841705] usbcore: registered new interface driver cdc_ether
+[2022-02-24 17:50:24.130376][    0.842458] usbcore: registered new interface driver dm9601
+[2022-02-24 17:50:24.130376][    0.843176] usbcore: registered new interface driver sr9700
+[2022-02-24 17:50:24.130376][    0.843901] usbcore: registered new interface driver smsc75xx
+[2022-02-24 17:50:24.130376][    0.844646] usbcore: registered new interface driver smsc95xx
+[2022-02-24 17:50:24.130376][    0.845396] usbcore: registered new interface driver net1080
+[2022-02-24 17:50:24.130376][    0.846126] usbcore: registered new interface driver cdc_subset
+[2022-02-24 17:50:24.130376][    0.846887] usbcore: registered new interface driver zaurus
+[2022-02-24 17:50:24.130376][    0.847618] usbcore: registered new interface driver cdc_ncm
+[2022-02-24 17:50:24.130376][    0.848456] usb_overcurrent_probe gpio:508, index:0
+[2022-02-24 17:50:24.130376][    0.849196] usb_overcurrent_probe gpio:304, index:1
+[2022-02-24 17:50:24.130376][    0.850018] [USB_VUP]: [func(vup_gpio_request)]vup_gpio_request dwld_mode_gpio :321, resynca_gpio :503 , vbus_sw_en = 391  drv_vbusa = 315 
+[2022-02-24 17:50:24.130376][    0.850018] 
+[2022-02-24 17:50:24.130376][    0.864903] [USB_VUP]: [func(vup_gpio_request)] gpio321 : [value 1]
+[2022-02-24 17:50:24.130376][    0.864903]   
+[2022-02-24 17:50:24.131375][    0.865896] [USB_VUP]: [func(vup_gpio_request)] gpio503 : [value 1]
+[2022-02-24 17:50:24.131375][    0.865896]   
+[2022-02-24 17:50:24.131375][    0.866888] [USB_VUP]: [func(vup_gpio_request)] gpio391 : [value 1]
+[2022-02-24 17:50:24.131375][    0.866888]   
+[2022-02-24 17:50:24.131375][    0.867882] [USB_VUP]: [func(vup_gpio_request)] gpio315 : [value 1]
+[2022-02-24 17:50:24.131375][    0.867882]   
+[2022-02-24 17:50:24.131375][    0.868874] [USB_VUP]: [func(vup_gpio_request)] gpio504 : [value 1]
+[2022-02-24 17:50:24.131375][    0.868874]   
+[2022-02-24 17:50:24.131375][    0.869886] [USB_VUP]: [func(vup_gpio_request)] gpio317 : [value 1]
+[2022-02-24 17:50:24.131375][    0.869886]   
+[2022-02-24 17:50:24.131375][    0.871286] 11271000.usb supply vusb33 not found, using dummy regulator
+[2022-02-24 17:50:24.131375][    0.872254] mtu3 11271000.usb: uwk - reg:0x510, version:2
+[2022-02-24 17:50:24.131375][    0.873011] mtu3 11271000.usb: dr_mode: 3, is_u3_dr: 0, u3p_dis_msk: 0, drd: manual
+[2022-02-24 17:50:24.131375][    0.874069] mtu3 11271000.usb: irq 276
+[2022-02-24 17:50:24.131375][    0.874546] mtu3 11271000.usb: IP version 0x20150504(U2 IP)
+[2022-02-24 17:50:24.131375][    0.875250] mtu3 11271000.usb: fifosz/epnum: Tx=0x2000/8, Rx=0x2000/8
+[2022-02-24 17:50:24.131375][    0.876066] mtu3 11271000.usb: max_speed: high-speed
+[2022-02-24 17:50:24.131375][    0.876691] mtu3 11271000.usb: dma mask: 36 bits
+[2022-02-24 17:50:24.131375][    0.879107] mtu3 11271000.usb: xHCI platform device register success...
+[2022-02-24 17:50:24.131375][    0.879994] 112c1000.usb supply vusb33 not found, using dummy regulator
+[2022-02-24 17:50:24.132375][    0.880998] mtu3 112c1000.usb: uwk - reg:0x514, version:2
+[2022-02-24 17:50:24.132375][    0.881725] mtu3 112c1000.usb: dr_mode: 3, is_u3_dr: 0, u3p_dis_msk: 0, drd: manual
+[2022-02-24 17:50:24.132375][    0.882775] mtu3 112c1000.usb: irq 277
+[2022-02-24 17:50:24.132375][    0.883252] mtu3 112c1000.usb: IP version 0x20150504(U2 IP)
+[2022-02-24 17:50:24.132375][    0.883956] mtu3 112c1000.usb: fifosz/epnum: Tx=0x2000/8, Rx=0x2000/8
+[2022-02-24 17:50:24.132375][    0.884770] mtu3 112c1000.usb: max_speed: high-speed
+[2022-02-24 17:50:24.132375][    0.885402] mtu3 112c1000.usb: dma mask: 36 bits
+[2022-02-24 17:50:24.132375][    0.887732] mtu3 112c1000.usb: xHCI platform device register success...
+[2022-02-24 17:50:24.132375][    0.889014] 11270000.xhci supply vbus not found, using dummy regulator
+[2022-02-24 17:50:24.132375][    0.889854] 11270000.xhci supply vusb33 not found, using dummy regulator
+[2022-02-24 17:50:24.132375][    0.890804] xhci-mtk 11270000.xhci: xHCI Host Controller
+[2022-02-24 17:50:24.132375][    0.891478] xhci-mtk 11270000.xhci: new USB bus registered, assigned bus number 1
+[2022-02-24 17:50:24.132375][    0.892561] xhci-mtk 11270000.xhci: hcc params 0x01400199 hci version 0x96 quirks 0x00210010
+[2022-02-24 17:50:24.132375][    0.893689] xhci-mtk 11270000.xhci: irq 316, io mem 0x11270000
+[2022-02-24 17:50:24.132375][    0.894765] hub 1-0:1.0: USB hub found
+[2022-02-24 17:50:24.132375][    0.895247] hub 1-0:1.0: 2 ports detected
+[2022-02-24 17:50:24.132375][    0.895892] xhci-mtk 11270000.xhci: xHCI Host Controller
+[2022-02-24 17:50:24.132375][    0.896562] xhci-mtk 11270000.xhci: new USB bus registered, assigned bus number 2
+[2022-02-24 17:50:24.133375][    0.897533] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[2022-02-24 17:50:24.133375][    0.898775] hub 2-0:1.0: USB hub found
+[2022-02-24 17:50:24.133375][    0.899255] hub 2-0:1.0: 1 port detected
+[2022-02-24 17:50:24.133375][    0.899924] 112c0000.xhci supply vbus not found, using dummy regulator
+[2022-02-24 17:50:24.133375][    0.900762] 112c0000.xhci supply vusb33 not found, using dummy regulator
+[2022-02-24 17:50:24.133375][    0.901718] xhci-mtk 112c0000.xhci: xHCI Host Controller
+[2022-02-24 17:50:24.133375][    0.902392] xhci-mtk 112c0000.xhci: new USB bus registered, assigned bus number 3
+[2022-02-24 17:50:24.133375][    0.903451] xhci-mtk 112c0000.xhci: hcc params 0x01400199 hci version 0x96 quirks 0x00210010
+[2022-02-24 17:50:24.133375][    0.904530] xhci-mtk 112c0000.xhci: irq 317, io mem 0x112c0000
+[2022-02-24 17:50:24.133375][    0.905539] hub 3-0:1.0: USB hub found
+[2022-02-24 17:50:24.133375][    0.906022] hub 3-0:1.0: 2 ports detected
+[2022-02-24 17:50:24.133375][    0.906659] xhci-mtk 112c0000.xhci: xHCI Host Controller
+[2022-02-24 17:50:24.133375][    0.907328] xhci-mtk 112c0000.xhci: new USB bus registered, assigned bus number 4
+[2022-02-24 17:50:24.133375][    0.908288] usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+[2022-02-24 17:50:24.133375][    0.909528] hub 4-0:1.0: USB hub found
+[2022-02-24 17:50:24.133375][    0.910011] hub 4-0:1.0: 1 port detected
+[2022-02-24 17:50:24.133375][    0.910706] usbcore: registered new interface driver usb-storage
+[2022-02-24 17:50:24.133375][    0.911737] i2c /dev entries driver
+[2022-02-24 17:50:24.133375][    0.912469] [RGB_KEY]: [func(RGB_KEY_probe)]++++++++++++++++++++
+[2022-02-24 17:50:24.133375][    0.912469] [line:00430](RGB_KEY_probe)
+[2022-02-24 17:50:24.133375][    0.912469] did->name((null))
+[2022-02-24 17:50:24.134376][    0.912469] client->addr(0x66)
+[2022-02-24 17:50:24.134376][    0.912469] -----------------------
+[2022-02-24 17:50:24.134376][    0.912469] 
+[2022-02-24 17:50:24.134376][    0.915111] [RGB_KEY]: [func(RGB_KEY_gpio_request)]RGB_KEY_gpio_request    gpio_rst = 305  
+[2022-02-24 17:50:24.134376][    0.915111] 
+[2022-02-24 17:50:24.134376][    0.916346] [RGB_KEY]: [func(RGB_KEY_power_up)]RGB_KEY_power_up     line = 121    , gpio_rst_value  = 0  
+[2022-02-24 17:50:24.134376][    0.916346] 
+[2022-02-24 17:50:24.134376][    0.944903] [RGB_KEY]: [func(RGB_KEY_power_up)]RGB_KEY_power_up  line = 125    , gpio_rst_value  = 1  
+[2022-02-24 17:50:24.134376][    0.944903] 
+[2022-02-24 17:50:24.134376][    0.948673] ++++++++++++++++++++
+[2022-02-24 17:50:24.134376][    0.948673] [line:00324](ml86640_probe)
+[2022-02-24 17:50:24.134376][    0.948673] did->name((null))
+[2022-02-24 17:50:24.134376][    0.948673] client->addr(0x44)
+[2022-02-24 17:50:24.134376][    0.948673] -----------------------
+[2022-02-24 17:50:24.134376][    0.950766] ml86640_gpio_request   gpio_power = 303   , gpio_rst = 370  
+[2022-02-24 17:50:24.134376][    0.951725] client->dev name is 1-004d
+[2022-02-24 17:50:24.134376][    0.951981] mtk-mipicsi 15004000.camsv: Waiting for larb device /larb@15001000
+[2022-02-24 17:50:24.134376][    0.952041] mtk-mipicsi 15005000.camsv: Waiting for larb device /larb@15001000
+[2022-02-24 17:50:24.134376][    0.952093] mtk-mipicsi 15006000.camsv: Waiting for larb device /larb@15001000
+[2022-02-24 17:50:24.134376][    0.952146] mtk-mipicsi 15007000.camsv: Waiting for larb device /larb@15001000
+[2022-02-24 17:50:24.134376][    0.952197] mtk-mipicsi 15008000.camsv: Waiting for larb device /larb@15001000
+[2022-02-24 17:50:24.134376][    0.952249] mtk-mipicsi 15009000.camsv: Waiting for larb device /larb@15001000
+[2022-02-24 17:50:24.134376][    0.952468] mtk_seninf 10217000.seninf: There are 4 seninf_mux in /seninf@10217000 node
+[2022-02-24 17:50:24.325513][    0.952513] mtk_seninf 10217000.seninf: seninf0 node parse done
+[2022-02-24 17:50:24.327511][    0.952578] mtk_seninf 10218000.seninf: There are 2 seninf_mux in /seninf@10218000 node
+[2022-02-24 17:50:24.327511][    0.952612] mtk_seninf 10218000.seninf: seninf1 node parse done
+[2022-02-24 17:50:24.327511][    0.952844] mtk_vcu 16000000.vcu: vcu iommudom: ffffffc07b3d8160,vcuid:0
+[2022-02-24 17:50:24.327511][    0.953495] mtk-jpeg 19001000.jpegdec: decoder device registered as /dev/video3 (81,0)
+[2022-02-24 17:50:24.327511][    0.959912] [MTK_V4L2] level=0 mtk_vcodec_probe(),358: decoder registered as /dev/video0
+[2022-02-24 17:50:24.327511][    0.964885] ***************vitural_dev_camera okok init success***************
+[2022-02-24 17:50:24.327511][    0.965450] usbcore: registered new interface driver uvcvideo
+[2022-02-24 17:50:24.327511][    0.965450] USB Video Class driver (1.1.1)
+[2022-02-24 17:50:24.327511][    0.971066] [MTK_V4L2] level=0 mtk_vcodec_probe(),402: encoder registered as /dev/video1
+[2022-02-24 17:50:24.327511][    0.982494] mtk-mdp 14001000.rdma: driver registered as /dev/video9
+[2022-02-24 17:50:24.327511][    0.992358] mtk-mdp 14002000.rdma: driver registered as /dev/video10
+[2022-02-24 17:50:24.329510][    1.002255] mtk-mdp 14028000.rdma: driver registered as /dev/video11
+[2022-02-24 17:50:24.329510][    1.012115] mtk-mdp 14033000.rdma: driver registered as /dev/video12
+[2022-02-24 17:50:24.329510][    1.013766] device-mapper: ioctl: 4.35.0-ioctl (2016-06-23) initialised: dm-devel@redhat.com
+[2022-02-24 17:50:24.330509][    1.019422] cpu cpu0: dummy supplies not allowed
+[2022-02-24 17:50:24.330509][    1.020008] failed to get proc regulator for cpu0
+[2022-02-24 17:50:24.330509][    1.020602] cpu cpu0: dummy supplies not allowed
+[2022-02-24 17:50:24.330509][    1.021441] cpu cpu2: dummy supplies not allowed
+[2022-02-24 17:50:24.330509][    1.022022] failed to get proc regulator for cpu2
+[2022-02-24 17:50:24.330509][    1.022615] cpu cpu2: dummy supplies not allowed
+[2022-02-24 17:50:24.330509][    1.023420] cpufreq: cpufreq_online: CPU0: Running at unlisted freq: 1196000 KHz
+[2022-02-24 17:50:24.330509][    1.024465] cpufreq: cpufreq_online: CPU0: Unlisted initial frequency changed to: 793000 KHz
+[2022-02-24 17:50:24.330509][    1.025717] cpufreq: cpufreq_online: CPU2: Running at unlisted freq: 1599000 KHz
+[2022-02-24 17:50:24.330509][    1.026722] cpufreq: cpufreq_online: CPU2: Unlisted initial frequency changed to: 1001000 KHz
+[2022-02-24 17:50:24.330509][    1.029692] sdhci: Secure Digital Host Controller Interface driver
+[2022-02-24 17:50:24.330509][    1.030470] sdhci: Copyright(c) Pierre Ossman
+[2022-02-24 17:50:24.330509][    1.031836] mtk-msdc 11230000.mmc: Got Src Clock Mux
+[2022-02-24 17:50:24.330509][    1.032469] mtk-msdc 11230000.mmc: Got Src Clock PLL
+[2022-02-24 17:50:24.330509][    1.033127] mtk-msdc 11230000.mmc: Got PLL Frequency:399960000
+[2022-02-24 17:50:24.330509][    1.077633] mtk-sdio 11260000.msdc3_sdio: Got Src Clock Mux
+[2022-02-24 17:50:24.330509][    1.078347] mtk-sdio 11260000.msdc3_sdio: Got Src Clock PLL
+[2022-02-24 17:50:24.330509][    1.079051] mtk-sdio 11260000.msdc3_sdio: Got PLL Frequency:180100000
+[2022-02-24 17:50:24.330509][    1.080157] [I]mtk_wcn_cmb_sdio_request_eirq:enter
+[2022-02-24 17:50:24.330509][    1.082112] [I]mtk_wcn_cmb_sdio_request_eirq:exit
+[2022-02-24 17:50:24.330509][    1.105472] mtk-sdio 11260000.msdc3_sdio: sclk: 398451, timing: 0 hz:400000 cfg:0x200719b
+[2022-02-24 17:50:24.330509][    1.124978] msdc_drv_probe: add new sdio_host mmc1, index=1, ret=0
+[2022-02-24 17:50:24.330509][    1.125929] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=00000C00; host->error=0x00000002
+[2022-02-24 17:50:24.330509][    1.127277] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=80000C08; host->error=0x00000002
+[2022-02-24 17:50:24.331509][    1.129866] mtk-msdc 11230000.mmc: phase: [map:ffff7fff] [maxlen:15] [final:5]
+[2022-02-24 17:50:24.331509][    1.130158] mmc0: new HS400 MMC card at address 0001
+[2022-02-24 17:50:24.331509][    1.132125] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=8 arg=000001AA; host->error=0x00000002
+[2022-02-24 17:50:24.331509][    1.133200] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.331509][    1.134023] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.331509][    1.135332] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.331509][    1.136563] mmcblk0: mmc0:0001 AGUF4R 14.6 GiB 
+[2022-02-24 17:50:24.331509][    1.136643] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.331509][    1.136809] mmcblk0boot0: mmc0:0001 AGUF4R partition 1 31.9 MiB
+[2022-02-24 17:50:24.331509][    1.138049] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.331509][    1.139358] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.331509][    1.140028] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.331509][    1.141228] mmcblk0boot1: mmc0:0001 AGUF4R partition 2 31.9 MiB
+[2022-02-24 17:50:24.331509][    1.141347] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.331509][    1.142305] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=1 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.332510][    1.142423] mtk-sdio 11260000.msdc3_sdio: set mclk to 0
+[2022-02-24 17:50:24.332510][    1.145647] mmcblk0rpmb: mmc0:0001 AGUF4R partition 3 4.00 MiB
+[2022-02-24 17:50:24.332510][    1.151748] mtk-sdio 11260000.msdc3_sdio: /proc/sdio is created.
+[2022-02-24 17:50:24.332510][    1.153379] Synopsys Designware Multimedia Card Interface Driver
+[2022-02-24 17:50:24.332510][    1.154469]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16
+[2022-02-24 17:50:24.332510][    1.155543] sdhci-pltfm: SDHCI platform and OF driver helper
+[2022-02-24 17:50:24.332510][    1.156828] ledtrig-cpu: registered to indicate activity on CPUs
+[2022-02-24 17:50:24.332510][    1.157758] hidraw: raw HID events driver (C) Jiri Kosina
+[2022-02-24 17:50:24.332510][    1.159553] usbcore: registered new interface driver usbhid
+[2022-02-24 17:50:24.332510][    1.160261] usbhid: USB HID core driver
+[2022-02-24 17:50:24.332510][    1.161034] mtk-sdio 11260000.msdc3_sdio: sclk: 298178, timing: 0 hz:300000 cfg:0x200979b
+[2022-02-24 17:50:24.332510][    1.162389] ashmem: initialized
+[2022-02-24 17:50:24.332510][    1.163036] logger: created 256K log 'log_main'
+[2022-02-24 17:50:24.332510][    1.163787] logger: created 256K log 'log_events'
+[2022-02-24 17:50:24.332510][    1.164569] logger: created 256K log 'log_radio'
+[2022-02-24 17:50:24.332510][    1.165379] logger: created 256K log 'log_system'
+[2022-02-24 17:50:24.332510][    1.166181] logger: created 256K log 'log_iauto_system'
+[2022-02-24 17:50:24.332510][    1.167024] logger: created 256K log 'log_iauto_events'
+[2022-02-24 17:50:24.332510][    1.167945] logger: created 256K log 'log_iauto_radio'
+[2022-02-24 17:50:24.332510][    1.168782] logger: created 256K log 'log_iauto_main'
+[2022-02-24 17:50:24.332510][    1.172654] mtk-iommu 1020a000.iommu: bound 14027000.larb (ops mtk_smi_larb_component_ops)
+[2022-02-24 17:50:24.333510][    1.173757] mtk-iommu 1020a000.iommu: bound 14030000.larb (ops mtk_smi_larb_component_ops)
+[2022-02-24 17:50:24.333510][    1.174809] mtk-iommu 1020a000.iommu: bound 14032000.larb (ops mtk_smi_larb_component_ops)
+[2022-02-24 17:50:24.333510][    1.177475] mtk-iommu 10205000.iommu: bound 14021000.larb (ops mtk_smi_larb_component_ops)
+[2022-02-24 17:50:24.333510][    1.178532] mtk-iommu 10205000.iommu: bound 16010000.larb (ops mtk_smi_larb_component_ops)
+[2022-02-24 17:50:24.333510][    1.179582] mtk-iommu 10205000.iommu: bound 15001000.larb (ops mtk_smi_larb_component_ops)
+[2022-02-24 17:50:24.333510][    1.180631] mtk-iommu 10205000.iommu: bound 18001000.larb (ops mtk_smi_larb_component_ops)
+[2022-02-24 17:50:24.333510][    1.181519] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=00000C00; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.182050] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=80000C08; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.184139] mtk-iommu 10205000.iommu: bound 18002000.larb (ops mtk_smi_larb_component_ops)
+[2022-02-24 17:50:24.333510][    1.186216] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=8 arg=000001AA; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.188026] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.189787] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.191450] LinuxCrashDump[Debug]: Init the linux crash dump driver
+[2022-02-24 17:50:24.333510][    1.191521] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.192053] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.192586] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.193120] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.193653] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.194186] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.194719] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=1 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.333510][    1.194748] mtk-sdio 11260000.msdc3_sdio: set mclk to 0
+[2022-02-24 17:50:24.333510][    1.201793] LinuxCrashDump[Debug]: Probe the linux crash dump driver
+[2022-02-24 17:50:24.333510][    1.202668] LinuxCrashDumpDebugModule: linux crash dump: phys_addr=0x60000000 size=0x300000 virt_addr=0xffffff8009800000
+[2022-02-24 17:50:24.334509][    1.204301] usbcore: registered new interface driver snd-usb-audio
+[2022-02-24 17:50:24.334509][    1.205852] mt2712_codec_dev_probe set dev name mt2712-codec
+[2022-02-24 17:50:24.334509][    1.213075] mtk-sdio 11260000.msdc3_sdio: sclk: 199225, timing: 0 hz:200000 cfg:0x200e29b
+[2022-02-24 17:50:24.334509][    1.214201] dummy_codec_probe set dev name dummy-codec
+[2022-02-24 17:50:24.468936][    1.216540] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM_multi mapping ok
+[2022-02-24 17:50:24.469935][    1.218010] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCMO0 mapping ok
+[2022-02-24 17:50:24.469935][    1.219300] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCMO1 mapping ok
+[2022-02-24 17:50:24.469935][    1.220871] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCMO2 mapping ok
+[2022-02-24 17:50:24.469935][    1.222196] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCMO3 mapping ok
+[2022-02-24 17:50:24.469935][    1.223573] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM0 mapping ok
+[2022-02-24 17:50:24.469935][    1.224845] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM1 mapping ok
+[2022-02-24 17:50:24.469935][    1.226417] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM2 mapping ok
+[2022-02-24 17:50:24.469935][    1.227691] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM_AWB2 mapping ok
+[2022-02-24 17:50:24.469935][    1.229105] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM_BT_DL mapping ok
+[2022-02-24 17:50:24.469935][    1.230442] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM_BT_UL mapping ok
+[2022-02-24 17:50:24.469935][    1.232048] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM_MOD_DL mapping ok
+[2022-02-24 17:50:24.469935][    1.233411] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM_MOD_UL mapping ok
+[2022-02-24 17:50:24.469935][    1.233903] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=00000C00; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.234697] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=80000C08; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.237263] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM_TDMO0 mapping ok
+[2022-02-24 17:50:24.470933][    1.238595] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM_TDMO1 mapping ok
+[2022-02-24 17:50:24.470933][    1.239426] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=8 arg=000001AA; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.240193] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.240961] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.241837] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.242617] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.243385] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.244153] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.244921] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.245720] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.246502] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=1 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.470933][    1.246530] mtk-sdio 11260000.msdc3_sdio: set mclk to 0
+[2022-02-24 17:50:24.470933][    1.252934] mt2712-d1v1 sound: snd-soc-dummy-dai <-> PCM_TDMIN mapping ok
+[2022-02-24 17:50:24.470933][    1.253832] mt2712-d1v1 sound: virtual_codec-aif0 <-> I2S0 mapping ok
+[2022-02-24 17:50:24.470933][    1.254678] mt2712-d1v1 sound: virtual_codec-aif1 <-> I2S1 mapping ok
+[2022-02-24 17:50:24.470933][    1.255525] mt2712-d1v1 sound: virtual_codec-aif2 <-> I2S2 mapping ok
+[2022-02-24 17:50:24.470933][    1.256369] mt2712-d1v1 sound: snd-soc-dummy-dai <-> I2S3 mapping ok
+[2022-02-24 17:50:24.470933][    1.257211] mt2712-d1v1 sound: bt-sco-pcm-wb <-> MRG BT mapping ok
+[2022-02-24 17:50:24.470933][    1.258022] mt2712-d1v1 sound: snd-soc-dummy-dai <-> MOD PCM mapping ok
+[2022-02-24 17:50:24.470933][    1.258886] mt2712-d1v1 sound: snd-soc-dummy-dai <-> TDMO0 mapping ok
+[2022-02-24 17:50:24.470933][    1.259726] mt2712-d1v1 sound: snd-soc-dummy-dai <-> TDMO1 mapping ok
+[2022-02-24 17:50:24.470933][    1.260566] mt2712-d1v1 sound: virtual_codec-aif3 <-> TDMIN mapping ok
+[2022-02-24 17:50:24.470933][    1.261444] mt2712-d1v1 sound: mt2712-codec-aadc <-> AADC mapping ok
+[2022-02-24 17:50:24.470933][    1.262955] virtual_codec virtual_codec: ASoC: Failed to create Capture debugfs file
+[2022-02-24 17:50:24.471933][    1.263930] virtual_codec virtual_codec: ASoC: Failed to create Playback debugfs file
+[2022-02-24 17:50:24.471933][    1.264928] virtual_codec virtual_codec: ASoC: Failed to create Capture debugfs file
+[2022-02-24 17:50:24.471933][    1.265176] mtk-sdio 11260000.msdc3_sdio: sclk: 175878, timing: 0 hz:176568 cfg:0x201009b
+[2022-02-24 17:50:24.471933][    1.266925] virtual_codec virtual_codec: ASoC: Failed to create Playback debugfs file
+[2022-02-24 17:50:24.471933][    1.267909] virtual_codec virtual_codec: ASoC: Failed to create Capture debugfs file
+[2022-02-24 17:50:24.471933][    1.268906] bt-sco bt_sco_codec: ASoC: Failed to create Playback debugfs file
+[2022-02-24 17:50:24.471933][    1.269805] bt-sco bt_sco_codec: ASoC: Failed to create Capture debugfs file
+[2022-02-24 17:50:24.471933][    1.273257] Netfilter messages via NETLINK v0.30.
+[2022-02-24 17:50:24.471933][    1.274114] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[2022-02-24 17:50:24.471933][    1.274998] ctnetlink v0.93: registering with nfnetlink.
+[2022-02-24 17:50:24.471933][    1.276333] xt_time: kernel timezone is -0000
+[2022-02-24 17:50:24.471933][    1.277029] ipip: IPv4 and MPLS over IPv4 tunneling driver
+[2022-02-24 17:50:24.471933][    1.278446] ip_tables: (C) 2000-2006 Netfilter Core Team
+[2022-02-24 17:50:24.471933][    1.279277] arp_tables: arp_tables: (C) 2002 David S. Miller
+[2022-02-24 17:50:24.471933][    1.280023] Initializing XFRM netlink socket
+[2022-02-24 17:50:24.471933][    1.281166] NET: Registered protocol family 10
+[2022-02-24 17:50:24.471933][    1.282526] mip6: Mobile IPv6
+[2022-02-24 17:50:24.471933][    1.282961] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[2022-02-24 17:50:24.471933][    1.283898] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[2022-02-24 17:50:24.471933][    1.285546] NET: Registered protocol family 17
+[2022-02-24 17:50:24.471933][    1.285837] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=00000C00; host->error=0x00000002
+[2022-02-24 17:50:24.471933][    1.286717] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=80000C08; host->error=0x00000002
+[2022-02-24 17:50:24.471933][    1.288544] NET: Registered protocol family 15
+[2022-02-24 17:50:24.471933][    1.289163] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[2022-02-24 17:50:24.471933][    1.290832] 8021q: 802.1Q VLAN Support v1.8
+[2022-02-24 17:50:24.471933][    1.291402] 9pnet: Installing 9P2000 support
+[2022-02-24 17:50:24.471933][    1.291647] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=8 arg=000001AA; host->error=0x00000002
+[2022-02-24 17:50:24.472932][    1.292498] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.472932][    1.293351] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.472932][    1.294203] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.472932][    1.295056] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=5 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.472932][    1.295909] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.472932][    1.296762] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.472932][    1.297616] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.472932][    1.298468] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=55 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.472932][    1.299321] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=1 arg=00000000; host->error=0x00000002
+[2022-02-24 17:50:24.472932][    1.299341] mtk-sdio 11260000.msdc3_sdio: set mclk to 0
+[2022-02-24 17:50:24.472932][    1.304761] Key type dns_resolver registered
+[2022-02-24 17:50:24.472932][    1.306045] registered taskstats version 1
+[2022-02-24 17:50:24.472932][    1.318122] mtk-mipicsi 15004000.camsv: mipicsi node parse done
+[2022-02-24 17:50:24.472932][    1.318894] mtk-mipicsi 15004000.camsv: camsv get seninf0 info
+[2022-02-24 17:50:24.472932][    1.321397] mediatek-dpi 1401d000.dpi: Found bridge node: /lvds@14026000
+[2022-02-24 17:50:24.472932][    1.321686] mediatek-dpi 14024000.dpi: Found bridge node: /lvds@1402e000
+[2022-02-24 17:50:24.472932][    1.323313] mediatek-drm 14000000.dispsys: bound 1400c000.ovl (ops mtk_disp_ovl_component_ops)
+[2022-02-24 17:50:24.472932][    1.324399] mediatek-drm 14000000.dispsys: bound 1400d000.ovl (ops mtk_disp_ovl_component_ops)
+[2022-02-24 17:50:24.472932][    1.325504] mediatek-drm 14000000.dispsys: bound 1400e000.rdma (ops mtk_disp_rdma_component_ops)
+[2022-02-24 17:50:24.472932][    1.326612] mediatek-drm 14000000.dispsys: bound 1400f000.rdma (ops mtk_disp_rdma_component_ops)
+[2022-02-24 17:50:24.472932][    1.327717] mediatek-drm 14000000.dispsys: bound 14010000.rdma (ops mtk_disp_rdma_component_ops)
+[2022-02-24 17:50:24.472932][    1.328823] mediatek-drm 14000000.dispsys: bound 14013000.color (ops mtk_disp_color_component_ops)
+[2022-02-24 17:50:24.472932][    1.333079] mediatek-drm 14000000.dispsys: bound 14014000.color (ops mtk_disp_color_component_ops)
+[2022-02-24 17:50:24.472932][    1.334290] mediatek-drm 14000000.dispsys: bound 1401d000.dpi (ops mtk_dpi_component_ops)
+[2022-02-24 17:50:24.472932][    1.335351] mediatek-drm 14000000.dispsys: bound 14024000.dpi (ops mtk_dpi_component_ops)
+[2022-02-24 17:50:24.473931][    1.336392] mediatek-drm 14000000.dispsys: bound 14026000.lvds (ops mtk_lvds_component_ops)
+[2022-02-24 17:50:24.473931][    1.337492] mediatek-drm 14000000.dispsys: bound 14029000.color (ops mtk_disp_color_component_ops)
+[2022-02-24 17:50:24.473931][    1.338048] mtk-mipicsi 15004000.camsv: multiple subdevices aren't supported yet!
+[2022-02-24 17:50:24.473931][    1.338065] mtk-mipicsi 15004000.camsv: probe done
+[2022-02-24 17:50:24.473931][    1.338437] mtk-mipicsi 15005000.camsv: mipicsi node parse done
+[2022-02-24 17:50:24.968950][    1.338463] mtk-mipicsi 15005000.camsv: camsv get seninf0 info
+[2022-02-24 17:50:24.970337][    1.341701] mediatek-drm 14000000.dispsys: bound 1402e000.lvds (ops mtk_lvds_component_ops)
+[2022-02-24 17:50:24.970337][    1.342805] [drm] mtk cmdq enabled
+[2022-02-24 17:50:24.970337][    1.343417] [drm] mtk cmdq enabled
+[2022-02-24 17:50:24.970337][    1.343957] mediatek-drm 14000000.dispsys: Not creating crtc 2 because component 11 is disabled or missing
+[2022-02-24 17:50:24.970337][    1.345313] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[2022-02-24 17:50:24.970337][    1.346152] [drm] No driver support for vblank timestamp query.
+[2022-02-24 17:50:24.970337][    1.347179] [drm] np[1] map fail
+[2022-02-24 17:50:24.970337][    1.348047] mtk-mipicsi 15005000.camsv: multiple subdevices aren't supported yet!
+[2022-02-24 17:50:24.970337][    1.349037] mtk-mipicsi 15005000.camsv: probe done
+[2022-02-24 17:50:24.970337][    1.349978] mtk-mipicsi 15006000.camsv: mipicsi node parse done
+[2022-02-24 17:50:24.970337][    1.350746] mtk-mipicsi 15006000.camsv: camsv get seninf0 info
+[2022-02-24 17:50:24.970337][    1.360829] mtk-mipicsi 15006000.camsv: multiple subdevices aren't supported yet!
+[2022-02-24 17:50:24.970337][    1.361820] mtk-mipicsi 15006000.camsv: probe done
+[2022-02-24 17:50:24.970337][    1.362757] mtk-mipicsi 15007000.camsv: mipicsi node parse done
+[2022-02-24 17:50:24.970337][    1.363525] mtk-mipicsi 15007000.camsv: camsv get seninf0 info
+[2022-02-24 17:50:24.970337][    1.373580] mtk-mipicsi 15007000.camsv: multiple subdevices aren't supported yet!
+[2022-02-24 17:50:24.970337][    1.374535] mtk-mipicsi 15007000.camsv: probe done
+[2022-02-24 17:50:24.970337][    1.375468] mtk-mipicsi 15008000.camsv: mipicsi node parse done
+[2022-02-24 17:50:24.970337][    1.376236] mtk-mipicsi 15008000.camsv: camsv get seninf1 info
+[2022-02-24 17:50:24.970337][    1.386418] soc-camera-pdrv soc-camera-pdrv.4: Probing soc-camera-pdrv.4
+[2022-02-24 17:50:24.970337][    1.387267] func : vitural_dev_camera_enum_mbus_code, mbus_code->index = 0
+[2022-02-24 17:50:24.970337][    1.388130] func : vitural_dev_camera_enum_mbus_code, mbus_code->index = 0
+[2022-02-24 17:50:24.971340][    1.389009] func : vitural_dev_camera_g_mbus_config
+[2022-02-24 17:50:24.971340][    1.389626] func : vitural_dev_camera_enum_mbus_code, mbus_code->index = 0
+[2022-02-24 17:50:24.971340][    1.390489] func : vitural_dev_camera_g_mbus_config
+[2022-02-24 17:50:24.971340][    1.391245] func : vitural_dev_camera_get_fmt
+[2022-02-24 17:50:24.971340][    1.391811] mtk-mipicsi 15008000.camsv: multiple subdevices aren't supported yet!
+[2022-02-24 17:50:24.971340][    1.392761] mtk-mipicsi 15008000.camsv: probe done
+[2022-02-24 17:50:24.971340][    1.393721] mtk-mipicsi 15009000.camsv: mipicsi node parse done
+[2022-02-24 17:50:24.971340][    1.394490] mtk-mipicsi 15009000.camsv: camsv get seninf1 info
+[2022-02-24 17:50:24.971340][    1.404689] mtk-mipicsi 15009000.camsv: multiple subdevices aren't supported yet!
+[2022-02-24 17:50:24.971340][    1.405671] mtk-mipicsi 15009000.camsv: probe done
+[2022-02-24 17:50:24.971340][    1.407168] [TOUCH]:(func:mxt_print_parse_result,line:1284)touch_input:Atmel_mXT641T_TouchPanel 
+[2022-02-24 17:50:24.971340][    1.407168] key_input:Atmel_mXT641T_Key 
+[2022-02-24 17:50:24.971340][    1.407168] max_x:1279 max_y:719 
+[2022-02-24 17:50:24.971340][    1.407168] panel_size:9inch reset_gpio_num:316 bootlader_addr:0x27
+[2022-02-24 17:50:24.971340][    1.407168] 
+[2022-02-24 17:50:24.971340][    1.593311] atmel_mxt_ts 2-004b: get panel size(9inch) from according to GPIO
+[2022-02-24 17:50:24.971340][    1.597658] [TOUCH]:(func:mxt_initialize,line:1017)mxt_get_info error = 0!
+[2022-02-24 17:50:24.971340][    1.597658] 
+[2022-02-24 17:50:24.971340][    1.604593] random: fast init done
+[2022-02-24 17:50:24.971340][    1.614751] [TOUCH]:panel size is 9. 
+[2022-02-24 17:50:24.971340][    1.614751] 
+[2022-02-24 17:50:24.971340][    1.615427] [TOUCH]:Downloading New Config...
+[2022-02-24 17:50:24.971340][    1.616638] [TOUCH]:build:0xac config version:(hex)00 information block:(hex)00 00 00 00 00 00 00 checksum:(hex)00 00 00 Time:(hex)0000-00-00
+[2022-02-24 17:50:24.971340][    1.822315] [TOUCH]:build:0xac config version:(hex)00 information block:(hex)00 00 00 00 00 00 00 checksum:(hex)00 00 00 Time:(hex)0000-00-00
+[2022-02-24 17:50:25.469905][    1.950105] [TOUCH]:check checksum success!!
+[2022-02-24 17:50:25.470911][    1.950668] [TOUCH]:checksum is 0xeded43.
+[2022-02-24 17:50:25.470911][    1.950668] 
+[2022-02-24 17:50:25.470911][    1.952855] [TOUCH]:(func:mxt_interrupt,line:751)receive response in 5s, jiffies: 4294892782.
+[2022-02-24 17:50:25.470911][    1.955139] [TOUCH]:(func:touch_data_handle,line:740)Get unhandled report id:255 status:0.
+[2022-02-24 17:50:25.470911][    1.957497] input: Atmel_mXT641T_TouchPanel as /devices/platform/11010000.i2c/i2c-2/2-004b/input/input1
+[2022-02-24 17:50:25.470911][    1.959400] input: automotive_tp as /devices/virtual/input/input0
+[2022-02-24 17:50:25.470911][    1.960888] input: Atmel_mXT641T_Key as /devices/platform/11010000.i2c/i2c-2/2-004b/input/input2
+[2022-02-24 17:50:25.470911][    1.962595] hctosys: unable to open rtc device (rtc0)
+[2022-02-24 17:50:25.470911][    1.963456] sysfs create /sys/kernel/poweroff success!
+[2022-02-24 17:50:25.470911][    1.969038] mmc1_vmmc: disabling
+[2022-02-24 17:50:25.470911][    1.969460] ALSA device list:
+[2022-02-24 17:50:25.470911][    1.969835]   #0: mt2712-d1v1
+[2022-02-24 17:50:25.471915][    1.970660] Freeing unused kernel memory: 640K
+[2022-02-24 17:50:25.471915][    1.978061] (II) init: command 'loglevel' r=0
+[2022-02-24 17:50:25.471915][    1.978625] (II) init: command 'setrlimit' r=0
+[2022-02-24 17:50:25.471915][    1.979210] init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+[2022-02-24 17:50:25.471915][    1.980298] (II) init: command 'write' r=0
+[2022-02-24 17:50:25.471915][    1.980834] (!!) init: starting 'ueventd'
+[2022-02-24 17:50:25.471915][    1.981582] (II) init: command 'start' r=0
+[2022-02-24 17:50:25.471915][    1.982130] (!!) init: executing '/sbin/linux_crash_dump'
+[2022-02-24 17:50:25.471915][    1.995187] (II) linuxcrashdump: main() start Dump
+[2022-02-24 17:50:25.471915][    1.995997] (II) linuxcrashdump: main() /proc/linux_crash_dump  not exist  do nothing ==
+[2022-02-24 17:50:25.471915][    1.998459] (!!) init: executed '/sbin/linux_crash_dump' exited
+[2022-02-24 17:50:25.471915][    1.999215] (II) init: command 'exec' r=0
+[2022-02-24 17:50:25.471915][    1.999996] (II) init: command 'async' r=0
+[2022-02-24 17:50:25.471915][    2.000730] (II) init: command 'async' r=0
+[2022-02-24 17:50:25.471915][    2.021333] EXT4-fs (mmcblk0p8): mounted filesystem with ordered data mode. Opts: (null)
+[2022-02-24 17:50:25.471915][    2.049057] EXT4-fs (mmcblk0p13): recovery complete
+[2022-02-24 17:50:25.471915][    2.050259] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: nodelalloc,journal_checksum
+[2022-02-24 17:50:25.471915][    2.092463] export_store: invalid GPIO 35
+[2022-02-24 17:50:25.471915][    2.189668] EXT4-fs (mmcblk0p14): recovery complete
+[2022-02-24 17:50:25.471915][    2.192948] EXT4-fs (mmcblk0p14): mounted filesystem with ordered data mode. Opts: nodelalloc,journal_checksum
+[2022-02-24 17:50:25.471915][    2.207010] Date: 1970-01-01 GMT-3
+[2022-02-24 17:50:25.471915][    2.207511] [03:00:02.197] ********** Weston Server Start
+[2022-02-24 17:50:25.471915][    2.214806] EXT4-fs (mmcblk0p15): mounted filesystem with ordered data mode. Opts: (null)
+[2022-02-24 17:50:25.471915][    2.282013] [WMT-DETECT][I]wmt_detect_open:open major 154 minor 0 (pid 1999)
+[2022-02-24 17:50:25.472909][    2.282959] [WMT-DETECT][I]wmt_detect_open:WMT platform detect probed!
+[2022-02-24 17:50:25.472909][    2.284563] [WMT-DETECT][I]wmt_detect_unlocked_ioctl:cmd (-2147191034),arg(16)
+[2022-02-24 17:50:25.472909][    2.285611] [WMT-DETECT][I]wmt_detect_ext_chip_pwr_on:++
+[2022-02-24 17:50:25.472909][    2.286308] [WMT-DETECT][D]wmt_detect_dump_pin_conf:[WMT-DETECT]=>dump wmt pin configuration start<=
+[2022-02-24 17:50:25.472909][    2.287498] [WMT-DETECT][I]wmt_detect_dump_pin_conf:LDO(GPIO-1), PMU(GPIO451), PMUV28(GPIO-1)
+[2022-02-24 17:50:25.472909][    2.288618] [WMT-DETECT][I]wmt_detect_dump_pin_conf:RST(GPIO450), BGF_EINT(GPIO-1)
+[2022-02-24 17:50:25.472909][    2.290050] [WMT-DETECT][I]wmt_detect_dump_pin_conf:WIFI_EINT(GPIO453), WIFI_EINT_NUM(164)
+[2022-02-24 17:50:25.472909][    2.291131] [WMT-DETECT][D]wmt_detect_dump_pin_conf:[WMT-PLAT]=>dump wmt pin configuration ends<=
+[2022-02-24 17:50:25.472909][    2.292275] wmt_gpio:set GPIO_COMBO_URXD_PIN to GPIO_PULL_DIS fail, is NULL!
+[2022-02-24 17:50:25.472909][    2.293321] [WMT-DETECT][D]wmt_detect_chip_pwr_on:WMT-DETECT: GPIO_COMBO_URXD_PIN out 0
+[2022-02-24 17:50:25.472909][    2.294425] [WMT-DETECT][I]wmt_detect_chip_pwr_on:wmt_gpio:set GPIO_COMBO_PMU_EN_PIN to GPIO_PULL_DIS done!
+[2022-02-24 17:50:25.472909][    2.295706] [WMT-DETECT][I]wmt_detect_output_low:WMT-DETECT: set GPIO171 to output 0
+[2022-02-24 17:50:25.472909][    2.319891] [WMT-DETECT][I]wmt_detect_chip_pwr_on:wmt_gpio:set GPIO_COMBO_RST_PIN to GPIO_PULL_DIS done!
+[2022-02-24 17:50:25.472909][    2.324129] [WMT-DETECT][I]wmt_detect_output_low:WMT-DETECT: set GPIO170 to output 0
+[2022-02-24 17:50:25.472909]uid=0 gid=0@nutshell:/ # [    2.372281] [MTK_VCU][vcu_init_ipi_handler, 824] VPUD is running, fw version: 0.2.14
+[2022-02-24 17:50:25.971984]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:50:25.971984]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"TOUCH=press,522,267\",\"
+[2022-02-24 17:50:25.971984]\"GESTURE\":[\"TOUCH=press,522,267\",\"                                       <SLEEP=20\",\"TOUCH=hold,522,267\",\"SLE
+[2022-02-24 17:50:25.971984]SLEEP=20\",\"TOUCH=hold,522,267\",\"SLE                                       <EP=20\",\"TOUCH=release,522,267\"],\"Sc
+[2022-02-24 17:50:25.971984]EP=20\",\"TOUCH=release,522,267\"],\"Sc                                       <reenChange\":false}}" > /data/ws_client
+[2022-02-24 17:50:25.971984]reenChange\":false}}" > /data/ws_client                                       <_cmd
+[2022-02-24 17:50:25.971984]
+[2022-02-24 17:50:25.972983]uid=0 gid=0@nutshell:/ # [    2.480884] [MTK_VCU][vcu_init_ipi_handler, 827] MDPD is running, fw version: 0.2.13
+[2022-02-24 17:50:25.972983][    2.560985] [WMT-DETECT][I]wmt_detect_output_high:WMT-DETECT: set GPIO171 to output 1
+[2022-02-24 17:50:25.972983][    2.600993] [WMT-DETECT][I]wmt_detect_output_high:WMT-DETECT: set GPIO170 to output 1
+[2022-02-24 17:50:25.972983][    2.640972] mtk_wcn_cmb_sdio_off (1)
+[2022-02-24 17:50:25.972983][    2.641450] msdc3 -> USR Suspend
+[2022-02-24 17:50:25.972983][    2.642512] mtk_wcn_cmb_sdio_on (1)
+[2022-02-24 17:50:25.972983][    2.642963] msdc3 -> USR Resume
+[2022-02-24 17:50:25.974982][    2.661072] mtk-sdio 11260000.msdc3_sdio: sclk: 398451, timing: 0 hz:400000 cfg:0x200719b
+[2022-02-24 17:50:25.974982][    2.681042] [WMT-DETECT][I]wmt_detect_unlocked_ioctl:cmd (-2147191038),arg(0)
+[2022-02-24 17:50:25.974982][    2.681989] [WMT-DETECT][I]wmt_detect_ext_chip_detect:++
+[2022-02-24 17:50:25.974982][    2.683189] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=00000C00; host->error=0x00000002
+[2022-02-24 17:50:25.974982][    2.684896] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=80000C08; host->error=0x00000002
+[2022-02-24 17:50:25.974982][    2.690160] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=8 arg=000001AA; host->error=0x00000002
+[2022-02-24 17:50:25.974982][    2.693516] mtk-sdio 11260000.msdc3_sdio: set mclk to 0
+[2022-02-24 17:50:25.975982][    2.709005] [WMT-DETECT][D]wmt_detect_read_gpio_input:WMT-DETECT: get GPIO453 val1
+[2022-02-24 17:50:25.975982][    2.709994] [WMT-DETECT][E]wmt_detect_read_ext_cmb_status(267):WMT-DETECT: WIFI_EINT input status:1
+[2022-02-24 17:50:25.975982][    2.711157] [WMT-DETECT][I]wmt_detect_ext_chip_detect:external combo chip detected
+[2022-02-24 17:50:25.975982][    2.713812] mtk-sdio 11260000.msdc3_sdio: sclk: 398451, timing: 0 hz:400000 cfg:0x200719b
+[2022-02-24 17:50:25.975982][    2.734628] mtk-sdio 11260000.msdc3_sdio: sclk: 398451, timing: 6 hz:400000 cfg:0x200719b
+[2022-02-24 17:50:25.975982][    2.735689] mtk-sdio 11260000.msdc3_sdio: sclk: 180100000, timing: 6 hz:200000000 cfg:0x210009b
+[2022-02-24 17:50:25.975982][    2.740680] [AUTOK]CMD 0 	 48 	 OOOOOOOOOOOOOOXXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+[2022-02-24 17:50:25.975982]
+[2022-02-24 17:50:25.975982][    2.765595] [AUTOK]CMD 1 	 39 	 OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOXXXOOOOOOOOOOOOOOOOOOOOOO
+[2022-02-24 17:50:25.975982]
+[2022-02-24 17:50:25.975982][    2.766735] [AUTOK]Analysis Result: 1T = 52
+[2022-02-24 17:50:25.978980] [    2.796174] [AUTOK]DAT 0 	 45 	 OOOOOOOOOOOXXXXXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOXXX
+[2022-02-24 17:50:25.978980]
+[2022-02-24 17:50:25.978980][    2.822212] [AUTOK]DAT 1 	 36 	 OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOXXXXXXOOOOOOOOOOOOOOOOOOOOOO
+[2022-02-24 17:50:25.978980]
+[2022-02-24 17:50:25.979980][    2.823365] [AUTOK]Analysis Result: 1T = 50
+[2022-02-24 17:50:25.979980] [    2.824778] [TOUCH]:(func:touch_data_handle,line:740)Get unhandled report id:1 status:10.
+[2022-02-24 17:50:26.379733][    2.825252] [TOUCH]:(func:touch_data_handle,line:740)Get unhandled report id:255 status:10.
+[2022-02-24 17:50:26.380732][    2.832239] [TOUCH]:(func:touch_data_handle,line:740)Get unhandled report id:1 status:0.
+[2022-02-24 17:50:26.380732][    2.832689] [TOUCH]:(func:touch_data_handle,line:740)Get unhandled report id:255 status:0.
+[2022-02-24 17:50:26.380732][    2.887163] [AUTOK]CMD [EDGE:1 DLY1:14 DLY2:0 ]
+[2022-02-24 17:50:26.380732][    2.887940] [AUTOK]DAT [RDAT_EDGE:0 RD_FIFO_EDGE:1 WD_FIFO_EDGE:1]
+[2022-02-24 17:50:26.380732][    2.889637] [AUTOK]DAT [LATCH_CK:0 DLY1:13 DLY2:0 ]
+[2022-02-24 17:50:26.380732][    2.890348] [AUTOK]DS  [DLY1:0 DLY2:0 DLY3:0]
+[2022-02-24 17:50:26.380732][    2.891237] [AUTOK]=========Time Cost:154 ms========
+[2022-02-24 17:50:26.380732][    2.892413] [03:00:02.887] ********** Weston Server EnterLoop
+[2022-02-24 17:50:26.380732][    2.894994] SDIO MSDC_CFG=0x0210009b
+[2022-02-24 17:50:26.380732][    2.895452] SDIO MSDC_IOCON=0x00000002
+[2022-02-24 17:50:26.380732][    2.895928] SDIO MSDC_PATCH_BIT0=0x403c004e
+[2022-02-24 17:50:26.380732][    2.896458] SDIO MSDC_PATCH_BIT1=0xfffe00c0
+[2022-02-24 17:50:26.381732]/data/autotest_client
+[2022-02-24 17:50:26.381732]
+[2022-02-24 17:50:26.381732][    2.900763] SDIO MSDC_PATCH_BIT2=0x16881803
+[2022-02-24 17:50:26.381732][    2.901763] SDIO MSDC_PAD_TUNE0=0x002e2d00
+[2022-02-24 17:50:26.381732][    2.904253] SDIO MSDC_PAD_TUNE1=0x00000000
+[2022-02-24 17:50:26.381732]ws_client send: {
+[2022-02-24 17:50:26.381732]	"device":	0,
+[2022-02-24 17:50:26.381732]	"type":	10,
+[2022-02-24 17:50:26.381732]	"uuid":	"1234567890",
+[2022-02-24 17:50:26.381732]	"data":	{
+[2022-02-24 17:50:26.381732]		"GESTURE":	["TOUCH=press,522,267", "SLEEP=20", "TOUCH=hold,522,267", "SLEEP=20", "TOUCH=release,522,267"],
+[2022-02-24 17:50:26.381732]		"ScreenChange":	false
+[2022-02-24 17:50:26.381732]	}
+[2022-02-24 17:50:26.381732]}
+[2022-02-24 17:50:26.381732]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:50:26.381732]Unable to connect to 127.0.0.1:11134
+[2022-02-24 17:50:26.381732]Segmentation fault 
+[2022-02-24 17:50:26.381732][    2.922898] mmc1: new ultra high speed SDR104 SDIO card at address 0001
+[2022-02-24 17:50:26.381732][    2.927428] [SDIO-DETECT][I]sdio_detect_probe:vendor(0x37a) device(0x6630) num(0x1)
+[2022-02-24 17:50:26.381732][    2.930208] [SDIO-DETECT][I]hif_sdio_match_chipid_by_dev_id:valid chipId found, index(4), vendor id(0x37a), device id(0x6630), chip id(0x6630)
+[2022-02-24 17:50:26.381732][    2.940795] set current consys chipid (0x6630)
+[2022-02-24 17:50:26.381732]139|uid=0 gid=0@nutshell:/ # [    2.944315] [SDIO-DETECT][I]sdio_detect_probe:autok function detected, func:0xffffffc06edf6000
+[2022-02-24 17:50:26.381732][    2.954483] [SDIO-DETECT][I]sdio_detect_probe:vendor(0x37a) device(0x6630) num(0x2)
+[2022-02-24 17:50:26.381732][    2.959485] [SDIO-DETECT][I]hif_sdio_match_chipid_by_dev_id:valid chipId found, index(4), vendor id(0x37a), device id(0x6630), chip id(0x6630)
+[2022-02-24 17:50:26.381732][    2.972852] set current consys chipid (0x6630)
+[2022-02-24 17:50:26.382731][    3.082122] mediatek-mt8173-lvds-tx 10215800.lvds-phy: mtk_lvds_tx_power_on_signal
+[2022-02-24 17:50:26.382731][    3.084046] mediatek-drm-lvds 14026000.lvds: **********config lvds signal***********
+[2022-02-24 17:50:26.382731][    3.089625] [drm:mtk_wb_add_comp_to_path] *ERROR* mtk_wb_add_comp_to_path W:720 h:1280
+[2022-02-24 17:50:26.382731][    3.125719] [SDIO-DETECT][I]hif_sdio_is_chipid_valid:index:4, chipId:0x6630
+[2022-02-24 17:50:26.382731][    3.126694] [SDIO-DETECT][I]hif_sdio_is_chipid_valid:index:4, chipId:0x6630
+[2022-02-24 17:50:26.382731][    3.127571] [WMT-DETECT][I]wmt_detect_ext_chip_detect:valid external combo chip id (0x6630)
+[2022-02-24 17:50:26.382731][    3.128619] [WMT-DETECT][I]wmt_detect_ext_chip_detect:--
+[2022-02-24 17:50:26.382731][    3.129743] [WMT-DETECT][I]wmt_detect_unlocked_ioctl:cmd (-2147191040),arg(0)
+[2022-02-24 17:50:26.382731][    3.132212] query current consys chipid (0x6630)
+[2022-02-24 17:50:26.382731][    3.134940] [WMT-DETECT][I]wmt_detect_unlocked_ioctl:cmd (-2147191032),arg(26160)
+[2022-02-24 17:50:26.382731][    3.136034] [SDIO-DETECT][I]sdio_detect_do_autok:MTK_HIF_SDIO_AUTOK_ENABLED is not defined
+[2022-02-24 17:50:26.383730][    3.141196] [TC:3136][TT:138] [Opening] Application::initialize start
+[2022-02-24 17:50:26.383730][    3.141196] 
+[2022-02-24 17:50:26.383730][    3.141250] [TC:3136][TT:138] [Opening] Application::loadFeature start
+[2022-02-24 17:50:26.383730][    3.141250] 
+[2022-02-24 17:50:26.383730][    3.145300] ******************  open libAppLaunch APPLAUNCHER_SO begin
+[2022-02-24 17:50:26.383730][    3.145318] [WMT-DETECT][I]wmt_detect_unlocked_ioctl:cmd (-2147191033),arg(547562525472)
+[2022-02-24 17:50:26.383730][    3.145321] [WMT-DETECT][I]wmt_detect_ext_chip_pwr_off:--
+[2022-02-24 17:50:26.383730][    3.145326] mtk_wcn_cmb_sdio_off (1)
+[2022-02-24 17:50:26.383730][    3.145328] msdc3 -> USR Suspend
+[2022-02-24 17:50:26.383730][    3.146212] [SDIO-DETECT][I]sdio_detect_remove:do sdio remove
+[2022-02-24 17:50:26.383730][    3.149390] [SDIO-DETECT][I]sdio_detect_remove:do sdio remove
+[2022-02-24 17:50:26.383730][    3.150227] mmc1: card 0001 removed
+[2022-02-24 17:50:26.383730][    3.152688] mtk-sdio 11260000.msdc3_sdio: set mclk to 0
+[2022-02-24 17:50:26.383730][    3.155781] [WMT-DETECT][I]wmt_detect_output_low:WMT-DETECT: set GPIO170 to output 0
+[2022-02-24 17:50:26.383730][    3.157082] [WMT-DETECT][I]wmt_detect_output_low:WMT-DETECT: set GPIO171 to output 0
+[2022-02-24 17:50:26.383730][    3.158434] [WMT-DETECT][I]wmt_detect_unlocked_ioctl:cmd (1074034433),arg(26160)
+[2022-02-24 17:50:26.383730][    3.159700] set current consys chipid (0x6630)
+[2022-02-24 17:50:26.383730][    3.160497] [WMT-DETECT][I]wmt_detect_unlocked_ioctl:cmd (-2147191035),arg(26160)
+[2022-02-24 17:50:26.383730][    3.161836] [SDIO-DETECT][I]sdio_detect_exit:sdio_unregister_driver
+[2022-02-24 17:50:26.383730][    3.162656] [WMT-DETECT][I]wmt_detect_unlocked_ioctl:cmd (-2147191036),arg(26160)
+[2022-02-24 17:50:26.383730][    3.163607] [WMT-MOD-INIT][I]do_common_drv_init:start to do common driver init, chipid:0x00006630
+[2022-02-24 17:50:26.383730][    3.164730] [HIF-SDIO][I]hif_sdio_init:start!
+[2022-02-24 17:50:26.383730][    3.165658] [WMT-MOD-INIT][D]do_common_drv_init:HIF-SDIO driver init, i_ret:0
+[2022-02-24 17:50:26.385729][    3.166567] [HIF-SDIO][I]WMT_init:WMT Version= Consys WMT Driver - v1.0 DATE=2013/01/20
+[2022-02-24 17:50:26.385729][    3.167908] [STP-PSM] [I]psm_notify_wmt: In ACT state, dont do WAKEUP/HOST_AWAKE again
+[2022-02-24 17:50:26.385729][    3.168982] [STPDbg]stp_dbg_init: stp-dbg init
+[2022-02-24 17:50:26.385729][    3.170416] [STPDbg]stp_dbg_core_dump_init: create coredump object OK!
+[2022-02-24 17:50:26.385729][    3.171272] [STP] mtk_wcn_stp_dbg_enable:[I] STP dbg mode is turned on
+[2022-02-24 17:50:26.385729][    3.172112] [HIF-SDIO][I]WMT_init:driver(major 190) installed
+[2022-02-24 17:50:26.385729][    3.174760] [HIF-SDIO][E]wmt_lib_init(297):no pwr on seq and clk par found
+[2022-02-24 17:50:26.385729][    3.175671] [WMT-CMB-HW][W]mtk_wcn_cmb_hw_init:invalid pPwrSeqTime parameter, use default hw init sequence parameters
+[2022-02-24 17:50:26.385729][    3.177556] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_dmp_seq:combo chip power on sequence time, RTC (100), LDO (100), RST(30), OFF(10), ON(30)
+[2022-02-24 17:50:26.385729][    3.179326] [HIF-SDIO][I]WMT_init:wmt register fb_notifier OK!
+[2022-02-24 17:50:26.386728][    3.180074] [HIF-SDIO][I]WMT_init:success
+[2022-02-24 17:50:26.386728][    3.180584] [WMT-MOD-INIT][D]do_common_drv_init:COMBO COMMON driver init, i_ret:0
+[2022-02-24 17:50:26.386728][    3.186296] [HIF-SDIO][I]wmtd_thread:wmtd thread starts
+[2022-02-24 17:50:26.386728][    3.189236] [WMT-MOD-INIT][D]do_common_drv_init:STP-UART driver init, i_ret:0
+[2022-02-24 17:50:26.386728][    3.206282] [TC:3201][TT:7] [error] file: [217]
+[2022-02-24 17:50:26.386728][    3.206283] 
+[2022-02-24 17:50:26.386728][    3.207403] [WMT-MOD-INIT][D]do_common_drv_init:STP-SDIO driver init, i_ret:0
+[2022-02-24 17:50:26.386728][    3.208306] [WMT-MOD-INIT][I]do_common_drv_init:common driver init finish:0
+[2022-02-24 17:50:26.386728][    3.210974] [BT-MOD-INIT][I]do_bluetooth_drv_init:start to do bluetooth driver init
+[2022-02-24 17:50:26.386728][    3.213419] [MTK-BT] BT_init: mtk_stp_bt_chrdev driver(major 192) installed
+[2022-02-24 17:50:26.386728][    3.214946] [MTK-BT] BT_get_fw_cfg: [BDAddr 00-00-00-00-00-00]
+[2022-02-24 17:50:26.386728][    3.215700] [MTK-BT] BT_get_fw_cfg: [Voice 60 00]
+[2022-02-24 17:50:26.386728][    3.216301] [MTK-BT] BT_get_fw_cfg: [Codec 63 10 00 00]
+[2022-02-24 17:50:26.386728][    3.217003] [MTK-BT] BT_get_fw_cfg: [Radio 04 80 00 06 06 04]
+[2022-02-24 17:50:26.386728][    3.223100] [MTK-BT] BT_get_fw_cfg: [Sleep 03 40 1f 40 1f 00 04]
+[2022-02-24 17:50:26.386728][    3.225254] [MTK-BT] BT_get_fw_cfg: [BtFTR 80 00]
+[2022-02-24 17:50:26.386728][    3.226987] [MTK-BT] BT_get_fw_cfg: [TxPWOffset ff ff 1f]
+[2022-02-24 17:50:26.387727][    3.227830] [MTK-BT] BT_get_fw_cfg: [CoexAdj 00 00 00 00 00 00]
+[2022-02-24 17:50:26.387727][    3.228845] [BT-MOD-INIT][I]do_bluetooth_drv_init:finish bluetooth driver init, i_ret:0
+[2022-02-24 17:50:26.387727][    3.230118] [GPS-MOD-INIT][I]do_gps_drv_init:start to do gps driver init
+[2022-02-24 17:50:26.387727][    3.230182] NHSysCtrl:Set Boot Media :1 to Share memory OK in SetBSPData()
+[2022-02-24 17:50:26.387727][    3.230182] 
+[2022-02-24 17:50:26.387727][    3.230236] NHSysCtrl:Set BMode :0 to Share memory OK in SetBSPData()
+[2022-02-24 17:50:26.387727][    3.230236] 
+[2022-02-24 17:50:26.387727][    3.230281] NHSysCtrl:Set Active Kernel :0 to Share memory OK in SetBSPData()
+[2022-02-24 17:50:26.387727][    3.230281] 
+[2022-02-24 17:50:26.388727][    3.230326] NHSysCtrl:Set Active Ramdisk :0 to Share memory OK in SetBSPData()
+[2022-02-24 17:50:26.388727][    3.230326] 
+[2022-02-24 17:50:26.388727][    3.230541] NHSysCtrl:start timer(NH_SYSCTRL_TIMER_WAIT_PARTITION_MOUNT)
+[2022-02-24 17:50:26.388727][    3.230541] 
+[2022-02-24 17:50:26.388727][    3.240705] mtk_stp_GPS_chrdev driver(major 191) installed.
+[2022-02-24 17:50:26.388727][    3.241715] [GPS-MOD-INIT][I]do_gps_drv_init:finish gps driver init, i_ret:0
+[2022-02-24 17:50:26.388727][    3.242881] [FM-MOD-INIT][I]do_fm_drv_init:start to do fm module init
+[2022-02-24 17:50:26.388727][    3.248644] [FM-MOD-INIT][I]do_fm_drv_init:finish fm module init
+[2022-02-24 17:50:26.388727][    3.250948] [WLAN-MOD-INIT][I]do_wlan_drv_init:start to do wlan module init 0x6630
+[2022-02-24 17:50:26.388727][    3.253708] [MTK-WIFI] WIFI_init: Registered dev num is Major(242) Minot(0)
+[2022-02-24 17:50:26.388727][    3.255518] [MTK-WIFI] WIFI_init: mtk_wmt_wifi_chrdev driver(major 153) installed
+[2022-02-24 17:50:26.388727][    3.258115] [WLAN-MOD-INIT][I]do_wlan_drv_init:WMT-WIFI char dev init, ret:0
+[2022-02-24 17:50:26.388727][    3.259266] [wlan]Reset ALL DBG module log level to DEFAULT![    3.260438] [wlan]createWirelessDevice:(INIT INFO) Create wireless device success
+[2022-02-24 17:50:26.388727][    3.261850] [wlan]glRegisterBus:(INIT INFO) mtk_sdio: MediaTek SDIO WLAN driver
+[2022-02-24 17:50:26.388727][    3.263188] [wlan]glRegisterBus:(INIT INFO) mtk_sdio: Copyright MediaTek Inc.
+[2022-02-24 17:50:26.627989][    3.269817] [WLAN-MOD-INIT][I]do_wlan_drv_init:WLAN-GEN3 driver init, ret:0
+[2022-02-24 17:50:26.627989][    3.271044] [WLAN-MOD-INIT][I]do_wlan_drv_init:finish wlan module init
+[2022-02-24 17:50:26.627989][    3.272260] [WCN-MOD-INIT][D]do_ant_drv_init:ANT is not enabled on chip 6630!
+[2022-02-24 17:50:26.627989][    3.273593] [WMT-DETECT][I]wmt_detect_close:close major 154 minor 0 (pid 1999)
+[2022-02-24 17:50:26.627989][    3.288114] ******************  open libAppLaunch end
+[2022-02-24 17:50:26.627989][    3.333362] [WDK]: kick Ex WDT
+[2022-02-24 17:50:26.627989][    3.333372] [WDK]: kick Ex WDT
+[2022-02-24 17:50:26.627989][    3.333374] [WDK]: kick Ex WDT
+[2022-02-24 17:50:26.627989][    3.333378] [WDK]: kick Ex WDT
+[2022-02-24 17:50:26.627989][    3.337013] NHuCom:SetTimerByCommand(): Started Timer(TIMER_ID_CONECHK)![    3.337841] 
+[2022-02-24 17:50:26.627989][    3.340984] input: virtual keyboard as /devices/virtual/input/input3
+[2022-02-24 17:50:26.627989][    3.343493] input: virtual wire keyboard as /devices/virtual/input/input4
+[2022-02-24 17:50:26.627989][    3.345283] NHuCom:OnReceiveConeChkRes(): Stopped Timer(TIMER_ID_CONECHK)![    3.346131] 
+[2022-02-24 17:50:26.627989][    3.347614] input: virtual remocon keyboard as /devices/virtual/input/input5
+[2022-02-24 17:50:26.627989][    3.348612] NHuCom:EndConeChk(): sysd start OK, Model1(ProjectSeries): 13, Model2(Region): 55, Model3(Product): 01
+[2022-02-24 17:50:26.627989][    3.348613] 
+[2022-02-24 17:50:26.627989][    3.348635] NHuCom:BootStatus: 02, DVDType: 00, TunerType: 10, DTVType: 00, AUXType: 13, TmcRticType: 00
+[2022-02-24 17:50:26.627989][    3.348635] 
+[2022-02-24 17:50:26.628988][    3.348654] NHuCom:uComProjNo: 10, uComCheckSum: 0000, MiconBootInfo: 04, AbnormalStaus: 00
+[2022-02-24 17:50:26.628988][    3.348654] 
+[2022-02-24 17:50:26.628988][    3.348678] NHSysCtrl:StartCom(bResult:1, dwNaviID:135501, dwBootStatus:1)
+[2022-02-24 17:50:26.628988][    3.348678] 
+[2022-02-24 17:50:26.629987][    3.348698] NHSysCtrl:[StartCom] set system time from micon 2022/01/01 12:00:04
+[2022-02-24 17:50:26.629987][    3.348698] 
+[2022-02-24 17:50:26.629987][    3.349200] NHSysCtrl:NHSysCtrlMdlMain::StartCom() -- > CheckStartSeq(4)
+[2022-02-24 17:50:26.629987][    3.349201] 
+[2022-02-24 17:50:26.629987][    3.349221] NHSysCtrl:CheckStartSeq(mediaID:4),m_dwStartStatus:0xb,m_dwMdlMainMode:0x2
+[2022-02-24 17:50:26.629987][    3.349222] 
+[2022-02-24 17:50:26.629987][    3.349274] NHSysCtrl:get bootmode from NHSysInfo OK in CheckStartSeq(mediaID:4),bRet:1,sBootMode.Flg:1,sBootMode.BootMode:0,m_dwStartStatus:0xb
+[2022-02-24 17:50:26.629987][    3.349274] 
+[2022-02-24 17:50:26.629987][    3.350103] NHSysCtrl:SendStartDispValues and start timer, the 1 times 
+[2022-02-24 17:50:26.629987][    3.350110] 
+[2022-02-24 17:50:26.629987][    3.356207] NHuCom:recieve sys uCom version: 30 34 2e 30 39
+[2022-02-24 17:50:26.629987][    3.356207] 
+[2022-02-24 17:50:26.629987][    3.356315] NHuCom:recieve Sys Boot version: 30 30 2e 30 32
+[2022-02-24 17:50:26.629987][    3.356315] 
+[2022-02-24 17:50:26.629987][    3.362266] NHuCom:Receive Amigo program version: 38 30 32 31 30 44 30 31
+[2022-02-24 17:50:26.629987][    3.362266] 
+[2022-02-24 17:50:26.630987][    3.362363] NHuCom:Receive Amigo data version: 38 30 32 31 30 30 44 30
+[2022-02-24 17:50:26.630987][    3.362363] 
+[2022-02-24 17:50:26.630987][    3.366439] NHSysCtrl:NHSysCtrlMdlMain::SetPathEnd(VOID) ---- CheckStartSeq(4)[    3.367395] 
+[2022-02-24 17:50:26.630987][    3.367653] NHSysCtrl:CheckStartSeq(mediaID:4),m_dwStartStatus:0x8b,m_dwMdlMainMode:0x2[    3.368680] 
+[2022-02-24 17:50:26.630987][    3.369083] NHSysCtrl:get bootmode from NHSysInfo OK in CheckStartSeq(mediaID:4),bRet:1,sBootMode.Flg:1,sBootMode.BootMode:0,m_dwStartStatus:0x8b[    3.371036] 
+[2022-02-24 17:50:26.630987][    3.374328] NHSysCtrl:SetProductInfoEnd ==> CheckStartSeq(4)[    3.375054] 
+[2022-02-24 17:50:26.630987][    3.375337] NHSysCtrl:CheckStartSeq(mediaID:4),m_dwStartStatus:0x9b,m_dwMdlMainMode:0x2[    3.376363] 
+[2022-02-24 17:50:26.630987][    3.376735] NHSysCtrl:get bootmode from NHSysInfo OK in CheckStartSeq(mediaID:4),bRet:1,sBootMode.Flg:1,sBootMode.BootMode:0,m_dwStartStatus:0x9b[    3.378459] 
+[2022-02-24 17:50:26.630987][    3.378754] NHSysCtrl:SetInfoFixedDiskEnd ==> CheckStartSeq(4)[    3.379499] 
+[2022-02-24 17:50:26.630987][    3.379741] NHSysCtrl:CheckStartSeq(mediaID:4),m_dwStartStatus:0x19b,m_dwMdlMainMode:0x2[    3.380767] 
+[2022-02-24 17:50:26.630987][    3.381157] NHSysCtrl:get bootmode from NHSysInfo OK in CheckStartSeq(mediaID:4),bRet:1,sBootMode.Flg:1,sBootMode.BootMode:0,m_dwStartStatus:0x19b[    3.382859] 
+[2022-02-24 17:50:26.630987][    3.383127] NHSysCtrl:CheckStartSeq -->first -->CheckUpdateKey(NH_SYSCTRL_CKKEY_MEDIA_ID_USB)[    3.384200] 
+[2022-02-24 17:50:26.630987][    3.385574] NHSysCtrl:CheckStartSeq -->first -->CheckUpdateKey(NH_SYSCTRL_CKKEY_MEDIA_ID_USB2)[    3.386667] 
+[2022-02-24 17:50:26.630987][    3.387854] NHSysCtrl:CheckStartSeq -->then -->CheckUpdateKey(NH_SYSCTRL_CKKEY_MEDIA_ID_SDCARD) [    3.388977] 
+[2022-02-24 17:50:26.630987][    3.390223] NHSysCtrl:CheckStartSeq -->then -->CheckTestModeKey(NH_SYSCTRL_CKKEY_MEDIA_ID_USB) [    3.391330] 
+[2022-02-24 17:50:26.630987][    3.391864] NHSysCtrl:Get  bootmode:0 from NHSysInfo in CheckTestModeKey()[    3.392777] 
+[2022-02-24 17:50:26.630987][    3.393326] NHSysCtrl:CheckStartSeq -->then -->CheckTestModeKey(NH_SYSCTRL_CKKEY_MEDIA_ID_USB2) [    3.394617] 
+[2022-02-24 17:50:26.630987][    3.394961] NHSysCtrl:Get  bootmode:0 from NHSysInfo in CheckTestModeKey()[    3.395836] 
+[2022-02-24 17:50:26.630987][    3.396515] NHSysCtrl:CheckStartSeq -->then -->CheckTestModeKey(NH_SYSCTRL_CKKEY_MEDIA_ID_SDCARD) [    3.397709] 
+[2022-02-24 17:50:26.630987][    3.398114] NHSysCtrl:Get  bootmode:0 from NHSysInfo in CheckTestModeKey()[    3.398991] 
+[2022-02-24 17:50:26.630987][    3.399612] NHSysCtrl:Check TestMode.key in sdcard failed[    3.400367] 
+[2022-02-24 17:50:26.630987][    3.403118] NHuCom:CheckNextVersion() == get all version finished,m_dwVerRcv:0x63, m_bVerRes:0[    3.404187] 
+[2022-02-24 17:50:26.630987][    3.412345] NHSysCtrl:Receive Display Values Response!![    3.413029] 
+[2022-02-24 17:50:26.631986][    3.413337] NHSysCtrl:RcvStartDispValuesResponse and stop timer
+[2022-02-24 17:50:26.631986][    3.414097] 
+[2022-02-24 17:50:26.631986][    3.420536] NHuCom:CheckNextVersion() == get all version finished,m_dwVerRcv:0x63, m_bVerRes:0[    3.421627] 
+[2022-02-24 17:50:26.631986]echo "{\"device\":0,\"type\":10,\"uuid\":\"123456
+[2022-02-24 17:50:26.631986]e\":10,\"uuid\":\"123456                                                      <7890\",\"data\":{\"GESTURE\":[\"TOUCH=press,476,226\",
+[2022-02-24 17:50:26.631986]:{\"GESTURE\":[\"TOUCH=press,476,226\",                                       <\"SLEEP=20\",\"TOUCH=hold,476,226\",\"S
+[2022-02-24 17:50:26.631986]\"SLEEP=20\",\"TOUCH=hold,476,226\",\"S                                       <LEEP=20\",\"TOUCH=release,476,226\"],\"
+[2022-02-24 17:50:26.631986]LEEP=20\",\"TOUCH=release,476,226\"],\"                                       <ScreenChange\":false}}" > /data/ws_clie
+[2022-02-24 17:50:26.631986]ScreenChange\":false}}" > /data/ws_clie                                       <[    3.437966] NHuCom:CheckNextVersion() == get all version finished,m_dwVerRcv:0x63, m_bVerRes:0nt_cmd
+[2022-02-24 17:50:26.631986]
+[2022-02-24 17:50:26.631986][    3.439104] 
+[2022-02-24 17:50:26.631986]uid=0 gid=0@nutshell:/ # [    3.455435] input: BT_Remocon_key as /devices/virtual/input/input6
+[2022-02-24 17:50:26.631986][    3.456282] NHuCom:CheckNextVersion() == get all version finished,m_dwVerRcv:0x63, m_bVerRes:0
+[2022-02-24 17:50:26.631986][    3.456283] 
+[2022-02-24 17:50:26.631986][    3.458505] NHKeyBTRemocon:[run] open all input device success.
+[2022-02-24 17:50:26.631986][    3.463884] [MTK_V4L2] level=0 fops_vcodec_open(),185: encoder capability 0
+[2022-02-24 17:50:26.631986][    3.464799] [MTK_V4L2] level=0 fops_vcodec_open(),195: 18004000.codec encoder [0]
+[2022-02-24 17:50:26.631986][    3.466005] [MTK_V4L2] level=0 fops_vcodec_open(),166: decoder capability 10
+[2022-02-24 17:50:26.631986][    3.466925] [MTK_V4L2] level=0 fops_vcodec_open(),173: 16000000.codec decoder [0]
+[2022-02-24 17:50:26.631986][    3.466972] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:wmt-exp: OPID(3) type(2) start
+[2022-02-24 17:50:26.631986][    3.466979] [STP] mtk_wcn_stp_psm_disable:[W] STP Not Ready, Dont do Sleep/Wakeup
+[2022-02-24 17:50:26.631986][    3.467050] query current consys chipid (0x6630)
+[2022-02-24 17:50:26.631986][    3.467124] [WMT-PLAT][I]wmt_plat_bgf_eint_ctrl:WMT-PLAT:BGF EINT not defined
+[2022-02-24 17:50:26.631986][    3.467131] [WMT-PLAT][I]wmt_plat_cmb_gps_sync_ctrl:WMT-PLAT:GPS SYNC not defined
+[2022-02-24 17:50:26.631986][    3.467149] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin GPIO150 already requested by simple_devices:gpio-configure-node; cannot claim for connectivity-combo@0
+[2022-02-24 17:50:26.631986][    3.467161] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin-150 (connectivity-combo@0) status -22
+[2022-02-24 17:50:26.631986][    3.467183] mediatek-mt2712-pinctrl 1000b000.pinctrl: could not request pin 150 (GPIO150) from group GPIO150  on device 1000b000.pinctrl
+[2022-02-24 17:50:26.632986][    3.467193] mediatek,connectivity-combo connectivity-combo@0: Error applying setting, reverse things back
+[2022-02-24 17:50:26.632986][    3.524407] [HIF-SDIO][I]WMT_open:major 190 minor 0 (pid 2000)
+[2022-02-24 17:50:26.632986][    3.525358] [HIF-SDIO][I]WMT_open:1st call
+[2022-02-24 17:50:26.632986][    3.526047] NHSysCtrl:SetTouchKeyBacklightBrightness(102)
+[2022-02-24 17:50:26.632986][    3.526047] 
+[2022-02-24 17:50:26.632986][    3.527494] [WMT-PLAT][I]wmt_plat_merge_if_flag_ctrl:set gWmtMergeIfSupport to 1
+[2022-02-24 17:50:26.632986][    3.529429] [STP] mtk_wcn_stp_coredump_flag_ctrl:[I] disable coredump function.
+[2022-02-24 17:50:26.632986][    3.530421] [HIF-SDIO][W]WMT_unlocked_ioctl:unknown cmd (-1073176556)
+[2022-02-24 17:50:26.632986][    3.531240] [HIF-SDIO][I]WMT_unlocked_ioctl:luncher set STP mode success!
+[2022-02-24 17:50:26.632986][    3.532179] [WMT-CONF][E]wmt_conf_set_cfg_file(437):WMT config file is set to (mt6630_ant_m1.cfg)
+[2022-02-24 17:50:26.632986][    3.533328] [STP] mtk_wcn_stp_set_wmt_last_close:[I] set wmt_last_close flag (0)
+[2022-02-24 17:50:26.632986][    3.534260] [HIF-SDIO][W]WMT_unlocked_ioctl:unknown cmd (-2147180516)
+[2022-02-24 17:50:26.632986][    3.535417] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:wmt-exp: OPID(3) type(9) start
+[2022-02-24 17:50:27.129792][    3.536558] [WMT-PLAT][W]wmt_plat_wake_lock_ctrl:WMT-PLAT: wakelock status(1), counter(2)
+[2022-02-24 17:50:27.129792]/data/autotest_client
+[2022-02-24 17:50:27.129792]
+[2022-02-24 17:50:27.129792]ws_client send: {
+[2022-02-24 17:50:27.129792]	"device":	0,
+[2022-02-24 17:50:27.129792]	"type":	10,
+[2022-02-24 17:50:27.129792]	"uuid":	"1234567890",
+[2022-02-24 17:50:27.129792]	"data":	{
+[2022-02-24 17:50:27.129792]		"GESTURE":	["TOUCH=press,476,226", "SLEEP=20", "TOUCH=hold,476,226", "SLEEP=20", "TOUCH=release,476,226"],
+[2022-02-24 17:50:27.129792]		"ScreenChange":	false
+[2022-02-24 17:50:27.129792]	}
+[2022-02-24 17:50:27.129792]}
+[2022-02-24 17:50:27.129792]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:50:27.129792]Unable to connect to 127.0.0.1:11134
+[2022-02-24 17:50:27.129792]Segmentation fault 
+[2022-02-24 17:50:27.130793]139|uid=0 gid=0@nutshell:/ # [    3.609669] func : vitural_dev_camera_s_power, on = 1
+[2022-02-24 17:50:27.130793][    3.610373] func : vitural_dev_camera_s_power, on = 1
+[2022-02-24 17:50:27.130793][    3.611086] func : vitural_dev_camera_s_power, on = 0
+[2022-02-24 17:50:27.130793][    3.611754] vitural_dev_camera_set_fmt, sd name = vitural_dev_camera 1-004d
+[2022-02-24 17:50:27.130793][    3.612630] vitural_dev_camera_set_fmt, sd name = vitural_dev_camera 1-004d
+[2022-02-24 17:50:27.130793][    3.613745] [MTK_MIPICSI4] L0 mtk_mipicsi_set_fmt 516: width/height/sizeimage 1280/720/1843200
+[2022-02-24 17:50:27.130793][    3.614826] func : vitural_dev_camera_g_mbus_config
+[2022-02-24 17:50:27.130793][    3.615439] func : vitural_dev_camera_s_mbus_config
+[2022-02-24 17:50:27.130793][    3.615722] [TOUCH]:(func:touch_data_handle,line:740)Get unhandled report id:1 status:10.
+[2022-02-24 17:50:27.130793][    3.617361] func : vitural_dev_camera_s_power, on = 0
+[2022-02-24 17:50:27.130793][    3.618754] [MTK_V4L2] level=0 fops_vcodec_open(),173: 16000000.codec decoder [1]
+[2022-02-24 17:50:27.130793][    3.621205] [MTK_V4L2] level=0 fops_vcodec_release(),196: [1] decoder
+[2022-02-24 17:50:27.130793][    3.622024] [MTK_V4L2] level=0 mtk_vcodec_dec_release(),992: 0
+[2022-02-24 17:50:27.130793][    3.622807] [MTK_V4L2] level=0 fops_vcodec_open(),195: 18004000.codec encoder [1]
+[2022-02-24 17:50:27.130793][    3.624677] [MTK_V4L2] level=0 fops_vcodec_release(),224: [1] encoder
+[2022-02-24 17:50:27.130793][    3.641333] [TOUCH]:(func:touch_data_handle,line:740)Get unhandled report id:1 status:0.
+[2022-02-24 17:50:27.130793][    3.684982] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_on:CMB-HW, rtc clock exported
+[2022-02-24 17:50:27.130793][    3.685030] NHKeyHandler:[run] open all input device success.
+[2022-02-24 17:50:27.130793][    3.788701] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_on:CMB-HW, no need to register BGF_EINT for MT6630 & MT6632 SDIO mode
+[2022-02-24 17:50:27.130793][    3.790107] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_on:CMB-HW, hw_pwr_on finish (0)
+[2022-02-24 17:50:27.130793][    3.791109] (NULL device *): Direct firmware load for mt6630_ant_m1.cfg failed with error -2
+[2022-02-24 17:50:27.130793][    3.792174] (NULL device *): Falling back to user helper
+[2022-02-24 17:50:27.130793][    3.795147] [HIF-SDIO][I]wmt_dev_patch_get:loader firmware mt6630_ant_m1.cfg  ok!!
+[2022-02-24 17:50:27.131790][    3.796599] [WMT-CORE][E]wmt_core_stp_init(761):WMT-CORE: no hif info!
+[2022-02-24 17:50:27.131790][    3.797657] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 762, (DO_ASSERT)
+[2022-02-24 17:50:27.131790][    3.798820] [WMT-CORE][E]opfunc_pwr_on(1148):WMT-CORE: wmt_core_stp_init fail (-1)
+[2022-02-24 17:50:27.131790][    3.799778] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 1149, (DO_ASSERT)
+[2022-02-24 17:50:27.131790][    3.801188] [WMT-CORE][W]wmt_core_stp_deinit:gMtkWmtCtx.p_ic_ops is NULL
+[2022-02-24 17:50:27.131790][    3.802040] [HIF-SDIO][W]wmt_ctrl_stp_conf:CTRL_STP_ENABLE but invalid Handle of WmtStp
+[2022-02-24 17:50:27.131790][    3.803056] [WMT-CORE][E]wmt_core_ctrl(557):WMT-CORE: wmt_core_ctrl failed: id(5), type(1), value(0) iRet:(-1)
+[2022-02-24 17:50:27.131790][    3.804316] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 558, (DO_ASSERT)
+[2022-02-24 17:50:27.131790][    3.805514] [HIF-SDIO][W]wmt_ctrl_stp_conf:CTRL_STP_ENABLE but invalid Handle of WmtStp
+[2022-02-24 17:50:27.131790][    3.806530] [WMT-CORE][E]wmt_core_ctrl(557):WMT-CORE: wmt_core_ctrl failed: id(5), type(0), value(0) iRet:(-1)
+[2022-02-24 17:50:27.131790][    3.807790] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 558, (DO_ASSERT)
+[2022-02-24 17:50:27.131790][    3.808950] [WMT-CORE][W]wmt_core_stp_deinit:end with fail:-2
+[2022-02-24 17:50:27.131790][    3.809682] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_off:CMB-HW, hw_pwr_off start
+[2022-02-24 17:50:27.131790][    3.810562] query current consys chipid (0x6630)
+[2022-02-24 17:50:27.131790][    3.811153] [WMT-PLAT][I]wmt_plat_cmb_gps_sync_ctrl:WMT-PLAT:GPS SYNC not defined
+[2022-02-24 17:50:27.131790][    3.812179] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin GPIO150 already requested by simple_devices:gpio-configure-node; cannot claim for connectivity-combo@0
+[2022-02-24 17:50:27.131790][    3.814176] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin-150 (connectivity-combo@0) status -22
+[2022-02-24 17:50:27.131790][    3.815281] mediatek-mt2712-pinctrl 1000b000.pinctrl: could not request pin 150 (GPIO150) from group GPIO150  on device 1000b000.pinctrl
+[2022-02-24 17:50:27.131790][    3.816828] mediatek,connectivity-combo connectivity-combo@0: Error applying setting, reverse things back
+[2022-02-24 17:50:27.131790][    3.818183] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_off:CMB-HW, hw_pwr_off finish
+[2022-02-24 17:50:27.131790][    3.819071] [WMT-CORE][I]opfunc_pwr_on:WMT-CORE: retry (1)
+[2022-02-24 17:50:27.131790][    3.819767] query current consys chipid (0x6630)
+[2022-02-24 17:50:27.131790][    3.820473] [WMT-PLAT][I]wmt_plat_cmb_gps_sync_ctrl:WMT-PLAT:GPS SYNC not defined
+[2022-02-24 17:50:27.131790][    3.821473] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin GPIO150 already requested by simple_devices:gpio-configure-node; cannot claim for connectivity-combo@0
+[2022-02-24 17:50:27.131790][    3.823279] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin-150 (connectivity-combo@0) status -22
+[2022-02-24 17:50:27.131790][    3.824381] mediatek-mt2712-pinctrl 1000b000.pinctrl: could not request pin 150 (GPIO150) from group GPIO150  on device 1000b000.pinctrl
+[2022-02-24 17:50:27.131790][    3.825948] mediatek,connectivity-combo connectivity-combo@0: Error applying setting, reverse things back
+[2022-02-24 17:50:27.477240][    4.027353] NHSysCtrl:SetTouchKeyBacklightBrightness(128)[    4.028033] 
+[2022-02-24 17:50:27.477240][    4.032984] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_on:CMB-HW, no need to register BGF_EINT for MT6630 & MT6632 SDIO mode
+[2022-02-24 17:50:27.478241][    4.034300] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_on:CMB-HW, hw_pwr_on finish (0)
+[2022-02-24 17:50:27.478241][    4.035244] (NULL device *): Direct firmware load for mt6630_ant_m1.cfg failed with error -2
+[2022-02-24 17:50:27.478241][    4.036362] (NULL device *): Falling back to user helper
+[2022-02-24 17:50:27.478241][    4.046650] [HIF-SDIO][I]wmt_dev_patch_get:loader firmware mt6630_ant_m1.cfg  ok!!
+[2022-02-24 17:50:27.478241][    4.050974] [WMT-CORE][E]wmt_core_stp_init(761):WMT-CORE: no hif info!
+[2022-02-24 17:50:27.478241][    4.052148] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 762, (DO_ASSERT)
+[2022-02-24 17:50:27.478241][    4.053362] [WMT-CORE][E]opfunc_pwr_on(1148):WMT-CORE: wmt_core_stp_init fail (-1)
+[2022-02-24 17:50:27.478241][    4.054512] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 1149, (DO_ASSERT)
+[2022-02-24 17:50:27.478241][    4.055952] [WMT-CORE][W]wmt_core_stp_deinit:gMtkWmtCtx.p_ic_ops is NULL
+[2022-02-24 17:50:27.478241][    4.056796] [HIF-SDIO][W]wmt_ctrl_stp_conf:CTRL_STP_ENABLE but invalid Handle of WmtStp
+[2022-02-24 17:50:27.478241][    4.057991] [WMT-CORE][E]wmt_core_ctrl(557):WMT-CORE: wmt_core_ctrl failed: id(5), type(1), value(0) iRet:(-1)
+[2022-02-24 17:50:27.478241][    4.059387] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 558, (DO_ASSERT)
+[2022-02-24 17:50:27.478241][    4.060525] [HIF-SDIO][W]wmt_ctrl_stp_conf:CTRL_STP_ENABLE but invalid Handle of WmtStp
+[2022-02-24 17:50:27.478241][    4.061553] [WMT-CORE][E]wmt_core_ctrl(557):WMT-CORE: wmt_core_ctrl failed: id(5), type(0), value(0) iRet:(-1)
+[2022-02-24 17:50:27.478241][    4.062809] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 558, (DO_ASSERT)
+[2022-02-24 17:50:27.478241][    4.064662] [WMT-CORE][W]wmt_core_stp_deinit:end with fail:-2
+[2022-02-24 17:50:27.478241][    4.065508] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_off:CMB-HW, hw_pwr_off start
+[2022-02-24 17:50:27.478241][    4.066377] query current consys chipid (0x6630)
+[2022-02-24 17:50:27.478241][    4.066963] [WMT-PLAT][I]wmt_plat_cmb_gps_sync_ctrl:WMT-PLAT:GPS SYNC not defined
+[2022-02-24 17:50:27.478241][    4.067954] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin GPIO150 already requested by simple_devices:gpio-configure-node; cannot claim for connectivity-combo@0
+[2022-02-24 17:50:27.478241][    4.069859] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin-150 (connectivity-combo@0) status -22
+[2022-02-24 17:50:27.479239][    4.071235] mediatek-mt2712-pinctrl 1000b000.pinctrl: could not request pin 150 (GPIO150) from group GPIO150  on device 1000b000.pinctrl
+[2022-02-24 17:50:27.479239][    4.073181] mediatek,connectivity-combo connectivity-combo@0: Error applying setting, reverse things back
+[2022-02-24 17:50:27.479239][    4.075010] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_off:CMB-HW, hw_pwr_off finish
+[2022-02-24 17:50:27.479239][    4.077309] [WMT-CORE][I]opfunc_pwr_on:WMT-CORE: retry (0)
+[2022-02-24 17:50:27.479239][    4.078840] query current consys chipid (0x6630)
+[2022-02-24 17:50:27.479239][    4.079948] [WMT-PLAT][I]wmt_plat_cmb_gps_sync_ctrl:WMT-PLAT:GPS SYNC not defined
+[2022-02-24 17:50:27.479239][    4.081121] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin GPIO150 already requested by simple_devices:gpio-configure-node; cannot claim for connectivity-combo@0
+[2022-02-24 17:50:27.479239][    4.082923] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin-150 (connectivity-combo@0) status -22
+[2022-02-24 17:50:27.479239][    4.084217] mediatek-mt2712-pinctrl 1000b000.pinctrl: could not request pin 150 (GPIO150) from group GPIO150  on device 1000b000.pinctrl
+[2022-02-24 17:50:27.479239][    4.085775] mediatek,connectivity-combo connectivity-combo@0: Error applying setting, reverse things back
+[2022-02-24 17:50:27.479239][    4.144409] [TC:4139][TT:140] [Opening] Application::loadFeature end[    4.145240] 
+[2022-02-24 17:50:27.479239][    4.145690] [TC:4140][TT:141] [Opening] Application::lockHardkey[    4.146431] 
+[2022-02-24 17:50:27.479239][    4.150347] [TC:4145][TT:143] [Opening] Application::initialize end[    4.151141] 
+[2022-02-24 17:50:27.479239][    4.151416] [TC:4146][TT:144] [Opening] Application::execute start[    4.152727] 
+[2022-02-24 17:50:27.479239][    4.153084] [TC:4148][TT:145] [Opening] Application::getProductFeature get Opening_logo[    4.154074] 
+[2022-02-24 17:50:27.479239][    4.154294] [TC:4149][TT:147] [Opening] Application::getProductFeature get Opening_logo toyota[    4.155400] 
+[2022-02-24 17:50:27.479239][    4.155639] [TC:4150][TT:148] [Opening] [now state is ready]
+[2022-02-24 17:50:27.479239][    4.156353] 
+[2022-02-24 17:50:27.479239][    4.195017] [TC:4190][TT:163] [Opening] [Movie file read end]
+[2022-02-24 17:50:27.479239][    4.195764] 
+[2022-02-24 17:50:27.479239][    4.196006] [TC:4191][TT:164] [Opening] [m_player->prepare start]
+[2022-02-24 17:50:27.479239][    4.196797] 
+[2022-02-24 17:50:27.479239][    4.225892] [TC:4220][TT:0] [SystemService] check Env.[    4.226541] 
+[2022-02-24 17:50:27.479239][    4.242585] [TC:4237][TT:1] [SystemService] start setting.[    4.243277] 
+[2022-02-24 17:50:27.479239][    4.292965] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_on:CMB-HW, no need to register BGF_EINT for MT6630 & MT6632 SDIO mode
+[2022-02-24 17:50:27.479239][    4.294324] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_on:CMB-HW, hw_pwr_on finish (0)
+[2022-02-24 17:50:27.480238][    4.295456] (NULL device *): Direct firmware load for mt6630_ant_m1.cfg failed with error -2
+[2022-02-24 17:50:27.480238][    4.296587] (NULL device *): Falling back to user helper
+[2022-02-24 17:50:27.480238][    4.298421] [HIF-SDIO][I]wmt_dev_patch_get:loader firmware mt6630_ant_m1.cfg  ok!!
+[2022-02-24 17:50:27.480238][    4.299774] [WMT-CORE][E]wmt_core_stp_init(761):WMT-CORE: no hif info!
+[2022-02-24 17:50:27.480238][    4.300602] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 762, (DO_ASSERT)
+[2022-02-24 17:50:27.480238][    4.303248] [WMT-CORE][E]opfunc_pwr_on(1148):WMT-CORE: wmt_core_stp_init fail (-1)
+[2022-02-24 17:50:27.480238][    4.304203] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 1149, (DO_ASSERT)
+[2022-02-24 17:50:27.480238][    4.305453] [WMT-CORE][W]wmt_core_stp_deinit:gMtkWmtCtx.p_ic_ops is NULL
+[2022-02-24 17:50:27.480238][    4.307801] [HIF-SDIO][W]wmt_ctrl_stp_conf:CTRL_STP_ENABLE but invalid Handle of WmtStp
+[2022-02-24 17:50:27.480238][    4.309030] [WMT-CORE][E]wmt_core_ctrl(557):WMT-CORE: wmt_core_ctrl failed: id(5), type(1), value(0) iRet:(-1)
+[2022-02-24 17:50:27.480238][    4.310286] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 558, (DO_ASSERT)
+[2022-02-24 17:50:27.480238][    4.311421] [HIF-SDIO][W]wmt_ctrl_stp_conf:CTRL_STP_ENABLE but invalid Handle of WmtStp
+[2022-02-24 17:50:27.480238][    4.312427] [WMT-CORE][E]wmt_core_ctrl(557):WMT-CORE: wmt_core_ctrl failed: id(5), type(0), value(0) iRet:(-1)
+[2022-02-24 17:50:27.480238][    4.313724] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 558, (DO_ASSERT)
+[2022-02-24 17:50:27.480238][    4.314987] [WMT-CORE][W]wmt_core_stp_deinit:end with fail:-2
+[2022-02-24 17:50:27.480238][    4.315859] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_off:CMB-HW, hw_pwr_off start
+[2022-02-24 17:50:27.480238][    4.316755] query current consys chipid (0x6630)
+[2022-02-24 17:50:27.480238][    4.317394] [WMT-PLAT][I]wmt_plat_cmb_gps_sync_ctrl:WMT-PLAT:GPS SYNC not defined
+[2022-02-24 17:50:27.480238][    4.318383] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin GPIO150 already requested by simple_devices:gpio-configure-node; cannot claim for connectivity-combo@0
+[2022-02-24 17:50:27.480238][    4.320182] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin-150 (connectivity-combo@0) status -22
+[2022-02-24 17:50:27.480238][    4.321293] mediatek-mt2712-pinctrl 1000b000.pinctrl: could not request pin 150 (GPIO150) from group GPIO150  on device 1000b000.pinctrl
+[2022-02-24 17:50:27.480238][    4.323674] mediatek,connectivity-combo connectivity-combo@0: Error applying setting, reverse things back
+[2022-02-24 17:50:27.480238][    4.325064] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_off:CMB-HW, hw_pwr_off finish
+[2022-02-24 17:50:27.480238][    4.326172] [WMT-CORE][E]opfunc_func_on(1260):func(2) pwr_on fail(-2)
+[2022-02-24 17:50:27.480238][    4.326983] drivers/misc/mediatek/connectivity/common/common_main/core/wmt_core.c, 1261, (DO_ASSERT)
+[2022-02-24 17:50:27.480238][    4.328132] [HIF-SDIO][W]wmtd_thread:opid (0x3) failed, iRet(-3)
+[2022-02-24 17:50:27.481237][    4.328948] [HIF-SDIO][W]wmt_lib_put_act_op:opId(3) result:-3
+[2022-02-24 17:50:27.481237][    4.329675] [STP] mtk_wcn_stp_psm_enable:[W] STP Not Ready, Dont do Sleep/Wakeup
+[2022-02-24 17:50:27.481237][    4.330605] [HIF-SDIO][E]wmt_lib_ps_enable(564):PSM enable failed!
+[2022-02-24 17:50:27.481237][    4.331395] [STP] mtk_wcn_stp_psm_disable:[W] STP Not Ready, Dont do Sleep/Wakeup
+[2022-02-24 17:50:27.481237][    4.332651] [WMT-PLAT][W]wmt_plat_wake_lock_ctrl:WMT-PLAT: wakelock status(1), counter(1)
+[2022-02-24 17:50:27.481237][    4.333850] [HIF-SDIO][W]mtk_wcn_wmt_func_ctrl:OPID(3) type(2) fail
+[2022-02-24 17:50:27.481237][    4.335281] WMT turn on GPS fail!
+[2022-02-24 17:50:27.481237][    4.336214] [WMT-CORE][E]opfunc_hif_conf(1098):WMT-CORE: WMT HIF info added
+[2022-02-24 17:50:27.481237][    4.338352] [HIF-SDIO][E]wmtd_thread(1072):put free queue fail
+[2022-02-24 17:50:27.481237][    4.340873] query current consys chipid (0x6630)
+[2022-02-24 17:50:27.481237][    4.341898] [WMT-PLAT][I]wmt_plat_cmb_gps_sync_ctrl:WMT-PLAT:GPS SYNC not defined
+[2022-02-24 17:50:27.481237][    4.343989] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin GPIO150 already requested by simple_devices:gpio-configure-node; cannot claim for connectivity-combo@0
+[2022-02-24 17:50:27.481237][    4.346139] mediatek-mt2712-pinctrl 1000b000.pinctrl: pin-150 (connectivity-combo@0) status -22
+[2022-02-24 17:50:27.481237][    4.347929] mediatek-mt2712-pinctrl 1000b000.pinctrl: could not request pin 150 (GPIO150) from group GPIO150  on device 1000b000.pinctrl
+[2022-02-24 17:50:27.481237][    4.350336] mediatek,connectivity-combo connectivity-combo@0: Error applying setting, reverse things back
+[2022-02-24 17:50:27.481237][    4.383241] NHSysCtrl:SetBacklightBrightness(179)[    4.383819] 
+[2022-02-24 17:50:27.715527][    4.387675] NHSysCtrl:SetScreenContrast(128)[    4.388197] 
+[2022-02-24 17:50:27.715527][    4.445350] func : vitural_dev_camera_s_power, on = 1
+[2022-02-24 17:50:27.715527][    4.446008] func : vitural_dev_camera_s_power, on = 1
+[2022-02-24 17:50:27.715527][    4.446740] func : vitural_dev_camera_s_power, on = 0
+[2022-02-24 17:50:27.715527][    4.447407] vitural_dev_camera_set_fmt, sd name = vitural_dev_camera 1-004d
+[2022-02-24 17:50:27.715527][    4.448282] vitural_dev_camera_set_fmt, sd name = vitural_dev_camera 1-004d
+[2022-02-24 17:50:27.715527][    4.449225] [MTK_MIPICSI4] L0 mtk_mipicsi_set_fmt 516: width/height/sizeimage 1280/720/1843200
+[2022-02-24 17:50:27.715527][    4.450306] func : vitural_dev_camera_g_mbus_config
+[2022-02-24 17:50:27.716526][    4.450920] func : vitural_dev_camera_s_mbus_config
+[2022-02-24 17:50:27.716526][    4.451656] func : vitural_dev_camera_s_power, on = 0
+[2022-02-24 17:50:27.716526][    4.453010] [MTK_V4L2] level=0 fops_vcodec_open(),173: 16000000.codec decoder [2]
+[2022-02-24 17:50:27.716526][    4.454684] [MTK_V4L2] level=0 fops_vcodec_release(),196: [2] decoder
+[2022-02-24 17:50:27.716526][    4.455497] [MTK_V4L2] level=0 mtk_vcodec_dec_release(),992: 0
+[2022-02-24 17:50:27.716526][    4.456499] [MTK_V4L2] level=0 fops_vcodec_open(),195: 18004000.codec encoder [2]
+[2022-02-24 17:50:27.716526][    4.458493] [MTK_V4L2] level=0 fops_vcodec_release(),224: [2] encoder
+[2022-02-24 17:50:27.716526][    4.490270] [TC:4485][TT:412] [Opening] NMOpeningGstPlayerImpl setState 3, return %d
+[2022-02-24 17:50:27.716526] [3][    4.491294] 
+[2022-02-24 17:50:27.716526][    4.491516] [TC:4486][TT:413] [Opening] NMOpeningGstPlayerImpl setState 6, return %d
+[2022-02-24 17:50:27.716526] [2][    4.492532] 
+[2022-02-24 17:50:27.716526][    4.492796] [TC:4487][TT:415] [Opening] [m_player->prepare end]
+[2022-02-24 17:50:27.716526][    4.493623] 
+[2022-02-24 17:50:27.716526][    4.494060] [TC:4489][TT:416] [Opening] [set opening_movie_ready]
+[2022-02-24 17:50:27.716526][    4.494828] 
+[2022-02-24 17:50:27.716526][    4.495027] [TC:4490][TT:417] [Opening] [Opening Policy] OpeningMoviePlayer set NCSP_SYSTEM[    4.496054] 
+[2022-02-24 17:50:27.716526][    4.496502] [TC:4491][TT:418] [Opening] [type is ErrorCode_Success]
+[2022-02-24 17:50:27.716526][    4.497313] 
+[2022-02-24 17:50:27.716526][    4.497843] [TC:4492][TT:419] [Opening] NMOpeningGstPlayerImpl setState 3, return %d
+[2022-02-24 17:50:27.716526] [2][    4.498863] 
+[2022-02-24 17:50:27.716526][    4.509156] [TC:4504][TT:421] [Opening] NMOpeningGstPlayerImpl setState 5, result is: %d
+[2022-02-24 17:50:27.716526] [2][    4.510219] 
+[2022-02-24 17:50:27.717528][    4.520521] [TC:4515][TT:422] [Opening] NMOpeningGstPlayerImpl setState 5, result is: %d
+[2022-02-24 17:50:27.717528] [2][    4.521618] 
+[2022-02-24 17:50:27.717528][    4.521905] [MTK_V4L2] level=0 fops_vcodec_open(),173: 16000000.codec decoder [3]
+[2022-02-24 17:50:27.717528][    4.526959] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=64, height=64, after resize width=64, height=64, sizeimage=4096
+[2022-02-24 17:50:27.717528][    4.528587] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.717528][    4.529084] NHSysCtrl:SetTouchKeyBacklightBrightness(179)
+[2022-02-24 17:50:27.717528][    4.529085] 
+[2022-02-24 17:50:27.717528][    4.531280] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.717528][    4.531942] [TC:4527][TT:423] [Opening] NMOpeningGstPlayerImpl setState 5, result is: %d
+[2022-02-24 17:50:27.717528][    4.531942]  [2]
+[2022-02-24 17:50:27.717528][    4.531942] 
+[2022-02-24 17:50:27.717528][    4.534519] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.717528][    4.536253] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.717528][    4.538168] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.717528][    4.539870] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.717528][    4.541613] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.717528][    4.542073] [TC:4537][TT:424] [Opening] NMOpeningGstPlayerImpl setState 5, result is: %d
+[2022-02-24 17:50:27.717528][    4.542073]  [2]
+[2022-02-24 17:50:27.718530][    4.542073] 
+[2022-02-24 17:50:27.718530][    4.544798] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.718530][    4.546544] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.718530][    4.548250] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.718530][    4.549983] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.718530][    4.551692] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.718530][    4.553603] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.718530][    4.555313] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.718530][    4.556944] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_on:CMB-HW, no need to register BGF_EINT for MT6630 & MT6632 SDIO mode
+[2022-02-24 17:50:27.718530][    4.556949] [WMT-CMB-HW][I]mtk_wcn_cmb_hw_pwr_on:CMB-HW, hw_pwr_on finish (0)
+[2022-02-24 17:50:27.718530][    4.556995] (NULL device *): Direct firmware load for mt6630_ant_m1.cfg failed with error -2
+[2022-02-24 17:50:27.718530][    4.556997] (NULL device *): Falling back to user helper
+[2022-02-24 17:50:27.718530][    4.558932] [HIF-SDIO][I]wmt_dev_patch_get:loader firmware mt6630_ant_m1.cfg  ok!!
+[2022-02-24 17:50:27.718530][    4.559284] mtk_wcn_cmb_sdio_off (2)
+[2022-02-24 17:50:27.718530][    4.559293] mtk_wcn_cmb_sdio_on (2)
+[2022-02-24 17:50:27.718530][    4.559296] msdc3 -> USR Resume
+[2022-02-24 17:50:27.718530][    4.559657] mtk-sdio 11260000.msdc3_sdio: set mclk to 0
+[2022-02-24 17:50:27.718530][    4.565672] [MTK_V4L2] level=0 fops_vcodec_open(),173: 16000000.codec decoder [4]
+[2022-02-24 17:50:27.718530][    4.566653] [MTK_V4L2] level=0 fops_vcodec_release(),196: [4] decoder
+[2022-02-24 17:50:27.718530][    4.567475] [MTK_V4L2] level=0 mtk_vcodec_dec_release(),992: 0
+[2022-02-24 17:50:27.718530][    4.568311] [MTK_V4L2] level=0 fops_vcodec_open(),195: 18004000.codec encoder [3]
+[2022-02-24 17:50:27.718530][    4.569454] [MTK_V4L2] level=0 fops_vcodec_release(),224: [3] encoder
+[2022-02-24 17:50:27.718530][    4.579432] mtk-sdio 11260000.msdc3_sdio: sclk: 398451, timing: 0 hz:400000 cfg:0x200719b
+[2022-02-24 17:50:27.718530][    4.586991] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=64, height=64, after resize width=64, height=64, sizeimage=4096
+[2022-02-24 17:50:27.719527][    4.588558] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.590274] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.591949] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.593735] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.595467] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.597161] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.598836] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.600517] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.602219] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.602952] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=00000C00; host->error=0x00000002
+[2022-02-24 17:50:27.719527][    4.603377] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=52 arg=80000C08; host->error=0x00000002
+[2022-02-24 17:50:27.719527][    4.606935] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.607274] mtk-sdio 11260000.msdc3_sdio: msdc_track_cmd_data: cmd=8 arg=000001AA; host->error=0x00000002
+[2022-02-24 17:50:27.719527][    4.609259] mtk-sdio 11260000.msdc3_sdio: set mclk to 0
+[2022-02-24 17:50:27.719527][    4.610477] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:27.719527][    4.612948] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:28.216485][    4.614731] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:28.216485][    4.616406] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=2048, height=1920, after resize width=2048, height=1920, sizeimage=3932160
+[2022-02-24 17:50:28.216485][    4.618323] [MTK_V4L2] level=0 vidioc_try_fmt(),1287: before resize width=1280, height=736, after resize width=1280, height=768, sizeimage=983040
+[2022-02-24 17:50:28.216485][    4.625016] mtk-sdio 11260000.msdc3_sdio: sclk: 398451, timing: 0 hz:400000 cfg:0x200719b
+[2022-02-24 17:50:28.216485][    4.664843] mtk-sdio 11260000.msdc3_sdio: sclk: 398451, timing: 6 hz:400000 cfg:0x200719b
+[2022-02-24 17:50:28.216485][    4.666090] mtk-sdio 11260000.msdc3_sdio: sclk: 180100000, timing: 6 hz:200000000 cfg:0x210009b
+[2022-02-24 17:50:28.216485][    4.669664] SDIO MSDC_CFG=0x0210009b
+[2022-02-24 17:50:28.217484][    4.674301] SDIO MSDC_IOCON=0x00000002
+[2022-02-24 17:50:28.217484][    4.674790] SDIO MSDC_PATCH_BIT0=0x403c004e
+[2022-02-24 17:50:28.217484][    4.675321] SDIO MSDC_PATCH_BIT1=0xfffe00c0
+[2022-02-24 17:50:28.217484][    4.675852] SDIO MSDC_PATCH_BIT2=0x16881803
+[2022-02-24 17:50:28.217484][    4.676382] SDIO MSDC_PAD_TUNE0=0x002e2d00
+[2022-02-24 17:50:28.217484][    4.676935] SDIO MSDC_PAD_TUNE1=0x00000000
+[2022-02-24 17:50:28.217484][    4.684858] [tuning] mtk_mdp_vpu_handle_tuning_ack[237] map va[0xffffffc070c001a8] pa[0xb0c001a8]
+[2022-02-24 17:50:28.217484][    4.698922] mmc1: new ultra high speed SDR104 SDIO card at address 0001
+[2022-02-24 17:50:28.217484][    4.699293] Opening: 34 output lines suppressed due to ratelimiting
+[2022-02-24 17:50:28.217484][    4.703308] [HIF-SDIO][I]hif_sdio_probe:start!
+[2022-02-24 17:50:28.217484][    4.703894] [HIF-SDIO][I]hif_sdio_probe:vendor(0x37a) device(0x6630) num(0x1)
+[2022-02-24 17:50:28.217484][    4.704851] [HIF-SDIO][I]hif_sdio_probe:card->info[0]: 6630
+[2022-02-24 17:50:28.217484][    4.705600] [HIF-SDIO][I]hif_sdio_probe:card->info[1]: Combo
+[2022-02-24 17:50:28.217484][    4.706358] [HIF-SDIO][I]hif_sdio_probe:card->info[2]: 
+[2022-02-24 17:50:28.217484][    4.707094] [HIF-SDIO][I]hif_sdio_probe:card->info[3]: 
+[2022-02-24 17:50:28.217484][    4.710500] [HIF-SDIO][I]hif_sdio_probe:cur_blksize(512) max(512), host max blk_size(2048) blk_count(1024)
+[2022-02-24 17:50:28.217484][    4.712622] [HIF-SDIO][I]hif_sdio_probe:start!
+[2022-02-24 17:50:28.217484][    4.713267] [HIF-SDIO][I]hif_sdio_probe:vendor(0x37a) device(0x6630) num(0x2)
+[2022-02-24 17:50:28.217484][    4.714172] [HIF-SDIO][I]hif_sdio_probe:card->info[0]: 6630
+[2022-02-24 17:50:28.217484][    4.716485] [HIF-SDIO][I]hif_sdio_probe:card->info[1]: Combo
+[2022-02-24 17:50:28.217484][    4.717243] [HIF-SDIO][I]hif_sdio_probe:card->info[2]: 
+[2022-02-24 17:50:28.217484][    4.717910] [HIF-SDIO][I]hif_sdio_probe:card->info[3]: 
+[2022-02-24 17:50:28.217484][    4.718827] [HIF-SDIO][I]hif_sdio_probe:cur_blksize(512) max(512), host max blk_size(2048) blk_count(1024)
+[2022-02-24 17:50:28.218484][    4.762950] [HIF-SDIO][I]hif_sdio_stp_on:hif_sdio_stp_on, start!
+[2022-02-24 17:50:28.218484][    4.770567] [HIF-SDIO][I]hif_sdio_stp_on:sdio_claim_irq() for stp ok
+[2022-02-24 17:50:28.218484][    4.771635] [STP SDIO][I]stp_sdio_probe:request FW-Own back done
+[2022-02-24 17:50:28.218484][    4.772514] [STP SDIO][I]stp_sdio_ownback_poll:Driver own is polled!(10)
+[2022-02-24 17:50:28.218484][    4.776779] [HIF-SDIO][I]hif_sdio_stp_on:hif_sdio_stp_on, ok! set act_flag(0)
+[2022-02-24 17:50:28.218484][    4.777756] [STP SDIO][I]stp_sdio_tx_rx_handling:stp_tx_rx_thread start running...
+[2022-02-24 17:50:28.218484][    4.778707] [STP SDIO][I]stp_sdio_tx_rx_handling:stp_tx_rx_thread runns
+[2022-02-24 17:50:28.218484][    4.784809] [WMT-CORE][I]wmt_core_hw_check:get hwcode (chip id) (0x6630)
+[2022-02-24 17:50:28.218484][    4.793952] [WMT-IC][I]mt6630_ver_check:MT6630: read (hw version)(0x8a12), (fw version version)(0x8a11)
+[2022-02-24 17:50:28.218484][    4.795181] [WMT-IC][W]mt6630_find_wmt_ic_info:find no ic info for (0x8a12) by full match!try major num match!
+[2022-02-24 17:50:28.218484][    4.796438] [WMT-IC][I]mt6630_find_wmt_ic_info:MT6630: found ic info for hw_ver(0x8a12) by major num! index:3
+[2022-02-24 17:50:28.218484][    4.797756] [WMT-IC][I]mt6630_ver_check:MT6630: wmt ic info: MT6630.E4 (0x8b11, WMTHWVER:3, patch_ext:_e2)
+[2022-02-24 17:50:28.218484][    4.800504] [WMT-IC][I]mt6630_sw_init:patch total num = [2] ret(0)
+[2022-02-24 17:50:28.218484][    4.801853] [WMT-IC][I]mt6630_patch_dwn:the 1 time valid patch found: (mt6630_patch_e3_0_hdr.bin)
+[2022-02-24 17:50:28.218484][    4.803531] (NULL device *): Direct firmware load for mt6630_patch_e3_0_hdr.bin failed with error -2
+[2022-02-24 17:50:28.218484][    4.805461] (NULL device *): Falling back to user helper
+[2022-02-24 17:50:28.218484][    4.809758] [HIF-SDIO][I]wmt_dev_patch_get:loader firmware mt6630_patch_e3_0_hdr.bin  ok!!
+[2022-02-24 17:50:28.218484][    4.810843] [WMT-IC][I]mt6630_patch_dwn:Combo Patch:Build Time(20210106143638a)Hw(0x8a11) Sw(0x8a11) Ph(0x0008)Platform(AUDI)
+[2022-02-24 17:50:28.218484][    4.816230] [WMT-IC][I]mt6630_patch_dwn:4 bytes address command:0x00,0x00,0x08,0x00[    4.903837] [TC:4898][TT:430] [SystemService] boot completed.
+[2022-02-24 17:50:28.218484][    4.904646] 
+[2022-02-24 17:50:28.218484][    4.906871] [TC:4901][TT:0] [SystemService] notify AplReady.[    4.907570] 
+[2022-02-24 17:50:28.218484][    4.926458] NHSysCtrl:SetBacklightBrightness(179)[    4.929142] 
+[2022-02-24 17:50:28.218484][    4.943244] NHSysCtrl:SetScreenContrast(128)[    4.943967] 
+[2022-02-24 17:50:28.218484][    5.004993] [MTK-BT] BT_open: major 192 minor 0 (pid 2459)
+[2022-02-24 17:50:28.218484][    5.005734] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:wmt-exp: OPID(3) type(0) start
+[2022-02-24 17:50:28.218484][    5.006658] [WMT-PLAT][W]wmt_plat_wake_lock_ctrl:WMT-PLAT: wakelock status(1), counter(2)
+[2022-02-24 17:50:28.219485][    5.029966] NHSysCtrl:SetTouchKeyBacklightBrightness(230)[    5.030688] 
+[2022-02-24 17:50:28.219485][    5.121223] set status_control 0
+[2022-02-24 17:50:28.219485][    5.125364] set_status_control failed -6!
+[2022-02-24 17:50:28.219485][    5.125876] status_control_store failed -6!
+[2022-02-24 17:50:28.716506][    5.154410] [TC:5149][TT:0] [SystemService] notify service ready [mediamiracast][    5.155325] 
+[2022-02-24 17:50:28.716506][    5.267237] NHSysCtrl:SetLCDRGBStyle(Style : 1 isDay: 1)[    5.274869] 
+[2022-02-24 17:50:28.716506][    5.275160] [RGB_KEY]: [func(RGB_KEY_open)]open
+[2022-02-24 17:50:28.716506][    5.280277] [RGB_KEY]: [func(RGB_KEY_write)]write
+[2022-02-24 17:50:28.716506][    5.287227] [RGB_KEY]: [func(RGB_KEY_write)]write RGB0 
+[2022-02-24 17:50:28.716506][    5.287227] 
+[2022-02-24 17:50:28.716506][    5.293669] [RGB_KEY]: [func(RGB_KEY_write)]write
+[2022-02-24 17:50:28.716506][    5.296635] [RGB_KEY]: [func(RGB_KEY_write)]write RGB1 
+[2022-02-24 17:50:28.716506][    5.296635] 
+[2022-02-24 17:50:28.716506][    5.296936] [WMT-IC][I]mt6630_patch_dwn:wmt_core: patch dwn:0 frag(54, 656) ok
+[2022-02-24 17:50:28.716506][    5.305440] [WMT-IC][I]mt6630_patch_dwn:the 2 time valid patch found: (mt6630_patch_e3_1_hdr.bin)
+[2022-02-24 17:50:28.716506][    5.305560] (NULL device *): Direct firmware load for mt6630_patch_e3_1_hdr.bin failed with error -2
+[2022-02-24 17:50:28.717505][    5.305563] (NULL device *): Falling back to user helper
+[2022-02-24 17:50:28.717505][    5.308870] [HIF-SDIO][I]wmt_dev_patch_get:loader firmware mt6630_patch_e3_1_hdr.bin  ok!!
+[2022-02-24 17:50:28.717505][    5.317789] [WMT-IC][I]mt6630_patch_dwn:4 bytes address command:0x00,0x00,0x08,0x00
+[2022-02-24 17:50:28.717505][    5.317789] [RGB_KEY]: [func(RGB_KEY_write)]write
+[2022-02-24 17:50:28.717505][    5.319371] [RGB_KEY]: [func(RGB_KEY_write)]write RGB2 
+[2022-02-24 17:50:28.717505][    5.319371] 
+[2022-02-24 17:50:28.717505][    5.334245] [RGB_KEY]: [func(RGB_KEY_write)]write
+[2022-02-24 17:50:28.717505][    5.334948] [RGB_KEY]: [func(RGB_KEY_write)]write RGB3 
+[2022-02-24 17:50:28.717505][    5.334948] 
+[2022-02-24 17:50:28.717505][    5.335343] NHSysCtrl:check partition system OK
+[2022-02-24 17:50:28.717505][    5.335344] 
+[2022-02-24 17:50:28.717505][    5.335427] NHSysCtrl:check partition var OK
+[2022-02-24 17:50:28.717505][    5.335427] 
+[2022-02-24 17:50:28.717505][    5.335504] NHSysCtrl:check partition data OK
+[2022-02-24 17:50:28.717505][    5.335504] 
+[2022-02-24 17:50:28.717505][    5.335780] NHSysCtrl:check partition vdata OK
+[2022-02-24 17:50:28.717505][    5.335781] 
+[2022-02-24 17:50:28.717505][    5.336622] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:wmt-exp: OPID(3) type(2) start
+[2022-02-24 17:50:28.717505][    5.336627] [WMT-PLAT][W]wmt_plat_wake_lock_ctrl:WMT-PLAT: wakelock status(1), counter(3)
+[2022-02-24 17:50:28.717505][    5.349222] [RGB_KEY]: [func(RGB_KEY_write)]write
+[2022-02-24 17:50:28.717505][    5.349821] [RGB_KEY]: [func(RGB_KEY_write)]write GRPPWM 
+[2022-02-24 17:50:28.717505][    5.349821] 
+[2022-02-24 17:50:28.717505][    5.350893] [RGB_KEY]: [func(RGB_KEY_release)]close
+[2022-02-24 17:50:28.717505][    5.353551] NHSysCtrl:SetBacklightBrightness(179)[    5.354128] 
+[2022-02-24 17:50:28.717505][    5.358156] NHSysCtrl:SetScreenContrast(128)[    5.358714] 
+[2022-02-24 17:50:28.718504][    5.530672] NHSysCtrl:SetTouchKeyBacklightBrightness(254)[    5.531380] 
+[2022-02-24 17:50:29.216657][    5.881968] [WMT-IC][I]mt6630_patch_dwn:wmt_core: patch dwn:0 frag(66, 472) ok
+[2022-02-24 17:50:29.216657][    5.893448] [WMT-IC][I]wmt_stp_init_coex:ctrl GET_WMT_CONF ok(0xffffff80090a9250)
+[2022-02-24 17:50:29.217657][    5.915585] [WMT-IC][I]mt6630_sw_init:set fm mode (2) ok
+[2022-02-24 17:50:29.217657][    5.916267] [WMT-IC][I]mt6630_sw_init:disable mt662x firmware coredump
+[2022-02-24 17:50:29.217657][    5.917124] [STP] mtk_wcn_stp_psm_enable:[W] STP Not Ready, Dont do Sleep/Wakeup
+[2022-02-24 17:50:29.217657][    5.918653] [HIF-SDIO][E]wmt_lib_ps_enable(564):PSM enable failed!
+[2022-02-24 17:50:29.217657][    5.919439] [WMT-CORE][I]wmt_core_dump_func_state:[AF FUNC ON]status(b:0 f:0 g:0 w:0 lpbk:2 coredump:0 wmt:2 ant:0 sd1:0 sd2:2 stp:0)
+[2022-02-24 17:50:29.217657][    5.921000] [WMT-PLAT][W]wmt_plat_wake_lock_ctrl:WMT-PLAT: wakelock status(1), counter(2)
+[2022-02-24 17:50:29.217657][    5.921030] [STP-PSM] [I]psm_notify_wmt: In ACT state, dont do WAKEUP/HOST_AWAKE again
+[2022-02-24 17:50:29.217657][    5.923317] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:OPID(3) type(9) ok
+[2022-02-24 17:50:29.217657][    6.027470] random: crng init done
+[2022-02-24 17:50:29.719219][    6.209516] [TC:6204][TT:427] [Opening] caution initview begin [    6.210247] 
+[2022-02-24 17:50:29.719219][    6.355116] [TC:6350][TT:492] [Opening] caution initview end [    6.357435] 
+[2022-02-24 17:50:29.719219][    6.458484] [WMT-CORE][I]wmt_core_dump_func_state:[AF FUNC ON]status(b:2 f:0 g:0 w:0 lpbk:2 coredump:0 wmt:2 ant:0 sd1:0 sd2:2 stp:0)
+[2022-02-24 17:50:29.719219][    6.460636] [WMT-PLAT][W]wmt_plat_wake_lock_ctrl:WMT-PLAT: wakelock status(1), counter(1)
+[2022-02-24 17:50:29.719219][    6.462569] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:OPID(3) type(0) ok
+[2022-02-24 17:50:29.719219][    6.463349] [MTK-BT] BT_open: WMT turn on BT OK!
+[2022-02-24 17:50:29.719219][    6.463935] [MTK-BT] BT_open: Now it's in MTK Bluetooth Mode
+[2022-02-24 17:50:29.719219][    6.467631] [MTK-BT] BT_open: STP is ready!
+[2022-02-24 17:50:29.720218][    6.471721] [HIF-SDIO][I]wmt_ctrl_gps_sync_set:ctrl GPS_SYNC(4)
+[2022-02-24 17:50:29.720218][    6.473277] [WMT-PLAT][I]wmt_plat_cmb_gps_sync_ctrl:WMT-PLAT:GPS SYNC not defined
+[2022-02-24 17:50:29.720218][    6.474428] [WMT-FUNC][I]wmt_func_gps_pre_ctrl:ctrl GPS_SYNC_SET(0) ok
+[2022-02-24 17:50:29.720218][    6.479049] [WMT-IC][I]mt6630_pin_ctrl:ret = (0)
+[2022-02-24 17:50:29.720218][    6.479653] [WMT-FUNC][I]wmt_func_gps_pre_ctrl:set reg for GPS_SYNC function okay by chip ic_pin_ctrl
+[2022-02-24 17:50:29.720218][    6.480826] [WMT-FUNC][I]wmt_func_gps_pre_ctrl:ctrl combo chip gps sync function succeed
+[2022-02-24 17:50:29.720218][    6.483537] [WMT-FUNC][E]wmt_func_gps_pre_ctrl(484):wmt_gps_1pps_enabled !!
+[2022-02-24 17:50:29.720218][    6.484428] [WMT-IC][I]mt6630_gps_1pss_ctrl:Enable GPS 1 pps ctrl
+[2022-02-24 17:50:29.720218][    6.503201] [WMT-IC][I]mt6630_pin_ctrl:ret = (0)
+[2022-02-24 17:50:29.720218][    6.503944] [WMT-FUNC][I]wmt_func_gps_pre_ctrl:host pin used for gps lna
+[2022-02-24 17:50:29.720218][    6.504623] [MTK-BT] BT_open: major 192 minor 0 (pid 2894)
+[2022-02-24 17:50:29.720218][    6.504639] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:wmt-exp: OPID(3) type(0) start
+[2022-02-24 17:50:29.720218][    6.504648] [WMT-PLAT][W]wmt_plat_wake_lock_ctrl:WMT-PLAT: wakelock status(1), counter(2)
+[2022-02-24 17:50:29.720218][    6.507831] [HIF-SDIO][I]wmt_ctrl_gps_lna_set:ctrl GPS_LNA(2)
+[2022-02-24 17:50:29.720218][    6.508601] [WMT-FUNC][I]wmt_func_gps_pre_ctrl:ctrl host gps lna function succeed
+[2022-02-24 17:50:29.720218][    6.514878] [WMT-CORE][I]wmt_core_dump_func_state:[AF FUNC ON]status(b:2 f:0 g:2 w:0 lpbk:2 coredump:0 wmt:2 ant:0 sd1:0 sd2:2 stp:0)
+[2022-02-24 17:50:29.720218][    6.516469] [WMT-PLAT][W]wmt_plat_wake_lock_ctrl:WMT-PLAT: wakelock status(1), counter(1)
+[2022-02-24 17:50:29.720218][    6.516519] [WMT-CORE][W]opfunc_func_on:func(0) already on
+[2022-02-24 17:50:29.721218][    6.516561] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:OPID(3) type(0) ok
+[2022-02-24 17:50:29.721218][    6.516570] [MTK-BT] BT_open: WMT turn on BT OK!
+[2022-02-24 17:50:29.721218][    6.516574] [MTK-BT] BT_open: Now it's in MTK Bluetooth Mode
+[2022-02-24 17:50:29.721218][    6.516576] [MTK-BT] BT_open: STP is ready!
+[2022-02-24 17:50:29.721218][    6.521002] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:OPID(3) type(2) ok
+[2022-02-24 17:50:29.721218][    6.522471] Read Efuse not supported in this platform
+[2022-02-24 17:50:30.218000][    7.037266] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.218000][    7.057410] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.218000][    7.077412] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.218000][    7.097268] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.218000][    7.117254] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.718832][    7.138007] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.718832][    7.145266] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.718832][    7.169557] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.718832][    7.193193] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.718832][    7.213449] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.718832][    7.233308] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.718832][    7.253265] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.718832][    7.273381] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.718832][    7.293228] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.718832][    7.313238] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.334681] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.358277] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.381205] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.406702] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.430584] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.442632] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.468612] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.489393] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.502236] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.522360] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.539099] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.539900] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:953 tx:42851
+[2022-02-24 17:50:30.719826][    7.540642] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:965 tx:42851
+[2022-02-24 17:50:30.719826][    7.540647] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:30.719826][    7.542839] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:30.719826][    7.566313] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.585783] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.605164] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:30.719826][    7.625287] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:31.219356][    7.645557] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:31.219356][    7.653092] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:31.219356][    7.673528] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:31.219356][    7.693484] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:31.219356][    7.713197] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:31.219356][    7.721998] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:31.219356][    7.761101] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:32.219598][    9.030057] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:811 tx:19687
+[2022-02-24 17:50:32.219598][    9.031053] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:33.220230][    9.833083] [MTK_V4L2] level=0 vidioc_decoder_cmd(),947: decoder cmd= 1
+[2022-02-24 17:50:33.220230][   10.045162] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:560 tx:280
+[2022-02-24 17:50:33.220230][   10.046196] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:33.720459][   10.239626] (!!) init: processing action 0x55aeba0c50 (property:appmgr.lazystart=trigger_home_started)
+[2022-02-24 17:50:33.720459][   10.240881] (!!) init: starting 'ttsmain-navi'
+[2022-02-24 17:50:33.720459][   10.241843] (!!) init: starting 'voicerecogmain'
+[2022-02-24 17:50:33.720459][   10.242628] (II) init: command 'class_start' r=0
+[2022-02-24 17:50:33.720459][   10.257685] [TC:10252][TT:5] [SystemService] First App ready [11][   10.258464] 
+[2022-02-24 17:50:33.720459][   10.498442] [TC:10493][TT:0] [Opening] [Play End]
+[2022-02-24 17:50:33.720459][   10.499077] 
+[2022-02-24 17:50:33.720459][   10.535673] [TC:10530][TT:501] [Opening] [Movie play end/error][   10.536549] 
+[2022-02-24 17:50:33.721459][   10.536960] [TC:10531][TT:502] [Opening] OpeningMoviePlayer::stopMovie
+[2022-02-24 17:50:33.721459][   10.537914] 
+[2022-02-24 17:50:33.721459][   10.574992] [MTK_V4L2] level=0 fops_vcodec_release(),196: [3] decoder
+[2022-02-24 17:50:33.721459][   10.576308] [MTK_V4L2] level=0 mtk_vcodec_dec_release(),992: 3
+[2022-02-24 17:50:33.721459][   10.581356] [TC:10576][TT:538] [Opening] NMOpeningGstPlayerImpl setState 3, return %d
+[2022-02-24 17:50:33.721459] [1][   10.582765] 
+[2022-02-24 17:50:33.721459][   10.583014] [TC:10578][TT:539] [Opening] NMOpeningGstPlayerImpl setState 6, return %d
+[2022-02-24 17:50:33.721459] [2][   10.584754] 
+[2022-02-24 17:50:33.721459][   10.604579] [TC:10599][TT:544] [Opening] OpeningMoviePlayer::destroyMovieSurface
+[2022-02-24 17:50:33.721459][   10.605553] 
+[2022-02-24 17:50:33.721459][   10.620077] [TC:10615][TT:546] [Opening] Application::initialize stopMovie[   10.621229] 
+[2022-02-24 17:50:33.721459][   10.621476] [TC:10616][TT:547] [Opening] Application::lockHardkey[   10.622945] 
+[2022-02-24 17:50:34.720859][   11.333472] [WDK]: kick Ex WDT
+[2022-02-24 17:50:34.720859][   11.524791] [TC:11519][TT:557] [Opening] [CautionView] doTimerSlot OK button Enable[   11.525769] 
+[2022-02-24 17:50:34.720859][   11.624878] [TC:11619][TT:561] [Opening] [CautionView] doTimerSlot OK button Enable[   11.625877] 
+[2022-02-24 17:50:35.220999][   12.029413] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1095 tx:227
+[2022-02-24 17:50:35.220999][   12.030455] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:36.225090][   13.051841] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:481 tx:268
+[2022-02-24 17:50:36.225090][   13.054588] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:36.225090][   13.061389] [TC:13056][TT:77] [SystemService] notify service ready [ttsmain-navi][   13.062317] 
+[2022-02-24 17:50:38.235638][   15.029247] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:886 tx:227
+[2022-02-24 17:50:38.235638][   15.030225] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:39.241284][   16.043342] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:340 tx:268
+[2022-02-24 17:50:39.241284][   16.044423] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:40.247025][   16.652197] [TC:16647][TT:12] [Opening] [CautionView] onclicked stop ForSkiptimer[   16.653195] 
+[2022-02-24 17:50:40.249024][   16.653451] [TC:16648][TT:13] [Opening] [CautionView] OK onclicked start[   16.654281] 
+[2022-02-24 17:50:40.249024][   16.665444] [TC:16660][TT:15] [Opening] [CautionView] OK onclicked end[   16.665494] [TC:16660][TT:718] [Opening] Application::initialize end
+[2022-02-24 17:50:40.249024][   16.665499] 
+[2022-02-24 17:50:40.249024][   16.667549] 
+[2022-02-24 17:50:40.249024][   16.668133] [TC:16663][TT:718] [Opening] Application::unlockHardkey[   16.668964] 
+[2022-02-24 17:50:40.249024][   16.691730] [TC:16686][TT:16] [SystemService] PLCaution confirmed [32][   16.695251] 
+[2022-02-24 17:50:40.249024][   16.745298] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:40.249024][   16.778126] (!!) init: waitpid returned pid 1942, status = 0000000b
+[2022-02-24 17:50:40.249024][   16.778941] (!!) init: process 'Opening', pid 1942 exited
+[2022-02-24 17:50:41.252723][   18.029403] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:929 tx:244
+[2022-02-24 17:50:41.254723][   18.030376] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:41.757640][   18.401646] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.757640][   18.441713] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.757640][   18.443449] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.757640][   18.455079] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.458858] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.459740] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.460791] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.481151] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.505180] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.525152] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.545713] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.551164] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.553036] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.553982] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.555376] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.577281] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.581848] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.606553] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.609863] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.633232] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:41.758637][   18.654810] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.265853][   18.677262] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.265853][   18.701291] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.714669] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.737327] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.755742] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.777325] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.782596] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.801210] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.805892] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.830420] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.848151] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.857550] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.868203] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.889219] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.901960] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.929524] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.933041] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.937359] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.957347] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.977345] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   18.981243] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   19.002003] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.266852][   19.021402] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.267859][   19.027092] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.267859][   19.045839] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1571 tx:964
+[2022-02-24 17:50:42.267859][   19.046897] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:42.267859][   19.065388] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.267859][   19.089309] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.267859][   19.094539] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.267859][   19.133343] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.267859][   19.138319] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.267859][   19.161610] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.267859][   19.166116] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.769030][   19.189540] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.208657] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.275183] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.278703] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.298451] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.317457] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.321728] [STP SDIO][W]stp_sdio_do_own_set:set firmware own fail!, set CLR BACK
+[2022-02-24 17:50:42.771028][   19.333571] [WDK]: kick Ex WDT
+[2022-02-24 17:50:42.771028][   19.403646] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.429202] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.449313] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.450125] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.469217] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.771028][   19.470383] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.774026][   19.493204] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.774026][   19.513244] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.774026][   19.514092] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.514988] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.533067] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.533883] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.536332] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.553125] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.553960] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.565836] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.585227] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.605261] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.629114] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.629961] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.630857] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.649106] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.669159] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.670681] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.775026][   19.671531] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.776026][   19.674150] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.776026][   19.675287] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:42.776026][   19.676137] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.273077][   19.697773] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.274081][   19.717362] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.737177] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.757227] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.760881] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.781136] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.786669] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.792635] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.814042] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.829733] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.853804] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.859352] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.889238] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.893917] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.913178] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.919619] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.941113] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.949339] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.969334] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   19.973146] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   20.005165] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   20.025144] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.275076][   20.029760] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.276078][   20.053188] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.276078][   20.053979] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:2470 tx:1815
+[2022-02-24 17:50:43.276078][   20.054955] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:43.276078][   20.057629] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.276078][   20.066670] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.278076][   20.089120] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.278076][   20.093384] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.278076][   20.113133] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:43.278076][   20.117252] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:44.278123][   21.064329] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:615 tx:273
+[2022-02-24 17:50:44.278123][   21.065342] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:46.290574][   23.035906] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1056 tx:227
+[2022-02-24 17:50:46.291578][   23.036889] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:46.292574][   23.163532] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:46.794104][   23.225677] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:46.795108][   23.446842] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.300838][   23.753423] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.300838][   23.860779] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.300838][   23.897073] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.300838][   24.045065] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:703 tx:541
+[2022-02-24 17:50:47.300838][   24.046137] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:50:47.300838][   24.091370] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.300838][   24.092844] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.300838][   24.097630] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.300838][   24.098762] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.300838][   24.104416] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.300838][   24.168803] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.300838][   24.172895] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.303838][   24.173820] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.303838][   24.176341] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.803058][   24.211287] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.803058][   24.233754] [STP SDIO][W]stp_sdio_do_own_set:set firmware own fail!, set CLR BACK
+[2022-02-24 17:50:47.803058][   24.243848] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:50:47.803058][   24.430400] [MTK-BT] BT_read: Shorten read count from 2048 to 2048

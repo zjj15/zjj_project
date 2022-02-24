@@ -1,0 +1,130 @@
+[2022-02-24 17:33:15.712370]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:33:15.712370]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"KEY=1\"],\"ScreenChange\
+[2022-02-24 17:33:15.712370]\"GESTURE\":[\"KEY=1\"],\"ScreenChange\                                       <":false}}" > /data/ws_client_cmd
+[2022-02-24 17:33:15.712370]
+[2022-02-24 17:33:16.215799]uid=0 gid=0@nutshell:/ # [  164.988338] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:480 tx:227
+[2022-02-24 17:33:16.215799][  164.989366] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:33:16.716910]/data/autotest_client
+[2022-02-24 17:33:16.717910]
+[2022-02-24 17:33:16.717910]ws_client send: {
+[2022-02-24 17:33:16.717910]	"device":	0,
+[2022-02-24 17:33:16.717910]	"type":	10,
+[2022-02-24 17:33:16.717910]	"uuid":	"1234567890",
+[2022-02-24 17:33:16.717910]	"data":	{
+[2022-02-24 17:33:16.717910]		"GESTURE":	["KEY=1"],
+[2022-02-24 17:33:16.717910]		"ScreenChange":	false
+[2022-02-24 17:33:16.717910]	}
+[2022-02-24 17:33:16.717910]}
+[2022-02-24 17:33:16.717910]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:33:16.717910]127.0.0.1:57500 ++ joined
+[2022-02-24 17:33:16.717910]sendData start len:60
+[2022-02-24 17:33:16.717910]sendData end len:60
+[2022-02-24 17:33:16.717910]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:33:16.717910]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:33:16.717910]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:33:16.718909]
+[2022-02-24 17:33:16.718909]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:33:16.718909]
+[2022-02-24 17:33:16.718909]<<<< Start thread [Coolie] TC: 165425.
+[2022-02-24 17:33:16.718909]127.0.0.1:57500 -- left
+[2022-02-24 17:33:16.718909]<<<< Thread [Coolie] run (3576, 0x3576) prio: 0, TC: 165426.
+[2022-02-24 17:33:16.718909]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:33:16.718909]GESTURE: KEY=1
+[2022-02-24 17:33:16.718909]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:33:16.718909]uid=0 gid=0@nutshell:/ # AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:33:16.718909]onInputMonitorMessage device = 0, code = 1, action = 1
+[2022-02-24 17:33:16.718909]
+[2022-02-24 17:33:16.718909]<<<< Start thread [AutokeyRecorderCallbackThread] TC: 165455.
+[2022-02-24 17:33:16.718909]onInputMonitorMessage device = 0, code = 1, action = 0
+[2022-02-24 17:33:16.718909]
+[2022-02-24 17:33:16.718909]<<<< Thread [AutokeyRecorderCallbackThread] run (3583, 0x3583) prio: -6, TC: 165455.
+[2022-02-24 17:33:16.718909]onAutokeyRecorded:SLEEP=142927
+[2022-02-24 17:33:16.718909]onAutokeyRecorded:KEY=1
+[2022-02-24 17:33:16.719909]-> Running Msg
+[2022-02-24 17:33:16.719909]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:33:16.719909]-> Dummy GetScreenInfo
+[2022-02-24 17:33:16.719909]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:33:16.719909]sendData failed
+[2022-02-24 17:33:16.719909]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:33:16.719909]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:33:16.719909]wait(200ms)...
+[2022-02-24 17:33:16.719909]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:33:16.719909]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:33:16.719909]Capture Failed
+[2022-02-24 17:33:16.719909]sendData failed
+[2022-02-24 17:33:16.719909]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:33:17.729209]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:33:17.729209]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"KEY=1\"],\"ScreenChange\
+[2022-02-24 17:33:17.729209]\"GESTURE\":[\"KEY=1\"],\"ScreenChange\                                       <":false}}" > /data/ws_client_cmd
+[2022-02-24 17:33:17.729209]
+[2022-02-24 17:33:18.231823]uid=0 gid=0@nutshell:/ # [  166.990343] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:585 tx:268
+[2022-02-24 17:33:18.232821][  166.994052] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:33:18.739023]/data/autotest_client
+[2022-02-24 17:33:18.740020]
+[2022-02-24 17:33:18.740020]ws_client send: {
+[2022-02-24 17:33:18.740020]	"device":	0,
+[2022-02-24 17:33:18.740020]	"type":	10,
+[2022-02-24 17:33:18.740020]	"uuid":	"1234567890",
+[2022-02-24 17:33:18.740020]	"data":	{
+[2022-02-24 17:33:18.740020]		"GESTURE":	["KEY=1"],
+[2022-02-24 17:33:18.740020]		"ScreenChange":	false
+[2022-02-24 17:33:18.740020]	}
+[2022-02-24 17:33:18.740020]}
+[2022-02-24 17:33:18.740020]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:33:18.740020]127.0.0.1:57502 ++ joined
+[2022-02-24 17:33:18.740020]sendData start len:60
+[2022-02-24 17:33:18.740020]sendData end len:60
+[2022-02-24 17:33:18.740020]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:33:18.740020]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:33:18.740020]
+[2022-02-24 17:33:18.740020]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:33:18.740020]
+[2022-02-24 17:33:18.740020]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:33:18.740020]127.0.0.1:57502 -- left
+[2022-02-24 17:33:18.741021]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:33:18.741021]GESTURE: KEY=1
+[2022-02-24 17:33:18.741021]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:33:18.741021]onInputMonitorMessage device = 0, code = 1, action = 1
+[2022-02-24 17:33:18.741021]
+[2022-02-24 17:33:18.741021]onAutokeyRecorded:SLEEP=2011
+[2022-02-24 17:33:18.741021]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:33:18.741021]uid=0 gid=0@nutshell:/ # onInputMonitorMessage device = 0, code = 1, action = 0
+[2022-02-24 17:33:18.741021]
+[2022-02-24 17:33:18.741021]onAutokeyRecorded:KEY=1
+[2022-02-24 17:33:18.741021]-> Running Msg
+[2022-02-24 17:33:18.743020]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:33:18.743020]-> Dummy GetScreenInfo
+[2022-02-24 17:33:18.743020]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:33:18.744019]sendData failed
+[2022-02-24 17:33:18.744019]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:33:18.744019]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:33:18.744019]wait(200ms)...
+[2022-02-24 17:33:18.744019]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:33:18.744019]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:33:18.744019]Capture Failed
+[2022-02-24 17:33:18.744019]sendData failed
+[2022-02-24 17:33:18.744019]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:33:19.742546][  168.853975] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:619 tx:250
+[2022-02-24 17:33:19.742546][  168.854954] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:33:19.742546][  168.882627] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:19.742546][  168.901312] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:20.245437][  168.930142] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:20.246435][  168.944804] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:21.252577][  169.967164] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1035 tx:227
+[2022-02-24 17:33:21.252577][  169.968537] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:33:21.755551][  170.469692] [WDK]: kick Ex WDT
+[2022-02-24 17:33:22.258165][  170.984727] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:481 tx:268
+[2022-02-24 17:33:22.258165][  170.985752] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:33:22.758452][  171.529064] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.548891] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.550275] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.553029] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.554237] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.584871] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.605119] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.606247] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.628910] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.631908] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.652879] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:22.758452][  171.660688] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:33:23.265001][  171.989571] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:569 tx:336

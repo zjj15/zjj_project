@@ -1,0 +1,68 @@
+[22/02/24 17:41:43,482] case begin...
+[22/02/24 17:41:43,560] case setup...
+[22/02/24 17:41:43,569] case run...
+[22/02/24 17:41:43,574] usb_off(1)
+[22/02/24 17:41:43,687] usb_off(2)
+[22/02/24 17:41:43,811] usb_off(3)
+[22/02/24 17:41:43,917] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:41:43,922] keyevent('HOME', device='22TDEM:///?stream_method=camera')
+[22/02/24 17:41:46,044] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:41:46,048] keyevent('HOME', device='22TDEM:///?stream_method=camera')
+[22/02/24 17:41:48,054] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:41:48,058] touch(Template(pic/菜单按钮.png), device='22TDEM:///?stream_method=camera', threshold=0.65)
+[22/02/24 17:41:48,062] loop_find(Template(pic/菜单按钮.png), threshold=0.65, inv=None, raise_error=True)
+[22/02/24 17:41:48,065] Try finding: Template(pic/菜单按钮.png)
+[aircv][tpl] threshold=0.65, result={'confidence': 0.6711998335472943, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[22/02/24 17:41:50,057] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:41:50,061] exists(Template(pic/Ipod_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:41:50,061] loop_find(Template(pic/Ipod_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:41:50,067] Try finding: Template(pic/Ipod_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.5895072948131735, 'rectangle': ((69, 105), (69, 367), (290, 367), (290, 105)), 'result': (179, 236)}
+[22/02/24 17:41:50,192] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:41:50,193] exists(Template(pic/USB_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:41:50,194] loop_find(Template(pic/USB_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:41:50,194] Try finding: Template(pic/USB_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.7431406724523225, 'rectangle': ((373, 380), (373, 657), (592, 657), (592, 380)), 'result': (482, 518)}
+[22/02/24 17:41:50,324] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:41:50,328] exists(Template(pic/AM_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:41:50,330] loop_find(Template(pic/AM_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:41:50,332] Try finding: Template(pic/AM_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.5093510320186615, 'rectangle': ((1033, 469), (1033, 504), (1109, 504), (1109, 469)), 'result': (1071, 486)}
+[22/02/24 17:41:50,445] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:41:50,449] exists(Template(pic/FM1_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:41:50,453] loop_find(Template(pic/FM1_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:41:50,457] Try finding: Template(pic/FM1_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.2224678600017903, 'rectangle': ((373, 405), (373, 434), (432, 434), (432, 405)), 'result': (402, 419)}
+[22/02/24 17:41:50,597] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:41:50,602] exists(Template(pic/Carplay_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:41:50,602] loop_find(Template(pic/Carplay_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:41:50,605] Try finding: Template(pic/Carplay_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.7388194465265384, 'rectangle': ((970, 108), (970, 377), (1210, 377), (1210, 108)), 'result': (1090, 242)}
+[22/02/24 17:41:50,751] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:41:50,756] touch(Template(pic/BT_OFF.png), device='22TDEM:///?stream_method=camera', threshold=0.65)
+[22/02/24 17:41:50,756] loop_find(Template(pic/BT_OFF.png), threshold=0.65, inv=None, raise_error=True)
+[22/02/24 17:41:50,762] Try finding: Template(pic/BT_OFF.png)
+[aircv][tpl] threshold=0.65, result={'confidence': 0.7295612113059307, 'rectangle': ((58, 105), (58, 370), (292, 370), (292, 105)), 'result': (175, 237)}
+[22/02/24 17:41:52,561] Begin segment: Segment(../../01_Source_AccOffOn/BT/ConnectBT.tcs)...
+[22/02/24 17:41:52,564] case fail...
+[22/02/24 17:41:52,564] case teardown...
+fetch hu log...
+fetch dcu log...
+# dmesg -r > /data/atlog/dmesg.txt
+# ll /var/system/grave |grep tombstone_cur
+# mkdir /data/atlog/
+# /data/busybox tar -cvzf /data/atlog/log_20220224_174153.tar.gz /var/system/kern /var/system/linux_crash_dump /data/atlog/dmesg.txt /var/system/grave/tombstone_0278
+log zip at: /data/atlog/log_20220224_174153.tar.gz
+network unavailable...
+Traceback (most recent call last):
+  File "autost\utils\thread.py", line 17, in autost.utils.thread.CThread.run
+  File "threading.py", line 862, in run
+  File "D:\Release_v1.4.13_20220218174710\library_pack_folder\iauto\autost-1.0.0\autost\case\executor.py", line 538, in process
+  File "autost\api.py", line 2386, in autost.api.do_segment
+  File "D:\AutoST\gitlab\22tdem\Robustness\03_SourceChangeTest\SourceRandomChange.tcs\SourceRandomChange.py", line 145, in <module>
+    btnObj1, btnObj2 = choiceBtn()
+  File "D:\AutoST\gitlab\22tdem\Robustness\03_SourceChangeTest\SourceRandomChange.tcs\SourceRandomChange.py", line 99, in choiceBtn
+    do_segment(Segment('../../01_Source_AccOffOn/BT/ConnectBT.tcs'))
+  File "autost\api.py", line 2363, in autost.api.do_segment
+AssertionError
+case result: Failed(1)

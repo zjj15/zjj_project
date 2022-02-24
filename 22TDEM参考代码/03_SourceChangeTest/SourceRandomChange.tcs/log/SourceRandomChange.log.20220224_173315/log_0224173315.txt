@@ -1,0 +1,24 @@
+[22/02/24 17:33:15,149] case begin...
+[22/02/24 17:33:15,213] case setup...
+[22/02/24 17:33:15,217] case run...
+[22/02/24 17:33:15,224] usb_off(1)
+[22/02/24 17:33:15,331] usb_off(2)
+[22/02/24 17:33:15,446] usb_off(3)
+[22/02/24 17:33:15,587] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:33:15,588] keyevent('HOME', device='22TDEM:///?stream_method=camera')
+[22/02/24 17:33:17,225] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:33:17,232] keyevent('HOME', device='22TDEM:///?stream_method=camera')
+[22/02/24 17:33:19,240] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:33:19,243] touch(Template(pic/菜单按钮.png), threshold=0.8)
+[22/02/24 17:33:19,243] loop_find(Template(pic/菜单按钮.png), threshold=0.8, inv=None, raise_error=True)
+[22/02/24 17:33:19,252] Try finding: Template(pic/菜单按钮.png)
+[aircv][tpl] threshold=0.8, result={'confidence': 0.664707546853659, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6578563936700014, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6698230871579645, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6608309311662318, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6627580756264235, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6635236607850404, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6659739182407887, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[22/02/24 17:33:23,173] case teardown...
+Abort forced by user...
+case result: Failed(62097)

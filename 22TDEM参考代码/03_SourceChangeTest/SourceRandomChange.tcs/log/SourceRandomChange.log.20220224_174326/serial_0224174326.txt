@@ -1,0 +1,716 @@
+[2022-02-24 17:43:27.291667]echo "{\"device\":0,\"type\":10,\"uuid\":\"123456
+[2022-02-24 17:43:27.291667]e\":10,\"uuid\":\"123456                                                      <7890\",\"data\":{\"GESTURE\":[\"KEY=1\"],\"ScreenChang
+[2022-02-24 17:43:27.291667]:{\"GESTURE\":[\"KEY=1\"],\"ScreenChang                                       <e\":false}}" > /data/ws_client_cmd
+[2022-02-24 17:43:27.291667]
+[2022-02-24 17:43:27.792023]uid=0 gid=0@nutshell:/ # [  776.801061] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:27.792023][  776.970479] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:27.793023][  776.971309] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:454 tx:249
+[2022-02-24 17:43:27.793023][  776.972268] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:28.297962]/data/autotest_client
+[2022-02-24 17:43:28.298962]
+[2022-02-24 17:43:28.298962]ws_client send: {
+[2022-02-24 17:43:28.298962]	"device":	0,
+[2022-02-24 17:43:28.298962]	"type":	10,
+[2022-02-24 17:43:28.298962]	"uuid":	"1234567890",
+[2022-02-24 17:43:28.298962]	"data":	{
+[2022-02-24 17:43:28.298962]		"GESTURE":	["KEY=1"],
+[2022-02-24 17:43:28.298962]		"ScreenChange":	false
+[2022-02-24 17:43:28.298962]	}
+[2022-02-24 17:43:28.298962]}
+[2022-02-24 17:43:28.298962]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:43:28.298962]127.0.0.1:57530 ++ joined
+[2022-02-24 17:43:28.298962]sendData start len:60
+[2022-02-24 17:43:28.298962]sendData end len:60
+[2022-02-24 17:43:28.299963]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:43:28.300964]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:43:28.300964]
+[2022-02-24 17:43:28.301960]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:43:28.301960]
+[2022-02-24 17:43:28.301960]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:43:28.301960]127.0.0.1:57530 -- left
+[2022-02-24 17:43:28.301960]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:43:28.301960]GESTURE: KEY=1
+[2022-02-24 17:43:28.301960]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:28.301960]uid=0 gid=0@nutshell:/ # onInputMonitorMessage device = 0, code = 1, action = 1
+[2022-02-24 17:43:28.301960]
+[2022-02-24 17:43:28.301960]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:28.301960]onAutokeyRecorded:SLEEP=96267
+[2022-02-24 17:43:28.301960]onInputMonitorMessage device = 0, code = 1, action = 0
+[2022-02-24 17:43:28.301960]
+[2022-02-24 17:43:28.301960]onAutokeyRecorded:KEY=1
+[2022-02-24 17:43:28.301960]-> Running Msg
+[2022-02-24 17:43:28.303959]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:43:28.304958]-> Dummy GetScreenInfo
+[2022-02-24 17:43:28.304958]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:28.304958]sendData failed
+[2022-02-24 17:43:28.304958]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:43:28.304958]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:43:28.304958]wait(200ms)...
+[2022-02-24 17:43:28.801632]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:43:28.801632]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:43:28.801632]Capture Failed
+[2022-02-24 17:43:28.801632]sendData failed
+[2022-02-24 17:43:28.801632]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:43:29.305022]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:43:29.305022]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"KEY=1\"],\"ScreenChange\
+[2022-02-24 17:43:29.305022]\"GESTURE\":[\"KEY=1\"],\"ScreenChange\                                       <":false}}" > /data/ws_client_cmd
+[2022-02-24 17:43:29.305022]
+[2022-02-24 17:43:29.305022]uid=0 gid=0@nutshell:/ # [  778.108481] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:480 tx:430
+[2022-02-24 17:43:29.306019][  778.109521] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:29.306019][  778.120449] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.306019][  778.430523] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.306019][  778.433091] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.306019][  778.440911] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.306019][  778.442045] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.306019][  778.450511] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.306019][  778.459208] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.308018][  778.470661] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.308018][  778.480902] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.308018][  778.483555] [WDK]: kick Ex WDT
+[2022-02-24 17:43:29.308018][  778.490364] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.806887]/data/autotest_client
+[2022-02-24 17:43:29.808888]
+[2022-02-24 17:43:29.808888]ws_client send: {
+[2022-02-24 17:43:29.808888]	"device":	0,
+[2022-02-24 17:43:29.808888]	"type":	10,
+[2022-02-24 17:43:29.808888]	"uuid":	"1234567890",
+[2022-02-24 17:43:29.808888]	"data":	{
+[2022-02-24 17:43:29.808888]		"GESTURE":	["KEY=1"],
+[2022-02-24 17:43:29.808888]		"ScreenChange":	false
+[2022-02-24 17:43:29.808888]	}
+[2022-02-24 17:43:29.808888]}
+[2022-02-24 17:43:29.808888]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:43:29.808888]127.0.0.1:57532 ++ joined
+[2022-02-24 17:43:29.808888]sendData start len:60
+[2022-02-24 17:43:29.808888]sendData end len:60
+[2022-02-24 17:43:29.809888]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:43:29.809888]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:43:29.811884]
+[2022-02-24 17:43:29.811884]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:43:29.811884]
+[2022-02-24 17:43:29.811884]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:43:29.811884]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:43:29.812884]127.0.0.1:57532 -- left
+[2022-02-24 17:43:29.812884]GESTURE: KEY=1
+[2022-02-24 17:43:29.812884]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:29.812884]uid=0 gid=0@nutshell:/ # onInputMonitorMessage device = 0, code = 1, action = 1
+[2022-02-24 17:43:29.812884]
+[2022-02-24 17:43:29.812884]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:29.812884]onAutokeyRecorded:SLEEP=1391
+[2022-02-24 17:43:29.812884]onInputMonitorMessage device = 0, code = 1, action = 0
+[2022-02-24 17:43:29.812884]
+[2022-02-24 17:43:29.812884]onAutokeyRecorded:KEY=1
+[2022-02-24 17:43:29.812884]-> Running Msg
+[2022-02-24 17:43:29.812884]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:43:29.812884]-> Dummy GetScreenInfo
+[2022-02-24 17:43:29.812884]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:29.812884]sendData failed
+[2022-02-24 17:43:29.812884]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:43:29.812884]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:43:29.812884]wait(200ms)...
+[2022-02-24 17:43:29.812884][  778.801085] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.812884][  778.814115] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:29.813883]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:43:29.813883]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:43:29.813883]Capture Failed
+[2022-02-24 17:43:29.813883]sendData failed
+[2022-02-24 17:43:29.813883]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:43:30.814747]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:43:30.814747]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"TOUCH=press,641,305\",\"
+[2022-02-24 17:43:30.815746]\"GESTURE\":[\"TOUCH=press,641,305\",\"                                       <SLEEP=20\",\"TOUCH=hold,641,305\",\"SLE
+[2022-02-24 17:43:30.815746]SLEEP=20\",\"TOUCH=hold,641,305\",\"SLE                                       <EP=20\",\"TOUCH=release,641,305\"],\"Sc
+[2022-02-24 17:43:30.815746]EP=20\",\"TOUCH=release,641,305\"],\"Sc                                       <reenChange\":false}}" > /data/ws_client
+[2022-02-24 17:43:30.815746]reenChange\":false}}" > /data/ws_client                                       <_cmd
+[2022-02-24 17:43:30.815746]
+[2022-02-24 17:43:30.815746]uid=0 gid=0@nutshell:/ # [  779.960120] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1160 tx:335
+[2022-02-24 17:43:30.815746][  779.962080] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:31.329372]/data/autotest_client
+[2022-02-24 17:43:31.330370]
+[2022-02-24 17:43:31.330370]ws_client send: {
+[2022-02-24 17:43:31.330370]	"device":	0,
+[2022-02-24 17:43:31.330370]	"type":	10,
+[2022-02-24 17:43:31.330370]	"uuid":	"1234567890",
+[2022-02-24 17:43:31.330370]	"data":	{
+[2022-02-24 17:43:31.330370]		"GESTURE":	["TOUCH=press,641,305", "SLEEP=20", "TOUCH=hold,641,305", "SLEEP=20", "TOUCH=release,641,305"],
+[2022-02-24 17:43:31.330370]		"ScreenChange":	false
+[2022-02-24 17:43:31.330370]	}
+[2022-02-24 17:43:31.330370]}
+[2022-02-24 17:43:31.330370]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:43:31.330370]127.0.0.1:57534 ++ joined
+[2022-02-24 17:43:31.330370]sendData start len:60
+[2022-02-24 17:43:31.330370]sendData end len:60
+[2022-02-24 17:43:31.330370]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:43:31.331369]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,641,305","SLEEP=20","TOUCH=hold,641,305","SLEEP=20","TOUCH=release,641,305"],"ScreenChange":false}}
+[2022-02-24 17:43:31.331369]
+[2022-02-24 17:43:31.331369]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,641,305","SLEEP=20","TOUCH=hold,641,305","SLEEP=20","TOUCH=release,641,305"],"ScreenChange":false}}
+[2022-02-24 17:43:31.331369]
+[2022-02-24 17:43:31.331369]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:43:31.333368]127.0.0.1:57534 -- left
+[2022-02-24 17:43:31.333368]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:43:31.333368]GESTURE: TOUCH=press,641,305
+[2022-02-24 17:43:31.333368]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:31.333368]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:31.333368]GESTURE: SLEEP=20
+[2022-02-24 17:43:31.333368]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:31.333368]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7f70001750
+[2022-02-24 17:43:31.333368]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:43:31.333368]  id = 0, isPrimary = 1, state = 1
+[2022-02-24 17:43:31.333368]    NCSurfaceOutPointerCoords
+[2022-02-24 17:43:31.333368]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:43:31.333368]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:43:31.334367]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:43:31.334367]
+[2022-02-24 17:43:31.334367]onAutokeyRecorded:SLEEP=1445
+[2022-02-24 17:43:31.334367]onAutokeyRecorded:TOUCH=press,641,305
+[2022-02-24 17:43:31.334367]uid=0 gid=0@nutshell:/ # AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:31.334367]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:31.334367]GESTURE: TOUCH=hold,641,305
+[2022-02-24 17:43:31.334367]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:31.334367]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:31.334367]GESTURE: SLEEP=20
+[2022-02-24 17:43:31.334367]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:31.334367]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7f70001750
+[2022-02-24 17:43:31.334367]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:43:31.334367]  id = 0, isPrimary = 1, state = 4
+[2022-02-24 17:43:31.334367]    NCSurfaceOutPointerCoords
+[2022-02-24 17:43:31.334367]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:43:31.334367]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:43:31.334367]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:43:31.334367]
+[2022-02-24 17:43:31.334367]onAutokeyRecorded:SLEEP=29
+[2022-02-24 17:43:31.334367]onAutokeyRecorded:TOUCH=hold,641,305
+[2022-02-24 17:43:31.334367]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:31.334367]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:31.334367]GESTURE: TOUCH=release,641,305
+[2022-02-24 17:43:31.335366]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:31.335366]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:31.335366]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7f70001750
+[2022-02-24 17:43:31.335366]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:43:31.335366]  id = 0, isPrimary = 1, state = 8
+[2022-02-24 17:43:31.335366]    NCSurfaceOutPointerCoords
+[2022-02-24 17:43:31.335366]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:43:31.335366]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:43:31.335366]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:43:31.335366]
+[2022-02-24 17:43:31.335366]onAutokeyRecorded:SLEEP=25
+[2022-02-24 17:43:31.335366]onAutokeyRecorded:TOUCH=release,641,305
+[2022-02-24 17:43:31.335366]-> Running Msg
+[2022-02-24 17:43:31.335366]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:43:31.336367]-> Dummy GetScreenInfo
+[2022-02-24 17:43:31.336367]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:31.336367]sendData failed
+[2022-02-24 17:43:31.336367]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:43:31.336367]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:43:31.336367]wait(200ms)...
+[2022-02-24 17:43:31.336367]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:43:31.336367]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:43:31.336367]Capture Failed
+[2022-02-24 17:43:31.336367]sendData failed
+[2022-02-24 17:43:31.336367]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:43:31.830082][  780.791233] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:31.830082][  780.977154] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:555 tx:290
+[2022-02-24 17:43:31.830082][  780.978126] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:31.830082][  780.999080] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:32.832859]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:43:32.832859]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"TOUCH=press,1090,242\",\
+[2022-02-24 17:43:32.832859]\"GESTURE\":[\"TOUCH=press,1090,242\",\                                       <"SLEEP=20\",\"TOUCH=hold,1090,242\",\"S
+[2022-02-24 17:43:32.832859]"SLEEP=20\",\"TOUCH=hold,1090,242\",\"S                                       <LEEP=20\",\"TOUCH=release,1090,242\"],\
+[2022-02-24 17:43:32.832859]LEEP=20\",\"TOUCH=release,1090,242\"],\                                       <"ScreenChange\":false}}" > /data/ws_cli
+[2022-02-24 17:43:32.832859]"ScreenChange\":false}}" > /data/ws_cli                                       <ent_cmd
+[2022-02-24 17:43:32.833859]
+[2022-02-24 17:43:33.336686]uid=0 gid=0@nutshell:/ # [2022-02-24 17:43:33.839796]/data/autotest_client
+[2022-02-24 17:43:33.841795]
+[2022-02-24 17:43:33.841795]ws_client send: {
+[2022-02-24 17:43:33.841795]	"device":	0,
+[2022-02-24 17:43:33.841795]	"type":	10,
+[2022-02-24 17:43:33.841795]	"uuid":	"1234567890",
+[2022-02-24 17:43:33.841795]	"data":	{
+[2022-02-24 17:43:33.841795]		"GESTURE":	["TOUCH=press,1090,242", "SLEEP=20", "TOUCH=hold,1090,242", "SLEEP=20", "TOUCH=release,1090,242"],
+[2022-02-24 17:43:33.841795]		"ScreenChange":	false
+[2022-02-24 17:43:33.842794]	}
+[2022-02-24 17:43:33.842794]}
+[2022-02-24 17:43:33.842794]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:43:33.842794]127.0.0.1:57536 ++ joined
+[2022-02-24 17:43:33.842794]sendData start len:60
+[2022-02-24 17:43:33.842794]sendData end len:60
+[2022-02-24 17:43:33.842794]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:43:33.842794]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,1090,242","SLEEP=20","TOUCH=hold,1090,242","SLEEP=20","TOUCH=release,1090,242"],"ScreenChange":false}}
+[2022-02-24 17:43:33.842794]
+[2022-02-24 17:43:33.842794]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,1090,242","SLEEP=20","TOUCH=hold,1090,242","SLEEP=20","TOUCH=release,1090,242"],"ScreenChange":false}}
+[2022-02-24 17:43:33.842794]
+[2022-02-24 17:43:33.842794]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:43:33.842794]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:43:33.842794]GESTURE: TOUCH=press,1090,242
+[2022-02-24 17:43:33.842794]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:33.842794]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:33.842794]GESTURE: SLEEP=20
+[2022-02-24 17:43:33.842794]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:33.842794]127.0.0.1:57536 -- left
+[2022-02-24 17:43:33.845790]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7f70001750
+[2022-02-24 17:43:33.845790]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:43:33.845790]  id = 0, isPrimary = 1, state = 1
+[2022-02-24 17:43:33.845790]    NCSurfaceOutPointerCoords
+[2022-02-24 17:43:33.845790]    x = 1090.000000, y = 242.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:43:33.845790]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:43:33.845790]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:43:33.845790]
+[2022-02-24 17:43:33.845790]onAutokeyRecorded:SLEEP=2491
+[2022-02-24 17:43:33.845790]onAutokeyRecorded:TOUCH=press,1090,242
+[2022-02-24 17:43:33.845790]uid=0 gid=0@nutshell:/ # AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:33.845790]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:33.845790]GESTURE: TOUCH=hold,1090,242
+[2022-02-24 17:43:33.845790]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:33.845790]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:33.845790]GESTURE: SLEEP=20
+[2022-02-24 17:43:33.845790]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:33.845790]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7f70001750
+[2022-02-24 17:43:33.845790]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:43:33.845790]  id = 0, isPrimary = 1, state = 4
+[2022-02-24 17:43:33.845790]    NCSurfaceOutPointerCoords
+[2022-02-24 17:43:33.845790]    x = 1090.000000, y = 242.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:43:33.845790]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:43:33.846790]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:43:33.846790]
+[2022-02-24 17:43:33.846790]onAutokeyRecorded:SLEEP=21
+[2022-02-24 17:43:33.846790]onAutokeyRecorded:TOUCH=hold,1090,242
+[2022-02-24 17:43:33.846790]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:33.846790]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:33.846790]GESTURE: TOUCH=release,1090,242
+[2022-02-24 17:43:33.846790]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:33.846790]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:33.846790]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7f70001750
+[2022-02-24 17:43:33.846790]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:43:33.846790]  id = 0, isPrimary = 1, state = 8
+[2022-02-24 17:43:33.846790]    NCSurfaceOutPointerCoords
+[2022-02-24 17:43:33.846790]    x = 1090.000000, y = 242.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:43:33.846790]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:43:33.846790]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:43:33.846790]
+[2022-02-24 17:43:33.846790]onAutokeyRecorded:SLEEP=20
+[2022-02-24 17:43:33.846790]onAutokeyRecorded:TOUCH=release,1090,242
+[2022-02-24 17:43:33.846790]-> Running Msg
+[2022-02-24 17:43:33.846790]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:43:33.847791]-> Dummy GetScreenInfo
+[2022-02-24 17:43:33.847791][  782.782823] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:579 tx:249
+[2022-02-24 17:43:33.847791][  782.783791] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:33.847791][  782.791712] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:33.847791]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:33.847791]sendData failed
+[2022-02-24 17:43:33.847791]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:43:33.847791]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:43:33.847791]wait(200ms)...
+[2022-02-24 17:43:33.847791][  783.002694] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:34.344182]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:43:34.344182]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:43:34.344182]Capture Failed
+[2022-02-24 17:43:34.344182]sendData failed
+[2022-02-24 17:43:34.344182]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:43:34.846544]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:43:34.847545]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"KEY=1\"],\"ScreenChange\
+[2022-02-24 17:43:34.847545]\"GESTURE\":[\"KEY=1\"],\"ScreenChange\                                       <":false}}" > /data/ws_client_cmd
+[2022-02-24 17:43:34.847545]
+[2022-02-24 17:43:34.847545]uid=0 gid=0@nutshell:/ # [  783.961034] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1227 tx:227
+[2022-02-24 17:43:34.847545][  783.962089] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:35.350644]/data/autotest_client
+[2022-02-24 17:43:35.352642]
+[2022-02-24 17:43:35.352642]ws_client send: {
+[2022-02-24 17:43:35.352642]	"device":	0,
+[2022-02-24 17:43:35.352642]	"type":	10,
+[2022-02-24 17:43:35.352642]	"uuid":	"1234567890",
+[2022-02-24 17:43:35.352642]	"data":	{
+[2022-02-24 17:43:35.352642]		"GESTURE":	["KEY=1"],
+[2022-02-24 17:43:35.352642]		"ScreenChange":	false
+[2022-02-24 17:43:35.352642]	}
+[2022-02-24 17:43:35.352642]}
+[2022-02-24 17:43:35.352642]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:43:35.352642]127.0.0.1:57538 ++ joined
+[2022-02-24 17:43:35.352642]sendData start len:60
+[2022-02-24 17:43:35.352642]sendData end len:60
+[2022-02-24 17:43:35.352642]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:43:35.352642]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:43:35.352642]
+[2022-02-24 17:43:35.355642]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:43:35.355642]
+[2022-02-24 17:43:35.355642]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:43:35.355642]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:43:35.355642]127.0.0.1:57538 -- left
+[2022-02-24 17:43:35.355642]GESTURE: KEY=1
+[2022-02-24 17:43:35.355642]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:35.355642]uid=0 gid=0@nutshell:/ # onInputMonitorMessage device = 0, code = 1, action = 1
+[2022-02-24 17:43:35.355642]
+[2022-02-24 17:43:35.355642]onAutokeyRecorded:SLEEP=1460
+[2022-02-24 17:43:35.355642]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:35.355642]onInputMonitorMessage device = 0, code = 1, action = 0
+[2022-02-24 17:43:35.355642]
+[2022-02-24 17:43:35.355642]onAutokeyRecorded:KEY=1
+[2022-02-24 17:43:35.355642]-> Running Msg
+[2022-02-24 17:43:35.356639]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:43:35.356639]-> Dummy GetScreenInfo
+[2022-02-24 17:43:35.356639]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:35.356639]sendData failed
+[2022-02-24 17:43:35.356639]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:43:35.356639]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:43:35.356639]wait(200ms)...
+[2022-02-24 17:43:35.356639]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:43:35.356639]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:43:35.356639]Capture Failed
+[2022-02-24 17:43:35.356639]sendData failed
+[2022-02-24 17:43:35.356639]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:43:35.852840][  784.608769] usb usb1-port1: status 0101, change 0000
+[2022-02-24 17:43:35.852840][  784.732642] usb 1-1: new high-speed USB device number 4 using xhci-mtk
+[2022-02-24 17:43:35.852840][  784.789105] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:35.852840][  784.874974] Function = usb_choose_configuration ,Line = 107
+[2022-02-24 17:43:35.855838][  784.877648] ipod set 1500 mA
+[2022-02-24 17:43:35.855838][  784.888213] usb 1-1: 1:1: cannot get freq at ep 0x81
+[2022-02-24 17:43:35.856839][  784.905880] hid-generic 0003:05AC:12A8.0001: hiddev0,hidraw0: USB HID v1.11 Device [Apple Inc. iPhone] on usb-11270000.xhci-1/input2
+[2022-02-24 17:43:35.856839][  784.966381] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:421 tx:249
+[2022-02-24 17:43:35.856839][  784.967398] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:35.856839][  785.000846] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:36.356162][  785.047228] [TC:785042][TT:41] [ConnectMgr] CarPlay status : [inserted][  785.048060] 
+[2022-02-24 17:43:36.358163][  785.048456] [TC:785043][TT:42] [ConnectMgr] CarPlay status : [request][  785.051145] 
+[2022-02-24 17:43:36.358163][  785.080097] (!!) init: processing action 0x55bd2e2980 (property:sys.usb.config=dio)
+[2022-02-24 17:43:36.358163][  785.081977] [TC:785077][TT:43] [ConnectMgr] CarPlay status : [startswitch]
+[2022-02-24 17:43:36.358163][  785.081978] 
+[2022-02-24 17:43:36.359159][  785.089564] (II) init: command 'insmod' r=0
+[2022-02-24 17:43:36.359159][  785.090242] (!!) init: service 'hostapd' is being stopped
+[2022-02-24 17:43:36.359159][  785.091280] [wlan]bssRemoveClientByMac:(BSS INFO) Current Client List didn't contain that STA_RECORD_T[ff:ff:ff:ff:ff:ff] before removing.
+[2022-02-24 17:43:36.359159][  785.105718] (II) init: command 'insmod' r=0
+[2022-02-24 17:43:36.359159][  785.109316] (II) init: command 'insmod' r=0
+[2022-02-24 17:43:36.359159][  785.114083] (II) init: command 'insmod' r=0
+[2022-02-24 17:43:36.359159][  785.117055] [wlan]nicTxCmd:(TX INFO) TX MGMT Frame: SUBTYPE[c] BSS[1] WIDX:PID[0:0] SEQ[30] STA[255] LEN[56] RSP[0]
+[2022-02-24 17:43:36.359159][  785.118015] (II) init: command 'insmod' r=0
+[2022-02-24 17:43:36.359159][  785.120453] name = 11271000.usb  
+[2022-02-24 17:43:36.359159][  785.120993] using random self ethernet address
+[2022-02-24 17:43:36.359159][  785.121559] using random host ethernet address
+[2022-02-24 17:43:36.359159][  785.122375] iap_bind_config
+[2022-02-24 17:43:36.361158][  785.122739] create_bulk_endpoints dev: ffffffc017f8d800
+[2022-02-24 17:43:36.361158][  785.123417] dual speed iap: IN/ep1in, OUT/ep1out
+[2022-02-24 17:43:36.361158][  785.126607] g_usb0: HOST MAC 22:27:55:58:d1:5a
+[2022-02-24 17:43:36.361158][  785.128478] g_usb0: MAC 36:ec:14:70:ba:a5
+[2022-02-24 17:43:36.362158][  785.129074] g_dio gadget: Apple CarPlay Gadget
+[2022-02-24 17:43:36.362158][  785.129657] g_dio gadget: g_dio ready
+[2022-02-24 17:43:36.362158][  785.130913] (II) init: command 'insmod' r=0
+[2022-02-24 17:43:36.362158][  785.131560] (II) init: command 'setprop' r=0
+[2022-02-24 17:43:36.362158][  785.133933] [wlan]p2pStop:(P2P WARN) [p2p] scan complete but cfg80211 scan request is NULL
+[2022-02-24 17:43:36.362158][  785.141914] (!!) init: waitpid returned pid 3500, status = 00000000
+[2022-02-24 17:43:36.362158]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:43:36.362158]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"TOUCH=press,641,305\",\"
+[2022-02-24 17:43:36.362158]\"GESTURE\":[\"TOUCH=press,641,305\",\"                                       <SLEEP=20\",\"TOUCH=hold,641,305\",\"SLE
+[2022-02-24 17:43:36.362158]SLEEP=20\",\"TOUCH=hold,641,305\",\"SLE                                       <EP=20\",\"TOUCH=release,641,305\"],\"Sc
+[2022-02-24 17:43:36.362158]EP=20\",\"TOUCH=release,641,305\"],\"Sc                                       <reenChange\":false}}" > /data/ws_client
+[2022-02-24 17:43:36.362158]reenChange\":false}}" > /data/ws_client   [  785.184338] mtu3 11271000.usb:   from  host  switch to  device
+[2022-02-24 17:43:36.362158][  785.184338]   
+[2022-02-24 17:43:36.362158]                [  785.185482] mtu3 11271000.usb: gadget (high-speed) pullup D+
+[2022-02-24 17:43:36.362158]                    <_cmd
+[2022-02-24 17:43:36.362158]
+[2022-02-24 17:43:36.362158][  785.185595] usb usb1-port1: status 0100, change 0001
+[2022-02-24 17:43:36.362158][  785.185639] usb 1-1: USB disconnect, device number 4
+[2022-02-24 17:43:36.362158][  785.191449] mtu3 11271000.usb: mtu3 is already bound to g_dio
+[2022-02-24 17:43:36.363157]uid=0 gid=0@nutshell:/ # [  785.219396] [wlan]p2pFuncStopGO:(P2P INFO) Re activate P2P Network.
+[2022-02-24 17:43:36.363157][  785.221518] [wlan]p2pRoleFsmStateTransition:(P2P STATE) [P2P_ROLE][0]TRANSITION: [P2P_ROLE_STATE_IDLE] -> [P2P_ROLE_STATE_IDLE]
+[2022-02-24 17:43:36.363157][  785.223008] <fw> BCM:i=12,src=2
+[2022-02-24 17:43:36.363157][  785.223598] [wlan]mtk_p2p_wext_set_Multicastlist:(P2P WARN) SEt Multicast List ERROR
+[2022-02-24 17:43:36.363157][  785.224635] [wlan]qmHandleEventBssAbsencePresence:(QM INFO) Bss Absence Presence NAF=1,0,0
+[2022-02-24 17:43:36.363157][  785.226522] [wlan]nicpmSetFWOwn:(NIC INFO) FW OWN
+[2022-02-24 17:43:36.363157][  785.531535] g_dio gadget: high-speed config #1: CDC Ethernet (NCM),Iap
+[2022-02-24 17:43:36.873427]/data/autotest_client
+[2022-02-24 17:43:36.874426]
+[2022-02-24 17:43:36.874426]ws_client send: {
+[2022-02-24 17:43:36.874426]	"device":	0,
+[2022-02-24 17:43:36.874426]	"type":	10,
+[2022-02-24 17:43:36.874426]	"uuid":	"1234567890",
+[2022-02-24 17:43:36.875426]	"data":	{
+[2022-02-24 17:43:36.875426]		"GESTURE":	["TOUCH=press,641,305", "SLEEP=20", "TOUCH=hold,641,305", "SLEEP=20", "TOUCH=release,641,305"],
+[2022-02-24 17:43:36.875426]		"ScreenChange":	false
+[2022-02-24 17:43:36.875426]	}
+[2022-02-24 17:43:36.875426]}
+[2022-02-24 17:43:36.875426]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:43:36.875426]127.0.0.1:57540 ++ joined
+[2022-02-24 17:43:36.875426]sendData start len:60
+[2022-02-24 17:43:36.875426]sendData end len:60
+[2022-02-24 17:43:36.876425]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:43:36.876425]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,641,305","SLEEP=20","TOUCH=hold,641,305","SLEEP=20","TOUCH=release,641,305"],"ScreenChange":false}}
+[2022-02-24 17:43:36.876425]
+[2022-02-24 17:43:36.876425]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,641,305","SLEEP=20","TOUCH=hold,641,305","SLEEP=20","TOUCH=release,641,305"],"ScreenChange":false}}
+[2022-02-24 17:43:36.876425]
+[2022-02-24 17:43:36.876425]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:43:36.876425]127.0.0.1:57540 -- left
+[2022-02-24 17:43:36.876425]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:43:36.876425]GESTURE: TOUCH=press,641,305
+[2022-02-24 17:43:36.876425]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:36.876425]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:36.876425]GESTURE: SLEEP=20
+[2022-02-24 17:43:36.876425]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:36.879423]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7f70001750
+[2022-02-24 17:43:36.880425]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:43:36.880425]  id = 0, isPrimary = 1, state = 1
+[2022-02-24 17:43:36.880425]    NCSurfaceOutPointerCoords
+[2022-02-24 17:43:36.880425]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:43:36.880425]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:43:36.880425]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:43:36.880425]
+[2022-02-24 17:43:36.880425]onAutokeyRecorded:SLEEP=1425
+[2022-02-24 17:43:36.880425]onAutokeyRecorded:TOUCH=press,641,305
+[2022-02-24 17:43:36.880425]uid=0 gid=0@nutshell:/ # AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:36.880425]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:36.880425]GESTURE: TOUCH=hold,641,305
+[2022-02-24 17:43:36.880425]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:36.880425]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:36.880425]GESTURE: SLEEP=20
+[2022-02-24 17:43:36.880425]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:43:36.880425]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7f70001750
+[2022-02-24 17:43:36.880425]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:43:36.881422]  id = 0, isPrimary = 1, state = 4
+[2022-02-24 17:43:36.881422]    NCSurfaceOutPointerCoords
+[2022-02-24 17:43:36.881422]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:43:36.881422]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:43:36.881422]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:43:36.881422]
+[2022-02-24 17:43:36.881422]onAutokeyRecorded:SLEEP=25
+[2022-02-24 17:43:36.881422]onAutokeyRecorded:TOUCH=hold,641,305
+[2022-02-24 17:43:36.881422]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:43:36.881422]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:36.881422]GESTURE: TOUCH=release,641,305
+[2022-02-24 17:43:36.881422]AT_Msg_RequestGestrue::doAction [  785.632691]  usb A connect iap 
+[2022-02-24 17:43:36.881422]simulate start
+[2022-02-24 17:43:36.881422]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:43:36.881422][  785.650867] [TC:785646][TT:44] [ConnectMgr] CarPlay status : [switchcomplete][  785.654067] 
+[2022-02-24 17:43:36.881422][  785.657662] mediaipod:IAP RoleSw [cp]
+[2022-02-24 17:43:36.881422][  785.663275] iap_open
+[2022-02-24 17:43:36.881422]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7f70001750
+[2022-02-24 17:43:36.881422]  NCSurfaceMultiTouchPoint[  785.672496] mediaipod:[TX] DtcSend 6
+[2022-02-24 17:43:36.881422]
+[2022-02-24 17:43:36.881422]  id = 0, isPrimary = 1, state = 8
+[2022-02-24 17:43:36.881422]    NCSurfaceOutPointerCoords
+[2022-02-24 17:43:36.882422]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:43:36.882422]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:43:36.882422]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:43:36.882422]
+[2022-02-24 17:43:36.882422]onAutokeyRecorded:SLEEP=58
+[2022-02-24 17:43:36.882422]onAutokeyRecorded:TOUCH=release,641,305
+[2022-02-24 17:43:36.882422]-> Running Msg
+[2022-02-24 17:43:36.882422]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:43:36.882422]-> Dummy GetScreenInfo
+[2022-02-24 17:43:36.882422][  785.679583] mediaipod:[RX] DtcRecv:[ 0:FF 1:55 2: 2 3: 0 4:EE 5:10 ]
+[2022-02-24 17:43:36.882422][  785.681730] mediaipod:[RX] DtcRecv [2]
+[2022-02-24 17:43:36.882422][  785.682806] iap_release
+[2022-02-24 17:43:36.882422][  785.699281] mediaipod:OPENCP SUCC[125]
+[2022-02-24 17:43:36.882422][  785.700527] mediaipod:LOCKCP[fd:125, ret:0, sucess]
+[2022-02-24 17:43:36.882422][  785.741619] iap_open
+[2022-02-24 17:43:36.882422][  785.764608] mediaipod:[RX] StartIdent
+[2022-02-24 17:43:36.882422][  785.827403] mediaipod:[RX] IdentRejected
+[2022-02-24 17:43:36.882422]AT_Msg_RequestGe[  785.834389] mediaipod:[RX] IdentRejected without reasons
+[2022-02-24 17:43:36.882422]strue::doTimeout
+[2022-02-24 17:43:36.882422]sendData failed
+[2022-02-24 17:43:36.883420]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:43:36.883420]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:43:36.883420]wait(200ms)...
+[2022-02-24 17:43:36.883420][  785.972523] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:444 tx:268
+[2022-02-24 17:43:36.883420][  785.979893] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:36.883420]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:43:36.883420]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:43:36.883420]Capture Failed
+[2022-02-24 17:43:36.883420]sendData failed
+[2022-02-24 17:43:36.883420]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:43:37.375360][  786.068542] mediaipod:[RX] R.IdentAccepted
+[2022-02-24 17:43:37.375360][  786.070675] mediaipod:IdentificationAccepted
+[2022-02-24 17:43:37.375360][  786.071757] mediaipod:IdentAccep
+[2022-02-24 17:43:37.375360][  786.072502] mediaipod:[RX] ReqAuthCert
+[2022-02-24 17:43:37.375360][  786.100247] IPv6: ADDRCONF(NETDEV_UP): g_usb0: link is not ready
+[2022-02-24 17:43:37.376361][  786.108744] mediaipod:[RX] ReqAuthCert
+[2022-02-24 17:43:37.376361][  786.135709] mediaipod:[RX] ReqAuthChallRsp
+[2022-02-24 17:43:37.376361][  786.141461] IPv6: ADDRCONF(NETDEV_CHANGE): g_usb0: link becomes ready
+[2022-02-24 17:43:37.376361][  786.164166] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:37.376361][  786.190559] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:37.376361][  786.232806] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:37.376361][  786.277841] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:37.376361][  786.305727] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:37.376361][  786.330406] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:37.376361][  786.356062] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:37.376361][  786.391597] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:37.376361][  786.423528] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:37.377352][  786.433415] [MTK-WIFI] WIFI_open: major 242 minor 0 (pid 3861)
+[2022-02-24 17:43:37.377352][  786.434176] [MTK-WIFI] WIFI_write: WIFI_write 0
+[2022-02-24 17:43:37.377352][  786.434176] 
+[2022-02-24 17:43:37.381350][  786.464752] [wlan]wlanoidSetP2pMode:(P2P INFO) Set P2P enable[0] mode[0]
+[2022-02-24 17:43:37.387346][  786.465718] [wlan]p2pRemove:(P2P INFO) fgIsP2PRegistered FALSE
+[2022-02-24 17:43:37.390348][  786.466477] [wlan]p2pDevFsmStateTransition:(P2P STATE) [P2P_DEV]TRANSITION: [P2P_DEV_STATE_IDLE] -> [P2P_DEV_STATE_IDLE]
+[2022-02-24 17:43:37.390348][  786.467953] [wlan]p2pDevStateInit_IDLE:(P2P INFO) prepare to enter sleep in idle
+[2022-02-24 17:43:37.390348][  786.468943] [wlan]p2pRoleFsmUninit:(P2P INFO) ->p2pRoleFsmUninit()
+[2022-02-24 17:43:37.390348][  786.471630] [wlan]nicpmSetDriverOwn:(INIT INFO) DRIVER OWN
+[2022-02-24 17:43:37.390348][  786.476437] [wlan]nicpmSetDriverOwn:(NIC INFO) DRIVER OWN, status=1 count=3
+[2022-02-24 17:43:37.390348][  786.483479] [wlan]nicTxCmd:(TX INFO) TX MGMT Frame: SUBTYPE[c] BSS[1] WIDX:PID[0:0] SEQ[31] STA[255] LEN[56] RSP[0]
+[2022-02-24 17:43:37.390348][  786.485123] [WDK]: kick Ex WDT
+[2022-02-24 17:43:37.391344][  786.547444] mediaipod:[TX] AuthRsp
+[2022-02-24 17:43:37.391344][  786.548040] mediaipod:CLOSECP SUCC[125]
+[2022-02-24 17:43:37.876047][  786.576051] mediaipod:[RX] AuthSucceeded
+[2022-02-24 17:43:37.876047][  786.576720] mediaipod:Auth Success
+[2022-02-24 17:43:37.876047][  786.577570] mediaipod:AUTH [4-0]
+[2022-02-24 17:43:37.876047][  786.586367] [wlan]p2pRoleFsmStateTransition:(P2P STATE) [P2P_ROLE][0]TRANSITION: [P2P_ROLE_STATE_IDLE] -> [P2P_ROLE_STATE_IDLE]
+[2022-02-24 17:43:37.876047][  786.587955] [MTK-WIFI] WIFI_write: Turn off p2p/ap mode[  786.588620] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:wmt-exp: OPID(4) type(3) start
+[2022-02-24 17:43:37.877045][  786.590006] <fw> BCM:i=12,src=2
+[2022-02-24 17:43:37.877045][  786.591328] [wlan]nicpmSetFWOwn:(NIC INFO) FW OWN Failed due to pending INT
+[2022-02-24 17:43:37.877045][  786.593284] [wlan]qmHandleEventBssAbsencePresence:(QM INFO) Bss Absence Presence NAF=1,0,0
+[2022-02-24 17:43:37.877045][  786.597487] [wlan]nicpmSetFWOwn:(NIC INFO) FW OWN
+[2022-02-24 17:43:37.877045][  786.616695] [STP-PSM] [I]psm_do_wait: STP is waiting state for ACT, i=1, state = 0
+[2022-02-24 17:43:37.877045][  786.617668] [STP-PSM] [I]psm_do_wait: +Total waits for ACT takes 20 msec
+[2022-02-24 17:43:37.877045][  786.618606] [HIF-SDIO][I]hif_sdio_wifi_off:start!
+[2022-02-24 17:43:37.877045][  786.619367] [wlan]mtk_sdio_remove:(INIT INFO) pfWlanRemove done
+[2022-02-24 17:43:37.877045][  786.620120] [wlan]wlanRemove:(INIT INFO) Remove wlan!
+[2022-02-24 17:43:37.877045][  786.620877] [MTK-WIFI] register_set_p2p_mode_handler: (pid 2506) register set p2p mode handler           (null)
+[2022-02-24 17:43:37.877045][  786.622175] [wlan]kalPerMonDisable:(SW4 INFO) enter kalPerMonDisable
+[2022-02-24 17:43:37.877045][  786.629849] [wlan]wlanRemove:(INIT WARN) flush_delayed_work fail1
+[2022-02-24 17:43:37.877045][  786.630931] [wlan]wlanRemove:(INIT WARN) flush_delayed_work fail1
+[2022-02-24 17:43:37.877045][  786.635684] [wlan]nicpmSetDriverOwn:(INIT INFO) DRIVER OWN
+[2022-02-24 17:43:37.877045][  786.640821] [wlan]nicpmSetDriverOwn:(NIC INFO) DRIVER OWN, status=1 count=3
+[2022-02-24 17:43:37.877045][  786.645116] [wlan]hif_thread:(INIT INFO) hif_thread should stop now...
+[2022-02-24 17:43:37.877045][  786.646118] [wlan]rx_thread:(INIT INFO) rx_thread should stop now...
+[2022-02-24 17:43:37.877045][  786.647571] [wlan]tx_thread:(INIT INFO) <1>tx_thread should stop now...
+[2022-02-24 17:43:37.877045][  786.648989] [wlan]wlanReleasePendingOid:(INIT INFO) tx_thread stopped! Releasing pending OIDs ..
+[2022-02-24 17:43:37.877045][  786.650512] [wlan]tx_thread:(INIT INFO) mtk_sdiod stops
+[2022-02-24 17:43:37.877045][  786.664948] [wlan]nicpmSetFWOwn:(NIC INFO) FW OWN
+[2022-02-24 17:43:37.877045][  786.666528] [wlan]aisFsmUninit:(SW1 INFO) ->aisFsmUninit()
+[2022-02-24 17:43:37.877045][  786.667500] [wlan]scnUninit:(SCN INFO) ->scnUninit()
+[2022-02-24 17:43:37.877045][  786.668184] [wlan]scnUninit:(SCN INFO) scnFreeAllPendingScanrRquests !!
+[2022-02-24 17:43:37.878044][  786.704787] [HIF-SDIO][I]hif_sdio_wifi_off:ok!
+[2022-02-24 17:43:37.878044][  786.705992] [HIF-SDIO][I]hif_sdio_wifi_off:sdio_release_irq() for wifi ok
+[2022-02-24 17:43:37.878044][  786.707112] [WMT-CORE][I]wmt_core_dump_func_state:[AF FUNC OFF]status(b:2 f:0 g:2 w:0 lpbk:2 coredump:0 wmt:2 ant:0 sd1:0 sd2:2 stp:0)
+[2022-02-24 17:43:37.878044][  786.708998] [HIF-SDIO][I]mtk_wcn_wmt_func_ctrl:OPID(4) type(3) ok
+[2022-02-24 17:43:37.878044][  786.709793] [MTK-WIFI] WIFI_write: WMT turn off WIFI OK!
+[2022-02-24 17:43:37.878044][  786.710498] [MTK-WIFI] WIFI_close: major 242 minor 0 (pid 3861)
+[2022-02-24 17:43:37.878044][  786.744087] mtu3 11271000.usb: 11271000.usb vbus off
+[2022-02-24 17:43:37.878044][  786.745014] NHPnp:ResetUsb Port:[0] start! bPortRes:1
+[2022-02-24 17:43:37.878044][  786.786966] iap_function_suspend
+[2022-02-24 17:43:37.878044][  786.791614] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:37.878044][  786.800615]  usb A disconnect iap 
+[2022-02-24 17:43:37.878044][  786.809586] [TC:786805][TT:46] [ConnectMgr] CarPlay status : [startdisconnect][  786.810485] 
+[2022-02-24 17:43:37.878044][  786.812970] mediaipod:IAP ONSTARTDISCONN [cp]
+[2022-02-24 17:43:37.878044][  786.821683] mtu3 11271000.usb: gadget (high-speed) pullup D-
+[2022-02-24 17:43:37.878044][  786.822460] iap_function_disable
+[2022-02-24 17:43:37.878044][  786.823904] [TC:786819][TT:49] [ConnectMgr] CarPlay status : [disconnect][  786.824999] 
+[2022-02-24 17:43:37.879044][  786.839345] iap_read: device not online state
+[2022-02-24 17:43:37.879044][  786.840530] iap_release
+[2022-02-24 17:43:37.879044][  786.880030] mediaipod:IAP ONDISCONN [cp]
+[2022-02-24 17:43:37.879044][  786.880794] [TC:786876][TT:51] [ConnectMgr] CarPlay status : [removed][  786.881671] 
+[2022-02-24 17:43:37.879044][  786.923460] mtu3 11271000.usb:   from  device  switch to  host
+[2022-02-24 17:43:37.879044][  786.923460]   
+[2022-02-24 17:43:37.879044][  786.975817] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:38.376266][  787.246775] NHPnp:ResetUsb Port:1 end!
+[2022-02-24 17:43:38.376266][  787.247698] mtu3 11271000.usb: 11271000.usb vbus on
+[2022-02-24 17:43:38.376266][  787.252633] vbus is 0 --> 1 ,ovc-->0; index:0
+[2022-02-24 17:43:38.879011][  787.772956] usb usb1-port1: status 0101, change 0000
+[2022-02-24 17:43:38.879011][  787.892774] usb 1-1: new high-speed USB device number 5 using xhci-mtk
+[2022-02-24 17:43:38.879011][  787.960770] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:723 tx:249
+[2022-02-24 17:43:38.879011][  787.965476] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:38.879011][  788.037627] Function = usb_choose_configuration ,Line = 107
+[2022-02-24 17:43:38.879011][  788.038482] ipod set 1500 mA
+[2022-02-24 17:43:38.879011][  788.043901] usb 1-1: 1:1: cannot get freq at ep 0x81
+[2022-02-24 17:43:38.879011][  788.062895] hid-generic 0003:05AC:12A8.0002: hiddev0,hidraw0: USB HID v1.11 Device [Apple Inc. iPhone] on usb-11270000.xhci-1/input2
+[2022-02-24 17:43:39.379145][  788.193281] [TC:788188][TT:53] [ConnectMgr] CarPlay status : [inserted][  788.194150] 
+[2022-02-24 17:43:39.379145][  788.209914] [TC:788205][TT:54] [ConnectMgr] CarPlay status : [request][  788.210737] 
+[2022-02-24 17:43:39.379145][  788.276991] [TC:788272][TT:56] [ConnectMgr] CarPlay status : [startswitch][  788.278355] mtu3 11271000.usb:   from  host  switch to  device
+[2022-02-24 17:43:39.380143][  788.278355]   
+[2022-02-24 17:43:39.380143][  788.278496] mtu3 11271000.usb: gadget (high-speed) pullup D+
+[2022-02-24 17:43:39.380143][  788.278649] usb usb1-port1: status 0100, change 0001
+[2022-02-24 17:43:39.380143][  788.278696] usb 1-1: USB disconnect, device number 5
+[2022-02-24 17:43:39.380143][  788.298154] 
+[2022-02-24 17:43:39.380143][  788.525299] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.881499][  788.628855] g_dio gadget: high-speed config #1: CDC Ethernet (NCM),Iap
+[2022-02-24 17:43:39.881499][  788.722457] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.881499][  788.723897] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.881499][  788.733263]  usb A connect iap 
+[2022-02-24 17:43:39.881499][  788.750224] [TC:788745][TT:60] [ConnectMgr] CarPlay status : [switchcomplete][  788.756095] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.881499][  788.760225] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.881499][  788.764793] 
+[2022-02-24 17:43:39.882495][  788.765202] mediaipod:IAP RoleSw [cp]
+[2022-02-24 17:43:39.882495][  788.768730] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.882495][  788.776529] iap_open
+[2022-02-24 17:43:39.882495][  788.779746] mediaipod:[TX] DtcSend 6
+[2022-02-24 17:43:39.882495][  788.781326] mediaipod:[RX] DtcRecv:[ 0:FF 1:55 2: 2 3: 0 4:EE 5:10 ]
+[2022-02-24 17:43:39.882495][  788.782262] mediaipod:[RX] DtcRecv [2]
+[2022-02-24 17:43:39.882495][  788.783311] iap_release
+[2022-02-24 17:43:39.882495][  788.786559] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.882495][  788.786981] mediaipod:OPENCP SUCC[125]
+[2022-02-24 17:43:39.882495][  788.787211] mediaipod:LOCKCP[fd:125, ret:0, sucess]
+[2022-02-24 17:43:39.882495][  788.808743] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.882495][  788.828981] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.882495][  788.830630] iap_open
+[2022-02-24 17:43:39.882495][  788.830809] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.882495][  788.832909] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:39.882495][  788.853785] mediaipod:[RX] StartIdent
+[2022-02-24 17:43:39.882495][  788.863683] mediaipod:[RX] IdentRejected
+[2022-02-24 17:43:39.882495][  788.864572] mediaipod:[RX] IdentRejected without reasons
+[2022-02-24 17:43:39.882495][  788.975727] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:585 tx:393
+[2022-02-24 17:43:39.885493][  788.976899] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:40.384306][  789.077832] mediaipod:[RX] R.IdentAccepted
+[2022-02-24 17:43:40.384306][  789.078512] mediaipod:IdentificationAccepted
+[2022-02-24 17:43:40.384306][  789.079320] mediaipod:IdentAccep
+[2022-02-24 17:43:40.384306][  789.079889] mediaipod:[RX] ReqAuthCert
+[2022-02-24 17:43:40.384306][  789.081856] mediaipod:[RX] ReqAuthCert
+[2022-02-24 17:43:40.385305][  789.090936] mediaipod:[RX] ReqAuthChallRsp
+[2022-02-24 17:43:40.385305][  789.132769] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:40.385305][  789.171002] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:40.385305][  789.221093] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:40.385305][  789.258738] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:40.385305][  789.285412] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:40.385305][  789.321215] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:40.385305][  789.372323] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:40.385305][  789.417703] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:40.385305][  789.467748] mediaipod:READCP.W[6:No such device or address]
+[2022-02-24 17:43:40.385305][  789.483999] mediaipod:[TX] AuthRsp
+[2022-02-24 17:43:40.385305][  789.484527] mediaipod:CLOSECP SUCC[125]
+[2022-02-24 17:43:40.385305][  789.541629] mediaipod:[RX] AuthSucceeded
+[2022-02-24 17:43:40.385305][  789.542217] mediaipod:Auth Success
+[2022-02-24 17:43:40.385305][  789.542928] mediaipod:AUTH [4-0]
+[2022-02-24 17:43:40.887004][  789.981939] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:343 tx:41
+[2022-02-24 17:43:40.887004][  789.983050] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:41.390160][  790.456928] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:41.891655][  790.648594] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:41.891655][  790.692247] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:41.892658][  790.695673] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:41.892658][  790.717447] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:41.892658][  790.724149] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:41.892658][  790.817024] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:41.892658][  790.825499] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:42.898792][  791.960801] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:799 tx:300
+[2022-02-24 17:43:42.898792][  791.964750] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:43.905179][  792.809732] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:43.905179][  792.831866] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:43.905179][  792.982870] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:587 tx:292
+[2022-02-24 17:43:43.905179][  792.983847] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:45.415041][  794.486014] [WDK]: kick Ex WDT
+[2022-02-24 17:43:45.917123][  794.786691] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:480 tx:249
+[2022-02-24 17:43:45.918118][  794.787684] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:45.919116][  794.816996] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:45.919116][  794.833272] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:46.924515][  795.960547] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:791 tx:227
+[2022-02-24 17:43:46.924515][  795.961631] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:47.931003][  796.805393] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:47.931003][  796.819825] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:47.931003][  796.982925] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:451 tx:290
+[2022-02-24 17:43:47.931003][  796.986806] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:49.944464][  798.787093] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:414 tx:250
+[2022-02-24 17:43:49.944464][  798.788064] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:49.944464][  798.808835] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:49.944464][  798.843283] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:50.950961][  799.964388] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:791 tx:227
+[2022-02-24 17:43:50.951960][  799.973549] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:51.956976][  800.809149] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:51.957975][  800.914347] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:51.957975][  800.981659] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:386 tx:249
+[2022-02-24 17:43:51.957975][  800.982628] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:53.463423][  802.486162] [WDK]: kick Ex WDT
+[2022-02-24 17:43:53.968623][  802.787878] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:415 tx:476
+[2022-02-24 17:43:53.968623][  802.788878] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:53.968623][  802.811554] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:53.968623][  803.009124] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:54.974665][  803.966680] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:860 tx:227
+[2022-02-24 17:43:54.974665][  803.967661] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:55.977707][  804.808874] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:55.979706][  804.979589] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:421 tx:290
+[2022-02-24 17:43:55.980704][  804.988714] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:55.980704][  805.017993] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:57.991869][  806.787544] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:578 tx:249
+[2022-02-24 17:43:57.991869][  806.788656] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:43:57.991869][  806.812938] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:43:57.991869][  807.008417] [MTK-BT] BT_read: Shorten read count from 2048 to 2048

@@ -1,0 +1,789 @@
+[2022-02-24 17:52:13.906614]echo "{\"device\":0,\"type\":10,\"uuid\":\"123456
+[2022-02-24 17:52:13.906614]e\":10,\"uuid\":\"123456                                                      <7890\",\"data\":{\"GESTURE\":[\"KEY=1\"],\"ScreenChang
+[2022-02-24 17:52:13.906614]:{\"GESTURE\":[\"KEY=1\"],\"ScreenChang                                       <e\":false}}" > /data/ws_client_cmd
+[2022-02-24 17:52:13.907614]
+[2022-02-24 17:52:14.406862]uid=0 gid=0@nutshell:/ # [2022-02-24 17:52:14.907719]/data/autotest_client
+[2022-02-24 17:52:14.908719]
+[2022-02-24 17:52:14.908719]ws_client send: {
+[2022-02-24 17:52:14.908719]	"device":	0,
+[2022-02-24 17:52:14.909720]	"type":	10,
+[2022-02-24 17:52:14.909720]	"uuid":	"1234567890",
+[2022-02-24 17:52:14.909720]	"data":	{
+[2022-02-24 17:52:14.909720]		"GESTURE":	["KEY=1"],
+[2022-02-24 17:52:14.909720]		"ScreenChange":	false
+[2022-02-24 17:52:14.909720]	}
+[2022-02-24 17:52:14.909720]}
+[2022-02-24 17:52:14.909720]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:52:14.909720]127.0.0.1:51292 ++ joined
+[2022-02-24 17:52:14.909720]sendData start len:60
+[2022-02-24 17:52:14.909720]sendData end len:60
+[2022-02-24 17:52:14.909720]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:52:14.909720]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:52:14.909720]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:52:14.909720]
+[2022-02-24 17:52:14.909720]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:52:14.909720]
+[2022-02-24 17:52:14.909720]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:52:14.909720]GESTURE: KEY=1
+[2022-02-24 17:52:14.909720]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:14.910720]127.0.0.1:51292 -- left
+[2022-02-24 17:52:14.910720]uid=0 gid=0@nutshell:/ # onInputMonitorMessage device = 0, code = 1, action = 1
+[2022-02-24 17:52:14.910720]
+[2022-02-24 17:52:14.910720]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:14.910720]onAutokeyRecorded:SLEEP=49795
+[2022-02-24 17:52:14.910720]onInputMonitorMessage device = 0, code = 1, action = 0
+[2022-02-24 17:52:14.910720]
+[2022-02-24 17:52:14.910720]onAutokeyRecorded:KEY=1
+[2022-02-24 17:52:14.910720]-> Running Msg
+[2022-02-24 17:52:14.910720]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:52:14.910720]-> Dummy GetScreenInfo
+[2022-02-24 17:52:14.910720]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:14.910720]sendData failed
+[2022-02-24 17:52:14.910720]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:52:14.910720]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:52:14.910720]wait(200ms)...
+[2022-02-24 17:52:14.910720]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:52:14.910720]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:52:14.911719]Capture Failed
+[2022-02-24 17:52:14.911719]sendData failed
+[2022-02-24 17:52:14.911719]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:52:15.408151][  111.944458] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:412 tx:233
+[2022-02-24 17:52:15.408151][  111.945504] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:15.408151][  111.977607] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  111.989025] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  111.990121] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  112.192862] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  112.194546] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  112.213243] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  112.215373] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  112.218452] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  112.245249] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  112.256815] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  112.277215] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.408151][  112.287836] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:15.909064]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:52:15.909064]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"KEY=1\"],\"ScreenChange\
+[2022-02-24 17:52:15.909064]\"GESTURE\":[\"KEY=1\"],\"ScreenChange\                                       <":false}}" > /data/ws_client_cmd
+[2022-02-24 17:52:15.909064]
+[2022-02-24 17:52:16.409535]uid=0 gid=0@nutshell:/ # [  113.029463] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1042 tx:313
+[2022-02-24 17:52:16.409535][  113.031342] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:16.911410]/data/autotest_client
+[2022-02-24 17:52:16.911410]
+[2022-02-24 17:52:16.911410]ws_client send: {
+[2022-02-24 17:52:16.911410]	"device":	0,
+[2022-02-24 17:52:16.911410]	"type":	10,
+[2022-02-24 17:52:16.911410]	"uuid":	"1234567890",
+[2022-02-24 17:52:16.911410]	"data":	{
+[2022-02-24 17:52:16.911410]		"GESTURE":	["KEY=1"],
+[2022-02-24 17:52:16.911410]		"ScreenChange":	false
+[2022-02-24 17:52:16.911410]	}
+[2022-02-24 17:52:16.911410]}
+[2022-02-24 17:52:16.911410]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:52:16.911410]127.0.0.1:51294 ++ joined
+[2022-02-24 17:52:16.911410]sendData start len:60
+[2022-02-24 17:52:16.911410]sendData end len:60
+[2022-02-24 17:52:16.911410]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:52:16.912409]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:52:16.912409]
+[2022-02-24 17:52:16.912409]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:52:16.912409]
+[2022-02-24 17:52:16.912409]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:52:16.912409]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:52:16.912409]127.0.0.1:51294 -- left
+[2022-02-24 17:52:16.912409]GESTURE: KEY=1
+[2022-02-24 17:52:16.912409]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:16.912409]onInputMonitorMessage device = 0, code = 1, action = 1
+[2022-02-24 17:52:16.913408]
+[2022-02-24 17:52:16.913408]onAutokeyRecorded:SLEEP=1998
+[2022-02-24 17:52:16.913408]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:16.913408]uid=0 gid=0@nutshell:/ # onInputMonitorMessage device = 0, code = 1, action = 0
+[2022-02-24 17:52:16.913408]
+[2022-02-24 17:52:16.913408]onAutokeyRecorded:KEY=1
+[2022-02-24 17:52:16.913408]-> Running Msg
+[2022-02-24 17:52:16.913408]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:52:16.913408]-> Dummy GetScreenInfo
+[2022-02-24 17:52:16.913408]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:16.913408]sendData failed
+[2022-02-24 17:52:16.913408]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:52:16.913408]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:52:16.913408]wait(200ms)...
+[2022-02-24 17:52:16.913408]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:52:16.913408]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:52:16.913408]Capture Failed
+[2022-02-24 17:52:16.913408]sendData failed
+[2022-02-24 17:52:16.913408]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:52:17.413205][  114.042481] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:344 tx:268
+[2022-02-24 17:52:17.413205][  114.044130] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:17.913290]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:52:17.913290]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"TOUCH=press,641,305\",\"
+[2022-02-24 17:52:17.913290]\"GESTURE\":[\"TOUCH=press,641,305\",\"                                       <SLEEP=20\",\"TOUCH=hold,641,305\",\"SLE
+[2022-02-24 17:52:17.913290]SLEEP=20\",\"TOUCH=hold,641,305\",\"SLE                                       <EP=20\",\"TOUCH=release,641,305\"],\"Sc
+[2022-02-24 17:52:17.913290]EP=20\",\"TOUCH=release,641,305\"],\"Sc                                       <reenChange\":false}}" > /data/ws_client
+[2022-02-24 17:52:17.913290]reenChange\":false}}" > /data/ws_client                                       <_cmd
+[2022-02-24 17:52:17.913290]
+[2022-02-24 17:52:18.413298]uid=0 gid=0@nutshell:/ # [  115.055760] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:341 tx:41
+[2022-02-24 17:52:18.413298][  115.056745] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:18.915242][  115.336206] [WDK]: kick Ex WDT
+[2022-02-24 17:52:18.915242]/data/autotest_client
+[2022-02-24 17:52:18.915242]
+[2022-02-24 17:52:18.915242]ws_client send: {
+[2022-02-24 17:52:18.915242]	"device":	0,
+[2022-02-24 17:52:18.915242]	"type":	10,
+[2022-02-24 17:52:18.915242]	"uuid":	"1234567890",
+[2022-02-24 17:52:18.915242]	"data":	{
+[2022-02-24 17:52:18.915242]		"GESTURE":	["TOUCH=press,641,305", "SLEEP=20", "TOUCH=hold,641,305", "SLEEP=20", "TOUCH=release,641,305"],
+[2022-02-24 17:52:18.915242]		"ScreenChange":	false
+[2022-02-24 17:52:18.915242]	}
+[2022-02-24 17:52:18.916240]}
+[2022-02-24 17:52:18.916240]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:52:18.916240]127.0.0.1:51296 ++ joined
+[2022-02-24 17:52:18.916240]sendData start len:60
+[2022-02-24 17:52:18.916240]sendData end len:60
+[2022-02-24 17:52:18.916240]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:52:18.916240]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,641,305","SLEEP=20","TOUCH=hold,641,305","SLEEP=20","TOUCH=release,641,305"],"ScreenChange":false}}
+[2022-02-24 17:52:18.916240]
+[2022-02-24 17:52:18.916240]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,641,305","SLEEP=20","TOUCH=hold,641,305","SLEEP=20","TOUCH=release,641,305"],"ScreenChange":false}}
+[2022-02-24 17:52:18.916240]
+[2022-02-24 17:52:18.916240]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:52:18.916240]127.0.0.1:51296 -- left
+[2022-02-24 17:52:18.916240]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:52:18.916240]GESTURE: TOUCH=press,641,305
+[2022-02-24 17:52:18.916240]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:18.917241]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:18.917241]GESTURE: SLEEP=20
+[2022-02-24 17:52:18.917241]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:18.917241]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:18.917241]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:18.917241]  id = 0, isPrimary = 1, state = 1
+[2022-02-24 17:52:18.917241]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:18.917241]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:18.917241]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:18.917241]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:18.917241]
+[2022-02-24 17:52:18.917241]onAutokeyRecorded:SLEEP=1944
+[2022-02-24 17:52:18.917241]onAutokeyRecorded:TOUCH=press,641,305
+[2022-02-24 17:52:18.917241]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:18.917241]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:18.917241]GESTURE: TOUCH=hold,641,305
+[2022-02-24 17:52:18.917241]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:18.917241]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:18.917241]GESTURE: SLEEP=20
+[2022-02-24 17:52:18.917241]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:18.917241]uid=0 gid=0@nutshell:/ # onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:18.917241]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:18.917241]  id = 0, isPrimary = 1, state = 4
+[2022-02-24 17:52:18.917241]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:18.917241]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:18.917241]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:18.918240]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:18.918240]
+[2022-02-24 17:52:18.918240]onAutokeyRecorded:SLEEP=23
+[2022-02-24 17:52:18.918240]onAutokeyRecorded:TOUCH=hold,641,305
+[2022-02-24 17:52:18.918240]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:18.918240]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:18.918240]GESTURE: TOUCH=release,641,305
+[2022-02-24 17:52:18.918240]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:18.918240]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:18.918240]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:18.918240]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:18.918240]  id = 0, isPrimary = 1, state = 8
+[2022-02-24 17:52:18.918240]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:18.918240]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:18.918240]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:18.918240]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:18.918240]
+[2022-02-24 17:52:18.918240]onAutokeyRecorded:SLEEP=11
+[2022-02-24 17:52:18.918240]onAutokeyRecorded:TOUCH=release,641,305
+[2022-02-24 17:52:18.918240]-> Running Msg
+[2022-02-24 17:52:18.918240]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:52:18.918240]-> Dummy GetScreenInfo
+[2022-02-24 17:52:18.918240]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:18.918240]sendData failed
+[2022-02-24 17:52:18.918240]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:52:18.918240]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:52:18.919240]wait(200ms)...
+[2022-02-24 17:52:18.919240]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:52:18.919240]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:52:18.919240]Capture Failed
+[2022-02-24 17:52:18.919240]sendData failed
+[2022-02-24 17:52:18.919240]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:52:20.416652][  117.027939] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:886 tx:227
+[2022-02-24 17:52:20.416652][  117.028981] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:20.416652]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:52:20.416652]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"TOUCH=press,476,226\",\"
+[2022-02-24 17:52:20.416652]\"GESTURE\":[\"TOUCH=press,476,226\",\"                                       <SLEEP=20\",\"TOUCH=hold,476,226\",\"SLE
+[2022-02-24 17:52:20.416652]SLEEP=20\",\"TOUCH=hold,476,226\",\"SLE                                       <EP=20\",\"TOUCH=release,476,226\"],\"Sc
+[2022-02-24 17:52:20.416652]EP=20\",\"TOUCH=release,476,226\"],\"Sc                                       <reenChange\":false}}" > /data/ws_client
+[2022-02-24 17:52:20.416652]reenChange\":false}}" > /data/ws_client                                       <_cmd
+[2022-02-24 17:52:20.417623]
+[2022-02-24 17:52:20.916870]uid=0 gid=0@nutshell:/ # [2022-02-24 17:52:21.417937]/data/autotest_client
+[2022-02-24 17:52:21.417937]
+[2022-02-24 17:52:21.418938]ws_client send: {
+[2022-02-24 17:52:21.418938]	"device":	0,
+[2022-02-24 17:52:21.418938]	"type":	10,
+[2022-02-24 17:52:21.418938]	"uuid":	"1234567890",
+[2022-02-24 17:52:21.418938]	"data":	{
+[2022-02-24 17:52:21.418938]		"GESTURE":	["TOUCH=press,476,226", "SLEEP=20", "TOUCH=hold,476,226", "SLEEP=20", "TOUCH=release,476,226"],
+[2022-02-24 17:52:21.418938]		"ScreenChange":	false
+[2022-02-24 17:52:21.418938]	}
+[2022-02-24 17:52:21.418938]}
+[2022-02-24 17:52:21.418938]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:52:21.418938]127.0.0.1:51298 ++ joined
+[2022-02-24 17:52:21.418938]sendData start len:60
+[2022-02-24 17:52:21.418938]sendData end len:60
+[2022-02-24 17:52:21.418938]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:52:21.418938]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,476,226","SLEEP=20","TOUCH=hold,476,226","SLEEP=20","TOUCH=release,476,226"],"ScreenChange":false}}
+[2022-02-24 17:52:21.418938]
+[2022-02-24 17:52:21.418938]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,476,226","SLEEP=20","TOUCH=hold,476,226","SLEEP=20","TOUCH=release,476,226"],"ScreenChange":false}}
+[2022-02-24 17:52:21.418938]
+[2022-02-24 17:52:21.418938]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:52:21.418938]GESTURE: TOUCH=press,476,226
+[2022-02-24 17:52:21.418938]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:21.418938]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:21.418938]GESTURE: SLEEP=20
+[2022-02-24 17:52:21.419934]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:21.419934]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:52:21.419934]127.0.0.1:51298 -- left
+[2022-02-24 17:52:21.419934]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:21.419934]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:21.419934]  id = 0, isPrimary = 1, state = 1
+[2022-02-24 17:52:21.419934]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:21.419934]    x = 476.000000, y = 226.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:21.419934]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:21.419934]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:21.419934]
+[2022-02-24 17:52:21.419934]onAutokeyRecorded:SLEEP=2474
+[2022-02-24 17:52:21.419934]onAutokeyRecorded:TOUCH=press,476,226
+[2022-02-24 17:52:21.419934]uid=0 gid=0@nutshell:/ # AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:21.419934]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:21.419934]GESTURE: TOUCH=hold,476,226
+[2022-02-24 17:52:21.419934]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:21.419934]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:21.419934]GESTURE: SLEEP=20
+[2022-02-24 17:52:21.419934]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:21.419934]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:21.419934]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:21.419934]  id = 0, isPrimary = 1, state = 4
+[2022-02-24 17:52:21.419934]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:21.419934]    x = 476.000000, y = 226.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:21.419934]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:21.419934]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:21.420934]
+[2022-02-24 17:52:21.420934]onAutokeyRecorded:SLEEP=14
+[2022-02-24 17:52:21.420934]onAutokeyRecorded:TOUCH=hold,476,226
+[2022-02-24 17:52:21.420934]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:21.420934]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:21.420934]GESTURE: TOUCH=release,476,226
+[2022-02-24 17:52:21.420934]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:21.420934]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:21.420934]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:21.420934]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:21.420934]  id = 0, isPrimary = 1, state = 8
+[2022-02-24 17:52:21.420934]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:21.420934]    x = 476.000000, y = 226.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:21.420934]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:21.420934]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:21.420934]
+[2022-02-24 17:52:21.420934]onAutokeyRecorded:SLEEP=30
+[2022-02-24 17:52:21.420934]onAutokeyRecorded:TOUCH=release,476,226
+[2022-02-24 17:52:21.420934]-> Running Msg
+[2022-02-24 17:52:21.420934]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:52:21.420934]-> Dummy GetScreenInfo
+[2022-02-24 17:52:21.420934][  118.041910] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:408 tx:227
+[2022-02-24 17:52:21.420934][  118.042881] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:21.420934]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:21.420934]sendData failed
+[2022-02-24 17:52:21.421933]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:52:21.421933]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:52:21.421933]wait(200ms)...
+[2022-02-24 17:52:21.421933]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:52:21.421933]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:52:21.421933]Capture Failed
+[2022-02-24 17:52:21.421933]sendData failed
+[2022-02-24 17:52:21.421933]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:52:22.419070]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:52:22.419070]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"TOUCH=press,277,597\",\"
+[2022-02-24 17:52:22.419070]\"GESTURE\":[\"TOUCH=press,277,597\",\"                                       <SLEEP=20\",\"TOUCH=hold,277,597\",\"SLE
+[2022-02-24 17:52:22.419070]SLEEP=20\",\"TOUCH=hold,277,597\",\"SLE                                       <EP=20\",\"TOUCH=release,277,597\"],\"Sc
+[2022-02-24 17:52:22.419070]EP=20\",\"TOUCH=release,277,597\"],\"Sc                                       <reenChange\":false}}" > /data/ws_client
+[2022-02-24 17:52:22.419070]reenChange\":false}}" > /data/ws_client                                       <_cmd
+[2022-02-24 17:52:22.419070]
+[2022-02-24 17:52:22.419070]uid=0 gid=0@nutshell:/ # [  119.053311] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:341 tx:268
+[2022-02-24 17:52:22.419070][  119.054283] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:22.921038]/data/autotest_client
+[2022-02-24 17:52:22.921038]
+[2022-02-24 17:52:22.921038]ws_client send: {
+[2022-02-24 17:52:22.921038]	"device":	0,
+[2022-02-24 17:52:22.921038]	"type":	10,
+[2022-02-24 17:52:22.921038]	"uuid":	"1234567890",
+[2022-02-24 17:52:22.921038]	"data":	{
+[2022-02-24 17:52:22.921038]		"GESTURE":	["TOUCH=press,277,597", "SLEEP=20", "TOUCH=hold,277,597", "SLEEP=20", "TOUCH=release,277,597"],
+[2022-02-24 17:52:22.921038]		"ScreenChange":	false
+[2022-02-24 17:52:22.922037]	}
+[2022-02-24 17:52:22.922037]}
+[2022-02-24 17:52:22.922037]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:52:22.922037]127.0.0.1:51300 ++ joined
+[2022-02-24 17:52:22.922037]sendData start len:60
+[2022-02-24 17:52:22.922037]sendData end len:60
+[2022-02-24 17:52:22.922037]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:52:22.922037]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,277,597","SLEEP=20","TOUCH=hold,277,597","SLEEP=20","TOUCH=release,277,597"],"ScreenChange":false}}
+[2022-02-24 17:52:22.922037]
+[2022-02-24 17:52:22.922037]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,277,597","SLEEP=20","TOUCH=hold,277,597","SLEEP=20","TOUCH=release,277,597"],"ScreenChange":false}}
+[2022-02-24 17:52:22.922037]
+[2022-02-24 17:52:22.922037]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:52:22.922037]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:52:22.922037]GESTURE: TOUCH=press,277,597
+[2022-02-24 17:52:22.922037]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:22.922037]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:22.922037]GESTURE: SLEEP=20
+[2022-02-24 17:52:22.923037]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:22.923037]127.0.0.1:51300 -- left
+[2022-02-24 17:52:22.923037]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:22.923037]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:22.923037]  id = 0, isPrimary = 1, state = 1
+[2022-02-24 17:52:22.923037]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:22.923037]    x = 277.000000, y = 597.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:22.923037]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:22.923037]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:22.923037]
+[2022-02-24 17:52:22.923037]onAutokeyRecorded:SLEEP=1444
+[2022-02-24 17:52:22.923037]onAutokeyRecorded:TOUCH=press,277,597
+[2022-02-24 17:52:22.923037]uid=0 gid=0@nutshell:/ # AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:22.923037]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:22.923037]GESTURE: TOUCH=hold,277,597
+[2022-02-24 17:52:22.923037]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:22.923037]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:22.923037]GESTURE: SLEEP=20
+[2022-02-24 17:52:22.923037]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:22.923037]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:22.923037]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:22.923037]GESTURE: TOUCH=release,277,597
+[2022-02-24 17:52:22.924036]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:22.924036]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:22.924036]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:22.924036]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:22.924036]  id = 0, isPrimary = 1, state = 4
+[2022-02-24 17:52:22.924036]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:22.924036]    x = 277.000000, y = 597.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:22.924036]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:22.924036]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:22.924036]
+[2022-02-24 17:52:22.924036]onAutokeyRecorded:SLEEP=82
+[2022-02-24 17:52:22.924036]onAutokeyRecorded:TOUCH=hold,277,597
+[2022-02-24 17:52:22.924036]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:22.924036]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:22.924036]  id = 0, isPrimary = 1, state = 8
+[2022-02-24 17:52:22.924036]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:22.924036]    x = 277.000000, y = 597.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:22.924036]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:22.924036]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:22.924036]
+[2022-02-24 17:52:22.924036]onAutokeyRecorded:SLEEP=2
+[2022-02-24 17:52:22.924036]onAutokeyRecorded:TOUCH=release,277,597
+[2022-02-24 17:52:22.924036]-> Running Msg
+[2022-02-24 17:52:22.924036]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:52:22.925034]-> Dummy GetScreenInfo
+[2022-02-24 17:52:22.925034]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:22.925034]sendData failed
+[2022-02-24 17:52:22.925034]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:52:22.925034]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:52:22.925034]wait(200ms)...
+[2022-02-24 17:52:23.423473]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:52:23.423473]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:52:23.423473]Capture Failed
+[2022-02-24 17:52:23.423473]sendData failed
+[2022-02-24 17:52:23.423473]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:52:23.923446]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:52:23.923446]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"KEY=1\"],\"ScreenChange\
+[2022-02-24 17:52:23.923446]\"GESTURE\":[\"KEY=1\"],\"ScreenChange\                                       <":false}}" > /data/ws_client_cmd
+[2022-02-24 17:52:23.923446]
+[2022-02-24 17:52:24.423870]uid=0 gid=0@nutshell:/ # [  121.027346] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:818 tx:227
+[2022-02-24 17:52:24.423870][  121.028422] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:24.924253]/data/autotest_client
+[2022-02-24 17:52:24.925256]
+[2022-02-24 17:52:24.925256]ws_client send: {
+[2022-02-24 17:52:24.925256]	"device":	0,
+[2022-02-24 17:52:24.925256]	"type":	10,
+[2022-02-24 17:52:24.925256]	"uuid":	"1234567890",
+[2022-02-24 17:52:24.925256]	"data":	{
+[2022-02-24 17:52:24.925256]		"GESTURE":	["KEY=1"],
+[2022-02-24 17:52:24.925256]		"ScreenChange":	false
+[2022-02-24 17:52:24.925256]	}
+[2022-02-24 17:52:24.925256]}
+[2022-02-24 17:52:24.925256]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:52:24.925256]127.0.0.1:51302 ++ joined
+[2022-02-24 17:52:24.926254]sendData start len:60
+[2022-02-24 17:52:24.926254]sendData end len:60
+[2022-02-24 17:52:24.926254]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:52:24.926254]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:52:24.926254]
+[2022-02-24 17:52:24.926254]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["KEY=1"],"ScreenChange":false}}
+[2022-02-24 17:52:24.926254]
+[2022-02-24 17:52:24.926254]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:52:24.926254]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:52:24.926254]GESTURE: KEY=1
+[2022-02-24 17:52:24.926254]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:24.926254]127.0.0.1:51302 -- left
+[2022-02-24 17:52:24.926254]onInputMonitorMessage device = 0, code = 1, action = 1
+[2022-02-24 17:52:24.926254]
+[2022-02-24 17:52:24.926254]onAutokeyRecorded:SLEEP=1937
+[2022-02-24 17:52:24.926254]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:24.926254]uid=0 gid=0@nutshell:/ # onInputMonitorMessage device = 0, code = 1, action = 0
+[2022-02-24 17:52:24.926254]
+[2022-02-24 17:52:24.926254]onAutokeyRecorded:KEY=1
+[2022-02-24 17:52:24.926254]-> Running Msg
+[2022-02-24 17:52:24.926254]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:52:24.926254]-> Dummy GetScreenInfo
+[2022-02-24 17:52:24.927254]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:24.927254]sendData failed
+[2022-02-24 17:52:24.927254]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:52:24.927254]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:52:24.927254]wait(200ms)...
+[2022-02-24 17:52:24.927254]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:52:24.927254]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:52:24.927254]Capture Failed
+[2022-02-24 17:52:24.927254]sendData failed
+[2022-02-24 17:52:24.927254]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:52:25.425445][  122.041230] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:408 tx:268
+[2022-02-24 17:52:25.425445][  122.042232] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:25.926281][  122.357067] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:25.926281]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:52:25.926281]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"TOUCH=press,641,305\",\"
+[2022-02-24 17:52:25.926281]\"GESTURE\":[\"TOUCH=press,641,305\",\"                                       <SLEEP=20\",\"TOUCH=hold,641,305\",\"SLE
+[2022-02-24 17:52:25.926281]SLEEP=20\",\"TOUCH=hold,641,305\",\"SLE                                       <EP=20\",\"TOUCH=release,641,305\"],\"Sc
+[2022-02-24 17:52:25.926281]EP=20\",\"TOUCH=release,641,305\"],\"Sc                                       <reenChange\":false}}" > /data/ws_client
+[2022-02-24 17:52:25.927280]reenChange\":false}}" > /data/ws_client                                       <_cmd
+[2022-02-24 17:52:25.927280]
+[2022-02-24 17:52:25.927280]uid=0 gid=0@nutshell:/ # [  122.557364] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:25.927280][  122.577417] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:25.927280][  122.580531] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:25.927280][  122.602824] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:25.927280][  122.611484] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:25.927280][  122.633760] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:25.927280][  122.660984] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:26.427279]/data/autotest_client
+[2022-02-24 17:52:26.428280]
+[2022-02-24 17:52:26.428280]ws_client send: {
+[2022-02-24 17:52:26.428280]	"device":	0,
+[2022-02-24 17:52:26.428280]	"type":	10,
+[2022-02-24 17:52:26.428280]	"uuid":	"1234567890",
+[2022-02-24 17:52:26.428280]	"data":	{
+[2022-02-24 17:52:26.428280]		"GESTURE":	["TOUCH=press,641,305", "SLEEP=20", "TOUCH=hold,641,305", "SLEEP=20", "TOUCH=release,641,305"],
+[2022-02-24 17:52:26.428280]		"ScreenChange":	false
+[2022-02-24 17:52:26.428280]	}
+[2022-02-24 17:52:26.428280]}
+[2022-02-24 17:52:26.428280]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:52:26.428280]127.0.0.1:51304 ++ joined
+[2022-02-24 17:52:26.428280]sendData start len:60
+[2022-02-24 17:52:26.428280]sendData end len:60
+[2022-02-24 17:52:26.428280]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:52:26.428280]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,641,305","SLEEP=20","TOUCH=hold,641,305","SLEEP=20","TOUCH=release,641,305"],"ScreenChange":false}}
+[2022-02-24 17:52:26.428280]
+[2022-02-24 17:52:26.428280]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,641,305","SLEEP=20","TOUCH=hold,641,305","SLEEP=20","TOUCH=release,641,305"],"ScreenChange":false}}
+[2022-02-24 17:52:26.428280]
+[2022-02-24 17:52:26.428280]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:52:26.428280]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:52:26.428280]127.0.0.1:51304 -- left
+[2022-02-24 17:52:26.428280]GESTURE: TOUCH=press,641,305
+[2022-02-24 17:52:26.428280]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:26.428280]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:26.429278]GESTURE: SLEEP=20
+[2022-02-24 17:52:26.429278]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:26.429278]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:26.429278]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:26.429278]  id = 0, isPrimary = 1, state = 1
+[2022-02-24 17:52:26.429278]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:26.429278]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:26.429278]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:26.429278]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:26.429278]
+[2022-02-24 17:52:26.429278]onAutokeyRecorded:SLEEP=1429
+[2022-02-24 17:52:26.429278]onAutokeyRecorded:TOUCH=press,641,305
+[2022-02-24 17:52:26.429278]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:26.429278]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:26.429278]GESTURE: TOUCH=hold,641,305
+[2022-02-24 17:52:26.429278]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:26.429278]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:26.429278]GESTURE: SLEEP=20
+[2022-02-24 17:52:26.429278]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:26.429278]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:26.429278]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:26.429278]  id = 0, isPrimary = 1, state = 4
+[2022-02-24 17:52:26.429278]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:26.429278]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:26.429278]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:26.429278]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:26.429278]
+[2022-02-24 17:52:26.430278]onAutokeyRecorded:SLEEP=27
+[2022-02-24 17:52:26.430278]onAutokeyRecorded:TOUCH=hold,641,305
+[2022-02-24 17:52:26.430278]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:26.430278]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:26.430278]GESTURE: TOUCH=release,641,305
+[2022-02-24 17:52:26.430278]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:26.430278]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:26.430278]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:26.430278]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:26.430278]  id = 0, isPrimary = 1, state = 8
+[2022-02-24 17:52:26.430278]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:26.430278]    x = 641.000000, y = 305.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:26.430278]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:26.430278]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:26.430278]
+[2022-02-24 17:52:26.430278]onAutokeyRecorded:SLEEP=22
+[2022-02-24 17:52:26.430278]onAutokeyRecorded:TOUCH=release,641,305
+[2022-02-24 17:52:26.430278]-> Running Msg
+[2022-02-24 17:52:26.430278]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:52:26.430278]-> Dummy GetScreenInfo
+[2022-02-24 17:52:26.430278]uid=0 gid=0@nutshell:/ # AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:26.430278]sendData failed
+[2022-02-24 17:52:26.430278]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:52:26.431277]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:52:26.431277]wait(200ms)...
+[2022-02-24 17:52:26.431277]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:52:26.431277]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:52:26.431277]Capture Failed
+[2022-02-24 17:52:26.431277]sendData failed
+[2022-02-24 17:52:26.431277]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:52:26.431277][  123.336530] [WDK]: kick Ex WDT
+[2022-02-24 17:52:27.428059]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:52:27.428059]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"TOUCH=press,476,226\",\"
+[2022-02-24 17:52:27.428059]\"GESTURE\":[\"TOUCH=press,476,226\",\"                                       <SLEEP=20\",\"TOUCH=hold,476,226\",\"SLE
+[2022-02-24 17:52:27.428059]SLEEP=20\",\"TOUCH=hold,476,226\",\"SLE                                       <EP=20\",\"TOUCH=release,476,226\"],\"Sc
+[2022-02-24 17:52:27.428059]EP=20\",\"TOUCH=release,476,226\"],\"Sc                                       <reenChange\":false}}" > /data/ws_client
+[2022-02-24 17:52:27.428059]reenChange\":false}}" > /data/ws_client                                       <_cmd
+[2022-02-24 17:52:27.429058]
+[2022-02-24 17:52:27.429058]uid=0 gid=0@nutshell:/ # [  124.027507] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1156 tx:330
+[2022-02-24 17:52:27.429058][  124.028714] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:27.929211]/data/autotest_client
+[2022-02-24 17:52:27.929211]
+[2022-02-24 17:52:27.929211]ws_client send: {
+[2022-02-24 17:52:27.929211]	"device":	0,
+[2022-02-24 17:52:27.929211]	"type":	10,
+[2022-02-24 17:52:27.929211]	"uuid":	"1234567890",
+[2022-02-24 17:52:27.930210]	"data":	{
+[2022-02-24 17:52:27.930210]		"GESTURE":	["TOUCH=press,476,226", "SLEEP=20", "TOUCH=hold,476,226", "SLEEP=20", "TOUCH=release,476,226"],
+[2022-02-24 17:52:27.930210]		"ScreenChange":	false
+[2022-02-24 17:52:27.930210]	}
+[2022-02-24 17:52:27.930210]}
+[2022-02-24 17:52:27.930210]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:52:27.930210]127.0.0.1:51306 ++ joined
+[2022-02-24 17:52:27.930210]sendData start len:60
+[2022-02-24 17:52:27.930210]sendData end len:60
+[2022-02-24 17:52:27.930210]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:52:27.930210]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,476,226","SLEEP=20","TOUCH=hold,476,226","SLEEP=20","TOUCH=release,476,226"],"ScreenChange":false}}
+[2022-02-24 17:52:27.930210]
+[2022-02-24 17:52:27.930210]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,476,226","SLEEP=20","TOUCH=hold,476,226","SLEEP=20","TOUCH=release,476,226"],"ScreenChange":false}}
+[2022-02-24 17:52:27.930210]
+[2022-02-24 17:52:27.930210]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:52:27.930210]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:52:27.930210]127.0.0.1:51306 -- left
+[2022-02-24 17:52:27.930210]GESTURE: TOUCH=press,476,226
+[2022-02-24 17:52:27.930210]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:27.930210]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:27.930210]GESTURE: SLEEP=20
+[2022-02-24 17:52:27.930210]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:27.930210]uid=0 gid=0@nutshell:/ # onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:27.930210]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:27.930210]  id = 0, isPrimary = 1, state = 1
+[2022-02-24 17:52:27.930210]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:27.931209]    x = 476.000000, y = 226.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:27.931209]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:27.931209]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:27.931209]
+[2022-02-24 17:52:27.931209]onAutokeyRecorded:SLEEP=1466
+[2022-02-24 17:52:27.931209]onAutokeyRecorded:TOUCH=press,476,226
+[2022-02-24 17:52:27.931209]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:27.931209]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:27.931209]GESTURE: TOUCH=hold,476,226
+[2022-02-24 17:52:27.931209]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:27.931209]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:27.931209]GESTURE: SLEEP=20
+[2022-02-24 17:52:27.931209]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:27.931209]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:27.931209]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:27.931209]  id = 0, isPrimary = 1, state = 4
+[2022-02-24 17:52:27.931209]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:27.931209]    x = 476.000000, y = 226.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:27.931209]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:27.931209]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:27.931209]
+[2022-02-24 17:52:27.931209]onAutokeyRecorded:SLEEP=12
+[2022-02-24 17:52:27.931209]onAutokeyRecorded:TOUCH=hold,476,226
+[2022-02-24 17:52:27.931209]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:27.931209]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:27.931209]GESTURE: TOUCH=release,476,226
+[2022-02-24 17:52:27.931209]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:27.932209]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:27.932209]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:27.932209]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:27.932209]  id = 0, isPrimary = 1, state = 8
+[2022-02-24 17:52:27.932209]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:27.932209]    x = 476.000000, y = 226.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:27.932209]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:27.932209]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:27.932209]
+[2022-02-24 17:52:27.932209]onAutokeyRecorded:SLEEP=25
+[2022-02-24 17:52:27.932209]onAutokeyRecorded:TOUCH=release,476,226
+[2022-02-24 17:52:27.932209]-> Running Msg
+[2022-02-24 17:52:27.932209]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:52:27.932209]-> Dummy GetScreenInfo
+[2022-02-24 17:52:27.932209]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:27.932209]sendData failed
+[2022-02-24 17:52:27.932209]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:52:27.932209]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:52:27.932209]wait(200ms)...
+[2022-02-24 17:52:27.932209]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:52:27.932209]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:52:27.932209]Capture Failed
+[2022-02-24 17:52:27.932209]sendData failed
+[2022-02-24 17:52:27.932209]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:52:28.430077][  125.044478] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:547 tx:268
+[2022-02-24 17:52:28.430077][  125.045503] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:29.432347]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890
+[2022-02-24 17:52:29.432347]":10,\"uuid\":\"1234567890                                                    <\",\"data\":{\"GESTURE\":[\"TOUCH=press,476,226\",\"
+[2022-02-24 17:52:29.432347]\"GESTURE\":[\"TOUCH=press,476,226\",\"                                       <SLEEP=20\",\"TOUCH=hold,476,226\",\"SLE
+[2022-02-24 17:52:29.432347]SLEEP=20\",\"TOUCH=hold,476,226\",\"SLE                                       <EP=20\",\"TOUCH=release,476,226\"],\"Sc
+[2022-02-24 17:52:29.432347]EP=20\",\"TOUCH=release,476,226\"],\"Sc                                       <reenChang[  126.053203] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:744 tx:41
+[2022-02-24 17:52:29.432347]e\":false}}" > /[  126.054197] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:29.432347]data/ws_client
+[2022-02-24 17:52:29.432347]reenChange\":false}}" > /data/ws_client                                       <_cmd
+[2022-02-24 17:52:29.432347]
+[2022-02-24 17:52:29.932788]uid=0 gid=0@nutshell:/ # [2022-02-24 17:52:30.434200]/data/autotest_client
+[2022-02-24 17:52:30.434200]
+[2022-02-24 17:52:30.434200]ws_client send: {
+[2022-02-24 17:52:30.434200]	"device":	0,
+[2022-02-24 17:52:30.434200]	"type":	10,
+[2022-02-24 17:52:30.434200]	"uuid":	"1234567890",
+[2022-02-24 17:52:30.435199]	"data":	{
+[2022-02-24 17:52:30.435199]		"GESTURE":	["TOUCH=press,476,226", "SLEEP=20", "TOUCH=hold,476,226", "SLEEP=20", "TOUCH=release,476,226"],
+[2022-02-24 17:52:30.435199]		"ScreenChange":	false
+[2022-02-24 17:52:30.435199]	}
+[2022-02-24 17:52:30.435199]}
+[2022-02-24 17:52:30.435199]easywsclient: connecting: host=127.0.0.1 port=11134 path=/
+[2022-02-24 17:52:30.435199]127.0.0.1:51308 ++ joined
+[2022-02-24 17:52:30.435199]sendData start len:60
+[2022-02-24 17:52:30.435199]sendData end len:60
+[2022-02-24 17:52:30.435199]Connected to: ws://127.0.0.1:11134
+[2022-02-24 17:52:30.435199]ws_client recv: {"data":{"connected":"connect success"},"error":"","type":0}
+[2022-02-24 17:52:30.435199]ev_handler:{"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,476,226","SLEEP=20","TOUCH=hold,476,226","SLEEP=20","TOUCH=release,476,226"],"ScreenChange":false}}
+[2022-02-24 17:52:30.435199]
+[2022-02-24 17:52:30.435199]AT_Protocol::handle: {"device":0,"type":10,"uuid":"1234567890","data":{"GESTURE":["TOUCH=press,476,226","SLEEP=20","TOUCH=hold,476,226","SLEEP=20","TOUCH=release,476,226"],"ScreenChange":false}}
+[2022-02-24 17:52:30.435199]
+[2022-02-24 17:52:30.435199]AT_Msg_RequestGestrue::doAction Start
+[2022-02-24 17:52:30.435199]GESTURE: TOUCH=press,476,226
+[2022-02-24 17:52:30.435199]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:30.435199]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:30.435199]GESTURE: SLEEP=20
+[2022-02-24 17:52:30.435199]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:30.435199]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:30.435199]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:30.436200]  id = 0, isPrimary = 1, state = 1
+[2022-02-24 17:52:30.436200]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:30.436200]    x = 476.000000, y = 226.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:30.436200]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:30.436200]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:30.436200]
+[2022-02-24 17:52:30.436200]onAutokeyRecorded:SLEEP=2469
+[2022-02-24 17:52:30.436200]onAutokeyRecorded:TOUCH=press,476,226
+[2022-02-24 17:52:30.436200]127.0.0.1:51308 -- left
+[2022-02-24 17:52:30.436200]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:30.436200]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:30.436200]GESTURE: TOUCH=hold,476,226
+[2022-02-24 17:52:30.436200]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:30.436200]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:30.436200]GESTURE: SLEEP=20
+[2022-02-24 17:52:30.436200]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:30.436200]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:30.436200]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:30.436200]  id = 0, isPrimary = 1, state = 4
+[2022-02-24 17:52:30.436200]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:30.436200]    x = 476.000000, y = 226.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:30.436200]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:30.436200]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:30.436200]
+[2022-02-24 17:52:30.436200]onAutokeyRecorded:SLEEP=22
+[2022-02-24 17:52:30.437198]onAutokeyRecorded:TOUCH=hold,476,226
+[2022-02-24 17:52:30.437198]uid=0 gid=0@nutshell:/ # AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:30.437198]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:30.437198]GESTURE: TOUCH=release,476,226
+[2022-02-24 17:52:30.437198]AT_Msg_RequestGestrue::doAction simulate start
+[2022-02-24 17:52:30.437198]AT_Msg_RequestGestrue::doAction simulate end
+[2022-02-24 17:52:30.437198]onTouchMonitorMessage mtdata.size = 48, mtdata.alloc = 0, mtdata.data = 0x7fa4001b80
+[2022-02-24 17:52:30.437198]  NCSurfaceMultiTouchPoint
+[2022-02-24 17:52:30.437198]  id = 0, isPrimary = 1, state = 8
+[2022-02-24 17:52:30.437198]    NCSurfaceOutPointerCoords
+[2022-02-24 17:52:30.437198]    x = 476.000000, y = 226.000000, pressure = 1.000000, size = 0.000000
+[2022-02-24 17:52:30.437198]    touchMajor = 20.000000, touchMinor = 0.000000
+[2022-02-24 17:52:30.437198]    toolMajor = 0.000000, toolMinor = 0.000000, orientation = 0.000000
+[2022-02-24 17:52:30.437198]
+[2022-02-24 17:52:30.437198]onAutokeyRecorded:SLEEP=22
+[2022-02-24 17:52:30.437198]onAutokeyRecorded:TOUCH=release,476,226
+[2022-02-24 17:52:30.438197]-> Running Msg
+[2022-02-24 17:52:30.438197]AT_Msg_RequestGestrue::onTransEnd
+[2022-02-24 17:52:30.438197]-> Dummy GetScreenInfo
+[2022-02-24 17:52:30.438197]AT_Msg_RequestGestrue::doTimeout
+[2022-02-24 17:52:30.438197]sendData failed
+[2022-02-24 17:52:30.438197]AT_Msg_RequestGestrue::doAction End
+[2022-02-24 17:52:30.438197]AT_Msg_GetScreenInfo::doAction Start
+[2022-02-24 17:52:30.438197]wait(200ms)...
+[2022-02-24 17:52:30.438197]AT_Msg_GetScreenInfo::doTimeout
+[2022-02-24 17:52:30.438197]CaptureScreen: Can't open framebuffer
+[2022-02-24 17:52:30.438197]Capture Failed
+[2022-02-24 17:52:30.438197]sendData failed
+[2022-02-24 17:52:30.438197]AT_Msg_GetScreenInfo::doAction End
+[2022-02-24 17:52:31.437153][  128.028579] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:818 tx:227
+[2022-02-24 17:52:31.437153][  128.031523] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:32.440383][  129.043320] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:342 tx:268
+[2022-02-24 17:52:32.440383][  129.046312] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:33.451861][  130.050719] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:342 tx:227
+[2022-02-24 17:52:33.451861][  130.052833] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:34.456867][  131.336657] [WDK]: kick Ex WDT
+[2022-02-24 17:52:35.464927][  132.028263] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:409 tx:227
+[2022-02-24 17:52:35.465923][  132.031337] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:35.967379][  132.730970] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:36.471133][  132.956320] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:36.471133][  132.959022] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:36.471133][  132.968009] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:36.471133][  132.969421] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:36.471133][  132.987147] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:36.471133][  133.005233] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:36.471133][  133.013576] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:36.471133][  133.020902] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:36.471133][  133.029519] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:36.471133][  133.079561] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:480 tx:371
+[2022-02-24 17:52:36.471133][  133.080532] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:38.485120][  135.027887] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:684 tx:227
+[2022-02-24 17:52:38.485120][  135.028861] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:39.492235][  136.041295] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:408 tx:268
+[2022-02-24 17:52:39.492235][  136.042279] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:40.497748][  137.047899] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:408 tx:227
+[2022-02-24 17:52:40.497748][  137.054921] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:42.506569][  139.027518] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:341 tx:227
+[2022-02-24 17:52:42.506569][  139.028698] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:42.506569][  139.269293] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:42.506569][  139.336785] [WDK]: kick Ex WDT
+[2022-02-24 17:52:43.006825][  139.478205] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:43.006825][  139.484248] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:43.506959][  140.043590] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:480 tx:291
+[2022-02-24 17:52:43.506959][  140.050693] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:45.523741][  142.027508] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:749 tx:227
+[2022-02-24 17:52:45.523741][  142.028481] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:46.527232][  143.044030] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:410 tx:268
+[2022-02-24 17:52:46.527232][  143.045069] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:46.527232][  143.113279] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:46.527232][  143.327016] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:46.527232][  143.328376] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:46.527232][  143.349245] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:46.527232][  143.350310] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:46.527232][  143.356733] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:46.527232][  143.377227] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:46.527232][  143.393108] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:46.527232][  143.413238] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:46.528230][  143.431425] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:52:47.527489][  144.047397] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:480 tx:144
+[2022-02-24 17:52:47.527489][  144.048369] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:49.529934][  146.027656] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:754 tx:227
+[2022-02-24 17:52:49.529934][  146.028629] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:50.530033][  147.041948] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:408 tx:268
+[2022-02-24 17:52:50.530033][  147.042921] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:52:50.530033][  147.337422] [WDK]: kick Ex WDT

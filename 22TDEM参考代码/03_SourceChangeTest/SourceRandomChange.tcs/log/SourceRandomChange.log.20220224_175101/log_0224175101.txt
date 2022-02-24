@@ -1,0 +1,167 @@
+[22/02/24 17:51:01,919] case begin...
+[22/02/24 17:51:01,985] case setup...
+[22/02/24 17:51:01,989] case run...
+[22/02/24 17:51:01,996] usb_off(1)
+[22/02/24 17:51:02,113] usb_off(2)
+[22/02/24 17:51:02,224] usb_off(3)
+[22/02/24 17:51:02,352] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:02,353] keyevent('HOME', device='22TDEM:///?stream_method=camera')
+[22/02/24 17:51:03,985] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:03,989] keyevent('HOME', device='22TDEM:///?stream_method=camera')
+[22/02/24 17:51:05,987] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:05,991] touch(Template(pic/菜单按钮.png), device='22TDEM:///?stream_method=camera', threshold=0.65)
+[22/02/24 17:51:05,995] loop_find(Template(pic/菜单按钮.png), threshold=0.65, inv=None, raise_error=True)
+[22/02/24 17:51:05,999] Try finding: Template(pic/菜单按钮.png)
+[aircv][tpl] threshold=0.65, result={'confidence': 0.6850435729105047, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[22/02/24 17:51:07,490] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:07,495] exists(Template(pic/Androidauto_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:51:07,495] loop_find(Template(pic/Androidauto_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:51:07,498] Try finding: Template(pic/Androidauto_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.8787078543588421, 'rectangle': ((133, 456), (133, 561), (219, 561), (219, 456)), 'result': (176, 508)}
+[22/02/24 17:51:07,605] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:07,609] exists(Template(pic/Androidauto_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:51:07,609] loop_find(Template(pic/Androidauto_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:51:07,611] Try finding: Template(pic/Androidauto_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.8786501281656258, 'rectangle': ((133, 456), (133, 561), (219, 561), (219, 456)), 'result': (176, 508)}
+[22/02/24 17:51:07,733] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:07,736] exists(Template(pic/FM1_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:51:07,736] loop_find(Template(pic/FM1_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:51:07,742] Try finding: Template(pic/FM1_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.23929716441513144, 'rectangle': ((373, 405), (373, 434), (432, 434), (432, 405)), 'result': (402, 419)}
+[22/02/24 17:51:07,876] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:07,878] exists(Template(pic/FM1_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:51:07,878] loop_find(Template(pic/FM1_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:51:07,878] Try finding: Template(pic/FM1_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.22679363636252925, 'rectangle': ((373, 405), (373, 434), (432, 434), (432, 405)), 'result': (402, 419)}
+[22/02/24 17:51:08,003] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:08,007] exists(Template(pic/FM2_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:51:08,007] loop_find(Template(pic/FM2_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:51:08,013] Try finding: Template(pic/FM2_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.2189768633369975, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[22/02/24 17:51:08,133] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:08,133] touch([476, 226])
+[22/02/24 17:51:09,993] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:09,997] touch(Template(pic/FM2_OFF.png), device='22TDEM:///?stream_method=camera', threshold=0.65)
+[22/02/24 17:51:10,000] loop_find(Template(pic/FM2_OFF.png), threshold=0.65, inv=None, raise_error=True)
+[22/02/24 17:51:10,001] Try finding: Template(pic/FM2_OFF.png)
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2161881189482725, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.7726444146450447, 'rectangle': ((434, 581), (434, 614), (488, 614), (488, 581)), 'result': (461, 597)}
+[22/02/24 17:51:12,501] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:12,501] keyevent('HOME', device='22TDEM:///?stream_method=camera')
+[22/02/24 17:51:14,009] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:14,010] touch(Template(pic/菜单按钮.png), device='22TDEM:///?stream_method=camera', threshold=0.65)
+[22/02/24 17:51:14,012] loop_find(Template(pic/菜单按钮.png), threshold=0.65, inv=None, raise_error=True)
+[22/02/24 17:51:14,013] Try finding: Template(pic/菜单按钮.png)
+[aircv][tpl] threshold=0.65, result={'confidence': 0.6817034843061653, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[22/02/24 17:51:15,520] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:15,521] touch([476, 226])
+[22/02/24 17:51:17,535] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:17,536] exists(Template(pic/Androidauto_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:51:17,536] loop_find(Template(pic/Androidauto_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:51:17,536] Try finding: Template(pic/Androidauto_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.5868206135751928, 'rectangle': ((773, 544), (773, 649), (859, 649), (859, 544)), 'result': (816, 596)}
+[22/02/24 17:51:17,650] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:17,652] exists(Template(pic/BT_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:51:17,654] loop_find(Template(pic/BT_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:51:17,654] Try finding: Template(pic/BT_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.24949390374164376, 'rectangle': ((858, 115), (858, 380), (1092, 380), (1092, 115)), 'result': (975, 247)}
+[22/02/24 17:51:17,789] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:17,791] exists(Template(pic/Ipod_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:51:17,793] loop_find(Template(pic/Ipod_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:51:17,795] Try finding: Template(pic/Ipod_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.20793186134063413, 'rectangle': ((188, 97), (188, 359), (409, 359), (409, 97)), 'result': (298, 228)}
+[22/02/24 17:51:17,909] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:17,913] exists(Template(pic/BT_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:51:17,913] loop_find(Template(pic/BT_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:51:17,916] Try finding: Template(pic/BT_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.24864193556562791, 'rectangle': ((859, 115), (859, 380), (1093, 380), (1093, 115)), 'result': (976, 247)}
+[22/02/24 17:51:18,045] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:18,045] exists(Template(pic/Androidauto_OFF.png), device='22TDEM:///?stream_method=camera', timeout=0)
+[22/02/24 17:51:18,049] loop_find(Template(pic/Androidauto_OFF.png), inv=None, raise_error=True, timeout=0)
+[22/02/24 17:51:18,052] Try finding: Template(pic/Androidauto_OFF.png)
+[aircv][tpl] threshold=0.98, result={'confidence': 0.5813539590821584, 'rectangle': ((773, 543), (773, 648), (859, 648), (859, 543)), 'result': (816, 595)}
+[22/02/24 17:51:18,157] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:18,160] touch([476, 226])
+[22/02/24 17:51:20,051] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:20,054] touch(Template(pic/AM_OFF.png), device='22TDEM:///?stream_method=camera', threshold=0.65)
+[22/02/24 17:51:20,055] loop_find(Template(pic/AM_OFF.png), threshold=0.65, inv=None, raise_error=True)
+[22/02/24 17:51:20,055] Try finding: Template(pic/AM_OFF.png)
+[aircv][tpl] threshold=0.65, result={'confidence': 0.8385142524813315, 'rectangle': ((64, 580), (64, 615), (140, 615), (140, 580)), 'result': (102, 597)}
+[22/02/24 17:51:22,064] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:22,064] keyevent('HOME', device='22TDEM:///?stream_method=camera')
+[22/02/24 17:51:23,572] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:23,576] touch(Template(pic/菜单按钮.png), device='22TDEM:///?stream_method=camera', threshold=0.65)
+[22/02/24 17:51:23,577] loop_find(Template(pic/菜单按钮.png), threshold=0.65, inv=None, raise_error=True)
+[22/02/24 17:51:23,577] Try finding: Template(pic/菜单按钮.png)
+[aircv][tpl] threshold=0.65, result={'confidence': 0.6834568586153853, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[22/02/24 17:51:25,589] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:51:25,592] touch(Template(pic/FM2_OFF.png), device='22TDEM:///?stream_method=camera', threshold=0.65)
+[22/02/24 17:51:25,593] loop_find(Template(pic/FM2_OFF.png), threshold=0.65, inv=None, raise_error=True)
+[22/02/24 17:51:25,600] Try finding: Template(pic/FM2_OFF.png)
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2190776478347808, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.22222825211667635, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.20374678207203473, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.20848788016836817, 'rectangle': ((845, 403), (845, 436), (899, 436), (899, 403)), 'result': (872, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.20915005142010323, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21968873228635022, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.222326329275349, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21444693419967648, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21970787579303797, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21640225529589352, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2164648955262542, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2160580482357753, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21105090417998346, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.23871396934290312, 'rectangle': ((1151, 404), (1151, 437), (1205, 437), (1205, 404)), 'result': (1178, 420)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21027019797111351, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.22423574377546285, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.24708022895776222, 'rectangle': ((1151, 404), (1151, 437), (1205, 437), (1205, 404)), 'result': (1178, 420)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21839392768563848, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2202288624675235, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21673531085300024, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21594677819466362, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.24550148213630857, 'rectangle': ((1151, 404), (1151, 437), (1205, 437), (1205, 404)), 'result': (1178, 420)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2536740036650905, 'rectangle': ((1151, 404), (1151, 437), (1205, 437), (1205, 404)), 'result': (1178, 420)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.25402702026791596, 'rectangle': ((1151, 404), (1151, 437), (1205, 437), (1205, 404)), 'result': (1178, 420)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2182849299814104, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2110190941599986, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2185417303886858, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.22266958123652103, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21533447524611055, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2194821967565873, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.2141697215080789, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.22947115437575294, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.24836604049794292, 'rectangle': ((1151, 404), (1151, 437), (1205, 437), (1205, 404)), 'result': (1178, 420)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.21500189416142423, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.22491221127276678, 'rectangle': ((538, 403), (538, 436), (592, 436), (592, 403)), 'result': (565, 419)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.23060395644158088, 'rectangle': ((1151, 404), (1151, 437), (1205, 437), (1205, 404)), 'result': (1178, 420)}
+[aircv][tpl] threshold=0.65, result={'confidence': 0.23915376143042794, 'rectangle': ((1151, 404), (1151, 437), (1205, 437), (1205, 404)), 'result': (1178, 420)}
+[22/02/24 17:51:45,792] case fail...
+[22/02/24 17:51:45,793] case teardown...
+fetch hu log...
+fetch dcu log...
+# dmesg -r > /data/atlog/dmesg.txt
+# ll /var/system/grave |grep tombstone_cur
+# mkdir /data/atlog/
+# /data/busybox tar -cvzf /data/atlog/log_20220224_175146.tar.gz /var/system/kern /var/system/linux_crash_dump /data/atlog/dmesg.txt /var/system/grave/tombstone_0278
+log zip at: /data/atlog/log_20220224_175146.tar.gz
+network unavailable...
+Traceback (most recent call last):
+  File "autost\utils\thread.py", line 17, in autost.utils.thread.CThread.run
+  File "threading.py", line 862, in run
+  File "D:\Release_v1.4.13_20220218174710\library_pack_folder\iauto\autost-1.0.0\autost\case\executor.py", line 538, in process
+  File "autost\api.py", line 2386, in autost.api.do_segment
+  File "D:\AutoST\gitlab\22tdem\Robustness\03_SourceChangeTest\SourceRandomChange.tcs\SourceRandomChange.py", line 158, in <module>
+    checkImage_btn1 = touchObj(btnObj1)
+  File "D:\AutoST\gitlab\22tdem\Robustness\03_SourceChangeTest\SourceRandomChange.tcs\SourceRandomChange.py", line 38, in touchObj
+    touch(Template(btnObj),threshold=ST.allSource_threshold, device=DEV1)
+  File "autost\api.py", line 172, in autost.api.sync_check.func
+  File "autost\api.py", line 161, in autost.api.device_selector.func
+  File "autost\helper\log.py", line 229, in autost.helper.log.logwrap.wrapper
+  File "autost\helper\log.py", line 215, in autost.helper.log.logwrap.wrapper
+  File "autost\api.py", line 574, in autost.api.touch
+  File "autost\audio\case_generator.py", line 687, in autost.audio.case_generator.case_generator.wrapper
+  File "autost\helper\log.py", line 229, in autost.helper.log.logwrap.wrapper
+  File "autost\helper\log.py", line 215, in autost.helper.log.logwrap.wrapper
+  File "autost\audio\cv.py", line 138, in autost.audio.cv.loop_find
+airtest.core.error.TargetNotFoundError: 'Picture Template(pic/FM2_OFF.png) not found in screen'
+case result: Failed(1)

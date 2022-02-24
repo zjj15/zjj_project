@@ -1,0 +1,80 @@
+[22/02/24 17:33:33,846] case begin...
+[22/02/24 17:33:33,905] case setup...
+[22/02/24 17:33:33,909] case run...
+[22/02/24 17:33:33,916] usb_off(1)
+[22/02/24 17:33:34,048] usb_off(2)
+[22/02/24 17:33:34,160] usb_off(3)
+[22/02/24 17:33:34,261] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:33:34,262] keyevent('HOME', device='22TDEM:///?stream_method=camera')
+Autokey shell try...0
+[22/02/24 17:33:36,408] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:33:36,412] keyevent('HOME', device='22TDEM:///?stream_method=camera')
+[22/02/24 17:33:37,911] switch_device('22TDEM:///?stream_method=camera')
+[22/02/24 17:33:37,915] touch(Template(pic/菜单按钮.png), threshold=0.8)
+[22/02/24 17:33:37,918] loop_find(Template(pic/菜单按钮.png), threshold=0.8, inv=None, raise_error=True)
+[22/02/24 17:33:37,919] Try finding: Template(pic/菜单按钮.png)
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6632806707196549, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6594790306726142, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6585412290000244, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6692921828905594, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6661504371979646, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6619248614930865, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6644560345698681, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6655290396841196, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6536948070720513, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6629955907940719, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.664249034341943, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6573811940796969, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.661069258009291, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6662551129506009, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6720829280358696, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6514333254844388, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6651648658507192, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6624144269518749, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6594006359136736, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6650149208612375, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6694872462900059, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6702389751144788, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6683266379760106, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6707941736257854, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6626157805684774, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6572492264568767, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6640576500128172, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6687425409658079, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6578292733753699, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6664277500427727, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6630653982437943, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6655717339638261, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6533568498423923, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6641805428241288, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6632043682250027, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6646979309421794, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[aircv][tpl] threshold=0.8, result={'confidence': 0.6652358633580844, 'rectangle': ((601, 271), (601, 340), (681, 340), (681, 271)), 'result': (641, 305)}
+[22/02/24 17:33:58,010] case fail...
+[22/02/24 17:33:58,010] case teardown...
+fetch hu log...
+fetch dcu log...
+# dmesg -r > /data/atlog/dmesg.txt
+# ll /var/system/grave |grep tombstone_cur
+# mkdir /data/atlog/
+# /data/busybox tar -cvzf /data/atlog/log_20220224_173400.tar.gz /var/system/kern /var/system/linux_crash_dump /data/atlog/dmesg.txt /var/system/grave/tombstone_0278
+log zip at: /data/atlog/log_20220224_173400.tar.gz
+network unavailable...
+Traceback (most recent call last):
+  File "autost\utils\thread.py", line 17, in autost.utils.thread.CThread.run
+  File "threading.py", line 862, in run
+  File "D:\Release_v1.4.13_20220218174710\library_pack_folder\iauto\autost-1.0.0\autost\case\executor.py", line 538, in process
+  File "autost\api.py", line 2386, in autost.api.do_segment
+  File "D:\AutoST\gitlab\22tdem\Robustness\03_SourceChangeTest\SourceRandomChange.tcs\SourceRandomChange.py", line 139, in <module>
+    touch(Template('pic/菜单按钮.png'), threshold=ST.allSource_threshold)
+  File "autost\api.py", line 172, in autost.api.sync_check.func
+  File "autost\api.py", line 161, in autost.api.device_selector.func
+  File "autost\helper\log.py", line 229, in autost.helper.log.logwrap.wrapper
+  File "autost\helper\log.py", line 215, in autost.helper.log.logwrap.wrapper
+  File "autost\api.py", line 574, in autost.api.touch
+  File "autost\audio\case_generator.py", line 687, in autost.audio.case_generator.case_generator.wrapper
+  File "autost\helper\log.py", line 229, in autost.helper.log.logwrap.wrapper
+  File "autost\helper\log.py", line 215, in autost.helper.log.logwrap.wrapper
+  File "autost\audio\cv.py", line 138, in autost.audio.cv.loop_find
+airtest.core.error.TargetNotFoundError: 'Picture Template(pic/菜单按钮.png) not found in screen'
+case result: Failed(1)

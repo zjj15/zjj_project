@@ -1,0 +1,202 @@
+[2022-02-24 17:49:19.023462][ 1127.855206] iap_function_suspend
+[2022-02-24 17:49:19.024460][ 1127.868646]  usb A disconnect iap 
+[2022-02-24 17:49:19.024460][ 1127.887727] [TC:1127883][TT:67] [ConnectMgr] CarPlay status : [startdisconnect][ 1127.892537] 
+[2022-02-24 17:49:19.024460][ 1127.896215] mediaipod:IAP ONSTARTDISCONN [cp]
+[2022-02-24 17:49:19.024460][ 1127.925464] iap_read: device not online state
+[2022-02-24 17:49:19.024460][ 1127.972387] [TC:1127967][TT:70] [ConnectMgr] CarPlay status : [disconnect]
+[2022-02-24 17:49:19.024460][ 1127.972388] 
+[2022-02-24 17:49:19.024460][ 1127.974084] mediaipod:IAP ONDISCONN [cp]
+[2022-02-24 17:49:19.025459][ 1127.974823] iap_ioctl: IAP_WAKEUP_RD_WR.
+[2022-02-24 17:49:19.025459][ 1127.976890] [TC:1127972][TT:71] [ConnectMgr] CarPlay status : [removed]
+[2022-02-24 17:49:19.025459][ 1127.976891] 
+[2022-02-24 17:49:19.025459][ 1127.984088] mtu3 11271000.usb: gadget (high-speed) pullup D-
+[2022-02-24 17:49:19.025459][ 1127.984095] iap_function_disable
+[2022-02-24 17:49:19.025459][ 1128.018567] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:374 tx:6
+[2022-02-24 17:49:19.025459][ 1128.018572] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:19.025459][ 1128.044987] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.025459][ 1128.077014] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.026460][ 1128.084850] mtu3 11271000.usb:   from  device  switch to  host
+[2022-02-24 17:49:19.026460][ 1128.084850]   
+[2022-02-24 17:49:19.026460][ 1128.090639] iap_release
+[2022-02-24 17:49:19.026460][ 1128.091353] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.026460][ 1128.118646] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.026460][ 1128.132454] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.026460][ 1128.133323] ttyS ttyS0: 1 input overrun(s)
+[2022-02-24 17:49:19.026460]echo "{\"device\":0,\"type\":10,TURE\":[\"KEY=1
+[2022-02-24 17:49:19.026460]"type\":10,TURE\":[\"KEY=1                                                    <\"],\"ScreenChange\":fallient_cmd
+[2022-02-24 17:49:19.026460]
+[2022-02-24 17:49:19.026460]> [ 1128.156800] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.026460][ 1128.163658] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.026460][ 1128.185201] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.026460][ 1128.207517] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.524447][ 1128.233018] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.525447][ 1128.251718] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.525447][ 1128.273388] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.525447][ 1128.294632] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.525447][ 1128.297157] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.525447][ 1128.316902] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.525447][ 1128.336864] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.337811] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.338719] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.340030] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.341201] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.342082] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.343465] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.367150] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.368425] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.389160] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.418349] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.419394] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.420431] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.441339] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.467239] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.526447][ 1128.468884] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.469992] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.471806] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.494108] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.495612] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.499104] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.500200] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.503345] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.507626] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.529059] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.534008] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.536891] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.552720] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.577964] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.582118] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.605264] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.632295] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.527446][ 1128.654120] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.528445][ 1128.659729] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:19.528445][ 1128.661243] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.026296][ 1128.736864] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.769139] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.795406] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.817487] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.840942] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.863272] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.894155] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.913099] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.931667] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.973284] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.974318] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.975199] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.976163] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.979639] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1128.998776] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1129.025201] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.027295][ 1129.026486] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1937 tx:1097
+[2022-02-24 17:49:20.027295][ 1129.027465] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:20.027295][ 1129.028940] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.048898] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.069162] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.078801] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.097280] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.116883] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.117877] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.130633] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.132059] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.134705] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.169421] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.193015] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.194037] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.194950] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.197871] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.028294][ 1129.198838] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.527666][ 1129.225168] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.246283] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.249761] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.260669] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.289492] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.300728] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.301945] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.330293] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.368936] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.369842] [STP SDIO][W]stp_sdio_do_own_set:set firmware own fail!, set CLR BACK
+[2022-02-24 17:49:20.528666][ 1129.372925] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.396860] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.405653] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.416657] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.440840] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.448400] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.460716] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.469943] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.500913] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.501931] [STP SDIO][W]stp_sdio_do_own_set:set firmware own fail!, set CLR BACK
+[2022-02-24 17:49:20.528666][ 1129.505356] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.528666][ 1129.506308] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.529667][ 1129.514351] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.529667][ 1129.515245] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.529667][ 1129.533919] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.529667][ 1129.553086] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.529667][ 1129.562895] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.529667][ 1129.585160] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.529667][ 1129.589966] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:20.529667][ 1129.656906] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.029059][ 1129.965325] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.029059][ 1130.099368] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.029059][ 1130.100200] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:1289 tx:1075
+[2022-02-24 17:49:21.029059][ 1130.101236] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:21.029059][ 1130.158978] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.529925][ 1130.276341] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.529925][ 1130.277449] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.529925][ 1130.281850] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.529925][ 1130.282792] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.529925][ 1130.286950] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.529925][ 1130.322098] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.529925][ 1130.346528] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.529925][ 1130.391358] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.529925][ 1130.414939] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:21.529925][ 1130.494919] [WDK]: kick Ex WDT
+[2022-02-24 17:49:21.529925][ 1130.560852] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:22.030292][ 1130.905343] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:22.030292][ 1130.918810] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:22.030292]/data/autotest_client
+[2022-02-24 17:49:22.030292]
+[2022-02-24 17:49:22.531277]> [2022-02-24 17:49:23.031566][ 1131.957003] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:7233 tx:275
+[2022-02-24 17:49:23.031566][ 1131.958011] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:24.032743][ 1132.904914] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:24.032743][ 1132.918894] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:24.032743][ 1132.968404] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:380 tx:249
+[2022-02-24 17:49:24.032743][ 1132.970822] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:25.534036]echo "{\"device\":0,\"type\":10,\"uuid\":\"1234567890\",\"data\":{\"GESTURE\
+[2022-02-24 17:49:25.534036]\":\"1234567890\",\"data\":{\"GESTURE\                                        <":[\"KEY=1\"],\"ScreenChange\":false}}" 
+[2022-02-24 17:49:25.534036]:[\"KEY=1\"],\"ScreenChange\":false}}"                                        <> /data/ws_client_cmd
+[2022-02-24 17:49:25.534036]
+[2022-02-24 17:49:26.034397]> [ 1134.884148] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:340 tx:476
+[2022-02-24 17:49:26.034397][ 1134.886456] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:26.034397][ 1134.908857] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:26.034397][ 1134.922109] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:27.038680][ 1135.959837] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:780 tx:227
+[2022-02-24 17:49:27.040682][ 1135.960835] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:28.046987][ 1136.905330] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:28.046987][ 1136.921450] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:28.046987][ 1136.969714] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:448 tx:249
+[2022-02-24 17:49:28.046987][ 1136.978703] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:28.550238]/data/autotest_client
+[2022-02-24 17:49:28.551227]
+[2022-02-24 17:49:29.052635]> [2022-02-24 17:49:29.555099][ 1138.495241] [WDK]: kick Ex WDT
+[2022-02-24 17:49:30.058254][ 1138.883546] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:407 tx:476
+[2022-02-24 17:49:30.059264][ 1138.884523] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:30.059264][ 1138.908916] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:30.059264][ 1138.924287] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:30.560065][ 1139.640977] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:30.562065][ 1139.644124] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:30.562065][ 1139.645459] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:30.562065][ 1139.665198] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:30.562065][ 1139.669710] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:30.562065][ 1139.693105] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:30.562065][ 1139.700172] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:30.562065][ 1139.720934] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:30.562065][ 1139.732094] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:31.065082][ 1139.961410] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:850 tx:330
+[2022-02-24 17:49:31.065082][ 1139.963559] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:32.065752][ 1140.900192] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:32.065752][ 1140.978785] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:484 tx:476
+[2022-02-24 17:49:32.065752][ 1140.979784] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:32.065752][ 1141.144716] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:34.068829][ 1142.884335] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: STP speed rx:409 tx:249
+[2022-02-24 17:49:34.068829][ 1142.885405] [STP-PSM] [I]stp_psm_disable_by_tx_rx_density: Low speed,Enable monitor
+[2022-02-24 17:49:34.068829][ 1142.909427] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
+[2022-02-24 17:49:34.068829][ 1143.094843] [MTK-BT] BT_read: Shorten read count from 2048 to 2048
