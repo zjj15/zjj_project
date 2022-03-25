@@ -173,3 +173,6 @@ origin    git@github.com:tianqixin/runoob-git-test.git (push)
 添加到暂存区的文件删除文件找回：git reset --hard HEAD(当前位置，因为删除的文件还没提交到暂存区)
 
 
+add1
+https://www.jianshu.com/p/59cd1560ebff
+
