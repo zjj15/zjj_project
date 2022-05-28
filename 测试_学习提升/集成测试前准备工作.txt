@@ -1,0 +1,29 @@
+性能测试、网络诊断测试、接口测试
+
+1.CAN， Ethenet，UDS相关协议都是通用的：网络诊断测试
+
+2.performance测试主要是需要对系统命令比较熟悉：性能测试
+
+3.接口测试
+
+
+
+
+解答：can与canoe
+
+1.CANoe是德国Vector公司出的一款总线开发环境，全称叫CAN open environment，主要用于汽车总线的开发而设计的。CANoe的前期是为了对CAN通信网络进行建模、仿真、测试和开发，后来扩展加入了LIN、Ethernet、FlexRay、MOST等网络。
+CANoe是网络和ECU开发、测试和分析的专业工具，支持从需求分析到系统实现的整个系统的开发过程。CANoe丰富的功能和配置选项被OEM和供应商的网络设计工程师、开发工程师和测试工程师所广泛使用。Canoe是一个汽车总线开发环境,可以模拟汽车的can总线网络,收发数据,主要是用于汽车软硬件开发的测试
+1.1Canoe是一个汽车总线开发环境,可以模拟汽车的can总线网络,收发数据,主要是用于汽车软硬件开发的测试
+
+解答：使用CANoe搭建CAN网关
+https://blog.csdn.net/ll148305879/article/details/99978323
+
+解答：UDS
+https://zhuanlan.zhihu.com/p/37310388
+
+解答：dbc
+https://zhuanlan.zhihu.com/p/141638034
+
+4.汽车ECU
+https://zhuanlan.zhihu.com/p/24217391
+ECU（Electronic Control Unit）电子控制器单元，又称为汽车的“行车电脑”，它们的用途就是控制汽车的行驶状态以及实现其各种功能。主要是利用各种传感器、总线的数据采集与交换，来判断车辆状态以及司机的意图并通过执行器来操控汽车。
