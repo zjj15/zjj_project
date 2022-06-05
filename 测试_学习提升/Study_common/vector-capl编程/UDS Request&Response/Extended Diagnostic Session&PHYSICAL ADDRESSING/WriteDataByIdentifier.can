@@ -1,0 +1,396 @@
+variables
+{
+    message     NAV_MSC_FrI00  pc_rx_data;
+    message     DIAG_MSC_FrI00 pc_tx_func;
+    message     DIAG_MSC_FrI02 pc_tx_phys;
+	byte		Long_Txdata[4096];
+	byte		Long_Rxdata[4096];
+    const long P2max = 50;
+    const long P2smax =500;
+}
+
+void MainTest()
+{
+    TestModuleTitle ("UDS on CAN Request&Response Test");
+    TestModuleDescription (" Default Diagnostic Session, Physical Addressing.SID=WriteDataByIdentifier");
+    TestGroupBegin("CAN Diagnostic Message Test", "Test the WriteDataByIdentifier service");
+    WriteDataByIdentifier_Test();
+    TestGroupEnd(); 
+}
+
+on message NAV_MSC_FrI00
+{
+     pc_rx_data = this;
+}
+
+testcase WriteDataByIdentifier_Test ()
+{
+    long rev_flag = 0;
+    long goon_flag = 1;
+	
+    TestCaseTitle("ReadDataByIdentifier TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+    TestStep ("Test Step1", "Send the request");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x10;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x14;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0xF1;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x90;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x02;
+    output(pc_tx_phys);
+    TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x21;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x03;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x05;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x06;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x07;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x08;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x09;
+    output(pc_tx_phys);
+    TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x22;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x0A;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x0B;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x0C;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x0D;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x0E;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x0F;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x10;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+         TestStepPass("Test Step","Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+	
+	
+	TestCaseTitle("ReadDataByIdentifier TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+    TestStep ("Test Step2", "Send the request");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x10;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x0e;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0xF1;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x98;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x02;
+    output(pc_tx_phys);
+    TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x21;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x03;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x05;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x06;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x07;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x08;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x09;
+    output(pc_tx_phys);
+    TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x22;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x0A;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+         TestStepPass("Test Step","Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+	
+	
+	TestCaseTitle("ReadDataByIdentifier TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+    TestStep ("Test Step3", "Send the request");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x10;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x17;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0xF1;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0xa8;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x02;
+    output(pc_tx_phys);
+    TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x21;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x03;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x05;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x06;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x07;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x08;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x09;
+    output(pc_tx_phys);
+    TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x22;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x0A;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x0b;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x0c;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x0d;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x0e;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x0f;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x10;
+    output(pc_tx_phys);
+	TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x23;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x11;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x12;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x13;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+         TestStepPass("Test Step","Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+	
+	
+	TestCaseTitle("ReadDataByIdentifier TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+    TestStep ("Test Step4", "Send the request");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x10;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x08;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0xF1;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0xa9;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x02;
+    output(pc_tx_phys);
+    TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x21;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x03;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+         TestStepPass("Test Step","Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+	
+
+	TestCaseTitle("ReadDataByIdentifier TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+    TestStep ("Test Step5", "Send the request");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x06;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0xF1;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x8b;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x02;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+	output(pc_tx_phys);
+
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+         TestStepPass("Test Step","Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+	
+	
+	TestCaseTitle("ReadDataByIdentifier TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+    TestStep ("Test Step6", "Send the request");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x10;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x0d;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0xF1;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x8c;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x02;
+    output(pc_tx_phys);
+    TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x21;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x03;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x05;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x06;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x07;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x08;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x09;
+    output(pc_tx_phys);
+
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+         TestStepPass("Test Step","Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+	
+	
+	TestCaseTitle("ReadDataByIdentifier TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+    TestStep ("Test Step7", "Send the request");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x10;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x13;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x02;
+    output(pc_tx_phys);
+    TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x21;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x03;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x05;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x06;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x07;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x08;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x09;
+    output(pc_tx_phys);
+	TestWaitForTimeout(50);
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x22;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x0a;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x0b;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x0c;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x0d;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x0e;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x0f;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+         TestStepPass("Test Step","Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+}
+
