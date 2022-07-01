@@ -1,0 +1,53 @@
+variables
+{
+    message     NAV_MSC_FrI00  pc_rx_data;
+    message     DIAG_MSC_FrI00 pc_tx_func;
+    message     DIAG_MSC_FrI02 pc_tx_phys;
+	byte		Long_Txdata[4096];
+	byte		Long_Rxdata[4096];
+    long P2max = 0;
+    long P2smax = 0;
+}
+
+void MainTest()
+{
+    TestModuleTitle ("UDS on CAN Request&Response Test");
+    TestModuleDescription (" Default Diagnostic Session, Physical Addressing.SID=DiagnosticSessionControl");
+    TestGroupBegin("CAN Diagnostic Message Test", "Test the DiagnosticSessionControl service");
+    DSC_Test ();
+    TestGroupEnd(); 
+}
+
+testcase DSC_Test ()
+{
+    long rev_flag = 0;
+	
+    TestStep ("Test Step", "Send:10 82");
+    TestCaseTitle("DSC TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+	
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x02;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x10;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x82;
+	
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+	
+    if(rev_flag == 0)
+    {
+        TestStepPass("Test Step","No Response ,Right");
+    }
+    else if(rev_flag == 1)
+    {
+        TestStepFail("Test Step","A Response?Oh no!");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+}
+
+on message NAV_MSC_FrI00
+{
+    pc_rx_data = this;
+}

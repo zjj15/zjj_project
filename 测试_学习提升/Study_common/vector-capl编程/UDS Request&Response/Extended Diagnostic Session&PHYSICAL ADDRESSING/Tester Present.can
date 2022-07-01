@@ -1,0 +1,81 @@
+variables
+{
+    message     NAV_MSC_FrI00  pc_rx_data;
+    message     DIAG_MSC_FrI00 pc_tx_func;
+    message     DIAG_MSC_FrI02 pc_tx_phys;
+	byte		Long_Txdata[4096];
+	byte		Long_Rxdata[4096];
+    const long  P2max = 40;
+    const long  P2smax = 40;
+}
+
+void MainTest()
+{
+    TestModuleTitle ("UDS on CAN Request&Response Test");
+    TestModuleDescription (" Tester Present, Physical Addressing.SID=ControlDTCSetting");
+    TestGroupBegin("CAN Diagnostic Message Test", "Test the DiagnosticSessionControl service");
+    TesterPresent_Test();
+    TestGroupEnd(); 
+}
+
+testcase TesterPresent_Test ()
+{
+    long rev_flag = 0;
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x02;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x3E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x00;
+    TestCaseTitle("TesterPresent TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+    TestStep ("Test Step", "Send:3E 00");
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x02)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7E)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x00))
+    {
+      TestStepPass("Test Step","Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x02;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x3E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x80;
+	
+    TestStep ("Test Step", "Send:3E 80");
+	output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,100);
+
+    if(rev_flag == 0)
+    {
+        TestStepPass("Test Step","No Response ,Right");
+    }
+    else if(rev_flag == 1)
+    {
+        TestStepFail("Test Step","A Response?Oh no!");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+
+}
+
+on message NAV_MSC_FrI00
+{
+    pc_rx_data = this;
+}
+

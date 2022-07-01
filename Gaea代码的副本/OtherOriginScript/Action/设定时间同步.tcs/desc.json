@@ -1,6 +1,0 @@
-{
-    "Scenario": "... what behavior will be tested ...",
-    "Given": "... conditions ...",
-    "When": "... actions ...",
-    "Then": "... expected results ..."
-}

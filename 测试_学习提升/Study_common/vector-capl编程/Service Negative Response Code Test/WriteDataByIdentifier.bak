@@ -1,0 +1,1044 @@
+/*@@var:*/
+variables
+{
+    message     NAV_MSC_FrI00  pc_rx_data;
+    message     DIAG_MSC_FrI00 pc_tx_func;
+    message     DIAG_MSC_FrI02 pc_tx_phys;
+	byte		Long_Txdata[4096];
+	byte		Long_Rxdata[4096];
+    const long P2max = 40;
+    const long P2smax = 40;
+}
+/*@@end*/
+
+/*@@mainTest:MainTest():*/
+void MainTest()
+{
+    TestModuleTitle ("UDS on CAN Request&Response Test");
+    TestModuleDescription (" Default Diagnostic Session, Physical Addressing.SID=WriteDataByIdentifier");
+    TestGroupBegin("CAN Diagnostic Message Test", "Test the WriteDataByIdentifier service");
+    WriteDataByIdentifier_Test();
+    TestGroupEnd(); 
+}
+/*@@end*/
+
+/*@@msg:CAN1._______lh1IP21MCE_NAV_EP1V11_IP2::NAV_MSC_FrI00 (0x769):*/
+on message NAV_MSC_FrI00
+{
+     pc_rx_data = this;
+}
+/*@@end*/
+
+/*@@testcase:WriteDataByIdentifier_Test():*/
+testcase WriteDataByIdentifier_Test ()
+{
+    long rev_flag = 0;
+    long p2max = 0;
+    long p2smax = 0;
+    TestCaseTitle("WriteDataByIdentifier TEST(Phys)", "Send wrong request , check the NRC");
+    TestCaseDescription("send a wrong request and receive a response,then check if the negative response is right");
+    /*TestStep 1*/
+    TestStep ("Test Step", "Send:02 10 03 00 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x02;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x10;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x03;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x06)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x50)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x03))
+    {
+        p2max = (pc_rx_data.DiagnosticRespNAV_b3<<8)+pc_rx_data.DiagnosticRespNAV_b4;
+        p2smax = (pc_rx_data.DiagnosticRespNAV_b5<<8)+pc_rx_data.DiagnosticRespNAV_b6;
+        if((p2max ==50)&&(p2smax == 500))
+        {
+           TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","AA or BB Wrong");
+        }
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 2*/
+    TestStep ("Test Step", "Send:01 2E 00 00 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x13))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x13 Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 3*/
+    TestStep ("Test Step", "Send:02 2E AA 00 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x02;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0xAA;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x13))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x13 Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);       
+
+    /*TestStep 4*/
+    TestStep ("Test Step", "Send:03 2E 01 12 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x03;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x12;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x13))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x13 Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 5*/
+    TestStep ("Test Step", "Send:04 2E FF FF 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0xFF;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0xFF;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x31))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x31 Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 6*/
+    TestStep ("Test Step", "Send:04 2E 01 12 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x12;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x31))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x31 Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 7*/
+    TestStep ("Test Step", "Send:04 2E F1 90 01 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0xF1;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x90;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x33))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x33 Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 8*/
+    TestStep ("Test Step", "Send:02 10 01 00 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x02;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x10;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x06)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x50)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x01))
+    {
+        p2max = (pc_rx_data.DiagnosticRespNAV_b3<<8)+pc_rx_data.DiagnosticRespNAV_b4;
+        p2smax = (pc_rx_data.DiagnosticRespNAV_b5<<8)+pc_rx_data.DiagnosticRespNAV_b6;
+        if((p2max == 50)&&(p2smax == 500))
+        {
+           TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","AA or BB Wrong");
+        }
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);   
+
+    /*TestStep 9*/
+    TestStep ("Test Step", "Send:01 2E 00 00 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 10*/
+    TestStep ("Test Step", "Send:02 2E AA 00 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x02;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0xAA;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 11*/
+    TestStep ("Test Step", "Send:03 2E 01 12 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x03;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x12;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 12*/
+    TestStep ("Test Step", "Send:04 2E 01 00 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 13*/
+    TestStep ("Test Step", "Send:04 2E FF FF 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0xFF;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0xFF;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 14*/
+    TestStep ("Test Step", "Send:04 2E 00 00 00 00 00 00");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x04;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x2E;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);   
+
+    
+    TestCaseTitle("WriteDataByIdentifier TEST(Func)", "Send wrong request , check the NRC");
+    TestCaseDescription("send a wrong request and receive a response,then check if the negative response is right");
+    
+    /*TestStep 1*/
+    TestStep ("Test Step", "Send:02 10 03 00 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x02;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x10;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x03;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x06)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x50)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x03))
+    {
+        p2max = (pc_rx_data.DiagnosticRespNAV_b3<<8)+pc_rx_data.DiagnosticRespNAV_b4;
+        p2smax = (pc_rx_data.DiagnosticRespNAV_b5<<8)+pc_rx_data.DiagnosticRespNAV_b6;
+        if((p2max ==50)&&(p2smax == 500))
+        {
+           TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","AA or BB Wrong");
+        }
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 2*/
+    TestStep ("Test Step", "Send:01 2E 00 00 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x01;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x13))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x13 Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 3*/
+    TestStep ("Test Step", "Send:02 2E AA 00 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x02;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0xAA;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x13))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x13 Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);       
+
+    /*TestStep 4*/
+    TestStep ("Test Step", "Send:03 2E 01 12 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x03;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x01;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x12;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x13))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x13 Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 5*/
+    TestStep ("Test Step", "Send:04 2E FF FF 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x04;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0xFF;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0xFF;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepFail("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepPass("Test Step","Right!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+  
+    TestWaitForTimeout(100);
+    /*TestStep 6*/
+    TestStep ("Test Step", "Send:04 2E 01 12 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x04;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x01;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x12;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepFail("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepPass("Test Step","Right!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 7*/
+    TestStep ("Test Step", "Send:04 2E F1 90 01 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x04;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0xF1;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x90;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x01;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x33))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x33 Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 8*/
+    TestStep ("Test Step", "Send:02 10 01 00 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x02;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x10;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x01;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x06)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x50)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x01))
+    {
+        p2max = (pc_rx_data.DiagnosticRespNAV_b3<<8)+pc_rx_data.DiagnosticRespNAV_b4;
+        p2smax = (pc_rx_data.DiagnosticRespNAV_b5<<8)+pc_rx_data.DiagnosticRespNAV_b6;
+        if((p2max == 50)&&(p2smax == 500))
+        {
+           TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","AA or BB Wrong");
+        }
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);   
+
+    /*TestStep 9*/
+    TestStep ("Test Step", "Send:01 2E 00 00 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x01;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 10*/
+    TestStep ("Test Step", "Send:02 2E AA 00 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x02;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0xAA;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 11*/
+    TestStep ("Test Step", "Send:03 2E 01 12 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x03;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x01;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x12;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 12*/
+    TestStep ("Test Step", "Send:04 2E 01 00 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x04;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x01;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 13*/
+    TestStep ("Test Step", "Send:04 2E FF FF 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x04;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0xFF;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0xFF;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    /*TestStep 14*/
+    TestStep ("Test Step", "Send:04 2E 00 00 00 00 00 00");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x04;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x2E;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b7 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x2E)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x7F))
+    {
+        
+           TestStepPass("Test Step","NRC = 0x7F Response Correct");
+    }
+    else
+    {
+           TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);   
+}
+/*@@end*/
+

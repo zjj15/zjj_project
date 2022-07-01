@@ -1,0 +1,99 @@
+variables
+{
+    message     NAV_MSC_FrI00  pc_rx_data;
+    message     DIAG_MSC_FrI00 pc_tx_func;
+    message     DIAG_MSC_FrI02 pc_tx_phys;
+	byte		Long_Txdata[4096];
+	byte		Long_Rxdata[4096];
+    long P2max = 0;
+    long P2smax = 0;
+}
+
+void MainTest()
+{
+    TestModuleTitle ("UDS on CAN Request&Response Test");
+    TestModuleDescription (" Default Diagnostic Session, Physical Addressing.SID=DiagnosticSessionControl");
+    TestGroupBegin("CAN Diagnostic Message Test", "Test the DiagnosticSessionControl service");
+    DSC_Test ();
+    TestGroupEnd(); 
+}
+
+testcase DSC_Test ()
+{
+    long rev_flag = 0;
+    TestCaseTitle("DSC TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+    TestStep ("Test Step", "Send:10 01");
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x02;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x10;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x01;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    output(pc_tx_phys);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x06)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x50)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x01))
+    {
+        P2max = (pc_rx_data.DiagnosticRespNAV_b3<<8)+pc_rx_data.DiagnosticRespNAV_b4;
+        P2smax = (pc_rx_data.DiagnosticRespNAV_b5<<8)+pc_rx_data.DiagnosticRespNAV_b6;
+        if((P2max ==50)&&(P2smax == 500))
+        {
+           TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","AA or BB Wrong");
+        }
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+
+    pc_tx_phys.DiagnosticReqNAV_b0 = 0x02;
+    pc_tx_phys.DiagnosticReqNAV_b1 = 0x10;
+    pc_tx_phys.DiagnosticReqNAV_b2 = 0x81;
+    pc_tx_phys.DiagnosticReqNAV_b3 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b4 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b5 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b6 = 0x00;
+    pc_tx_phys.DiagnosticReqNAV_b7 = 0x00;
+    TestStep ("Test Step", "Send:10 81");
+    output(pc_tx_phys);
+	rev_flag = TestWaitForMessage(NAV_MSC_FrI00,50);
+
+    if(rev_flag == 0)
+    {
+        TestStepPass("Test Step","No Response ,Right");
+    }
+    else if(rev_flag == 1)
+    {
+        TestStepFail("Test Step","A Response?Oh no!");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+
+}
+
+on message NAV_MSC_FrI00
+{
+    pc_rx_data = this;
+}
+
