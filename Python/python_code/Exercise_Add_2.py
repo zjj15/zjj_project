@@ -5,3 +5,7 @@ import glob
 for i in glob.glob('./*.py'):
     print(i)
     print('\n')
+
+
+#https://blog.csdn.net/hehedadaq/article/details/81836025
+# for循环，若要平行迭代兩個 list，你需要的是 zip 或 zip_longest

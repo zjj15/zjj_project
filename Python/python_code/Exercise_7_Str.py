@@ -26,6 +26,8 @@ print(str7)
 str8=str4.index('l',3,15)#index(str,start,end),在start和end范围中查找str字符串，如果不存在产生异常
 print(str8)
 
+#补充：字符串比较函数 https://wenku.baidu.com/view/caec9c67bd1e650e52ea551810a6f524cdbfcb47.html
+
 str9='123456'
 str10='abcHG'
 str11='123abcHG'
