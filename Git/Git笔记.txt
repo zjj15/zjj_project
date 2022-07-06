@@ -9,6 +9,9 @@ https://www.cnblogs.com/Security-Darren/p/4106328.html
 0.3【解决Windows下使用github需要每次都要ssh-add的问题】
 https://blog.csdn.net/EsonJohn/article/details/79134665?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link
 https://blog.csdn.net/xianhenyuan/article/details/92397894
+0.4【git推送时，报错Logon failed, use ctrl+c to cancel basic credential prompt.的解决方法】
+https://blog.csdn.net/weixin_46622106/article/details/111914231
+
 
 git存储密码
 https://www.cnblogs.com/Black-Hawk/p/13508318.html
