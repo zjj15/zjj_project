@@ -1,0 +1,5 @@
+thisWeek不存在lastWeek拥有的文件/root/sbin/bootani
+
+文件大小变化如下：
+此文件大小有变化：/root/bin/sh
+      变化量本周相对上周：-2
