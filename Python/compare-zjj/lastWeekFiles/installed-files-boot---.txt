@@ -1,0 +1,12 @@
+     2484496  /root/lib/libicui18n.so
+     1990968  /root/lib/libcrypto.so
+     1812336  /root/lib/libicuuc.so
+     1761648  /root/sbin/adbd
+     1632984  /root/lib/libRenewalIFLib.so
+     1591680  /root/lib/libstdc++.so.6
+     1560280  /root/lib/libnhupdate.so
+     1443832  /root/lib/libc.so.6
+     1290112  /root/sbin/sysd
+     1193832  /root/lib/libbinder.so
+     1290113  /root/sbin/sysde
+     1290116  /root/sbin/sy
