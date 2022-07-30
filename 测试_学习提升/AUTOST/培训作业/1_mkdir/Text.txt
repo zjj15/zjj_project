@@ -1,0 +1,1 @@
+#题目：把sourceFilePath = "D:\\PY\\application\\1_mkdir\\music.mp3"文件拷贝到U盘每个文件夹里面

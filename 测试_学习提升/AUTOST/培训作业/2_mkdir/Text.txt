@@ -1,0 +1,1 @@
+#给U盘里建50个文件夹，每个文件夹10层目录；将sourceFilePath = "D:\\PY\\application\\2_mkdir\\music.mp3"拷贝到每个文件夹第10层目录下
