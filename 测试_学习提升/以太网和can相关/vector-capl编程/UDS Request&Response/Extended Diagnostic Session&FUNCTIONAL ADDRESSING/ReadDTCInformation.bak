@@ -1,0 +1,481 @@
+/*@@var:*/
+variables
+{
+     message     NAV_MSC_FrI00  pc_rx_data;
+    message     DIAG_MSC_FrI00 pc_tx_func;
+    message     DIAG_MSC_FrI02 pc_tx_phys;
+	byte		Long_Txdata[255];
+	byte		Long_Rxdata[255];
+    byte        Frame_Type;
+    byte        Muti_Flag;
+    byte        msg_cnt;
+    byte        Rx_Length;
+    byte        CF_Num;
+    byte        STmin;
+    byte        SN;
+    byte        finish_flag = 0;
+    const long P2max = 100;
+    const long P2smax = 100;
+}
+/*@@end*/
+
+/*@@mainTest:MainTest():*/
+void MainTest()
+{
+    TestModuleTitle ("UDS on CAN Request&Response Test");
+    TestModuleDescription (" Default Diagnostic Session, Physical Addressing.SID=ReadDTCInformation");
+    TestGroupBegin("CAN Diagnostic Message Test", "Test the ReadDTCInformation service");
+    ReadDTCInformation_Test ();
+    TestGroupEnd(); 
+}
+/*@@end*/
+
+/*@@msg:CAN1._______lh1IP21MCE_NAV_EP1V11::NAV_MSC_FrI00 (0x769):*/
+on message NAV_MSC_FrI00
+{
+    pc_rx_data = this;
+     Frame_Type = (this.DiagnosticRespNAV_b0 >> 4);
+      switch(Frame_Type)
+      {
+         case 0x00:
+              Muti_Flag = 0;
+              break;
+         case 0x01:
+         {    Muti_Flag = 1;
+              msg_cnt = 0;
+              Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b2;
+              msg_cnt++;
+              Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b3;
+              msg_cnt++;
+              Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b4;
+              msg_cnt++;
+              Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b5;
+              msg_cnt++;
+              Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b6;
+              msg_cnt++;
+              Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b7;
+              msg_cnt++;
+
+              Rx_Length = ((this.DiagnosticRespNAV_b0 & 0x0F) << 8) + this.DiagnosticRespNAV_b1;
+         }
+              break;
+         case 0x02:
+         {    
+              if(Muti_Flag == 1)
+              {
+                 SN = this.DiagnosticRespNAV_b1;
+                 Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b1;
+                 if(msg_cnt == Rx_Length)
+                 {
+                    finish_flag = 1;
+                    return;
+                 }
+                 else
+                 {
+                    msg_cnt++;
+                 }
+                 Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b2;
+                 if(msg_cnt == Rx_Length)
+                 {
+                    finish_flag = 1;
+                    return;
+                 }
+                 else
+                 {
+                    finish_flag = 1;
+                    msg_cnt++;
+                 }
+                 Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b3;
+                 if(msg_cnt == Rx_Length)
+                 {
+                    finish_flag = 1;
+                    return;
+                 }
+                 else
+                 {
+                    msg_cnt++;
+                 }
+                 Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b4;
+                 if(msg_cnt == Rx_Length)
+                 {
+                    finish_flag = 1;
+                    return;
+                 }
+                 else
+                 {
+                    msg_cnt++;
+                 }
+                 Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b5;
+                 if(msg_cnt == Rx_Length)
+                 {
+                    finish_flag = 1;
+                    return;
+                 }
+                 else
+                 {
+                    msg_cnt++;
+                 }
+                 Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b6;
+                 msg_cnt++;
+                 Long_Rxdata[msg_cnt] = this.DiagnosticRespNAV_b7;
+                 if(msg_cnt == Rx_Length)
+                 {
+                    finish_flag = 1;
+                    return;
+                 }
+                 else
+                 {
+                    msg_cnt++;
+                 }
+              }
+         }
+              break;
+         default:
+              break;
+      }
+    }
+/*@@end*/
+
+/*@@testcase:ReadDTCInformation_Test():*/
+testcase ReadDTCInformation_Test ()
+{
+    long rev_flag = 0;
+    long clr_cnt = 0;
+    TestCaseTitle("ReadDTCInformation TEST", "Request and check the response");
+    TestCaseDescription("send a request and receive a response,then check the response");
+    TestStep ("Test Step", "Send:19 01 0C");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x03;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x01;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x0C;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x06)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x59)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x01)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x0C)&&(pc_rx_data.DiagnosticRespNAV_b4 == 0x01))
+    {
+         TestStepPass("Test Step","Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(100);
+    TestStep ("Test Step", "Send:19 02 0C");
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x03;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x02;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x0C;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if(Muti_Flag == 0)
+    {
+        
+        if((pc_rx_data.DiagnosticRespNAV_b1 == 0x59)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x02)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x0C))
+        {
+             TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","Response Wrong");
+        }
+    }
+    else if(Muti_Flag == 1)
+    {
+        if((Long_Rxdata[0] == 0x59)&&(Long_Rxdata[1] == 0x02)&&(Long_Rxdata[2] == 0x0C))
+        {
+            TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","Response Wrong");
+        }
+        for(clr_cnt = 0;clr_cnt<255;clr_cnt++)
+        {
+            Long_Rxdata[clr_cnt] = 0;
+        }
+        Muti_Flag = 0;
+    }
+    TestWaitForTimeout(100);
+    TestStep ("Test Step", "Send:19 04 9A 10 19 00");    
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x06;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x04;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x9A;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x10;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x00;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x19)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x31))
+    {
+         TestStepPass("Test Step","this is a negative response,we are not a OBD ECU,So Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+    TestWaitForTimeout(500);
+    
+    TestStep ("Test Step", "Send:19 04 9A 10 19 01");    
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x06;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x04;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x9A;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x10;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x01;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    TestWaitForTimeout(1000);
+    if(Muti_Flag == 0)
+    {
+       
+            TestStepFail("Test Step","Response Wrong = single");
+    }
+    else if(Muti_Flag == 1)
+    {
+        if((Long_Rxdata[0] == 0x59)&&(Long_Rxdata[1] == 0x04)&&(Long_Rxdata[6] == 0x01))
+        {
+            TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","Response Wrong = muti");
+        }
+        for(clr_cnt = 0;clr_cnt<255;clr_cnt++)
+        {
+            Long_Rxdata[clr_cnt] = 0;
+        }
+        Muti_Flag = 0;
+    }
+    TestWaitForTimeout(100);
+    TestStep ("Test Step", "Send:19 04 9A 10 19 02");    
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x06;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x04;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x9A;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x10;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x02;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    if((pc_rx_data.DiagnosticRespNAV_b0 == 0x03)&&(pc_rx_data.DiagnosticRespNAV_b1 == 0x7F)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x19)&&(pc_rx_data.DiagnosticRespNAV_b3 == 0x31))
+    {
+         TestStepPass("Test Step","this is a negative response,we do not have user define snapshot,So Response Correct");
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+
+    TestWaitForTimeout(100);
+    TestStep ("Test Step", "Send:19 04 9A 10 19 FF");    
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x06;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x04;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x9A;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x10;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0xFF;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    TestWaitForTimeout(1000);
+    if(Muti_Flag == 0)
+    {
+       
+            TestStepFail("Test Step","Response Wrong = single");
+    }
+    else if(Muti_Flag == 1)
+    {
+        if((Long_Rxdata[0] == 0x59)&&(Long_Rxdata[1] == 0x04)&&(Long_Rxdata[6] == 0xFF))
+        {
+            TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","Response Wrong= muti");
+        }
+        for(clr_cnt = 0;clr_cnt<255;clr_cnt++)
+        {
+            Long_Rxdata[clr_cnt] = 0;
+        }
+        Muti_Flag = 0;
+    }
+    
+    TestWaitForTimeout(100);
+    TestStep ("Test Step", "Send:19 06 9A 10 19 01");    
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x06;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x06;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b3 = 0x9A;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b4 = 0x10;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b5 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b6 = 0x01;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    TestWaitForTimeout(1000);
+    if(Muti_Flag == 1)
+    {
+        if((Long_Rxdata[0] == 0x59)&&(Long_Rxdata[1] == 0x06)&&(Long_Rxdata[6] == 0x01))
+        {
+            TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","Response Wrong");
+        }
+        for(clr_cnt = 0;clr_cnt<255;clr_cnt++)
+        {
+            Long_Rxdata[clr_cnt] = 0;
+        }
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+
+    TestWaitForTimeout(100);
+    TestStep ("Test Step", "Send:19 0A");    
+    pc_tx_func.DiagnosticFuncAddrRq_m_b0 = 0x02;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b1 = 0x19;
+    pc_tx_func.DiagnosticFuncAddrRq_m_b2 = 0x0A;
+    output(pc_tx_func);
+    rev_flag = TestWaitForMessage(NAV_MSC_FrI00,P2max);
+    if(rev_flag == 1)
+    {
+        TestStepPass("Test Step","There is a response in time");
+    }
+    else if(rev_flag == 0)
+    {
+        TestStepFail("Test Step","Wrong!No response");
+    }
+    else 
+    {
+        TestStepFail("Test Step", "Error!"); 
+    }
+    TestStep ("Test Step", "Check the response");
+    TestWaitForTimeout(1000);    
+    if(Muti_Flag == 0)
+    {
+        if((pc_rx_data.DiagnosticRespNAV_b1 == 0x59)&&(pc_rx_data.DiagnosticRespNAV_b2 == 0x0A))
+        {
+             TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","Response Wrong");
+        }
+    }
+    else if(Muti_Flag == 1)
+    {
+        if((Long_Rxdata[0] == 0x59)&&(Long_Rxdata[1] == 0x0a))
+        {
+            TestStepPass("Test Step","Response Correct");
+        }
+        else
+        {
+            TestStepFail("Test Step","Response Wrong");
+        }
+        for(clr_cnt = 0;clr_cnt<255;clr_cnt++)
+        {
+            Long_Rxdata[clr_cnt] = 0;
+        }
+    }
+    else
+    {
+        TestStepFail("Test Step","Response Wrong");
+    }
+}
+/*@@end*/
+
